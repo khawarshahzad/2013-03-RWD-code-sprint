@@ -16,7 +16,7 @@
 .enhanced td.essential {
   display: table-cell; }
 
-@media screen and (min-width: 48em) {
+@media only screen and (min-width: 48em) {
   .lt-ie9 .enhanced th.optional,
   .lt-ie9 .enhanced td.optional {
     display: inline; }
@@ -24,7 +24,7 @@
   .enhanced th.optional,
   .enhanced td.optional {
     display: table-cell; } }
-@media screen and (min-width: 767px) {
+@media only screen and (min-width: 80em) {
   .lt-ie9 .enhanced th,
   .lt-ie9 .enhanced td {
     display: inline; }

@@ -1,0 +1,192 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"services",
+				"servicesSlider"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 380.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sde",
+				"Preferences: Settings - Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Eric/Dropbox/GitHub/RWD-Demo/prototypes/sections.html",
+		"/C/Users/Eric/Dropbox/GitHub/foundationexamples/carousel.html",
+		"/C/Users/Eric/Dropbox/GitHub/RWD-Demo/README.md",
+		"/C/Users/Eric/Dropbox/GitHub/RWD-Demo/index.html",
+		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Eric/Dropbox/GitHub/foundationexamples/index.html",
+		"/C/Users/Eric/Dropbox/GitHub/foundationexamples/js/foundation/foundation.section.js",
+		"/C/Users/Eric/Dropbox/GitHub/fndt/index.html",
+		"/C/Users/Eric/Dropbox/Web Design/Blains Bay/style.css",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/testimonials.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/css/style.css",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/index.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/photo-video-gallery.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-crew.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-gear.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-history.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-videos.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-work.html",
+		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/404.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/403.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/get-a-free-estimate.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/facebook.html",
+		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/robots.txt",
+		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"padding",
+			"48",
+			"float",
+			"browser",
+			"open"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Eric/Dropbox/GitHub/foundation/Foundation.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true
+}

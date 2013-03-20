@@ -1,3 +1,5 @@
+@import "foundation/foundation-global";
+
 .toggle-table-dropdown {
   input {
     display: inline-block;
@@ -23,7 +25,7 @@
    display: table-cell;
 }
 
-@media screen and (min-width: 48em) {
+@media #{$small} {
   .lt-ie9 .enhanced th.optional,
   .lt-ie9 .enhanced td.optional {
     display: inline;
@@ -34,7 +36,7 @@
   }
 }
 
-@media screen and (min-width: 767px) {
+@media #{$medium} {
    .lt-ie9 .enhanced th,
    .lt-ie9 .enhanced td {
       display: inline;

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Responsive (Togglable) Tables</title>
+
+  <link rel="stylesheet" href="../../css/normalize.css" />
+  <link rel="stylesheet" href="../../css/app.css" />
+  <link rel="stylesheet" href="../../css/foundation.css" />
+  <link rel="stylesheet" href="../../css/responsive-tables.css" />
+
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Responsive Table</h2>
+      <p>See this <a href="http://filamentgroup.com/lab/responsive_design_approach_for_complex_multicolumn_data_tables/">blog post</a> for a walkthrough of the code and rationale, and the <a href="https://github.com/filamentgroup/RWD-Table-Patterns">GitHub repo</a>.</p>
+      <h3>Usage:</h3>
+      <ul class="list-bullets-inside">
+        <li>Include:
+          <ul class="list-bullets-inside">
+            <li><code>js/vendor/jquery-ui.widget.js</code></li>
+            <li><code>js/app/responsive-tables.js</code></li>
+            <li><code>js/foundation/foundation.dropdown.js</code></li>
+          </ul>
+        </li>
+        <li>Give the <code>&lt;table&gt;</code> the class <code>.toggle-table</code></li>
+        <li>Add a <code>div.toggle-table-menu</code> with an <code>id</code> in the form of <code><em>[table id]</em>-check-container</code> to the page. This will contain the dropdown menu.</li>
+        <li>Optionally use the following classes on <code>&lt;th&gt;</code> elements to prioritize column display:
+          <ul class="list-bullets-inside">
+            <li><code>persist</code> (never hides)</li>
+            <li><code>optional</code> (hides as soon as there is not enough space)</li>
+            <li><code>essential</code> (only hides when all <code>optional</code> columns are hidden and there is not enough space)</li>
+          </ul>
+        </li>
+        <li>Call <code>$('#myTable').toggleTable();</code> to initialize</li>
+      </ul>
+      <h3>ITS conventions:</h3>
+      <ul class="list-bullets-inside">
+        <li>Add a <code>.row</code> above the <code>.row</code> containing the table to hold the <code>div.toggle-table-menu</code>.</li>
+      </ul>
+
+      <h3>To do:</h3>
+      <ul class="list-bullets-inside">
+        <li>Test with Zepto</li>
+        <li>Try to remove the dependency on jQueryUI Widget</li>
+        <li>Better dropdown styles (and put them back into Foundation)</li>
+        <li>Test on oldIE</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="toggle-table-menu" id="demo-check-container"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <table class="toggle-table" id="demo">
+            <thead>
+              <tr>
+                <th class="essential persist">Can't Hide Me</th>
+                <th class="essential">Try Not to Hide</th>
+                <th class="optional">Whatever</th>
+                <th class="essential no-wrap">Try to Keep Me</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>This column won't wrap</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>Content Goes Here</td>
+                <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/vendor/jquery-ui.widget.min.js"></script>
+  <script src="../../js/app/responsive-tables.js"></script>
+  <script src="../../js/foundation/foundation.js"></script>
+  <script src="../../js/foundation/foundation.dropdown.js"></script>
+  <script>
+    $(document).foundation();
+    $(function(){
+      $('.toggle-table').toggleTable();
+    });
+  </script>
+</body>

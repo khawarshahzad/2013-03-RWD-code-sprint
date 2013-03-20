@@ -4,46 +4,270 @@
 		"selected_items":
 		[
 			[
-				"services",
-				"servicesSlider"
+				"add",
+				"addEventListener"
+			],
+			[
+				"table",
+				"tableName"
+			],
+			[
+				"row",
+				"rowCount"
+			],
+			[
+				"getElem",
+				"getElementsByTagName"
+			],
+			[
+				"getE",
+				"getElementsByTagName"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"normal",
+				"normalizeDisplay"
+			],
+			[
+				"sav",
+				"savedIds"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"userid",
+				"user_id"
+			],
+			[
+				"DO",
+				"DOC_ROOT"
+			],
+			[
+				"entities",
+				"include_entities"
+			],
+			[
+				"array_",
+				"array_merge"
+			],
+			[
+				"is_",
+				"is_array"
+			],
+			[
+				"in",
+				"inline-block  (value)"
+			],
+			[
+				"composet",
+				"composeTweetBox"
+			],
+			[
+				"comp",
+				"$composeTweetBox  (variable)"
+			],
+			[
+				"targ",
+				"$target  (variable)"
+			],
+			[
+				"d",
+				"d  (namespace)"
+			],
+			[
+				"for",
+				"for: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"events",
+				"eventsInit  (function)"
+			],
+			[
+				"comma",
+				"command  (variable)"
+			],
+			[
+				"meta",
+				"meta: <meta name=\"\" content=\"\">"
+			],
+			[
+				"key",
+				"keys  (namespace)"
+			],
+			[
+				"fl",
+				"fltr  (namespace)"
+			],
+			[
+				"snr",
+				"snr  (variable)"
+			],
+			[
+				"body",
+				"$body  (variable)"
+			],
+			[
+				"fltr",
+				"fltr  (namespace)"
+			],
+			[
+				"s",
+				"source  (namespace)"
+			],
+			[
+				"sync",
+				"sync  (namespace)"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"fid",
+				"fid"
+			],
+			[
+				"de",
+				"defaultObj"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "prototypes/responsive-tables/index.html",
+			"settings":
+			{
+				"buffer_size": 4700,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/app/responsive-tables.js",
+			"settings":
+			{
+				"buffer_size": 3464,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/responsive-tables.scss",
+			"settings":
+			{
+				"buffer_size": 748,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/app.scss",
+			"settings":
+			{
+				"buffer_size": 93,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 380.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
-				"packa",
+				"ta",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"list",
 				"Package Control: List Packages"
 			],
 			[
-				"side",
-				"View: Toggle Side Bar"
+				"ins",
+				"Package Control: Install Package"
 			],
 			[
-				"sde",
-				"Preferences: Settings - Default"
+				"tag",
+				"Tag: Auto-Format Tags on Document"
+			],
+			[
+				"mo",
+				"SFTP: Monitor File (Upload on External Save)"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"fet ",
+				"Fetch"
+			],
+			[
+				"fet",
+				"Fetch"
+			],
+			[
+				"LIST ",
+				"Package Control: List Packages"
+			],
+			[
+				"fe",
+				"Fetch"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"oacka",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
-			],
-			[
-				"pack",
-				"Package Control: List Packages"
 			]
 		],
-		"width": 512.0
+		"width": 588.0
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 136.0
 	},
 	"distraction_free":
 	{
@@ -56,43 +280,154 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Eric/Dropbox/GitHub/RWD-Demo/prototypes/sections.html",
-		"/C/Users/Eric/Dropbox/GitHub/foundationexamples/carousel.html",
-		"/C/Users/Eric/Dropbox/GitHub/RWD-Demo/README.md",
-		"/C/Users/Eric/Dropbox/GitHub/RWD-Demo/index.html",
-		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Eric/Dropbox/GitHub/foundationexamples/index.html",
-		"/C/Users/Eric/Dropbox/GitHub/foundationexamples/js/foundation/foundation.section.js",
-		"/C/Users/Eric/Dropbox/GitHub/fndt/index.html",
-		"/C/Users/Eric/Dropbox/Web Design/Blains Bay/style.css",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/testimonials.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/css/style.css",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/index.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/photo-video-gallery.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-crew.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-gear.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-history.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-videos.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/gallery-work.html",
-		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/404.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/403.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/get-a-free-estimate.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/facebook.html",
-		"/C/Users/Eric/Dropbox/Web Design/Wades Tree Service/Prod Website/robots.txt",
-		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
-		"/C/Users/Eric/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+		"/Users/craig/Dropbox/ITS/RWD-Demo/prototypes/responsive-tables/responsive-tables.scss",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/prototypes/index.html",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/img/responsive-tables-icon-menu.png",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/prototypes/responsive-tables/responsive-tables.css",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/prototypes/responsive-tables.html",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/js/vendor/responsive-tables.js",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/prototypes/responsive-tables.css",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/css/foundation.css",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/css/app.css",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/scss/foundation/app.scss",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/js/foundation/index.js",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/prototypes/responsive-tables.js",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/prototypes/jquery-ui.widget.min.js",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/RWD-Demo.sublime-project",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/prototypes/responsive-tables/index.html",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/.gitignore",
+		"/Users/craig/Dropbox/ITS/RWD-Demo/index.html",
+		"/Users/craig/Dropbox/ITS/its-rwd-forms-demo/Template.html",
+		"/Users/craig/Dropbox/ITS/its-rwd-forms-demo/README.md",
+		"/Users/craig/Dropbox/ITS/its-rwd-forms-demo/.gitignore",
+		"/Users/craig/Dropbox/ITS/its-rwd-forms-demo/scss/foundation.scss",
+		"/Users/craig/Dropbox/ITS/its-rwd-forms-demo/docs/components/forms.html.erb",
+		"/Users/craig/Dropbox/ITS/its-rwd-forms-demo/templates/project/index.html",
+		"/Users/craig/Dropbox/ITS/foundation/stylesheets/app.css",
+		"/Users/craig/Dropbox/ITS/foundation/stylesheets/normalize.css",
+		"/Users/craig/Dropbox/ITS/foundation/javascripts/vendor/jquery.js",
+		"/Users/craig/Dropbox/ITS/foundation/sass/app.scss",
+		"/Users/craig/Dropbox/ITS/foundation/config.rb",
+		"/Users/craig/Dropbox/ITS/foundation/MIT-LICENSE.txt",
+		"/Users/craig/Dropbox/Patik.com/fever/firewall/app/views/default/scripts/fever.js",
+		"/Users/craig/Dropbox/Patik.com/code/user-scripts/hannaford.flyer.user.js",
+		"/Users/craig/Dropbox/New Text Document.txt",
+		"/Users/craig/Dropbox/Patik.com/sftp-settings.json",
+		"/Users/craig/Dropbox/Patik.com/sftp-config.json",
+		"/Users/craig/Dropbox/Patik.com/code/user-scripts/index.php",
+		"/Users/craig/Dropbox/Patik.com/less/style.less",
+		"/Users/craig/Dropbox/Patik.com/travel/index.php",
+		"/Users/craig/Dropbox/Patik.com/code/user-scripts/wiki-travel-voyage-redirect.user.js",
+		"/Users/craig/Dropbox/Patik.com/code/localStorageDBTest/style.less",
+		"/Users/craig/Dropbox/Patik.com/code/localStorageDBTest/less/bootstrap.less",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/README.md",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/consolelog.js",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/consolelog.detailprint.js",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/index.html",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/demo.js",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/demo.css",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/blog-detail-print_2012-12-17.html",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/blog-detail-print.html",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/consolelog.firebug.png",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/blog-detail-print.md",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/less/bootstrap.less",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/css/bootstrap.css",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/css/responsive.css",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/less/variables.less",
+		"/Users/craig/Dropbox/code/mimidev/wp2/wp-config.php",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/index.php",
+		"/Users/craig/Dropbox/Patik.com/code/index.php",
+		"/Users/craig/Dropbox/Patik.com/demos/consolelog/index.html",
+		"/Users/craig/Dropbox/Patik.com/.htaccess",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/console.log.js",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/console.log.detailprint.js",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/less/mixins.less",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/less/responsive.less",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/less/responsive-utilities.less",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/less/layouts.less",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/ie8-without-detail-print.png",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/ie8-without-detail-print.png.mno",
+		"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/console.log2.js",
+		"/Users/craig/Dropbox/Patik.com/code/shorten-url/shorten-url.js",
+		"/Users/craig/Dropbox/Patik.com/autosms.php",
+		"/Users/craig/Dropbox/Patik.com/inc/html.php",
+		"/Users/craig/Dropbox/Patik.com/index.php",
+		"/Users/craig/Dropbox/Patik.com/travel/britain-benelux/index.php",
+		"/Users/craig/Dropbox/Patik.com/css/style.css",
+		"/Users/craig/Dropbox/Patik.com/c/index.php",
+		"/Users/craig/Dropbox/Patik.com/c/realpage.php",
+		"/Users/craig/Dropbox/Patik.com/c/manifest.appcache",
+		"/Users/craig/Dropbox/Patik.com/c/index.html",
+		"/Users/craig/Dropbox/Patik.com/c/realpage.html",
+		"/Users/craig/Dropbox/Patik.com/c/script.cache.js",
+		"/Users/craig/Dropbox/Patik.com/c/style.cache.css",
+		"/Users/craig/Dropbox/Patik.com/c/script.dyn.js",
+		"/Users/craig/Dropbox/Patik.com/c/style.dyn.css",
+		"/Users/craig/Dropbox/Patik.com/c/cache.appcache",
+		"/Users/craig/Dropbox/Patik.com/code/shorten-url/index.php",
+		"/Users/craig/Dropbox/Apps/sublime text license.txt",
+		"/Users/craig/Dropbox/Patik.com/img/britain-benelux-edinburgh-link@2x.jpg",
+		"/Users/craig/Dropbox/Patik.com/img/britain-benelux-bruges-link.jpg",
+		"/Users/craig/Dropbox/Patik.com/js/plugins.js",
+		"/Users/craig/Dropbox/Patik.com/.gitignore",
+		"/Users/craig/Dropbox/Patik.com/js/dev.js",
+		"/Users/craig/Dropbox/Patik.com/js/script.js",
+		"/Users/craig/Dropbox/Patik.com/demos/consolelog/consolelog.js",
+		"/Users/craig/Dropbox/Patik.com/demos/consolelog/script.js",
+		"/Users/craig/Dropbox/Patik.com/demos/consolelog/style.css",
+		"/Users/craig/Dropbox/Patik.com/img/travel-britain-benelux@2x.jpg",
+		"/Users/craig/Dropbox/Patik.com/travel/germany/index.php",
+		"/Users/craig/Dropbox/Patik.com/travel/turkey/index.php",
+		"/Users/craig/Dropbox/Patik.com/travel/greece/index.php",
+		"/Users/craig/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/craig/Dropbox/Patik.com/code/user-scripts/enhanced-alpha-app-net.user.js",
+		"/Users/craig/Dropbox/Patik.com/code/user-scripts/app-net-twitter-char-count.user.js",
+		"/Users/craig/Dropbox/Patik.com/img/app-net-twitter-char-count.png",
+		"/Users/craig/Dropbox/Quebec City/Quebec City - Google Maps.html",
+		"/Users/craig/Dropbox/code/sizzle/sizzle.js",
+		"/Users/craig/Dropbox/Patik.com/code/user-scripts/readable-trip-advisor.user.min.js",
+		"/Users/craig/Dropbox/Patik.com/code/user-scripts/twitter-avatar-in-menu.user.js",
+		"/Users/craig/Dropbox/Patik.com/code/user-scripts/readable-google-plus.user.js",
+		"/Users/craig/Dropbox/Patik.com/demos/consolelog/consolelog.min.js",
+		"/Users/craig/Dropbox/Patik.com/min/groupsConfig.php",
+		"/Users/craig/Dropbox/Patik.com/js/libs/bootstrap.min.js",
+		"/Users/craig/Dropbox/Patik.com/js/libs/ajaxify-html5.js",
+		"/Users/craig/Dropbox/Patik.com/js/libs/jquery.history.js",
+		"/Users/craig/Dropbox/Patik.com/less/variables.less",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/maintenance.php",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/index.php",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/themes/default/templates/template.php",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/themes/default/stylesheets/styles.css",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/themes/default/javascripts/openphoto-theme.js",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/themes/default/javascripts/openphoto-theme-mobile.js",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/themes/default/config/settings.ini",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/javascripts/openphoto-upload.min.js",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/javascripts/openphoto-upload.js",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/javascripts/openphoto-helper.min.js",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/javascripts/openphoto-helper.js",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/stylesheets/upload.css",
+		"/Users/craig/Dropbox/Patik.com/ophoto/html/assets/stylesheets/mobile.css",
+		"/Users/craig/Dropbox/Patik.com/adaptive-images.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 33.0
 	},
 	"find_in_files":
 	{
 		"height": 0.0,
 		"where_history":
 		[
+			"",
+			"/Users/craig/Dropbox/Patik.com/code/console-log-polyfill/less/",
+			"",
+			"/Users/craig/Dropbox/Patik.com",
+			"/Users/craig/Dropbox/Patik.com/n/less/bootstrap",
+			"<open files>",
+			"script.desktop.js",
+			"script.snr.js",
+			"script.desktop.js",
+			"filters.desktop.js"
 		]
 	},
 	"find_state":
@@ -100,11 +435,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"padding",
-			"48",
-			"float",
-			"browser",
-			"open"
+			"hdrCols",
+			"bodyRows",
+			"table",
+			"p>",
+			"p",
+			", ",
+			"table-menu-wrapper",
+			"respTable",
+			"\"",
+			"inline-block",
+			"    ",
+			"   ",
+			"menuWrapper",
+			"'",
+			"@media",
+			"egacy-ie",
+			"legacy-ie",
+			"white-sp",
+			"stylesheets",
+			"div class=\"fieldHelpText\"",
+			" class=\"text\"",
+			"class=\"showDetails\"",
+			"class=\"button\" value=\"Submit\"",
+			"</div>\n        <div class=\"row\">",
+			"<div class=\"linePn labelM\">\n            <div class=\"labelPn\">\n              <div class=\"labelWrap noLabel\">",
+			"<div class=\"linePn labelM\">\n            <div class=\"labelPn\">\n              <div class=\"labelWrap\">",
+			":</label>",
+			"<div class=\"linePn labelM\">\n          <div class=\"labelPn\">\n            <div class=\"labelWrap\">",
+			"<div class=\"group\">",
+			"<div class=\"buttonGroup\">",
+			"h2",
+			" class=\"text\"",
+			"class=\"text\"",
+			"large-9",
+			"js/",
+			"css",
+			"<%= css_dir %>",
+			"<%= javascripts_dir %>",
+			"ul {",
+			"function",
+			", ",
+			"; ",
+			"$out.prepend",
+			"html",
+			"'",
+			"touches",
+			"emCalc",
+			"timestamp",
+			"1.4",
+			"isLion",
+			"item-content",
+			"adnenh.img",
+			"_adnenh_",
+			"adnenh.twchar",
+			"adnenh.rpl",
+			"adnenh.adnCharDisplay",
+			"adnenh.textarea",
+			"adnenh.twCharDisplay",
+			"adnenh",
+			"adnenh.setup",
+			"span12",
+			"clearLog",
+			"deleteBlobs",
+			"'blobs'",
+			"addBlobs",
+			"letterpool",
+			"snrdb",
+			"h3",
+			"aligncenter",
+			"code",
+			"\n              ",
+			"success",
+			" btn-success",
+			"http://cpatik.github.com/console.log-wrapper/",
+			"-webkit-gradient(",
+			"log.detailPrint",
+			"detailPrint",
+			"four",
+			"two",
+			"demoElement",
+			"isReallyIE9",
+			"addEvent",
+			"executeLog",
+			"commands",
+			"log-exec",
+			"id",
+			"'method'",
+			"executeme",
+			"arguments",
+			"prettyArgs",
+			"prettyPrint",
+			"\"",
+			"console.",
+			"\\t",
+			"cache",
+			"text-dec",
+			"\"",
+			"bruges",
+			"London",
+			"london",
+			"britain",
+			"li",
+			"–",
+			"!important",
+			"hMainM",
+			"<iframe",
+			"201258",
+			"main_map",
+			"mail_map",
+			"\\t",
+			"patik",
+			"serif",
+			"family",
+			"font-sans",
+			"bold",
+			"family",
+			"images",
+			"images/",
+			"cookie.php",
+			"ceyi0nGr",
+			"sawr2f1m",
+			"-redesign",
+			"santorini",
+			"font-f",
+			".navbar-fixed-top",
+			"fixed",
+			"\\n^\\s*$",
+			"style.320.css"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -112,6 +570,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"  ",
+			"",
+			"  ",
+			"url(../../img/",
+			"snr.d.twitter.displayToggleSavedButton",
+			"  ",
+			"snr.d.$quickFilterModal",
+			"  ",
+			"text-scoring"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -124,16 +591,495 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "prototypes/responsive-tables/index.html",
+					"settings":
+					{
+						"buffer_size": 4700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2643,
+								2643
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": false,
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": false,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": false,
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": false,
+								"qualified-headings": false,
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"text-indent": "warning",
+								"unique-headings": false,
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": false,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": "load-save",
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1232.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/app/responsive-tables.js",
+					"settings":
+					{
+						"buffer_size": 3464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3463,
+								3463
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": false,
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": false,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": false,
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": false,
+								"qualified-headings": false,
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"text-indent": "warning",
+								"unique-headings": false,
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": false,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": "load-save",
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/responsive-tables.scss",
+					"settings":
+					{
+						"buffer_size": 748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": false,
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": false,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": false,
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": false,
+								"qualified-headings": false,
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"text-indent": "warning",
+								"unique-headings": false,
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": false,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": "load-save",
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scss/app.scss",
+					"settings":
+					{
+						"buffer_size": 93,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": false,
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": false,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": false,
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": false,
+								"qualified-headings": false,
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"text-indent": "warning",
+								"unique-headings": false,
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"encoding_helper_confidence": 0.0,
+							"encoding_helper_encoding": "Unknown",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": false,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": "load-save",
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 32.0
 	},
 	"input":
 	{
-		"height": 38.0
+		"height": 30.0
 	},
 	"layout":
 	{
@@ -158,9 +1104,13 @@
 		]
 	},
 	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 110.0
+	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -178,7 +1128,7 @@
 		[
 			[
 				"",
-				"/C/Users/Eric/Dropbox/GitHub/foundation/Foundation.sublime-project"
+				"/Users/craig/Documents/SublimeWorkspaces/ExternalApps.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -187,6 +1137,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 259.0,
+	"side_bar_width": 252.0,
 	"status_bar_visible": true
 }

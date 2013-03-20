@@ -62,15 +62,19 @@
           $toggle
             .find('input')
             .change(function(){
-              var input = $(this),
-                  val = input.val(),
-                  cols = $('#' + val + ', [headers="+ val +"]');
+              var $input = $(this),
+                  val = $input.val(),
+                  cols = $('#' + val + ', [headers="' + val + '"]');
 
-             if (input.is(':checked')) { cols.show(); }
-             else { cols.hide(); }
+              if ($input.is(':checked')) {
+                cols.show();
+              }
+              else {
+                cols.hide();
+              }
             })
             .bind('updateCheck', function(){
-              if ( th.css('display') === 'table-cell' || th.css('display') === 'inline' ) {
+              if ( /inline|table\-cell/.test(th.css('display')) ) {
                 $(this).attr('checked', true);
               }
               else {

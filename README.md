@@ -1,1 +1,1 @@
-Clone of the Foundation Repo on 3/19/2013
+- [Prototypes Index](http://nys-its.github.com/RWD-Demo/prototypes/index.html) (pull master to gh-pages branch to update view)

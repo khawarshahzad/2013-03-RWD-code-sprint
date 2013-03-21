@@ -95,7 +95,7 @@
 
 	.gov-bar a.gov-link-3 {
 		display: none;
-		text-indent: -9999;
+		text-indent: -9999px;
 	}
 
 	.gov-bar form {
@@ -164,10 +164,13 @@
 	}
 
 	.site-bar .site-functions .mobile-icon {
+		border-left: 1px solid #FFF;
 		color: #FFF;
 		display: inline-block !important;
 		float: right;
 		font-size: 1.5em;
+		margin:	0.25em;
+		padding: 0.2em;
 	}
 
 	.global-nav {
@@ -190,12 +193,39 @@
 		height: 28px;
 	}
 
+	.gov-bar a {
+		height: 28px
+	}
+
 	.gov-bar a.gov-link-1 {
-		background: url(images/nys-banner-img) no-repeat 0 0 transparent;
+		background: url(images/nys-banner-img.png) no-repeat 0 0 transparent;
 		display: inline-block;
-		margin: 2px 0 0 0;
+		float: left;
+		margin: 0;
 		text-indent: -9999px;
 		width: 185px;
+	}
+
+	.gov-bar a.gov-link-2,
+	.gov-bar a.gov-link-2:hover {
+		background: url(images/nys-banner-img.png) no-repeat 0 -28px transparent;
+		border: 0;
+		float: left;
+		margin: 0;
+		padding: 0;
+		text-indent: -9999px;
+		width: 130px;
+	}
+
+	.gov-bar a.gov-link-2:hover {
+		background-color: transparent;
+	}
+
+	.gov-bar a.gov-link-3 {
+		background: url(images/nys-banner-img.png) no-repeat 0 -56px transparent;
+		display: inline-block;
+		float: right;
+		width: 150px;
 	}
 
 	.site-bar {

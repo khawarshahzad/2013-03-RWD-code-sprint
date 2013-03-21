@@ -167,6 +167,14 @@
 		height: 28px;
 	}
 
+	.gov-bar a.gov-link-1 {
+		background: url(images/nys-banner-img) no-repeat 0 0 transparent;
+		display: inline-block;
+		margin: 2px 0 0 0;
+		text-indent: -9999px;
+		width: 185px;
+	}
+
 	.site-bar {
 		background: green;
 		height: 96px;

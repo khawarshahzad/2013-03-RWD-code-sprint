@@ -1,0 +1,95 @@
+@import "../../scss/foundation/foundation-global";
+
+.label-auto-align {
+  clear: both;
+  overflow: hidden;
+
+  .label-wrap {
+    width: 100%;
+    float: none;
+    padding-top: 0.5em;
+    overflow: hidden;
+
+    label {
+      float: left;
+      display: block;
+      padding-right: 0.75em;
+      position: relative;
+    }
+
+    .required:after {
+      content: "*";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #{$alert-color}; //#f30;
+    }
+  }
+}
+
+.data-wrap {
+  width: 100%;
+  float: none;
+
+  input, select, textarea {
+    width: 100%;
+  }
+}
+
+.width-50 input,
+.width-50 select,
+.width-50 textarea {
+  width: 50%;
+  float: left;
+}
+
+.width-50 .data-addendum {
+  width: 50%;
+  float: left;
+  padding-left: emCalc(12px);
+  padding-top: 0.33em;
+  font-size: emCalc(12px);
+}
+
+.data-addendum label {
+  float: left;
+  padding-right: 1em;
+}
+
+
+
+@media #{$small} {
+  .label-auto-align {
+    text-align: left;
+
+    .label-wrap {
+      float: left;
+      width: 30%;
+    }
+  }
+
+  .data-wrap {
+    width: 70%;
+    float: right;
+  }
+}
+
+@media #{$medium-small} {
+  .label-auto-align {
+
+    .label-wrap {
+      text-align: right;
+      padding-right: 1em;
+
+      label {
+        float: none;
+        display: inline-block;
+      }
+
+      .required {
+        float: none;
+      }
+    }
+  }
+}

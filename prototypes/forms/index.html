@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Responsive (Togglable) Tables</title>
+
+  <link rel="stylesheet" href="../../css/normalize.css" />
+  <link rel="stylesheet" href="../../css/app.css" />
+  <link rel="stylesheet" href="../../css/foundation.css" />
+  <link rel="stylesheet" href="forms.css" />
+
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Forms</h2>
+
+      <form class="custom">
+        <fieldset>
+          <legend>Contact Info</legend>
+
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="label-auto-align">
+                <div class="label-wrap">
+                  <label for="name" class="required">Name <span class="hide">Required field.</span></label>
+                </div>
+                <div class="data-wrap">
+                  <input type="text" name="name" id="name" value="" required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="label-auto-align">
+                <div class="label-wrap">
+                  <label for="addr1" class="required">Street address <span class="hide">Required field.</span></label>
+                </div>
+                <div class="data-wrap">
+                  <input type="text" name="addr1" id="addr1" value="" required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="label-auto-align">
+                <div class="label-wrap">
+                  <label for="zip" class="required">ZIP <span class="hide">Required field.</span></label>
+                </div>
+                <div class="data-wrap width-50">
+                  <input type="text" pattern="(^\d{5}(-\d{4})?$)|(^[A-Za-z]{1}\d{1}[A-Za-z]{1}\s*\d{1}[A-Za-z]{1}\d{1}$)" name="zip" id="zip" value="" required>
+                  <div class="data-addendum">US: 55555 or 55555-4444.<br>Canada: A1A 1A1 (space is optional)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="label-auto-align">
+                <div class="label-wrap">
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="data-wrap width-50">
+                  <input type="tel" name="phone" id="phone" value="">
+                  <div class="data-addendum">
+                    <label for="radio1a">
+                      <input name="phoneType" type="radio" id="radio1a" style="display:none;" checked>
+                      <span class="custom radio checked"></span> Mobile
+                    </label>
+                    <label for="radio1b">
+                      <input name="phoneType" type="radio" id="radio1b" style="display:none;">
+                      <span class="custom radio"></span> Work
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="label-auto-align">
+                <div class="label-wrap">
+                  <label for="email">Email</label>
+                </div>
+                <div class="data-wrap">
+                  <input type="email" name="email" id="email" value="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-6 columns">
+              <input type="reset" class="button secondary" value="Reset">
+            </div>
+            <div class="small-6 columns right">
+              <input type="submit" class="button" value="Submit">
+            </div>
+          </div>
+<!--
+          <div class="row">
+            <div class="large-4 columns">
+              <label>Input Label</label>
+              <input type="text" value="">
+            </div>
+            <div class="large-4 columns">
+              <label>Input Label</label>
+              <input type="text" value="">
+            </div>
+            <div class="large-4 columns">
+              <div class="row collapse">
+                <label>Input Label</label>
+                <div class="small-9 columns">
+                  <input type="text" value="">
+                </div>
+                <div class="small-3 columns">
+                  <span class="postfix">.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Textarea Label</label>
+              <textarea placeholder="small-12.columns"></textarea>
+            </div>
+          </div>
+ -->
+        </fieldset>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/foundation/foundation.js"></script>
+  <script src="../../js/foundation/foundation.forms.js"></script>
+  <script src="forms.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>

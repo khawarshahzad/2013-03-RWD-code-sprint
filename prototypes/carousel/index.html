@@ -14,28 +14,42 @@
 </head>
 <body>
   <div class="row">
-    <div class="large-10 columns">
+    <div class="large-9 columns">
       <h1>Carousel</h1>
       <ul class="breadcrumbs">
         <li><a href="../index.html">Prototypes Home</a></li>
         <li class="current"><a href="#">Carousel</a></li>
       </ul>
-      <ul data-orbit>
-        <li>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-9 small-centered columns">
+      <ul data-orbit data-options="bullets:false;">
+        <li data-orbit-slide="statue">
           <img src="img/demos/demo1.jpg" />
-          <div class="orbit-caption">This is a "Picture" of an "Old House"</div>
+          <div class="orbit-caption"><h4>Statue of Liberty</h4>Photo by <a href="http://www.flickr.com/photos/suewaters/">Sue Walters</a></div>
         </li>
-        <li>
+        <li data-orbit-slide="falls">
           <img src="img/demos/demo2.jpg" />
-          <div class="orbit-caption">"Old Hardware Store"</div>
+          <div class="orbit-caption"><h4>Niagara Falls</h4>Photo by <a href="http://www.flickr.com/photos/raresmdutu/">Rares M. Dutu</a></div>
         </li>
-        <li>
+        <li data-orbit-slide="capitol">
           <img src="img/demos/demo3.jpg" />
-          <div class="orbit-caption">"Sun Tavern"</div>
+          <div class="orbit-caption"><h4>Capitol Building</h4>Photo by <a href="http://www.flickr.com/photos/31451603@N02/">PeteDz Photography</a></div>
         </li>
       </ul>
     </div>
   </div>
+  <div class="row">
+    <div class="small-10 large-6 small-centered columns">
+      <ul class="small-block-grid-3">
+        <li><a class="th radius" href="#" data-orbit-link="statue"><img src="img/demos/demo1-th.jpg"></a></li>
+        <li><a class="th radius" href="#" data-orbit-link="falls"><img src="img/demos/demo2-th.jpg"></a></li>
+        <li><a class="th radius" href="#" data-orbit-link="capitol"><img src="img/demos/demo3-th.jpg"></a></li>
+      </ul>
+    </div>
+  </div>
+      
 
   <script src='../../js/vendor/jquery.js'></script> 
   

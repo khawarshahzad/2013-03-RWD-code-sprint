@@ -1,0 +1,44 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "close",
+        "cancel",
+        "reject"
+      ],
+      "code": 10005,
+      "from": 10005,
+      "uid": "c709da589c923ba3c2ad48d9fc563e93",
+      "css": "cancel",
+      "orig_css": "cancel",
+      "orig_code": 10005,
+      "src": "entypo"
+    },
+    {
+      "search": [
+        "list"
+      ],
+      "code": 57349,
+      "uid": "3626b3f3a0b284e7f4166b815719aece",
+      "css": "list",
+      "orig_css": "list",
+      "orig_code": 57349,
+      "src": "entypo",
+      "from": 57349
+    },
+    {
+      "search": [
+        "search",
+        "find"
+      ],
+      "code": 128269,
+      "uid": "7222571caa5c15f83dcfd447c58d68d9",
+      "css": "search",
+      "orig_css": "search",
+      "orig_code": 128269,
+      "src": "entypo",
+      "from": 128269
+    }
+  ]
+}

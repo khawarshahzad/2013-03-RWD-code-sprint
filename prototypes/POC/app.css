@@ -56,9 +56,13 @@
 		display: none;
 	}
 
+	/* temp font - Helvetica doesn't look great */
+	.gov-bar, .site-bar, h1 {
+		font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+	}
+
 	.gov-bar {
 		background: #036;
-		height: 150px;
 	}
 
 	.gov-bar a {
@@ -66,19 +70,27 @@
 	}
 
 	.gov-bar a.gov-link-1 {
-		display: block;
-		font-size: 1.5em;
+		float: left;
+		font-size: 1.3em;
 		text-align: center;
-		margin: 7px auto 10px;
+		padding-bottom: 6px;
+		margin: 10px 0.2em 6px 0.4em;
 	}
 
 	.gov-bar a.gov-link-2 {
+		float: right;
+		background: #2ba6cb;
+		color: #FFF;
 		border: 1px solid #FFF;
-		display: block;
-		font-size: 1.2em;
-		text-align: center;
-		margin: 5px 15px;
-		padding: 10px 0.125em;
+		display: inline-block;
+		font-size: 1.1em;
+		margin: 5px 0.4em;
+		padding: 7px 0.7em;
+		border-radius: 4px;
+	}
+
+	.gov-bar a.gov-link-2:hover {
+		background: #2284a1;
 	}
 
 	.gov-bar a.gov-link-3 {
@@ -87,23 +99,33 @@
 	}
 
 	.gov-bar form {
-		margin: 5px 1em;
+		float: left;
+		clear: both;
+		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.gov-bar form .gov-search-box {
-		display: inline-block;
-		margin: .25em;
-		width: 75%;
 		float: left;
+		margin-left: 0.5em;
+		width: 70%;
 	}
 
 	.gov-bar form .gov-search-button {
-		width: 23%;
-		float: right
+		float: right;
+		margin: 0.1em 0.5em 0 0.3em;
+		width: 24%;
 	}
 
 	.gov-bar {
 		overflow: hidden;
+	}
+
+	.gov-bar input {
+		border-radius: 4px;
+		font-size: 0.8em;
+		padding: 0.25em;
+		margin: 0;
 	}
 
 	.site-bar {
@@ -115,6 +137,7 @@
 	.site-bar h1 {
 		color: #FFF;
 		font-size: 1.1em;
+		font-weight: normal;
 		margin: 0;
 		padding: 0.5em 0 0 1.5em;
 	}

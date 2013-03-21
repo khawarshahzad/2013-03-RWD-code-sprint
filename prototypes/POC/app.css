@@ -1,0 +1,70 @@
+@media only screen {
+
+	.skip-to {
+		display: none;
+	}
+
+	.gov-bar {
+		background: #036;
+		height: 70px;
+	}
+
+	.gov-bar form {
+		margin: 0;
+	}
+
+	.gov-bar form .gov-search-box {
+		display: inline-block;
+		margin: .25em;
+		width: 50%;
+	}
+
+	.gov-bar form .gov-search-button {
+		
+	}
+
+
+	.site-bar {
+		background: red;
+		height: 48px;
+	}
+
+	.global-nav {
+		background: gray;
+		height: 48px;
+	}
+
+	.page {
+		background: #FFF;
+		height: 100%
+	}
+
+}
+
+/* Medium Displays: 768px - 1279px */
+@media only screen and (min-width: 48em) {
+
+	.gov-bar {
+		background: #blue;
+		height: 28px;
+	}
+
+	.site-bar {
+		background: green;
+	}
+
+	.global-nav {
+		background: dark-gray;
+	}
+
+}
+
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+
+}
+
+/* X-Large Displays: 1400px and up */
+@media only screen and (min-width: 90em) {
+
+}}

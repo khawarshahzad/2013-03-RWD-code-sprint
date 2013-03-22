@@ -64,10 +64,15 @@
 	.gov-bar {
 		background: #036;
 		height: 0;
+		overflow: hidden;
 	}
 
 	.gov-bar a {
 		color: #FFF;
+	}
+
+	.gov-bar .state-links {
+		overflow: auto;
 	}
 
 	.gov-bar a.gov-link-1 {
@@ -99,10 +104,8 @@
 	}
 
 	.gov-bar form {
-		float: left;
-		clear: both;
-		width: 100%;
-		margin: 5px 0 10px 0;
+		overflow: auto;
+		margin: 5px 0;
 	}
 
 	.gov-bar form .gov-search-box {
@@ -119,10 +122,6 @@
 		font-size: 0.95em;
 		margin: 0.2em 0.4em 0 0.4em;
 		width: 26%;
-	}
-
-	.gov-bar {
-		overflow: hidden;
 	}
 
 	.gov-bar input {
@@ -178,8 +177,14 @@
 		display: inline-block !important;
 		float: right;
 		font-size: 1.5em;
-		margin:	0.25em;
-		padding: 0.2em;
+		padding: 5px;
+		margin: 5px;
+	}
+
+	.site-bar .site-functions .mobile-icon span {
+		display: inline-block;
+		height: 28px;
+		width: 28px;
 	}
 
 	.global-nav {
@@ -192,18 +197,20 @@
 		height: 100%
 	}
 
+	/* Utility Classes */
 }
 
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 48em) {
 
-	.gov-bar {
-		background: #blue;
+	.gov-bar,
+	.gov-bar a {
 		height: 28px;
 	}
 
-	.gov-bar a {
-		height: 28px
+	.gov-bar .state-links {
+		display: inline-block;
+		float: left;
 	}
 
 	.gov-bar a.gov-link-1 {
@@ -235,6 +242,23 @@
 		display: inline-block;
 		float: right;
 		width: 150px;
+	}
+
+	.gov-bar form {
+		display: none;
+		float: right;
+		font-size: .75em;
+		width: 280px;
+		margin-top: 1px;
+	}
+
+	/* Active Gov Bar Search Box */
+	.active-gov-bar-search a.gov-link-3 {
+		display: none;
+	}
+
+	.active-gov-bar-search .gov-bar form {
+		display: block;
 	}
 
 	.site-bar {

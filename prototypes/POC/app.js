@@ -12,3 +12,10 @@ document.getElementById('gov-pull-down').onclick = function() {
 	}
 
 }
+
+// Standard Gov Banner display code
+document.getElementById('gov-link-3').onclick = function() {
+
+	$('html').addClass('active-gov-bar-search');
+
+}

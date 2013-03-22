@@ -63,6 +63,7 @@
 
 	.gov-bar {
 		background: #036;
+		height: 0;
 	}
 
 	.gov-bar a {
@@ -129,6 +130,11 @@
 		margin: 0;
 	}
 
+	/* Active Govenor Banner */
+	.active-gov-bar .gov-bar {
+		height: 96px;
+	}
+
 	.site-bar {
 		background: red;
 		height: 48px;
@@ -144,13 +150,15 @@
 	}
 
 	.site-bar .gov-pull-down {
-		background: #036;
+		background: url(images/nys-small.png) no-repeat 4px 4px #036;
+		background-size: 32px 32px;
 		border-radius: 0 0 8px 8px;
 		display: inline-block;
 		float: left;
 		height: 40px;
 		margin: 0 5px 8px;
 		padding: 4px;
+		text-indent: -9999px;
 		width: 40px;
 	}
 

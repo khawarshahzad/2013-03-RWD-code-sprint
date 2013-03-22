@@ -204,6 +204,7 @@
 @media only screen and (min-width: 48em) {
 
 	.gov-bar,
+	.active-gov-bar .gov-bar,
 	.gov-bar a {
 		height: 28px;
 	}
@@ -263,7 +264,7 @@
 
 	.site-bar {
 		background: green;
-		height: 96px;
+		height: 72px;
 	}
 
 	.site-bar .site-functions .mobile-icon {

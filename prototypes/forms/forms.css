@@ -11,36 +11,56 @@
       display: block;
       padding-right: 0.75em;
       position: relative; }
-    .label-auto-align .label-wrap .required:after {
-      content: "*";
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      color: #c60f13; }
 
-.data-wrap {
-  width: 100%;
-  float: none; }
-  .data-wrap input, .data-wrap select, .data-wrap textarea {
-    width: 100%; }
+.required:after {
+  content: "*";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #c60f13; }
 
-.width-50 input,
-.width-50 select,
-.width-50 textarea {
-  width: 50%;
+.has-addendum input,
+.has-addendum select,
+.has-addendum textarea {
+  width: 80%;
   float: left; }
 
-.width-50 .data-addendum {
-  width: 50%;
+.has-addendum .data-addendum {
+  width: 20%;
   float: left;
   padding-left: 0.75em;
-  padding-top: 0.33em;
-  font-size: 0.75em; }
+  padding-top: 0.33em; }
+
+.width-33 input,
+.width-33 select,
+.width-33 textarea {
+  width: 33%;
+  float: left; }
+
+.label-auto-align .width-33 {
+  width: 33%;
+  float: left;
+  padding-left: 0.375em;
+  padding-top: 0.33em; }
+  .label-auto-align .width-33 .label-wrap {
+    width: 70%; }
+  .label-auto-align .width-33 .data-wrap {
+    width: 30%; }
 
 .data-addendum label {
   float: left;
   padding-right: 1em; }
+
+.columns .label-auto-align + .label-auto-align {
+  clear: none; }
+.columns .label-auto-align:first-child {
+  padding-left: 0; }
+.columns .label-auto-align:last-child {
+  padding-right: 0; }
+
+.padding-left-none {
+  padding-left: 0 !important; }
 
 @media only screen and (min-width: 48em) {
   .label-auto-align {

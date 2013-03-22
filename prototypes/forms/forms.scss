@@ -17,7 +17,11 @@
       position: relative;
     }
 
-    .required:after {
+
+  }
+}
+
+.required:after {
       content: "*";
       display: block;
       position: absolute;
@@ -25,31 +29,54 @@
       right: 0;
       color: #{$alert-color}; //#f30;
     }
-  }
-}
 
-.data-wrap {
-  width: 100%;
-  float: none;
+// .data-wrap {
+//   width: 100%;
+//   float: none;
 
-  input, select, textarea {
-    width: 100%;
-  }
-}
+//   input, select, textarea {
+//     width: 100%;
+//   }
+// }
 
-.width-50 input,
-.width-50 select,
-.width-50 textarea {
-  width: 50%;
+.has-addendum input,
+.has-addendum select,
+.has-addendum textarea {
+  width: 80%;
   float: left;
 }
 
-.width-50 .data-addendum {
-  width: 50%;
+.has-addendum .data-addendum {
+  width: 20%;
   float: left;
   padding-left: emCalc(12px);
   padding-top: 0.33em;
-  font-size: emCalc(12px);
+  // font-size: emCalc(12px);
+}
+
+.width-33 input,
+.width-33 select,
+.width-33 textarea {
+  width: 33%;
+  float: left;
+}
+
+.label-auto-align {
+  .width-33 {
+    width: 33%;
+    float: left;
+    padding-left: emCalc(6px);
+    padding-top: 0.33em;
+    // font-size: emCalc(12px);
+
+    .label-wrap {
+      width: 70%;
+    }
+
+    .data-wrap {
+      width: 30%;
+    }
+  }
 }
 
 .data-addendum label {
@@ -57,7 +84,23 @@
   padding-right: 1em;
 }
 
+.columns {
+  .label-auto-align + .label-auto-align {
+    clear: none;
+  }
 
+  .label-auto-align:first-child {
+    padding-left: 0;
+  }
+
+  .label-auto-align:last-child {
+    padding-right: 0;
+  }
+}
+
+.padding-left-none {
+  padding-left: 0 !important;
+}
 
 @media #{$small} {
   .label-auto-align {

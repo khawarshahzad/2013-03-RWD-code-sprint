@@ -1,5 +1,5 @@
 // Active Governor Banner
-$('#gov-pull-down').on('click', function() {
+$('#gov-pull-down').on('click', function(e) {
 
 	e.preventDefault();
 
@@ -29,13 +29,34 @@ $('#mobile-site-search').on('click', function(e) {
 
 	e.preventDefault();
 
-	if ($('html').hasClass('active-mobile-site-search')) {
+	if ($('html').hasClass('active-site-search')) {
 
-		$('html').removeClass('active-mobile-site-search')
+		$('html').removeClass('active-site-search');
+		$(this).removeClass('close-button');
 
 	} else {
 
-		$('html').addClass('active-mobile-site-search')
+		$('html').addClass('active-site-search');
+		$(this).addClass('close-button');
+		
+	}
+
+});
+
+// Activate the menu on mobile (Toggle Version)
+$('#mobile-site-menu').on('click', function(e) {
+
+	e.preventDefault();
+
+	if ($('html').hasClass('active-site-menu')) {
+
+		$('html').removeClass('active-site-menu');
+		$(this).removeClass('close-button');
+
+	} else {
+
+		$('html').addClass('active-site-menu');
+		$(this).addClass('close-button');
 		
 	}
 

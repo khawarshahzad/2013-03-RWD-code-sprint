@@ -25,22 +25,26 @@
 
   <div class="row">
     <div class="large-12 columns callout" id="in">
-      <p>Perform any of the following touch actions on this box:</p>
-      <ul>
-        <li><code>tap</code></li>
-        <li><code>longTap</code></li>
-        <li><code>swipeLeft</code></li>
-        <li><code>swipeRight</code></li>
-        <li><code>swipeUp</code></li>
-        <li><code>swipeDown</code></li>
-      </ul>
-      <p>The script also supports singleTap, doubleTap, and swipe.</p>
-      <p>To test on desktop, open Chrome's Dev Tool settings (gear icon) and enable touch events.</p>
+      <div id="hastouch" style="display:none;">
+        <p>Perform touch actions in this box. Recognized events will appear below (most recent first).</p>
+        <ul>
+          <li><code>tap</code></li>
+          <li><code>longTap</code></li>
+          <li><code>swipeLeft</code></li>
+          <li><code>swipeRight</code></li>
+        </ul>
+        <p>The library also supports singleTap, doubleTap, swipeUp, swipeDown, and swipe.</p>
+      </div>
+      <div id="notouch">
+        <p>Click inside this box. Recognized events will appear below (most recent first).</p>
+        <p class="error">Touch events are not supported on this browser. Only <code>click</code> events will be recognized.</p>
+        <p>To test on desktop, open Chrome's Dev Tool settings (gear icon) and enable touch events.</p>
+      </div>
     </div>
   </div>
   <div class="row">
     <div class="large-12 columns">
-      <p>Recognized events will appear below.</p>
+      <p></p>
       <ul id="out"></ul>
     </div>
   </div>
@@ -54,6 +58,10 @@
     ul {
       list-style-position: inside;
     }
+    .error {
+      color: maroon;
+      font-style: italic;
+    }
   </style>
 
   <script src="../../js/vendor/jquery.js"></script>
@@ -65,12 +73,20 @@
 
     $(document).ready(function() {
       var $out = $('#out'),
+          touchEvent = 'click', // default
           logType = function (type) {
             $out.prepend('<li>' + type + '</li>');
           };
 
+      // Touch is supported
+      if (Modernizr.touch) {
+        touchEvent = 'tap';
+        $('#notouch').hide();
+        $('#hastouch').show();
+      }
+
       $('#in')
-        .on('tap', function (evt) {
+        .on(touchEvent, function (evt) {
           logType(evt.type);
         })
         .on('longTap', function (evt) {
@@ -80,12 +96,6 @@
           logType(evt.type);
         })
         .on('swipeRight', function (evt) {
-          logType(evt.type);
-        })
-        .on('swipeUp', function (evt) {
-          logType(evt.type);
-        })
-        .on('swipeDown', function (evt) {
           logType(evt.type);
         });
     });

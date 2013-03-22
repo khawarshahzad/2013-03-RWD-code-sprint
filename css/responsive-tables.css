@@ -1,7 +1,9 @@
-.toggle-table-dropdown li {
-  padding: 1em; }
-.toggle-table-dropdown input {
-  display: inline-block;
-  margin-right: 0.5em; }
-.toggle-table-dropdown label {
-  display: inline-block; }
+.toggle-table-dropdown {
+  max-width: 300px !important; }
+  .toggle-table-dropdown li {
+    padding: 1em; }
+  .toggle-table-dropdown input {
+    display: inline-block;
+    margin-right: 0.5em; }
+  .toggle-table-dropdown label {
+    display: inline-block; }

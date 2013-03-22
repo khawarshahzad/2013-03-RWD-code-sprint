@@ -1,6 +1,8 @@
 @import "foundation/foundation-global";
 
 .toggle-table-dropdown {
+  max-width: 300px !important;
+
   li {
     padding: 1em;
   }

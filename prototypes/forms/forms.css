@@ -1,83 +1,31 @@
-.label-auto-align {
-  clear: both;
-  overflow: hidden; }
-  .label-auto-align .label-wrap {
-    width: 100%;
-    float: none;
-    padding-top: 0.5em;
-    overflow: hidden; }
-    .label-auto-align .label-wrap label {
-      float: left;
-      display: block;
-      padding-right: 0.75em;
-      position: relative; }
+label {
+  display: inline-block;
+  position: relative; }
 
 .required:after {
   content: "*";
   display: block;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -10px;
   color: #c60f13; }
 
 .has-addendum input,
 .has-addendum select,
 .has-addendum textarea {
-  width: 80%;
+  width: 90%;
   float: left; }
 
 .has-addendum .data-addendum {
-  width: 20%;
+  width: 10%;
   float: left;
   padding-left: 0.75em;
-  padding-top: 0.33em; }
-
-.width-33 input,
-.width-33 select,
-.width-33 textarea {
-  width: 33%;
-  float: left; }
-
-.label-auto-align .width-33 {
-  width: 33%;
-  float: left;
-  padding-left: 0.375em;
-  padding-top: 0.33em; }
-  .label-auto-align .width-33 .label-wrap {
-    width: 70%; }
-  .label-auto-align .width-33 .data-wrap {
-    width: 30%; }
+  padding-top: 0.5em; }
 
 .data-addendum label {
   float: left;
   padding-right: 1em; }
 
-.columns .label-auto-align + .label-auto-align {
-  clear: none; }
-.columns .label-auto-align:first-child {
-  padding-left: 0; }
-.columns .label-auto-align:last-child {
-  padding-right: 0; }
-
-.padding-left-none {
-  padding-left: 0 !important; }
-
-@media only screen and (min-width: 48em) {
-  .label-auto-align {
-    text-align: left; }
-    .label-auto-align .label-wrap {
-      float: left;
-      width: 30%; }
-
-  .data-wrap {
-    width: 70%;
-    float: right; } }
-@media only screen and (min-width: 61.25em) {
-  .label-auto-align .label-wrap {
-    text-align: right;
-    padding-right: 1em; }
-    .label-auto-align .label-wrap label {
-      float: none;
-      display: inline-block; }
-    .label-auto-align .label-wrap .required {
-      float: none; } }
+.padding-sides-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }

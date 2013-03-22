@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js fixed-header">
+<html class="no-js">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -14,25 +14,37 @@
 		<a href="#" class="skip-to">Skip to Navigation</a>
 		<a href="#" class="skip-to">Skip to Content</a>
 		<div id="gov-bar" class="gov-bar">
-			<a href="#">
-				New York State
-			</a>
-			<a href="#">
-				State Agency List
-			</a>
-			<a href="#">
+			<div class="state-links">
+				<a href="#" class="gov-link-1">
+					New York State
+				</a>
+				<a href="#" class="gov-link-2">
+					Agencies Lists
+				</a>
+			</div>
+			<a href="#" id="gov-link-3" class="gov-link-3">
+				Search all of NY.gov
 			</a>
 			<form>
 				<input type="text" class="gov-search-box" />
-				<input type="submit" value="Search NYS" class="gov-search-button" />
+				<input type="submit" value="Search NY" class="gov-search-button" />
 			</form>
 		</div>
 		<div id="site-bar" class="site-bar">
-			<a href="#">Gov-Banner-Show</a>
+			<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small">
+				Open New York State Search
+			</a>
 			<h1>
 				NYS State Agency
 			</h1>
 			<div class="site-functions">
+				<!-- Link to show the menu -->
+				<a href="#" class="show-site-navigation mobile-icon show-for-small">
+					<span class="icon-list"></span>
+				</a>
+				<a href="#" class="show-site-search mobile-icon show-for-small">
+					<span class="icon-search"></span>
+				</a>
 				<div class="site-search">
 					<form>
 						<input type="text" class="site-search-box" />
@@ -42,7 +54,14 @@
 			</div>
 		</div>
 		<nav id="global-nav" class="global-nav">
-
+			<ul>
+				<li>
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#"></a>
+				</li>
+			</ul>
 		</nav>
 		<div id="page" class="page">
 
@@ -52,4 +71,5 @@
 		</footer>
 	</body>
 	<script src="../../js/vendor/zepto.js"></script>
+	<script src="app.js"></script>
 </html>

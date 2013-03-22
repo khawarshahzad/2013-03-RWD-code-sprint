@@ -72,37 +72,6 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h3>Details</h3>
-      <p>See this <a href="http://filamentgroup.com/lab/responsive_design_approach_for_complex_multicolumn_data_tables/">blog post</a> for a walkthrough of the code and rationale, and the <a href="https://github.com/filamentgroup/RWD-Table-Patterns">GitHub repo</a>.</p>
-      <h4>Usage:</h4>
-      <ul class="list-bullets-inside">
-        <li>Include:
-          <ul class="list-bullets-inside">
-            <li><code>js/vendor/jquery-ui.widget.js</code></li>
-            <li><code>js/app/responsive-tables.js</code></li>
-            <li><code>js/foundation/foundation.dropdown.js</code></li>
-          </ul>
-        </li>
-        <li>Give the <code>&lt;table&gt;</code> the class <code>.toggle-table</code></li>
-        <li>Add a <code>div.toggle-table-menu</code> with an <code>id</code> in the form of <code><em>[table id]</em>-check-container</code> to the page. This will contain the dropdown menu.</li>
-        <li>Optionally use the following classes on <code>&lt;th&gt;</code> elements to prioritize column display:
-          <ul class="list-bullets-inside">
-            <li><code>persist</code> (never hides)</li>
-            <li><code>optional</code> (hides as soon as there is not enough space)</li>
-            <li><code>essential</code> (only hides when all <code>optional</code> columns are hidden and there is not enough space)</li>
-          </ul>
-        </li>
-        <li>Call <code>$('#myTable').toggleTable();</code> to initialize</li>
-      </ul>
-      <h4>ITS conventions:</h4>
-      <ul class="list-bullets-inside">
-        <li>Add a <code>.row</code> above the <code>.row</code> containing the table to hold the <code>div.toggle-table-menu</code>.</li>
-      </ul>
-    </div>
-  </div>
-<!--
-  <div class="row">
-    <div class="large-12 columns">
       <div class="row">
         <div class="large-12 columns">
           <div class="toggle-table-menu" id="demo-check-container"></div>
@@ -144,7 +113,38 @@
       </div>
     </div>
   </div>
--->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h3>Details</h3>
+      <p>See this <a href="http://filamentgroup.com/lab/responsive_design_approach_for_complex_multicolumn_data_tables/">blog post</a> for a walkthrough of the code and rationale, and the <a href="https://github.com/filamentgroup/RWD-Table-Patterns">GitHub repo</a>.</p>
+      <h4>Usage:</h4>
+      <ul class="list-bullets-inside">
+        <li>Include:
+          <ul class="list-bullets-inside">
+            <li><code>js/vendor/jquery-ui.widget.js</code></li>
+            <li><code>js/app/responsive-tables.js</code></li>
+            <li><code>js/foundation/foundation.dropdown.js</code></li>
+          </ul>
+        </li>
+        <li>Give the <code>&lt;table&gt;</code> the class <code>.toggle-table</code></li>
+        <li>Add a <code>div.toggle-table-menu</code> with an <code>id</code> in the form of <code><em>[table id]</em>-check-container</code> to the page. This will contain the dropdown menu.</li>
+        <li>Optionally use the following classes on <code>&lt;th&gt;</code> elements to prioritize column display:
+          <ul class="list-bullets-inside">
+            <li><code>persist</code> (never hides)</li>
+            <li><code>optional</code> (hides as soon as there is not enough space)</li>
+            <li><code>essential</code> (only hides when all <code>optional</code> columns are hidden and there is not enough space)</li>
+          </ul>
+        </li>
+        <li>Call <code>$('#myTable').toggleTable();</code> to initialize</li>
+      </ul>
+      <h4>ITS conventions:</h4>
+      <ul class="list-bullets-inside">
+        <li>Add a <code>.row</code> above the <code>.row</code> containing the table to hold the <code>div.toggle-table-menu</code>.</li>
+      </ul>
+    </div>
+  </div>
+
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/vendor/jquery-ui.widget.min.js"></script>
   <script src="../../js/app/responsive-tables.js"></script>

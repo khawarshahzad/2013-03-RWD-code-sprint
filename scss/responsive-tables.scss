@@ -1,6 +1,9 @@
 @import "foundation/foundation-global";
 
 .toggle-table-dropdown {
+  li {
+    padding: 1em;
+  }
   input {
     display: inline-block;
     margin-right: 0.5em;
@@ -10,39 +13,39 @@
   }
 }
 
-.enhanced th,
-.enhanced td {
-   display: none;
-}
+// .js th,
+// .js td {
+//    display: none;
+// }
 
-.lt-ie9 .enhanced th.essential,
-.lt-ie9 .enhanced td.essential {
-  display: inline;
-}
+// .lt-ie9.js th.essential,
+// .lt-ie9.js td.essential {
+//   display: inline;
+// }
 
-.enhanced th.essential,
-.enhanced td.essential {
-   display: table-cell;
-}
+// .js th.essential,
+// .js td.essential {
+//    display: table-cell;
+// }
 
-@media #{$small} {
-  .lt-ie9 .enhanced th.optional,
-  .lt-ie9 .enhanced td.optional {
-    display: inline;
-  }
-  .enhanced th.optional,
-  .enhanced td.optional {
-    display: table-cell;
-  }
-}
+// @media #{$small} {
+//   .lt-ie9.js th.optional,
+//   .lt-ie9.js td.optional {
+//     display: inline;
+//   }
+//   .js th.optional,
+//   .js td.optional {
+//     display: table-cell;
+//   }
+// }
 
-@media #{$medium} {
-   .lt-ie9 .enhanced th,
-   .lt-ie9 .enhanced td {
-      display: inline;
-   }
-   .enhanced th,
-   .enhanced td {
-      display: table-cell;
-   }
-}
+// @media #{$medium} {
+//    .lt-ie9.js th,
+//    .lt-ie9.js td {
+//       display: inline;
+//    }
+//    .js th,
+//    .js td {
+//       display: table-cell;
+//    }
+// }

@@ -6,6 +6,31 @@
    https://github.com/filamentgroup/RWD-Table-Patterns
 */
 
+
+jQuery.fn.reverse = [].reverse;
+
+var toggleTable = (function _toggleTable() {
+
+  function init (table) {
+
+  }
+
+  function _setMinWidths (table) {
+
+  }
+
+  /**
+   * Events
+   */
+
+  // function _evt_
+
+  return {
+    init: init
+  };
+}());
+
+
 (function( $ ) {
   $.widget( "filament.toggleTable", { // need to come up with a better namespace var...
 
@@ -23,12 +48,126 @@
           $thead = $table.find('thead'),
           $tbody = $table.find('tbody'),
           $hdrCols = $thead.find('th'),
+          $hdrColsReversed = $thead.find('th').reverse(),
           $bodyRows = $tbody.find('tr'),
           $container = $('#' + $table.attr('id') + '-check-container'),
-          dropdownid = 'drop-' + $table.attr('id');
+          dropdownid = 'drop-' + $table.attr('id'),
+          totalMinWidth = 0;
 
-      // add class for scoping styles - cells should be hidden only when JS is on
-      $table.addClass('enhanced');
+      // Add missing optional classes and attributes to table
+      $hdrCols.each(function(i) {
+        var $th = $(this);
+
+        if (!$th.attr('data-min-width')) {
+          // Assign current width
+          $th.data('min-width', $th.width());
+        }
+
+        if (!$th.is('.persist, .priority1, .priority2')) {
+          $th.addClass('priority2');
+        }
+      });
+
+      // Test if element is currently displaying
+      function isDisplaying ($elem) {
+        // These properties come from CSS
+        return (/inline|table\-cell/).test($elem.css('display'));
+      }
+
+      function getTotalMinWidth () {
+        var total = 0;
+
+        $hdrCols.each(function() {
+          var $th = $(this);
+
+          if (isDisplaying($th)) {
+            total += $th.data('min-width');
+          }
+        });
+
+        return total;
+      }
+
+      // Add up min-widths of all columns. If no data-min-width, assign to current size (rounded down)
+      // If total is too wide for the parent, hide the right-most .priority2 column
+      // Continue hiding .priority2 columns until the table fits
+      // If all .priority2 columns are gone and the table still doesn't fit, then repeat for .priority1
+      function hideCols () {
+        var selectors = ['.priority2', '.priority1'];
+
+        $.each(selectors, function(j, selector) {
+
+          if ($table.width() >= totalMinWidth) {
+            // Don't need to hide any more
+            return false;
+          }
+
+          // Hide the right-most `selector` column
+          $hdrColsReversed.each(function() {
+            var $this = $(this),
+                $input;
+
+            if (isDisplaying($this) && $this.is(selector)) {
+              // Hide cell
+              $('#' + $this.attr('id') + ', [headers="' + $this.attr('id') + '"]').hide();
+
+              // Uncheck and hide the toggle
+              $input = $('input[value="' + $this.attr('id') + '"]');
+              $input.parent().hide();
+              $input.attr('checked', false);
+
+              // Update and re-check widths
+              totalMinWidth = getTotalMinWidth();
+              if ($table.width() >= totalMinWidth) {
+                // Don't need to hide any more
+                return false;
+              }
+            }
+          });
+        });
+      } // end hideCols()
+
+      function showCols () {
+        var selectors = ['.priority1', '.priority2'],
+            allowedWidth = $table.parent().width();
+
+        $.each(selectors, function(j, selector) {
+
+          if ($table.width() <= totalMinWidth) {
+            // No room to show any more
+            return false;
+          }
+
+          // Hide the right-most `selector` column
+          $hdrColsReversed.each(function() {
+            var $this = $(this),
+                $input;
+
+            if (!isDisplaying($this) && $this.is(selector)) {
+              // Determine if this min width would exceed the allowed space
+              if (totalMinWidth + $this.data('min-width') <= allowedWidth) {
+                // Show cell
+                $('#' + $this.attr('id') + ', [headers="' + $this.attr('id') + '"]').show();
+
+                // Check and show the toggle
+                $input = $('input[value="' + $this.attr('id') + '"]');
+                $input.attr('checked', true);
+                $input.parent().show();
+              }
+
+              // Check new width
+              totalMinWidth = getTotalMinWidth();
+              if ($table.width() <= totalMinWidth) {
+                // No room to show any more
+                return false;
+              }
+            }
+          });
+        });
+
+        // Check if columns need to be hid
+        hideCols();
+      } // end showCols()
 
       $container.append('<ul id="' + dropdownid + '" class="f-dropdown toggle-table-dropdown"></ul>');
 
@@ -73,8 +212,8 @@
                 cols.hide();
               }
             })
-            .bind('updateCheck', function(){
-              if ( /inline|table\-cell/.test(th.css('display')) ) {
+            .on('updateCheck', function(){
+              if ( isDisplaying(th) ) {
                 $(this).attr('checked', true);
               }
               else {
@@ -83,13 +222,17 @@
             })
             .trigger('updateCheck');
         }
-
       }); // end $hdrCols loop
 
+      totalMinWidth = getTotalMinWidth();
+
       // update the inputs' checked status
-      $(window).bind('orientationchange resize', function() {
-        $container.find('input').trigger('updateCheck');
+      $(window).on('orientationchange resize', function() {
+        //$container.find('input').trigger('updateCheck');
+        showCols();
       });
+
+      hideCols();
 
       $container.prepend('<a href="#" data-dropdown="' + dropdownid + '" class="small button dropdown">Display</a>');
     } // end _create

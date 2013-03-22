@@ -134,6 +134,7 @@
 		height: 96px;
 	}
 
+	/* Site Header */
 	.site-bar {
 		background: red;
 		height: 48px;
@@ -190,6 +191,14 @@
 	.global-nav {
 		background: gray;
 		height: 48px;
+	}
+
+	/* Offi Canvas */
+
+	.off-canvas .global-nav {
+		position: fixed;
+		top: 0;
+		height: 100%;
 	}
 
 	.page {
@@ -262,6 +271,8 @@
 		display: block;
 	}
 
+	/* Site Header */
+
 	.site-bar {
 		background: green;
 		height: 72px;
@@ -273,7 +284,11 @@
 	}
 
 	.global-nav {
-		background: dark-gray;
+	}
+
+	/* Off Canvas */
+	.off-canvas .global-nav {
+		position: relative;
 	}
 
 }

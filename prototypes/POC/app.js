@@ -1,5 +1,5 @@
 // Active Governor Banner
-document.getElementById('gov-pull-down').onclick = function() {
+$('#gov-pull-down').on('click', function() {
 
 	// Check to see if the governor banner is show or not
 	if ($('html').hasClass('active-gov-bar')) {
@@ -11,11 +11,11 @@ document.getElementById('gov-pull-down').onclick = function() {
 		$('html').addClass('active-gov-bar');
 	}
 
-}
+});
 
 // Standard Gov Banner display code
-document.getElementById('gov-link-3').onclick = function() {
+$('#gov-link-3').on('click', function() {
 
 	$('html').addClass('active-gov-bar-search');
 
-}
+});

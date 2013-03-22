@@ -29,6 +29,106 @@
         <li><a href="../">Prototypes Home</a></li>
         <li class="current"><a href="#">Responsive Tables</a></li>
       </ul>
+      <p>A responsive table automatically hides and shows columns depending on screen size. Additionally, it provides a menu where the user can explicity toggle any column.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Tax Appeals Tribunal February 2013 Docket</h2>
+      <div class="large-7 small-8 columns">
+        <h4>Administrative Law Judge Determinations Issued</h4>
+      </div>
+      <div class="large-5 small-4 columns">
+        <div class="toggle-table-menu" id="tadocket-check-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <table class="toggle-table" id="tadocket">
+        <thead>
+          <tr>
+            <th class="tt-persist">Name</th>
+            <th class="tt-p1">DTA #</th>
+            <th class="tt-p2">Date Issued</th>
+            <th class="tt-p1">Corp</th>
+            <th class="tt-p2">Corp #</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>David &amp; Karen Ayoub</td>
+            <td>823894</td>
+            <td>01/22/2013</td>
+            <td>Island Recycling Corporation</td>
+            <td>822193</td>
+          </tr>
+          <tr>
+            <td>Gregg A. &amp; Sharon M. Goettel</td>
+            <td>823895</td>
+            <td>&nbsp;</td>
+            <td>Omni Recycling of Babylon, Inc.</td>
+            <td>822195</td>
+          </tr>
+          <tr>
+            <td>Carl &amp; Barbara Austin</td>
+            <td>823896</td>
+            <td>&nbsp;</td>
+            <td>Daria M. Carnesi</td>
+            <td>822194</td>
+          </tr>
+          <tr>
+            <td>James &amp; Maureen Bowers</td>
+            <td>823897</td>
+            <td>02/21/2013</td>
+            <td>Steven Dvorak</td>
+            <td>822196</td>
+          </tr>
+          <tr>
+            <td>Donald R. &amp; Susan M. Kimber</td>
+            <td>823898</td>
+            <td>&nbsp;</td>
+            <td>Triple C Retail Corporation</td>
+            <td>822197</td>
+          </tr>
+          <tr>
+            <td>David &amp; Kathleen Misner</td>
+            <td>823899</td>
+            <td>&nbsp;</td>
+            <td>Triple C Retail Corp Tinderbox # 362</td>
+            <td>823507</td>
+          </tr>
+          <tr>
+            <td>Gary &amp; Jean Petrick</td>
+            <td>823900</td>
+            <td>&nbsp;</td>
+            <td>IT USA, Inc.</td>
+            <td>823880</td>
+          </tr>
+          <tr>
+            <td>Michael G. D'Avirro</td>
+            <td>823901</td>
+            <td>&nbsp;</td>
+            <td>Manifatture Associate Cashmere</td>
+            <td>823881</td>
+          </tr>
+          <tr>
+            <td>William &amp; Kelley Kriesel</td>
+            <td>824246</td>
+            <td>&nbsp;</td>
+            <td>USA, Inc.</td>
+            <td>823780</td>
+          </tr>
+          <tr>
+            <td>Vatica Diner, Inc.</td>
+            <td>824299</td>
+            <td>02/28/2013</td>
+            <td>Great Bay Marine, Inc.</td>
+            <td>823771</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -124,31 +224,90 @@
     <div class="large-12 columns">
       <h3>Details</h3>
       <p>Togglable Tables automatically hide and show columns as the viewport allows. Additionally, it provides a menu where the user can explicity toggle any column. The page designer may optionally indicate a level of priority for each column as well as the minimum acceptable width for display.</p>
-      <h4>Usage:</h4>
-      <ul class="list-bullets-inside">
-        <li>Includes:
-          <ul class="list-bullets-inside">
-            <li><code>js/vendor/jquery-ui.widget.js</code></li>
-            <li><code>js/app/responsive-tables.js</code></li>
-            <li><code>js/foundation/foundation.dropdown.js</code></li>
-          </ul>
-        </li>
-        <li>To allow the user to toggle columns, add a <code>div.toggle-table-menu</code> with an <code>id</code> in the form of <code><em>[table id]</em>-check-container</code> to the page.</li>
-        <li>Optionally use the following classes on <code>&lt;th&gt;</code> elements to prioritize column display:
-          <ul class="list-bullets-inside">
-            <li><code>tt-persist</code> &mdash; never hides and cannot be toggled</li>
-            <li><code>tt-p<strong>2</strong></code> &mdash; hides when there is not enough space</li>
-            <li><code>tt-p<strong>1</strong></code> &mdash; hides as soon as there is not enough space and all <code>.tt-p2</code> are already hidden</li>
-          </ul>
-        </li>
-        <li>Call <code>$('#myTable').toggleTable();</code> to initialize</li>
-      </ul>
-      <h4>ITS conventions:</h4>
-      <ul class="list-bullets-inside">
-        <li>To include a menu, add a <code>.row</code> above the table's <code>.row</code> to hold the <code>div.toggle-table-menu</code>.</li>
-        <li>Give the <code>&lt;table&gt;</code> the class <code>.toggle-table</code>.</li>
-      </ul>
-      <p>The plugin is based on <a href="https://github.com/filamentgroup/RWD-Table-Patterns">Filament Group's</a> responsive tables solution.</p>
+
+      <div class="section-container accordion" data-section="accordion">
+        <section class="section">
+          <p class="title"><a href="#panel1">Developer Notes</a></p>
+          <div class="content">
+            <h4>Usage:</h4>
+            <ul class="list-bullets-inside">
+              <li>
+                Includes:
+                <ul class="list-bullets-inside">
+                  <li>
+                    <code>js/vendor/jquery-ui.widget.js</code>
+                  </li>
+                  <li>
+                    <code>js/app/responsive-tables.js</code>
+                  </li>
+                  <li>
+                    <code>js/foundation/foundation.dropdown.js</code>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                To allow the user to toggle columns, add a
+                <code>div.toggle-table-menu</code>
+                with an
+                <code>id</code>
+                in the form of
+                <code><em>[table id]</em>-check-container</code>
+                to the page.
+              </li>
+              <li>
+                Optionally use the following classes on
+                <code>&lt;th&gt;</code>
+                elements to prioritize column display:
+                <ul class="list-bullets-inside">
+                  <li>
+                    <code>tt-persist</code>
+                    &mdash; never hides and cannot be toggled
+                  </li>
+                  <li>
+                    <code>tt-p<strong>2</strong></code>
+                    &mdash; hides when there is not enough space
+                  </li>
+                  <li>
+                    <code>tt-p<strong>1</strong></code>
+                    &mdash; hides as soon as there is not enough space and all
+                    <code>.tt-p2</code>
+                    are already hidden
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Call
+                <code>$('#myTable').toggleTable();</code>
+                to initialize
+              </li>
+            </ul>
+            <h4>ITS conventions:</h4>
+            <ul class="list-bullets-inside">
+              <li>
+                To include a menu, add a
+                <code>.row</code>
+                above the table's
+                <code>.row</code>
+                to hold the
+                <code>div.toggle-table-menu</code>
+                .
+              </li>
+              <li>
+                Give the
+                <code>&lt;table&gt;</code>
+                the class
+                <code>.toggle-table</code>
+                .
+              </li>
+            </ul>
+            <p>
+              The plugin is based on
+              <a href="https://github.com/filamentgroup/RWD-Table-Patterns">Filament Group's</a>
+              responsive tables solution.
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 
@@ -157,6 +316,7 @@
   <script src="../../js/app/responsive-tables.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
   <script src="../../js/foundation/foundation.dropdown.js"></script>
+  <script src="../../js/foundation/foundation.section.js"></script>
   <script>
     $(document).foundation();
     $(function(){

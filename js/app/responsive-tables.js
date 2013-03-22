@@ -210,7 +210,7 @@ jQuery.fn.reverse = [].reverse;
       // Update the view now
       showCols();
 
-      $container.prepend('<a href="#" data-dropdown="' + dropdownid + '" class="small button dropdown">Display</a>');
+      $container.prepend('<a href="#" data-dropdown="' + dropdownid + '" class="small button dropdown">Columns</a>');
     } // end _create
   });
 }(jQuery));

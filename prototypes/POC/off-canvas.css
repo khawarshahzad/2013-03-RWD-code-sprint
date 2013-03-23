@@ -14,6 +14,11 @@
 		position: absolute;
 		width: 100%;
 		z-index: 500;
+
+		transition: top 0.2s ease-in;
+		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: top 0.2s ease-in; /* Opera */
 	}
 
 	.off-canvas .global-nav {
@@ -26,11 +31,14 @@
 
 	.off-canvas .page {
 		position: absolute;
-		height: auto;
-		min-height: 
+		min-height: 100%
 		top: 53px;
 		width: 100%;
 		z-index: 300;
+	}
+
+	.off-canvas.active-gov-bar .site-bar {
+		top: 96px;
 	}
 
 	.off-canvas.active-site-menu .gov-bar,
@@ -38,6 +46,10 @@
 	.off-canvas.active-site-menu .page {
 		position: fixed;
 		left: -85%;
+		transition: left 0.2s ease-in;
+		-moz-transition: left 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: left 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: left 0.2s ease-in; /* Opera */
 	}
 
 	.off-canvas.active-site-menu .global-nav {

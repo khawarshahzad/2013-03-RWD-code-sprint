@@ -1,20 +1,3 @@
-// Active Governor Banner
-$('#gov-pull-down').on('click', function(e) {
-
-	e.preventDefault();
-
-	// Check to see if the governor banner is show or not
-	if ($('html').hasClass('active-gov-bar')) {
-
-		$('html').removeClass('active-gov-bar');
-
-	} else {
-
-		$('html').addClass('active-gov-bar');
-	}
-
-});
-
 // Standard Gov Banner display code
 $('#gov-link-3').on('click', function(e) {
 
@@ -24,40 +7,32 @@ $('#gov-link-3').on('click', function(e) {
 
 });
 
-// Activate the search bar on mobile
-$('#mobile-site-search').on('click', function(e) {
+// Active Elements
+$('a[data-active]').on('click', function(){
+	
+	// Active attribute class 
+	var activeClass = $(this).attr('data-active');
+	var selectedClass = "active";
 
-	e.preventDefault();
+	// Check to see if the item is active
+	if ($('html').hasClass(activeClass)) {
 
-	if ($('html').hasClass('active-site-search')) {
+		// Remove active state class from header
+		$('html').removeClass(activeClass);
 
-		$('html').removeClass('active-site-search');
-		$(this).removeClass('close-button');
-
-	} else {
-
-		$('html').addClass('active-site-search');
-		$(this).addClass('close-button');
-		
-	}
-
-});
-
-// Activate the menu on mobile (Toggle Version)
-$('#mobile-site-menu').on('click', function(e) {
-
-	e.preventDefault();
-
-	if ($('html').hasClass('active-site-menu')) {
-
-		$('html').removeClass('active-site-menu');
-		$(this).removeClass('close-button');
+		// Remove active state class from the clicked element
+		$(this).removeClass(selectedClass);
 
 	} else {
 
-		$('html').addClass('active-site-menu');
-		$(this).addClass('close-button');
-		
+		// Add active state class from header
+		$('html').addClass(activeClass);
+
+		// Add active state class from clicked element
+		$(this).addClass(selectedClass);
+
 	}
 
+
 });
+

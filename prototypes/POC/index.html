@@ -31,7 +31,7 @@
 			</form>
 		</div>
 		<div id="site-bar" class="site-bar">
-			<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small">
+			<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
 				Open New York State Search
 			</a>
 			<a class="site-logo">
@@ -40,22 +40,26 @@
 			<div class="site-functions">
 				<ul class="mobile-functions">
 					<li>
-						<a href="#" id="mobile-site-search" class="mobile-icons mobile-search-buttton">
+						<a href="#" id="mobile-site-search" class="mobile-icons mobile-search-buttton" data-active="active-site-search">
 							Search Toggle
 						</a>
 					</li>
 					<li>
-						<a href="#" id="mobile-site-menu" class="mobile-icons mobile-menu-button">
+						<a href="#" id="mobile-site-menu" class="mobile-icons mobile-menu-button" data-active="active-site-menu">
 							Menu Toggle
 						</a>
 					</li>
 				</ul>
 				<!-- Link to show the menu -->
 				<div class="site-search">
-					<form>
-						<input type="text" class="site-search-box" />
-						<input type="submit" class="site-search-button" value="Search Agency" />
-					</form>
+					<form action="/">
+						<fieldset>
+							<legend>Legend</legend>
+							<label for="site-search-box">Search</label>
+							<input type="search" id="site-search-box" class="site-search-box" />
+							<input type="submit" class="site-search-button" value="Search Agency"  />
+						</fieldset>
+					</form>		
 				</div>
 			</div>
 		</div>

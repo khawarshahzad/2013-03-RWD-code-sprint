@@ -86,8 +86,12 @@
 
 	.gov-bar {
 		background: #036;
-		height: 0;
+		height: 5px;
 		overflow: hidden;
+		transition: height 0.5s;
+		-moz-transition: height 0.5s; /* Firefox 4 */
+		-webkit-transition: height 0.5s; /* Safari and Chrome */
+		-o-transition: height 0.5s; /* Opera */
 	}
 
 	.gov-bar a {
@@ -152,25 +156,13 @@
 		margin: 0;
 	}
 
-	/* Active Govenor Banner */
-	.active-gov-bar .gov-bar {
-		height: 96px;
-	}
+
 
 	/* Site Header */
 	.site-bar {
 		background: red;
 		height: 48px;
 		position: relative;
-	}
-
-	.site-bar a.site-logo {
-		color: #FFF;
-		float: left;
-		font-size: 1.1em;
-		font-weight: normal;
-		margin: 0;
-		padding: 0.5em 0 0 0.5em;
 	}
 
 	.site-bar .gov-pull-down {
@@ -186,25 +178,66 @@
 		width: 44px;
 	}
 
+	.site-bar a.site-logo {
+		color: #FFF;
+		float: left;
+		font-size: 1.1em;
+		font-weight: normal;
+		margin: 0;
+		padding: 0.5em 0 0 0.5em;
+	}
+
+	.site-bar .site-functions {
+		overflow: auto;
+	}
+
 	.site-bar .site-functions .site-search {
+		display: none;
+		height: 48px;
+		width: 100%;
+		z-index: 15;
+	}
+
+	.site-bar .site-functions .site-search form {
+		margin: 3px 0 0 0;
+		padding: 5px;
+		width: 100%;
+	}
+
+	.site-bar .site-functions .site-search form legend,
+	.site-bar .site-functions .site-search form label {
 		display: none;
 	}
 
-	.site-bar .site-functions .site-search .site-search-box {
-		float: left;
-		margin: 10px 20px;
-		width: 84%;
+	.site-bar .site-functions .site-search form fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
 	}
 
-	.site-bar .site-functions .site-search .site-search-button {
-		background: url(images/search.svg) no-repeat 12px 12px transparent;
-		background-size: 24px 24px;
+	.site-bar .site-functions .site-search input {
+		-webkit-appearance:none;
+		border: 1px solid #808080;
+		padding: 0;
+		display: block;
+		float: left;
+		margin: 0;
+	}
+	.site-bar .site-functions .site-search input[type=search] {
+		width: 86%;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.site-bar .site-functions .site-search input[type=submit] {
+		background: url(images/search.svg) no-repeat center center #808080;
+		background-size: 24px;
+		border-color: #808080;
 		border: 0;
-		display: inline-block;
-		float: right;
-		height: 48px;
+		width: 14%;
+		color: #fff;
 		text-indent: -9999px;
-		width: 48px;
+		padding-bottom: 0.69em;
 	}
 
 	.site-bar .mobile-functions {
@@ -234,24 +267,9 @@
 		width: 48px;
 	}
 
-	/* Active Site Search */
-	.active-site-search .site-bar .mobile-functions .mobile-icons.close-button,
-	.active-site-menu .site-bar .mobile-functions .mobile-icons.close-button {
-		background: url(images/close.svg) no-repeat 12px 12px #3B3B3B;
-		background-size: 24px 24px;
-	}
 
-	.active-site-search .site-functions .site-search {
-		background: #3B3B3B;
-		display: inline-block;
-		float: right;
-		position: relative;
-		width: 100%;
-	}
 
-	.active-site-search .site-functions .site-search form {
-		margin: 0;
-	}
+	/* Global Navigation Bar */
 
 	.global-nav {
 		background: #3B3B3B;
@@ -279,10 +297,8 @@
 	  	padding: 10px 15px;
 	}
 
-	/* Active Site Menu */
-	.active-site-menu .global-nav {
-		display: block
-	}
+
+	/* Page Contents */
 
 	.page {
 		background: #FFF;
@@ -290,6 +306,48 @@
 		position: absolute;
 		z-index: 10
 	}
+
+
+	/* 
+	 * Active Mobile State Items
+	 */
+	
+
+	/* Active Govenor Banner */
+	.active-gov-bar .gov-bar {
+		height: 96px;
+	}
+
+	.active-gov-bar .site-bar .gov-pull-down {
+		background: url(images/close.svg) no-repeat 10px 8px #036;
+		background-size: 24px 24px;
+	}
+
+
+	/* Active Site Search */
+	.active-site-search .site-bar .mobile-functions .mobile-icons.active,
+	.active-site-menu .site-bar .mobile-functions .mobile-icons.active {
+		background: url(images/close.svg) no-repeat 12px 12px #3B3B3B;
+		background-size: 24px 24px;
+	}
+
+	.active-site-search .site-functions .site-search {
+		background: #3B3B3B;
+		display: block;
+		left: 0;
+		top: 48px;
+		position: absolute;
+		width: 100%;
+	}
+
+	/* Active Site Menu */
+	.active-site-menu .global-nav {
+		display: block
+	}
+
+
+
+
 
 	/* Off Canvas */
 	.off-canvas .site-bar {

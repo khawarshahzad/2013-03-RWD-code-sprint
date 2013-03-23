@@ -1,0 +1,77 @@
+@media only screen {
+
+	.off-canvas .gov-bar {
+		position: absolute;
+		width: 100%;
+		z-index: 600;
+	}
+
+	.off-canvas .gov-bar form  {
+		margin: 0;
+	}
+
+	.off-canvas .site-bar {
+		position: absolute;
+		width: 100%;
+		z-index: 500;
+	}
+
+	.off-canvas .global-nav {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.off-canvas .page {
+		position: absolute;
+		height: auto;
+		min-height: 
+		top: 53px;
+		width: 100%;
+		z-index: 300;
+	}
+
+	.off-canvas.active-site-menu .gov-bar,
+	.off-canvas.active-site-menu .site-bar,
+	.off-canvas.active-site-menu .page {
+		position: fixed;
+		left: -85%;
+	}
+
+	.off-canvas.active-site-menu .global-nav {
+		position: fixed;
+	}
+
+	.off-canvas.active-site-menu .global-nav .nav-container {
+		height: inherit;
+		overflow-y: scroll;
+	}
+
+	.off-canvas.active-site-menu .global-nav ul {
+		margin-left: 16%;
+	}
+
+}
+
+/* Medium Displays: 768px - 1279px */
+@media only screen and (min-width: 48em) {
+
+	.off-canvas .site-bar,
+	.off-canvas .global-nav,
+	.off-canvas .page {
+		position: relative;
+	}
+
+}
+
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+
+}
+
+/* X-Large Displays: 1400px and up */
+@media only screen and (min-width: 90em) {
+
+}}

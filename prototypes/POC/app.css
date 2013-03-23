@@ -88,10 +88,10 @@
 		background: #036;
 		height: 5px;
 		overflow: hidden;
-		transition: height 0.5s;
-		-moz-transition: height 0.5s; /* Firefox 4 */
-		-webkit-transition: height 0.5s; /* Safari and Chrome */
-		-o-transition: height 0.5s; /* Opera */
+		transition: height 0.2s ease-in;
+		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: height 0.2s ease-in; /* Opera */
 	}
 
 	.gov-bar a {
@@ -192,10 +192,20 @@
 	}
 
 	.site-bar .site-functions .site-search {
-		display: none;
-		height: 48px;
+		background: #3B3B3B;
+		display: block;
+		height: 0;
+		left: 0;
+		top: 48px;
+		overflow: hidden;
+		position: absolute;
 		width: 100%;
 		z-index: 15;
+
+		transition: height 0.2s ease-in;
+		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: height 0.2s ease-in; /* Opera */
 	}
 
 	.site-bar .site-functions .site-search form {
@@ -273,10 +283,18 @@
 
 	.global-nav {
 		background: #3B3B3B;
-		display: none;
 		position: absolute;
 		width: 100%;
 		z-index: 20;
+	}
+
+	.global-nav .nav-container {
+		height: 0;
+		overflow: auto;
+		transition: height 0.2s ease-in;
+		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: height 0.2s ease-in; /* Opera */
 	}
 
 	.global-nav ul {
@@ -332,42 +350,12 @@
 	}
 
 	.active-site-search .site-functions .site-search {
-		background: #3B3B3B;
-		display: block;
-		left: 0;
-		top: 48px;
-		position: absolute;
-		width: 100%;
+		height: 48px;
 	}
 
 	/* Active Site Menu */
-	.active-site-menu .global-nav {
-		display: block
-	}
-
-
-
-
-
-	/* Off Canvas */
-	.off-canvas .site-bar {
-		position: fixed;
-		width: 100%;
-		z-index: 500;
-	}
-
-	.off-canvas .global-nav {
-		position: fixed;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		z-index: 100;
-	}
-
-	.off-canvas .page {
-		position: fixed;
-		width: 100%;
-		z-index: 300;
+	.active-site-menu .global-nav .nav-container {
+		height: 320px;
 	}
 
 	/* Utility Classes */
@@ -375,6 +363,14 @@
 
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 48em) {
+
+
+	.gov-bar {
+		transition: height 0s ease-in;
+		-moz-transition: height 0s ease-in; /* Firefox 4 */
+		-webkit-transition: height 0s ease-in; /* Safari and Chrome */
+		-o-transition: height 0s ease-in; /* Opera */
+	}
 
 	.gov-bar,
 	.active-gov-bar .gov-bar,
@@ -442,6 +438,11 @@
 		height: 72px;
 	}
 
+	.site-bar .site-functions {
+		height: 100%;
+		position:relative;
+	}
+
 	.site-bar .mobile-functions {
 		display: none !important;
 		speak: none;
@@ -449,11 +450,12 @@
 
 	.site-bar .site-functions .site-search {
 		background: transparent;
-		display: inline-block;
-		float: right;
-		position: relative;
-		top: 0;
-		vertical-align: middle;
+		height: 48px;
+		overflow: visible;
+		left: auto;
+		right: 0;
+		top: 50%;
+		margin-top: -24px;
 		width: 15em;
 	}
 
@@ -462,6 +464,10 @@
 		height: 48px;
 		overflow: hidden;
 		position: relative;
+	}
+
+	.global-nav .nav-container {
+		height: auto;
 	}
 
 	.global-nav ul li {
@@ -473,11 +479,6 @@
 	}
 
 	.page {
-		position: relative;
-	}
-
-	/* Off Canvas */
-	.off-canvas .global-nav {
 		position: relative;
 	}
 

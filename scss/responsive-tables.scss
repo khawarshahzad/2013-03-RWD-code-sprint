@@ -1,6 +1,11 @@
 @import "foundation/foundation-global";
 
 .toggle-table-dropdown {
+  max-width: 300px !important;
+
+  li {
+    padding: 1em;
+  }
   input {
     display: inline-block;
     margin-right: 0.5em;
@@ -8,41 +13,4 @@
   label {
     display: inline-block;
   }
-}
-
-.enhanced th,
-.enhanced td {
-   display: none;
-}
-
-.lt-ie9 .enhanced th.essential,
-.lt-ie9 .enhanced td.essential {
-  display: inline;
-}
-
-.enhanced th.essential,
-.enhanced td.essential {
-   display: table-cell;
-}
-
-@media #{$small} {
-  .lt-ie9 .enhanced th.optional,
-  .lt-ie9 .enhanced td.optional {
-    display: inline;
-  }
-  .enhanced th.optional,
-  .enhanced td.optional {
-    display: table-cell;
-  }
-}
-
-@media #{$medium} {
-   .lt-ie9 .enhanced th,
-   .lt-ie9 .enhanced td {
-      display: inline;
-   }
-   .enhanced th,
-   .enhanced td {
-      display: table-cell;
-   }
 }

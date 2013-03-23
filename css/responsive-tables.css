@@ -1,34 +1,9 @@
-.toggle-table-dropdown input {
-  display: inline-block;
-  margin-right: 0.5em; }
-.toggle-table-dropdown label {
-  display: inline-block; }
-
-.enhanced th,
-.enhanced td {
-  display: none; }
-
-.lt-ie9 .enhanced th.essential,
-.lt-ie9 .enhanced td.essential {
-  display: inline; }
-
-.enhanced th.essential,
-.enhanced td.essential {
-  display: table-cell; }
-
-@media only screen and (min-width: 48em) {
-  .lt-ie9 .enhanced th.optional,
-  .lt-ie9 .enhanced td.optional {
-    display: inline; }
-
-  .enhanced th.optional,
-  .enhanced td.optional {
-    display: table-cell; } }
-@media only screen and (min-width: 80em) {
-  .lt-ie9 .enhanced th,
-  .lt-ie9 .enhanced td {
-    display: inline; }
-
-  .enhanced th,
-  .enhanced td {
-    display: table-cell; } }
+.toggle-table-dropdown {
+  max-width: 300px !important; }
+  .toggle-table-dropdown li {
+    padding: 1em; }
+  .toggle-table-dropdown input {
+    display: inline-block;
+    margin-right: 0.5em; }
+  .toggle-table-dropdown label {
+    display: inline-block; }

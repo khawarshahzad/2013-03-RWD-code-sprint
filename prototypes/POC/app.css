@@ -447,7 +447,33 @@
 		speak: none;
 	}
 
+	.site-bar .site-functions .site-search {
+		background: transparent;
+		display: inline-block;
+		float: right;
+		position: relative;
+		top: 0;
+		vertical-align: middle;
+		width: 15em;
+	}
+
 	.global-nav {
+		display: block;
+		height: 48px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.global-nav ul li {
+		float: left
+	}
+
+	.global-nav ul li a {
+		font-size: 1em;
+	}
+
+	.page {
+		position: relative;
 	}
 
 	/* Off Canvas */

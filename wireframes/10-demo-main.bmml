@@ -1,0 +1,68 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="949" measuredH="774" mockupW="930" mockupH="760">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="19" y="14" w="930" h="760" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//nys-its.github.com/go-responsive</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="44" y="133" w="-1" h="-1" measuredW="281" measuredH="48" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <italic>false</italic>
+        <size>40</size>
+        <text>Go%20Responsive</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::RoundButton" x="19" y="87" w="929" h="31" measuredW="32" measuredH="32" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <borderColor>472931</borderColor>
+        <color>472931</color>
+        <shape>rectangle</shape>
+        <text>New%20York%20State</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="44" y="175" w="-1" h="-1" measuredW="312" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <size>16</size>
+        <text>Future%20Friendly%20Web%20Design%20for%20all%20Devices</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::MultilineButton" x="99" y="514" w="241" h="66" measuredW="139" measuredH="66" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>RWD%20Getting%20Starte%20Guide%0ASecond%20line%20of%20text</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::MultilineButton" x="364" y="514" w="241" h="66" measuredW="223" measuredH="66" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>RWD%20Demos%0ASecond%20line%20of%20text</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::MultilineButton" x="634" y="514" w="241" h="66" measuredW="120" measuredH="66" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Try%20It%20Out%0ASecond%20line%20of%20text</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="258" y="252" w="-1" h="-1" measuredW="452" measuredH="48" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <italic>false</italic>
+        <size>40</size>
+        <text>Responsive%20Web%20Design</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Arrow" x="32" y="639" w="905" h="10" measuredW="150" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <leftArrow>false</leftArrow>
+        <rightArrow>false</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Image" x="32" y="657" w="-1" h="-1" measuredW="235" measuredH="76" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <filter>true</filter>
+        <src>./assets/its-logo.jpg</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -14,7 +15,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -932,6 +933,7 @@ p.lead {
 .subheader {
   line-height: 1.4;
   color: #6f6f6f;
+  font-family: "MerriweatherBold";
   font-weight: 300;
   margin-top: 0.2em;
   margin-bottom: 0.5em; }
@@ -972,7 +974,7 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: inherit;
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 1em;
   line-height: 1.6;
@@ -985,7 +987,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "MerriweatherBold", Georgia, serif;
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -1026,13 +1028,27 @@ hr {
 /* Helpful Typography Defaults */
 em,
 i {
+  font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: italic;
   line-height: inherit; }
 
 strong,
 b {
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: inherit; }
+  strong h1, strong h2, strong h3, strong h4, strong h5, strong h6,
+  b h1,
+  b h2,
+  b h3,
+  b h4,
+  b h5,
+  b h6 {
+    font-family: "MerriweatherBold", Georgia, serif; }
+
+strong em,
+em strong {
+  font-family: "SourceSansProBoldItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
 small {
   font-size: 60%;
@@ -1051,7 +1067,7 @@ dl {
   line-height: 1.6;
   margin-bottom: 1.25em;
   list-style-position: outside;
-  font-family: inherit; }
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
 /* Unordered Lists */
 ul li ul,

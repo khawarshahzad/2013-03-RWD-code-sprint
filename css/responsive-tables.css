@@ -1,9 +1,9 @@
-.tt-table-dropdown {
+.rt-table-dropdown {
   max-width: 300px !important; }
-  .tt-table-dropdown li {
+  .rt-table-dropdown li {
     padding: 1em; }
-  .tt-table-dropdown input {
+  .rt-table-dropdown input {
     display: inline-block;
     margin-right: 0.5em; }
-  .tt-table-dropdown label {
+  .rt-table-dropdown label {
     display: inline-block; }

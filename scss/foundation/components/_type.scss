@@ -3,7 +3,7 @@
 //
 
 // We use these to control header font styles
-$header-font-family:                   "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$header-font-family:                   "MerriweatherBold", Georgia, serif !default;
 $header-font-weight:                   bold !default;
 $header-font-style:                    normal !default;
 $header-font-color:                    #222 !default;
@@ -32,7 +32,7 @@ $small-font-size:                      60% !default;
 $small-font-color:                     lighten($header-font-color, 30%) !default;
 
 // We use these to style paragraphs
-$paragraph-font-family:                inherit !default;
+$paragraph-font-family:                "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $paragraph-font-weight:                normal !default;
 $paragraph-font-size:                  1em !default;
 $paragraph-line-height:                1.6 !default;
@@ -111,6 +111,7 @@ $microformat-abbr-font-decoration:     none !default;
 %subheader {
   line-height: $subheader-line-height;
   color: $subheader-font-color;
+  font-family: "MerriweatherBold";
   font-weight: $subheader-font-weight;
   margin-top: $subheader-top-margin;
   margin-bottom: $subheader-bottom-margin;
@@ -210,14 +211,25 @@ hr {
 /* Helpful Typography Defaults */
 em,
 i {
+  font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: italic;
   line-height: inherit;
 }
 
 strong,
 b {
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: inherit;
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "MerriweatherBold", Georgia, serif;
+  }
+}
+
+strong em,
+em strong {
+  font-family: "SourceSansProBoldItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 small {

@@ -3632,6 +3632,10 @@ table {
     background: whitesmoke;
     font-weight: bold; }
     table thead tr th,
+    table tfoot tr th {
+      font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-weight: normal; }
+    table thead tr th,
     table thead tr td,
     table tfoot tr th,
     table tfoot tr td {
@@ -3639,6 +3643,9 @@ table {
       font-size: 0.875em;
       color: #222222;
       text-align: left; }
+  table tr th {
+    font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
   table tr th,
   table tr td {
     padding: 0.5625em 0.625em;

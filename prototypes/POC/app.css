@@ -238,6 +238,7 @@
 		margin: 0;
 	}
 	.site-bar .site-functions .site-search input[type=search] {
+		padding-left: 10px;
 		width: 86%;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
@@ -468,6 +469,7 @@
 		height: 48px;
 		overflow: hidden;
 		position: relative;
+		top: -10px;
 	}
 
 	.global-nav .nav-container {

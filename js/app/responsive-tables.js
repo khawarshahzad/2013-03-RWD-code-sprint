@@ -1,6 +1,6 @@
 jQuery.fn.reverse = [].reverse;
 
-/* Toggle Table
+/* Responsive Table
    Author: Craig Patik, NYS ITS, https://github.com/nys-its/RWD-Demo
    Date: March 2013
    Dependencies: jQuery, jQuery UI widget factory
@@ -8,7 +8,7 @@ jQuery.fn.reverse = [].reverse;
 */
 
 (function( $ ) {
-  $.widget('nysits.toggleTable', {
+  $.widget('nysits.responsiveTable', {
     options: {},
 
     // Set up the widget
@@ -54,11 +54,11 @@ jQuery.fn.reverse = [].reverse;
       }
 
       // Add up min-widths of all columns. If no data-min-width, assign to current size (rounded down)
-      // If total is too wide for the parent, hide the right-most .tt-p2 column
-      // Continue hiding .tt-p2 columns until the table fits
-      // If all .tt-p2 columns are gone and the table still doesn't fit, then repeat for .tt-p1
+      // If total is too wide for the parent, hide the right-most .rt-p2 column
+      // Continue hiding .rt-p2 columns until the table fits
+      // If all .rt-p2 columns are gone and the table still doesn't fit, then repeat for .rt-p1
       function hideCols () {
-        var selectors = ['.tt-p2', '.tt-p1'];
+        var selectors = ['.rt-p2', '.rt-p1'];
 
         $.each(selectors, function(j, selector) {
 
@@ -98,7 +98,7 @@ jQuery.fn.reverse = [].reverse;
       } // end hideCols()
 
       function showCols () {
-        var selectors = ['.tt-p1', '.tt-p2'],
+        var selectors = ['.rt-p1', '.rt-p2'],
             allowedWidth = $table.parent().width();
 
         $.each(selectors, function(j, selector) {
@@ -146,16 +146,16 @@ jQuery.fn.reverse = [].reverse;
 
       // Create container for check box list
       function createDropDown () {
-        if ($table.is('.tt-no-dropdown')) {
+        if ($table.is('.rt-no-dropdown')) {
           return false; // Page design explicitly denies a dropdown
         }
         $dropdown = $('#' + tableId + '-check-container');
         if (!$dropdown.length) {
-          $dropdown = $('<div class="tt-table-menu" id="' + tableId + '-check-container"></div>');
+          $dropdown = $('<div class="rt-table-menu" id="' + tableId + '-check-container"></div>');
           $dropdown.insertBefore($table);
         }
         $dropdown.prepend('<a href="#" data-dropdown="drop-' + tableId + '" class="small button dropdown radius">Columns</a>');
-        $dropdown.append('<ul id="drop-' + tableId + '" class="f-dropdown tt-table-dropdown"></ul>');
+        $dropdown.append('<ul id="drop-' + tableId + '" class="f-dropdown rt-table-dropdown"></ul>');
       }
 
       /**
@@ -164,8 +164,6 @@ jQuery.fn.reverse = [].reverse;
 
       // Ignore tables that request not to be responsive
       if ($table.is('.not-responsive')) { return false; }
-
-      $table.addClass('tt-table');
 
       // Set up dropdown menu
       if (!tableId) {
@@ -192,12 +190,12 @@ jQuery.fn.reverse = [].reverse;
         }
 
         // Add missing optional classes
-        if (!$th.is('.tt-persist, .tt-p1, .tt-p2')) {
+        if (!$th.is('.rt-persist, .rt-p1, .rt-p2')) {
           if (i === 0) {
-            $th.addClass('tt-p1');
+            $th.addClass('rt-p1');
           }
           else {
-            $th.addClass('tt-p2');
+            $th.addClass('rt-p2');
           }
         }
 
@@ -210,7 +208,7 @@ jQuery.fn.reverse = [].reverse;
         });
 
         // Create the hide/show toggles
-        if ($dropdown && !$th.is('.tt-persist') ) {
+        if ($dropdown && !$th.is('.rt-persist') ) {
           var $toggle = $('<li><input type="checkbox" name="toggle-cols" id="toggle-col-' + i +
                           '" value="' + id + '"><label for="toggle-col-' + i +
                           '">' + $th.text() + '</label></li>');
@@ -252,5 +250,5 @@ jQuery.fn.reverse = [].reverse;
 }(jQuery));
 
 $(function(){
-  $('table').toggleTable();
+  $('table').responsiveTable();
 });

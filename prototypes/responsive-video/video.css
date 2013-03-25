@@ -1,0 +1,18 @@
+body {
+        
+        background: black;
+      }
+      h1 {color: #778899; padding-top:4px; font-weight: bold; font-family: 'Kavoon', 'Trebuchet MS', Helvetica, sans-serif;}
+      .video-js {
+        margin: 0 auto;
+      }
+      #video-description {
+        margin-top: 25px;
+      }
+      .breadcrumbs {background-color:#778899; font-size:.8em;}
+      .breadcrumbs a:link {color:black;}
+      .breadcrumbs a:visited {color:black;}
+      .current {background-color:#BBCCDD;  border-radius:55px; font-size: 1.05em; margin-left:25px; font-weight:bold; padding-bottom: 5px;}
+      .breadcrumbs {border-color:#8899AA; border-radius:9px;}
+      .breadcrumbs li:before {
+      content: " ";}

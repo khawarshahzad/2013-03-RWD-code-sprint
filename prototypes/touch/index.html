@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Touch</title>
+
+  <link rel="stylesheet" href="../../css/normalize.css" />
+  <link rel="stylesheet" href="../../css/foundation.css" />
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
+  <link rel="icon" href="../../images/favicon.ico">
+
+</head>
+<body>
+  <div class="row">
+    <div class="large-10 columns">
+      <h1>Touch</h1>
+      <p>Zepto's touch library modified to work with either Zepto or with jQuery</p>
+      <ul class="breadcrumbs">
+        <li><a href="../">Prototypes Home</a></li>
+        <li class="current"><a href="#">Touch</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns callout" id="in">
+      <div id="hastouch" style="display:none;">
+        <p>Perform touch actions in this box. Recognized events will appear below (most recent first).</p>
+        <ul>
+          <li><code>tap</code></li>
+          <li><code>longTap</code></li>
+          <li><code>swipeLeft</code></li>
+          <li><code>swipeRight</code></li>
+        </ul>
+        <p>The library also supports singleTap, doubleTap, swipeUp, swipeDown, and swipe.</p>
+      </div>
+      <div id="notouch">
+        <p>Click inside this box. Recognized events will appear below (most recent first).</p>
+        <p class="error">Touch events are not supported on this browser. Only <code>click</code> events will be recognized.</p>
+        <p>To test on desktop, open Chrome's Dev Tool settings (gear icon) and enable touch events.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <p></p>
+      <ul id="out"></ul>
+    </div>
+  </div>
+
+  <style>
+    #in {
+      border: 1px solid #444;
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+    ul {
+      list-style-position: inside;
+    }
+    .error {
+      color: maroon;
+      font-style: italic;
+    }
+  </style>
+
+  <script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/foundation/foundation.js"></script>
+  <script src="../../js/vendor/touch.events.js"></script>
+
+  <script>
+    $(document).foundation();
+
+    $(document).ready(function() {
+      var $out = $('#out'),
+          touchEvent = 'click', // default
+          logType = function (type) {
+            $out.prepend('<li>' + type + '</li>');
+          };
+
+      // Touch is supported
+      if (Modernizr.touch) {
+        touchEvent = 'tap';
+        $('#notouch').hide();
+        $('#hastouch').show();
+      }
+
+      $('#in')
+        .on(touchEvent, function (evt) {
+          logType(evt.type);
+        })
+        .on('longTap', function (evt) {
+          logType(evt.type);
+        })
+        .on('swipeLeft', function (evt) {
+          logType(evt.type);
+        })
+        .on('swipeRight', function (evt) {
+          logType(evt.type);
+        });
+    });
+  </script>
+</body>
+</html>

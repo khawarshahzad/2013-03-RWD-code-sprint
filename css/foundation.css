@@ -933,7 +933,7 @@ p.lead {
 .subheader {
   line-height: 1.4;
   color: #6f6f6f;
-  font-family: "MerriweatherBold", Georgia, serif;
+  font-family: "Merriweather", Georgia, serif;
   font-weight: 300;
   margin-top: 0.2em;
   margin-bottom: 0.5em; }
@@ -987,8 +987,8 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "MerriweatherBold", Georgia, serif;
-  font-weight: bold;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: normal;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -1029,22 +1029,14 @@ hr {
 em,
 i {
   font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   line-height: inherit; }
 
 strong,
 b {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   line-height: inherit; }
-  strong h1, strong h2, strong h3, strong h4, strong h5, strong h6,
-  b h1,
-  b h2,
-  b h3,
-  b h4,
-  b h5,
-  b h6 {
-    font-family: "MerriweatherBold", Georgia, serif; }
 
 strong em,
 em strong {

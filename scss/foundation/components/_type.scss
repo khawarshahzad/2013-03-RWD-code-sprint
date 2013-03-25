@@ -3,8 +3,8 @@
 //
 
 // We use these to control header font styles
-$header-font-family:                   "MerriweatherBold", Georgia, serif !default;
-$header-font-weight:                   bold !default;
+$header-font-family:                   "Merriweather", Georgia, serif !default;
+$header-font-weight:                   normal !default;
 $header-font-style:                    normal !default;
 $header-font-color:                    #222 !default;
 $header-line-height:                   1.4 !default;
@@ -111,7 +111,7 @@ $microformat-abbr-font-decoration:     none !default;
 %subheader {
   line-height: $subheader-line-height;
   color: $subheader-font-color;
-  font-family: "MerriweatherBold", Georgia, serif;
+  font-family: "Merriweather", Georgia, serif;
   font-weight: $subheader-font-weight;
   margin-top: $subheader-top-margin;
   margin-bottom: $subheader-bottom-margin;
@@ -212,19 +212,15 @@ hr {
 em,
 i {
   font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-style: italic;
+  font-style: normal;
   line-height: inherit;
 }
 
 strong,
 b {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   line-height: inherit;
-
-  h1,h2,h3,h4,h5,h6 {
-    font-family: "MerriweatherBold", Georgia, serif;
-  }
 }
 
 strong em,

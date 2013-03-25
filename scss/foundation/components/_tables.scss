@@ -43,11 +43,6 @@ $table-margin-bottom:    emCalc(20px) !default;
     font-weight: $table-head-font-weight;
 
     tr {
-      th {
-        font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-        font-weight: normal;
-      }
-
       th,
       td {
         padding: $table-head-padding;
@@ -59,11 +54,6 @@ $table-margin-bottom:    emCalc(20px) !default;
   }
 
   tr {
-    th {
-      font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-    }
-
     th,
     td {
       padding: $table-row-padding;

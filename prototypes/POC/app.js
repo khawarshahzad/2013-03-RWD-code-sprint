@@ -8,7 +8,10 @@ $('#gov-link-3').on('click', function(e) {
 });
 
 // Active Elements
-$('a[data-active]').on('click', function(){
+$('a[data-active]').on('click', function(e){
+
+	// Prevent Defaults
+	e.preventDefault();
 	
 	// Active attribute class 
 	var activeClass = $(this).attr('data-active');

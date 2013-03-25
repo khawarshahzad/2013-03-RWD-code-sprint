@@ -13,6 +13,7 @@ $('a[data-active]').on('click', function(event){
 	// Prevent Defaults
 	event.preventDefault();
 
+	// Function is used to close a pre-existing active items.
 	function removeOtherActive(active) {
 
 		// Get the old active class to remove from the body tag
@@ -24,6 +25,16 @@ $('a[data-active]').on('click', function(event){
 		// Remove the active class from the old active item
 		active.removeClass('active');
 
+	}
+
+	// Function for special functionality determined by the data-active value
+	function specialEvents(activeElm) {
+		switch (activeElm) {
+			case "active-site-search": 
+				$('#site-search-box').focus();
+				break;
+
+		}
 	}
 
 	// Active attribute class 
@@ -59,6 +70,9 @@ $('a[data-active]').on('click', function(event){
 
 		// Add active state class from clicked element
 		$(this).addClass(selectedClass);
+
+		// Check to see if anything special has to happen based on data-active value
+		specialEvents(activeClass);
 
 	}
 

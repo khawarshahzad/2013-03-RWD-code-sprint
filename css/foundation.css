@@ -974,7 +974,7 @@ a {
 
 /* Default paragraph styles */
 p {
-  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "SourceSansProRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 1em;
   line-height: 1.6;
@@ -1067,7 +1067,7 @@ dl {
   line-height: 1.6;
   margin-bottom: 1.25em;
   list-style-position: outside;
-  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: "SourceSansProRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
 /* Unordered Lists */
 ul li ul,

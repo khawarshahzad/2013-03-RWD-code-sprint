@@ -46,8 +46,9 @@ body {
 input, select, textarea {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-button, .button {
-  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+button,
+.button {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal !important; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,9 +78,18 @@ legend {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
-/* Generic Classes */
 .no-wrap {
   white-space: nowrap; }
 
 .list-bullets-inside {
   list-style-position: inside; }
+
+.rt-table-dropdown {
+  max-width: 300px !important; }
+  .rt-table-dropdown li {
+    padding: 1em; }
+  .rt-table-dropdown input {
+    display: inline-block;
+    margin-right: 0.5em; }
+  .rt-table-dropdown label {
+    display: inline-block; }

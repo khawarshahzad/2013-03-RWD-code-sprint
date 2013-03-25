@@ -1,40 +1,40 @@
 @font-face {
-  font-family: 'SourceSansPro';
+  font-family: "SourceSansPro";
   src: url("../fonts/source-sans-pro/SourceSansPro-Regular.eot");
   src: url("../fonts/source-sans-pro/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans-pro/SourceSansPro-Regular.woff") format("woff"), url("../fonts/source-sans-pro/SourceSansPro-Regular.ttf") format("truetype"), url("../fonts/source-sans-pro/SourceSansPro-Regular.svg#SourceSansProRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'SourceSansProItalic';
+  font-family: "SourceSansProItalic";
   src: url("../fonts/source-sans-pro/SourceSansPro-It.eot");
   src: url("../fonts/source-sans-pro/SourceSansPro-It.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans-pro/SourceSansPro-It.woff") format("woff"), url("../fonts/source-sans-pro/SourceSansPro-It.ttf") format("truetype"), url("../fonts/source-sans-pro/SourceSansPro-It.svg#SourceSansProItalic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'SourceSansProBold';
+  font-family: "SourceSansProBold";
   src: url("../fonts/source-sans-pro/SourceSansPro-Bold.eot");
   src: url("../fonts/source-sans-pro/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans-pro/SourceSansPro-Bold.woff") format("woff"), url("../fonts/source-sans-pro/SourceSansPro-Bold.ttf") format("truetype"), url("../fonts/source-sans-pro/SourceSansPro-Bold.svg#SourceSansProBold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'SourceSansProBoldItalic';
+  font-family: "SourceSansProBoldItalic";
   src: url("../fonts/source-sans-pro/SourceSansPro-BoldIt.eot");
   src: url("../fonts/source-sans-pro/SourceSansPro-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans-pro/SourceSansPro-BoldIt.woff") format("woff"), url("../fonts/source-sans-pro/SourceSansPro-BoldIt.ttf") format("truetype"), url("../fonts/source-sans-pro/SourceSansPro-BoldIt.svg#SourceSansProBoldItalic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'MerriweatherRegular';
+  font-family: "MerriweatherRegular";
   src: url("../fonts/merriweather/Merriweather.eot");
   src: url("../fonts/merriweather/Merriweather.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather/Merriweather.woff") format("woff"), url("../fonts/merriweather/Merriweather.ttf") format("truetype"), url("../fonts/merriweather/Merriweather.svg#MerriweatherRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'MerriweatherBold';
+  font-family: "MerriweatherBold";
   src: url("../fonts/merriweather/Merriweather-Bold.eot");
   src: url("../fonts/merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather/Merriweather-Bold.woff") format("woff"), url("../fonts/merriweather/Merriweather-Bold.ttf") format("truetype"), url("../fonts/merriweather/Merriweather-Bold.svg#MerriweatherBold") format("svg");
   font-weight: normal;
@@ -46,9 +46,11 @@ body {
 input, select, textarea {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-button, .button {
-  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal !important; }
+button,
+.button {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal !important;
+  border-radius: 3px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", Georgia, serif;
@@ -56,6 +58,14 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+table thead tr th,
+table tfoot tr th {
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+table tr th {
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
 
 em,
 i {
@@ -77,9 +87,18 @@ legend {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
-/* Generic Classes */
 .no-wrap {
   white-space: nowrap; }
 
 .list-bullets-inside {
   list-style-position: inside; }
+
+.rt-table-dropdown {
+  max-width: 300px !important; }
+  .rt-table-dropdown li {
+    padding: 1em; }
+  .rt-table-dropdown input {
+    display: inline-block;
+    margin-right: 0.5em; }
+  .rt-table-dropdown label {
+    display: inline-block; }

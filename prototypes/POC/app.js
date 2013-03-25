@@ -3,7 +3,7 @@ $('#gov-link-3').on('click', function(e) {
 
 	e.preventDefault();
 
-	$('html').addClass('active-gov-bar-search');
+	$('body').addClass('active-gov-bar-search');
 
 });
 
@@ -15,11 +15,11 @@ $('a[data-active]').on('click', function(event){
 
 	function removeOtherActive(active) {
 
-		// Get the old active class to remove from the html tag
+		// Get the old active class to remove from the body tag
 		var activeClass = active.attr('data-active');
 
 		// Remove the old active class
-		$('html').removeClass(activeClass);
+		$('body').removeClass(activeClass);
 
 		// Remove the active class from the old active item
 		active.removeClass('active');
@@ -30,20 +30,14 @@ $('a[data-active]').on('click', function(event){
 	var activeClass = $(this).attr('data-active'),
 		selectedClass = "active";
 
-	// Check to see if there is another active item by looking for the active class
-	if ($('.active').length) {
-		
-		//alert("there is something else open");
-		removeOtherActive($('.active'));
-
-	}
-
+	console.log($(this));
+	console.log($('.active'));
 
 	// Check to see if the item is active
-	if ($('html').hasClass(activeClass)) {
+	if ($('body').hasClass(activeClass)) {
 
 		// Remove active state class from header
-		$('html').removeClass(activeClass);
+		$('body').removeClass(activeClass);
 
 		// Remove active state class from the clicked element
 		$(this).removeClass(selectedClass);
@@ -51,7 +45,7 @@ $('a[data-active]').on('click', function(event){
 	} else {
 
 		// Add active state class from header
-		$('html').addClass(activeClass);
+		$('body').addClass(activeClass);
 
 		// Add active state class from clicked element
 		$(this).addClass(selectedClass);

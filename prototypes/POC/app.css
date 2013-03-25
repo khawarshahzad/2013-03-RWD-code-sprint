@@ -290,7 +290,7 @@
 
 	.global-nav .nav-container {
 		height: 0;
-		overflow: auto;
+		overflow: hidden;
 		transition: height 0.2s ease-in;
 		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
 		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
@@ -355,7 +355,7 @@
 
 	/* Active Site Menu */
 	.active-site-menu .global-nav .nav-container {
-		height: 320px;
+		height: 364px;
 	}
 
 	/* Utility Classes */
@@ -483,6 +483,21 @@
 	}
 
 }
+
+/* Page Lock at 960px */
+@media only screen and (min-width: 60em) {
+	.gov-bar .gov-wrap,
+	.site-bar .site-wrap,
+	.global-nav,
+	.page {
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60em !important;
+	}
+}
+
+
 
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {

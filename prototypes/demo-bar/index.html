@@ -16,30 +16,38 @@
   <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
   <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
   <link rel="icon" href="../../images/favicon.ico">
-
 </head>
 <body>
   <div class="row">
     <div class="large-10 columns">
-      <h1>Name of Component</h1>
+      <h1>Demo Bar</h1>
       <ul class="breadcrumbs">
         <li><a href="../">Prototypes Home</a></li>
-        <li class="current"><a href="#">Name of Component</a></li>
+        <li class="current"><a href="#">Demo Bar</a></li>
       </ul>
-      <dl class="sub-nav">
-        <dt>Name of Component:</dt>
-        <dd><a href="#">opt1</a></dd>
-        <dd class="active"><a href="#">opt2</a></dd>
-        <dd><a href="#">opt3</a></dd>
-        <dd><a href="#">opt4</a></dd>
+
+<dl class="sub-nav">
+        <dt>Section:</dt>
+        <dd class="active"><a href="#">Auto</a></dd>
+        <dd><a href="tabs.html">Tabs</a></dd>
+        <dd><a href="accordion.html">Accordion</a></dd>
       </dl>
-
-      <!-- Component code goes here -->
-
+      <div class="section-container auto" data-section data-options="deep_linking: true">
+        <section class="section">
+          <p class="title"><a href="#section1">Section 1</a></p>
+          <div class="content" data-slug="section1">
+            <p>Content of section 1.</p>
+          </div>
+        </section>
+        <section class="section">
+          <p class="title"><a href="#section2">Section 2</a></p>
+          <div class="content" data-slug="section2">
+            <p>Content of section 2.</p>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
-
-
   <script src='../../js/vendor/jquery.js'></script>
   <script src="../../js/foundation/foundation.js"></script>
 
@@ -64,9 +72,9 @@
   <script src="../../js/foundation/foundation.placeholder.js"></script>
 
   <script src="../../js/foundation/foundation.reveal.js"></script>
-
+-->
   <script src="../../js/foundation/foundation.section.js"></script>
-
+<!--
   <script src="../../js/foundation/foundation.tooltips.js"></script>
 
   <script src="../../js/foundation/foundation.topbar.js"></script>
@@ -75,5 +83,16 @@
   <script>
     $(document).foundation();
   </script>
+<script>
+
+$(window).load(function(){
+  if ( !window.top.location.hash ) {
+    window.top.location.hash= "#responsive";
+    javascript:void((function(){var d=document;d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+d.title+' - Responsive test<\/title><link rel="stylesheet" href="http:\/\/responsive.victorcoulon.fr\/assets\/css\/app.css"><script src="http:\/\/responsive.victorcoulon.fr\/assets\/js\/app.min.js"><\/script><\/head><body><header><div class="close"><a href="#">%C3%97<\/a><\/div><div id="size"><\/div><div class="keyboard"><a href="#">I<\/a><\/div><div class="cssrefresh"><a href="#">I<\/a><\/div><div id="devices"><a href="#" class="tablet-portrait"><span>Tablet Portrait<\/span><\/a><a href="#" class="tablet-landscape"><span>Tablet Landscape<\/span><\/a><a href="#" class="smartphone-landscape"><span>iPhone Landscape<\/span><\/a><a href="#" class="smartphone-portrait"><span>iPhone Portrait<\/span><\/a><a href="#" class="auto active"><span>Auto<\/span><\/a><\/div><\/header><section><div id="wrapper"><iframe src="'+d.URL+'" onLoad="resbook.changeUrl(this.contentWindow.location,this.contentDocument.title);"><\/iframe><span class="keyboard-bg"><\/span><\/div><\/section><\/body><\/html>')})());
+  }
+});
+</script>
+
+
 </body>
 </html>

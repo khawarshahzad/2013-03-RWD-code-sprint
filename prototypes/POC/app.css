@@ -208,6 +208,10 @@
 		-o-transition: height 0.2s ease-in; /* Opera */
 	}
 
+	.site-bar .site-functions .site-search .search-container {
+		height: 32px;
+	}
+
 	.site-bar .site-functions .site-search form {
 		margin: 3px 0 0 0;
 		padding: 5px;
@@ -244,6 +248,7 @@
 		background-size: 24px;
 		border-color: #808080;
 		border: 0;
+		height: 100%;
 		width: 14%;
 		color: #fff;
 		text-indent: -9999px;
@@ -440,7 +445,6 @@
 
 	.site-bar .site-functions {
 		height: 100%;
-		position:relative;
 	}
 
 	.site-bar .mobile-functions {

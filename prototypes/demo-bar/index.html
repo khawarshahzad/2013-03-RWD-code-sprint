@@ -47,8 +47,6 @@
       </div>
     </div>
   </div>
-<a class="button primary" href="javascript:void((function(d){if(self!=top||d.getElementById(&#039;toolbar&#039;)&amp;&amp;d.getElementById(&#039;toolbar&#039;).getAttribute(&#039;data-resizer&#039;))return false;d.write(&#039;&lt;!DOCTYPE HTML&gt;&lt;html style=&quot;opacity:0;&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;/&gt;&lt;/head&gt;&lt;body&gt;&lt;a data-viewport=&quot;320x480&quot; data-icon=&quot;mobile&quot;&gt;Mobile (e.g. Apple iPhone)&lt;/a&gt;&lt;a data-viewport=&quot;320x568&quot; data-icon=&quot;mobile&quot; data-version=&quot;5&quot;&gt;Apple iPhone 5&lt;/a&gt;&lt;a data-viewport=&quot;600x800&quot; data-icon=&quot;small-tablet&quot;&gt;Small Tablet&lt;/a&gt;&lt;a data-viewport=&quot;768x1024&quot; data-icon=&quot;tablet&quot;&gt;Tablet (e.g. Apple iPad 2-3rd, mini)&lt;/a&gt;&lt;a data-viewport=&quot;1280x800&quot; data-icon=&quot;notebook&quot;&gt;Widescreen&lt;/a&gt;&lt;script src=&quot;http://lab.maltewassermann.com/viewport-resizer/resizer.min.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;&#039;)})(document));" data-text="Click or bookmark"><span>&harr; Resizer</span></a>
-
   <script src='../../js/vendor/jquery.js'></script>
   <script src="../../js/foundation/foundation.js"></script>
 
@@ -84,7 +82,15 @@
   <script>
     $(document).foundation();
   </script>
-<!--<script src="js/responsive.js"></script>-->
+<script>
+
+$(window).load(function(){
+  if ( !window.top.location.hash ) {
+    window.top.location.hash= "#responsive";
+    javascript:void((function(){var d=document;d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+d.title+' - Responsive test<\/title><link rel="stylesheet" href="http:\/\/responsive.victorcoulon.fr\/assets\/css\/app.css"><script src="http:\/\/responsive.victorcoulon.fr\/assets\/js\/app.min.js"><\/script><\/head><body><header><div class="close"><a href="#">%C3%97<\/a><\/div><div id="size"><\/div><div class="keyboard"><a href="#">I<\/a><\/div><div class="cssrefresh"><a href="#">I<\/a><\/div><div id="devices"><a href="#" class="tablet-portrait"><span>Tablet Portrait<\/span><\/a><a href="#" class="tablet-landscape"><span>Tablet Landscape<\/span><\/a><a href="#" class="smartphone-landscape"><span>iPhone Landscape<\/span><\/a><a href="#" class="smartphone-portrait"><span>iPhone Portrait<\/span><\/a><a href="#" class="auto active"><span>Auto<\/span><\/a><\/div><\/header><section><div id="wrapper"><iframe src="'+d.URL+'" onLoad="resbook.changeUrl(this.contentWindow.location,this.contentDocument.title);"><\/iframe><span class="keyboard-bg"><\/span><\/div><\/section><\/body><\/html>')})());
+  }
+});
+</script>
 
 
 </body>

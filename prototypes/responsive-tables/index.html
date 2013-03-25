@@ -46,12 +46,12 @@
   </div>
   <div class="row">
     <div class="large-12 columns">
-      <table class="toggle-table" id="tadocket">
+      <table id="tadocket">
         <thead>
           <tr>
             <th class="tt-persist">Name</th>
             <th class="tt-p1">DTA #</th>
-            <th class="tt-p2">Date Issued</th>
+            <th class="tt-p2 no-wrap">Date Issued</th>
             <th class="tt-p1">Corp</th>
             <th class="tt-p2">Corp #</th>
           </tr>
@@ -134,14 +134,20 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h2>Example with dropdown</h2>
-      <p>This gives the user ultimate control over which columns will display.</p>
-      <div class="toggle-table-menu" id="nycounties-check-container"></div>
+      <h2>Examples</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h4>With dropdown</h4>
+      <p>This gives the user ultimate control over which columns will display. The dropdown is automatically generated for this table.</p>
+      <!-- <div class="toggle-table-menu" id="nycounties-check-container"></div> -->
     </div>
   </div>
   <div class="row">
     <div class="large-12 columns">
-      <table class="toggle-table" id="nycounties">
+      <table id="nycounties" summary="Facts about counties in New York State">
         <thead>
           <tr>
             <th class="tt-persist" data-min-width="100">County</th>
@@ -180,14 +186,13 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h2>Example without dropdown</h2>
+      <h4>No dropdown</h4>
       <p>This lets the page designer decide which columns will display.</p>
-      <!--<div class="toggle-table-menu" id="demo-check-container"></div>-->
     </div>
   </div>
   <div class="row">
     <div class="large-12 columns">
-      <table class="toggle-table" id="demo">
+      <table class="tt-no-dropdown" id="demo2">
         <thead>
           <tr>
             <th class="tt-persist" data-min-width="137">Can't Be Hidden</th>
@@ -222,6 +227,47 @@
 
   <div class="row">
     <div class="large-12 columns">
+      <h4>Not responsive</h4>
+      <p>This table will not hide or show columns to fit the screen.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <table class="not-responsive" id="demo3">
+        <thead>
+          <tr>
+            <th class="tt-persist" data-min-width="137">Can't Be Hidden</th>
+            <th class="tt-p1" data-min-width="214">Usually Won't Hide</th>
+            <th class="tt-p2" data-min-width="109">Hides Easily</th>
+            <th class="tt-p2 no-wrap" data-min-width="169">Optional</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>This will always display</td>
+            <td>Use the dropdown menu to selectively hide and show columns.</td>
+            <td>Trivial content here</td>
+            <td class="no-wrap">This column won't wrap</td>
+          </tr>
+          <tr>
+            <td>Doesn't appear in dropdown</td>
+            <td>Additionally, columns will automatically hide themselves depending on the size of the viewport.</td>
+            <td>This will hide first</td>
+            <td class="no-wrap">This column won't wrap</td>
+          </tr>
+          <tr>
+            <td>Always visible</td>
+            <td>But you can always force columns to show using the dropdown, even if they don't fit well.</td>
+            <td>Before other columns</td>
+            <td class="no-wrap">This column won't wrap</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
       <h3>Details</h3>
       <p>Togglable Tables automatically hide and show columns as the viewport allows. Additionally, it provides a menu where the user can explicity toggle any column. The page designer may optionally indicate a level of priority for each column as well as the minimum acceptable width for display.</p>
 
@@ -231,80 +277,28 @@
           <div class="content">
             <h4>Usage:</h4>
             <ul class="list-bullets-inside">
-              <li>
-                Includes:
+              <li>Includes:
                 <ul class="list-bullets-inside">
-                  <li>
-                    <code>js/vendor/jquery-ui.widget.js</code>
-                  </li>
-                  <li>
-                    <code>js/app/responsive-tables.js</code>
-                  </li>
-                  <li>
-                    <code>js/foundation/foundation.dropdown.js</code>
-                  </li>
+                  <li><code>js/vendor/jquery-ui.widget.js</code></li>
+                  <li><code>js/app/responsive-tables.js</code></li>
+                  <li><code>js/foundation/foundation.dropdown.js</code></li>
                 </ul>
               </li>
-              <li>
-                To allow the user to toggle columns, add a
-                <code>div.toggle-table-menu</code>
-                with an
-                <code>id</code>
-                in the form of
-                <code><em>[table id]</em>-check-container</code>
-                to the page.
-              </li>
-              <li>
-                Optionally use the following classes on
-                <code>&lt;th&gt;</code>
-                elements to prioritize column display:
+              <li>Optionally use the following classes on <code>&lt;th&gt;</code> elements to prioritize column display:
                 <ul class="list-bullets-inside">
-                  <li>
-                    <code>tt-persist</code>
-                    &mdash; never hides and cannot be toggled
-                  </li>
-                  <li>
-                    <code>tt-p<strong>2</strong></code>
-                    &mdash; hides when there is not enough space
-                  </li>
-                  <li>
-                    <code>tt-p<strong>1</strong></code>
-                    &mdash; hides as soon as there is not enough space and all
-                    <code>.tt-p2</code>
-                    are already hidden
-                  </li>
+                  <li><code>tt-persist</code> &mdash; never hides and cannot be toggled</li>
+                  <li><code>tt-p<strong>2</strong></code> &mdash; hides when there is not enough space</li>
+                  <li><code>tt-p<strong>1</strong></code> &mdash; hides as soon as there is not enough space and all <code>.tt-p2</code> are already hidden</li>
                 </ul>
               </li>
-              <li>
-                Call
-                <code>$('#myTable').toggleTable();</code>
-                to initialize
-              </li>
+              <li>Add the class <code>.not-responsive</code> to a <code>&lt;table&gt;</code> to prevent the plugin from handling it.</li>
             </ul>
             <h4>ITS conventions:</h4>
             <ul class="list-bullets-inside">
-              <li>
-                To include a menu, add a
-                <code>.row</code>
-                above the table's
-                <code>.row</code>
-                to hold the
-                <code>div.toggle-table-menu</code>
-                .
-              </li>
-              <li>
-                Give the
-                <code>&lt;table&gt;</code>
-                the class
-                <code>.toggle-table</code>
-                .
-              </li>
+              <li>When including a menu, add a <code>.row</code> above the table's <code>.row</code> to hold the <code>div.toggle-table-menu</code>.</li>
+              <li>Give the <code>&lt;table&gt;</code> the class <code>.toggle-table</code>.</li>
             </ul>
-            <p>
-              The plugin is based on
-              <a href="https://github.com/filamentgroup/RWD-Table-Patterns">Filament Group's</a>
-              responsive tables solution.
-            </p>
+            <p>The plugin is based on <a href="https://github.com/filamentgroup/RWD-Table-Patterns">Filament Group's</a> responsive tables solution.</p>
           </div>
         </section>
       </div>
@@ -319,8 +313,5 @@
   <script src="../../js/foundation/foundation.section.js"></script>
   <script>
     $(document).foundation();
-    $(function(){
-      $('.toggle-table').toggleTable();
-    });
   </script>
 </body>

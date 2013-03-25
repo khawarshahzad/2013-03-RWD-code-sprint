@@ -1,6 +1,60 @@
 @import "fonts";
 @import "foundation/foundation-global";
 
+$font-sans: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-sans-bold: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-sans-italic: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-sans-bold-italic: "SourceSansProBoldItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-serif: "Merriweather", Georgia, serif;
+
+// Overrides
+
+body {
+  font-family: $font-sans;
+}
+
+input, select, textarea {
+  font-family: $font-sans;
+}
+
+button, .button {
+  font-family: $font-sans-bold;
+  font-weight: normal !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-serif;
+  font-weight: normal;
+}
+
+p {
+  font-family: $font-sans;
+}
+
+em,
+i {
+  font-family: $font-sans-italic;
+  font-style: normal;
+}
+
+strong,
+b {
+  font-family: $font-sans-bold;
+  font-weight: normal;
+}
+
+strong em,
+em strong {
+  font-family: $font-sans-bold-italic;
+  font-style: normal;
+  font-weight: normal;
+}
+
+legend {
+  font-family: $font-sans-bold;
+  font-weight: normal;
+}
+
 /* Generic Classes */
 
 .no-wrap {

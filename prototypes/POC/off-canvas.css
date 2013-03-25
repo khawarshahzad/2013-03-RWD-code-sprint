@@ -95,10 +95,12 @@
 		height: 48px;
 	}
 
+	.off-canvas .global-nav .nav-container,
 	.off-canvas.active-site-menu .global-nav .nav-container {
 		overflow: hidden;
 	}
 
+	.off-canvas .global-nav ul, 
 	.off-canvas.active-site-menu .global-nav ul {
 		margin-left: 0;
 	}

@@ -20,9 +20,12 @@ jQuery.fn.reverse = [].reverse;
           $hdrColsReversed = $thead.find('th').reverse(),
           $bodyRows = $tbody.find('tr'),
           tableId = $table.attr('id'),
-          $container = $('#' + tableId + '-check-container'),
-          dropdownid = 'drop-' + tableId,
-          totalMinWidth = 0;
+          totalMinWidth = 0,
+          $dropdown;
+
+      /**
+       * Private Methods
+       */
 
       // Test if element is currently displaying
       function isDisplaying ($elem) {
@@ -42,6 +45,12 @@ jQuery.fn.reverse = [].reverse;
         });
 
         return total;
+      }
+
+      function setTableId () {
+        var id = 'table' + (new Date().getTime()).toString().substr(9,4);
+        $table.attr('id', id);
+        return id;
       }
 
       // Add up min-widths of all columns. If no data-min-width, assign to current size (rounded down)
@@ -135,10 +144,34 @@ jQuery.fn.reverse = [].reverse;
         hideCols();
       } // end showCols()
 
-      if ($container) {
-        // Create container for check box list
-        $container.append('<ul id="' + dropdownid + '" class="f-dropdown toggle-table-dropdown"></ul>');
+      // Create container for check box list
+      function createDropDown () {
+        if ($table.is('.tt-no-dropdown')) {
+          return false; // Page design explicitly denies a dropdown
+        }
+        $dropdown = $('#' + tableId + '-check-container');
+        if (!$dropdown.length) {
+          $dropdown = $('<div class="tt-table-menu" id="' + tableId + '-check-container"></div>');
+          $dropdown.insertBefore($table);
+        }
+        $dropdown.prepend('<a href="#" data-dropdown="drop-' + tableId + '" class="small button dropdown radius">Columns</a>');
+        $dropdown.append('<ul id="drop-' + tableId + '" class="f-dropdown tt-table-dropdown"></ul>');
       }
+
+      /**
+       * Setup
+       */
+
+      // Ignore tables that request not to be responsive
+      if ($table.is('.not-responsive')) { return false; }
+
+      $table.addClass('tt-table');
+
+      // Set up dropdown menu
+      if (!tableId) {
+        tableId = setTableId($table);
+      }
+      createDropDown();
 
       // Prep each column header
       $hdrCols.each(function(i) {
@@ -160,7 +193,12 @@ jQuery.fn.reverse = [].reverse;
 
         // Add missing optional classes
         if (!$th.is('.tt-persist, .tt-p1, .tt-p2')) {
-          $th.addClass('tt-p2');
+          if (i === 0) {
+            $th.addClass('tt-p1');
+          }
+          else {
+            $th.addClass('tt-p2');
+          }
         }
 
         // Assign matching `data-headers` attributes to the associated cells
@@ -172,12 +210,12 @@ jQuery.fn.reverse = [].reverse;
         });
 
         // Create the hide/show toggles
-        if ($container && !$th.is('.tt-persist') ) {
+        if ($dropdown && !$th.is('.tt-persist') ) {
           var $toggle = $('<li><input type="checkbox" name="toggle-cols" id="toggle-col-' + i +
                           '" value="' + id + '"><label for="toggle-col-' + i +
                           '">' + $th.text() + '</label></li>');
 
-          $container.find('ul').append($toggle);
+          $dropdown.find('ul').append($toggle);
 
           $toggle
             .find('input')
@@ -209,8 +247,10 @@ jQuery.fn.reverse = [].reverse;
 
       // Update the view now
       showCols();
-
-      $container.prepend('<a href="#" data-dropdown="' + dropdownid + '" class="small button dropdown">Columns</a>');
     } // end _create
   });
 }(jQuery));
+
+$(function(){
+  $('table').toggleTable();
+});

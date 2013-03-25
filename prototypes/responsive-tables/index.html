@@ -49,11 +49,11 @@
       <table id="tadocket">
         <thead>
           <tr>
-            <th class="tt-persist">Name</th>
-            <th class="tt-p1">DTA #</th>
-            <th class="tt-p2 no-wrap">Date Issued</th>
-            <th class="tt-p1">Corp</th>
-            <th class="tt-p2">Corp #</th>
+            <th class="rt-persist">Name</th>
+            <th class="rt-p1">DTA #</th>
+            <th class="rt-p2 no-wrap">Date Issued</th>
+            <th class="rt-p1">Corp</th>
+            <th class="rt-p2">Corp #</th>
           </tr>
         </thead>
         <tbody>
@@ -150,11 +150,11 @@
       <table id="nycounties" summary="Facts about counties in New York State">
         <thead>
           <tr>
-            <th class="tt-persist" data-min-width="100">County</th>
-            <th class="tt-p1 no-wrap" data-min-width="90">Population</th>
-            <th class="tt-p2" data-min-width="110">Second</th>
-            <th class="tt-p1" data-min-width="110">Third</th>
-            <th class="tt-p2" data-min-width="400">First to go</th>
+            <th class="rt-persist" data-min-width="100">County</th>
+            <th class="rt-p1 no-wrap" data-min-width="90">Population</th>
+            <th class="rt-p2" data-min-width="110">Second</th>
+            <th class="rt-p1" data-min-width="110">Third</th>
+            <th class="rt-p2" data-min-width="400">First to go</th>
           </tr>
         </thead>
         <tbody>
@@ -192,13 +192,13 @@
   </div>
   <div class="row">
     <div class="large-12 columns">
-      <table class="tt-no-dropdown" id="demo2">
+      <table class="rt-no-dropdown" id="demo2">
         <thead>
           <tr>
-            <th class="tt-persist" data-min-width="137">Can't Be Hidden</th>
-            <th class="tt-p1" data-min-width="214">Usually Won't Hide</th>
-            <th class="tt-p2" data-min-width="109">Hides Easily</th>
-            <th class="tt-p2 no-wrap" data-min-width="169">Optional</th>
+            <th class="rt-persist" data-min-width="137">Can't Be Hidden</th>
+            <th class="rt-p1" data-min-width="214">Usually Won't Hide</th>
+            <th class="rt-p2" data-min-width="109">Hides Easily</th>
+            <th class="rt-p2 no-wrap" data-min-width="169">Optional</th>
           </tr>
         </thead>
         <tbody>
@@ -236,10 +236,10 @@
       <table class="not-responsive" id="demo3">
         <thead>
           <tr>
-            <th class="tt-persist" data-min-width="137">Can't Be Hidden</th>
-            <th class="tt-p1" data-min-width="214">Usually Won't Hide</th>
-            <th class="tt-p2" data-min-width="109">Hides Easily</th>
-            <th class="tt-p2 no-wrap" data-min-width="169">Optional</th>
+            <th class="rt-persist" data-min-width="137">Can't Be Hidden</th>
+            <th class="rt-p1" data-min-width="214">Usually Won't Hide</th>
+            <th class="rt-p2" data-min-width="109">Hides Easily</th>
+            <th class="rt-p2 no-wrap" data-min-width="169">Optional</th>
           </tr>
         </thead>
         <tbody>
@@ -286,17 +286,16 @@
               </li>
               <li>Optionally use the following classes on <code>&lt;th&gt;</code> elements to prioritize column display:
                 <ul class="list-bullets-inside">
-                  <li><code>tt-persist</code> &mdash; never hides and cannot be toggled</li>
-                  <li><code>tt-p<strong>2</strong></code> &mdash; hides when there is not enough space</li>
-                  <li><code>tt-p<strong>1</strong></code> &mdash; hides as soon as there is not enough space and all <code>.tt-p2</code> are already hidden</li>
+                  <li><code>rt-persist</code> &mdash; never hides and cannot be toggled</li>
+                  <li><code>rt-p<strong>2</strong></code> &mdash; hides when there is not enough space</li>
+                  <li><code>rt-p<strong>1</strong></code> &mdash; hides as soon as there is not enough space and all <code>.rt-p2</code> are already hidden</li>
                 </ul>
               </li>
               <li>Add the class <code>.not-responsive</code> to a <code>&lt;table&gt;</code> to prevent the plugin from handling it.</li>
             </ul>
             <h4>ITS conventions:</h4>
             <ul class="list-bullets-inside">
-              <li>When including a menu, add a <code>.row</code> above the table's <code>.row</code> to hold the <code>div.toggle-table-menu</code>.</li>
-              <li>Give the <code>&lt;table&gt;</code> the class <code>.toggle-table</code>.</li>
+              <li>When including a menu, add a <code>.row</code> above the table's <code>.row</code> with an empty <code>div.rt-table-menu</code> to hold the menu.</li>
             </ul>
             <p>The plugin is based on <a href="https://github.com/filamentgroup/RWD-Table-Patterns">Filament Group's</a> responsive tables solution.</p>
           </div>

@@ -1,0 +1,31 @@
+label {
+  display: inline-block;
+  position: relative; }
+
+.required:after {
+  content: "*";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  color: #c60f13; }
+
+.has-addendum input,
+.has-addendum select,
+.has-addendum textarea {
+  width: 90%;
+  float: left; }
+
+.has-addendum .data-addendum {
+  width: 10%;
+  float: left;
+  padding-left: 0.75em;
+  padding-top: 0.5em; }
+
+.data-addendum label {
+  float: left;
+  padding-right: 1em; }
+
+.padding-sides-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }

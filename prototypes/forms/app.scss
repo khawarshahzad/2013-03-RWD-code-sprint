@@ -1,0 +1,50 @@
+@import "../../scss/foundation/foundation-global";
+
+label {
+  // float: left;
+  display: inline-block;
+  // padding-right: 0.75em;
+  position: relative;
+}
+
+.required:after {
+  content: "*";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  color: #{$alert-color}; //#f30;
+}
+
+.has-addendum input,
+.has-addendum select,
+.has-addendum textarea {
+  width: 90%;
+  float: left;
+}
+
+.has-addendum .data-addendum {
+  width: 10%;
+  float: left;
+  padding-left: emCalc(12px);
+  padding-top: emCalc(8px);
+  // font-size: emCalc(12px);
+}
+
+.data-addendum label {
+  float: left;
+  padding-right: 1em;
+}
+
+.padding-sides-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media #{$small} {
+
+}
+
+@media #{$medium-small} {
+
+}

@@ -30,8 +30,18 @@ $('a[data-active]').on('click', function(event){
 	var activeClass = $(this).attr('data-active'),
 		selectedClass = "active";
 
-	console.log($(this));
-	console.log($('.active'));
+	// Check to see if there is already and active item
+	if ($('.active').length > 0) {
+
+		// Check to make sure its not the same as the currently clicked item
+
+		if ($('.active').attr('data-active') != $(this).attr('data-active')) {
+
+
+			removeOtherActive($('.active'));
+		}
+
+	}
 
 	// Check to see if the item is active
 	if ($('body').hasClass(activeClass)) {

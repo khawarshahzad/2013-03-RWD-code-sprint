@@ -116,6 +116,10 @@ legend {
   .rt-table-dropdown label {
     display: inline-block; }
 
+.rt-table-menu > a {
+  padding-bottom: emCalc(6px);
+  padding-top: emCalc(9px); }
+
 label {
   display: inline-block;
   position: relative; }

@@ -163,22 +163,9 @@
   </div>
 
   <script src="../../js/vendor/jquery.js"></script>
-  <script src="../../js/vendor/ios.js"></script>
+  <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
   <script src="../../js/foundation/foundation.forms.js"></script>
   <script src="../../js/foundation/foundation.tooltips.js"></script>
   <script src="app.js"></script>
-  <script>
-    $(document).foundation({
-      selector : '.has-tip',
-      additionalInheritableClasses : [],
-      tooltipClass : '.tooltip',
-      tipTemplate : function (selector, content) {
-        console.log('called');
-        return '<span data-selector="' + selector + '" class="'
-          + Foundation.libs.tooltips.settings.tooltipClass.substring(1)
-          + '">' + content + '<span class="nub"></span></span>';
-      }
-    });
-  </script>
 </body>

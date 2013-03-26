@@ -71,12 +71,15 @@ table tr th {
   font-weight: normal; }
 
 em,
-i {
+i,
+.italic,
+.form-field-info {
   font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: normal; }
 
 strong,
-b {
+b,
+.bold {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
@@ -127,10 +130,9 @@ label {
 
 .form-field-info {
   display: none;
-  margin-top: -10px;
-  font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  margin-top: -10px; }
 
-.show-form-field-info .form-field-info {
+.show .form-field-info {
   display: block; }
 
 .form-field-info p {

@@ -79,6 +79,30 @@
 		display: none;
 	}
 
+	.gov-pull-down {
+		background: url(images/nys-small.png) no-repeat 4px 4px #036;
+		background-size: 32px 32px;
+		border-radius: 0 0 8px 8px;
+		-webkit-box-shadow: 0 1px 2px #000000;
+		-moz-box-shadow: 0 1px 2px #000000;
+		box-shadow: 0 1px 2px #000000;
+		display: block;
+		height: 40px;
+		margin: -3px 5px 8px;
+		padding: 4px;
+		position: absolute;
+		text-indent: -9999px;
+		top: 5px;
+		width: 44px;
+		z-index: 50;
+
+		transition: top 0.2s ease-in;
+		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: top 0.2s ease-in; /* Opera */
+	}
+
+
 	/* temp font - Helvetica doesn't look great */
 	.gov-bar, .site-bar, h1 {
 		font-family: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -86,12 +110,18 @@
 
 	.gov-bar {
 		background: #036;
+		-webkit-box-shadow: 0 1px 2px #000000;
+		-moz-box-shadow: 0 1px 2px #000000;
+		box-shadow: 0 1px 2px #000000;
 		height: 5px;
+		position: absolute;
 		overflow: hidden;
 		transition: height 0.2s ease-in;
 		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
 		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
 		-o-transition: height 0.2s ease-in; /* Opera */
+		width: 100%;
+		z-index: 40;
 	}
 
 	.gov-bar a {
@@ -117,7 +147,7 @@
 		border: 1px solid #FFF;
 		border-radius: 4px;
 		font-size: 1.1em;
-		margin: 5px 0.4em;
+		margin: 5px 0.2em;
 		padding: 7px 0.7em;
 	}
 
@@ -157,25 +187,67 @@
 	}
 
 
+	.gov-bar form {
+		margin: 3px 0 0 0;
+		padding: 5px;
+		width: 100%;
+	}
+
+	.gov-bar form legend,
+	.gov-bar form label {
+		display: none;
+	}
+
+	.gov-bar form fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.gov-bar input {
+		-webkit-appearance:none;
+		border: 1px solid #808080;
+		padding: 0;
+		display: block;
+		float: left;
+		margin: 0;
+	}
+
+	.gov-bar input[type=search] {
+		border-radius: 5px 0 0 5px;
+		padding-left: 10px;
+		width: 70%;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.gov-bar input[type=submit] {
+		background: #808080;
+		border-color: #808080;
+		border-radius: 0 5px 5px 0;
+		border: 0;
+		color: #FFF;
+		height: 100%;
+		line-height: 2em;
+		width: 30%;
+	}
+
+
 
 	/* Site Header */
 	.site-bar {
-		background: red;
+		background: #666666;
 		height: 48px;
-		position: relative;
-	}
+		position: absolute;
+		top: 5px;
+		width: 100%;
+		z-index: 30;
 
-	.site-bar .gov-pull-down {
-		background: url(images/nys-small.png) no-repeat 4px 4px #036;
-		background-size: 32px 32px;
-		border-radius: 0 0 8px 8px;
-		display: inline-block;
-		float: left;
-		height: 40px;
-		margin: 0 5px 8px;
-		padding: 4px;
-		text-indent: -9999px;
-		width: 44px;
+		transition: top 0.2s ease-in;
+		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: top 0.2s ease-in; /* Opera */
 	}
 
 	.site-bar a.site-logo {
@@ -183,7 +255,7 @@
 		float: left;
 		font-size: 1.1em;
 		font-weight: normal;
-		margin: 0;
+		margin: 0 0 0 50px;
 		padding: 0.5em 0 0 0.5em;
 	}
 
@@ -206,6 +278,10 @@
 		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
 		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
 		-o-transition: height 0.2s ease-in; /* Opera */
+	}
+
+	.site-bar .site-functions .site-search .search-container {
+		height: 32px;
 	}
 
 	.site-bar .site-functions .site-search form {
@@ -234,6 +310,8 @@
 		margin: 0;
 	}
 	.site-bar .site-functions .site-search input[type=search] {
+		border-radius: 5px 0 0 5px;
+		padding-left: 10px;
 		width: 86%;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
@@ -243,7 +321,9 @@
 		background: url(images/search.svg) no-repeat center center #808080;
 		background-size: 24px;
 		border-color: #808080;
+		border-radius: 0 5px 5px 0;
 		border: 0;
+		height: 100%;
 		width: 14%;
 		color: #fff;
 		text-indent: -9999px;
@@ -284,13 +364,14 @@
 	.global-nav {
 		background: #3B3B3B;
 		position: absolute;
+		top: 53px;
 		width: 100%;
 		z-index: 20;
 	}
 
 	.global-nav .nav-container {
 		height: 0;
-		overflow: auto;
+		overflow: hidden;
 		transition: height 0.2s ease-in;
 		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
 		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
@@ -300,6 +381,7 @@
 	.global-nav ul {
 		list-style: none;
 		margin: 0;
+		padding: 0 0 0 .3em;
 	}
 
 	.global-nav ul li {
@@ -322,13 +404,10 @@
 		background: #FFF;
 		height: 100%;
 		position: absolute;
-		z-index: 10
+		top: 53px;
+		z-index: 10;
+		padding: 1em;
 	}
-
-
-	/* 
-	 * Active Mobile State Items
-	 */
 	
 
 	/* Active Govenor Banner */
@@ -336,16 +415,21 @@
 		height: 96px;
 	}
 
-	.active-gov-bar .site-bar .gov-pull-down {
-		background: url(images/close.svg) no-repeat 10px 8px #036;
+	.active-gov-bar .site-bar {
+		top: 96px;
+	}
+
+	.active-gov-bar .gov-pull-down {
+		background: url(images/close-x.svg) no-repeat 10px 8px #036;
 		background-size: 24px 24px;
+		top: 96px;
 	}
 
 
 	/* Active Site Search */
 	.active-site-search .site-bar .mobile-functions .mobile-icons.active,
 	.active-site-menu .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close.svg) no-repeat 12px 12px #3B3B3B;
+		background: url(images/close-x.svg) no-repeat 12px 12px #3B3B3B;
 		background-size: 24px 24px;
 	}
 
@@ -355,7 +439,7 @@
 
 	/* Active Site Menu */
 	.active-site-menu .global-nav .nav-container {
-		height: 320px;
+		height: 364px;
 	}
 
 	/* Utility Classes */
@@ -366,6 +450,10 @@
 
 
 	.gov-bar {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: 0 1px 1px #000000;
+		position: relative;
 		transition: height 0s ease-in;
 		-moz-transition: height 0s ease-in; /* Firefox 4 */
 		-webkit-transition: height 0s ease-in; /* Safari and Chrome */
@@ -419,7 +507,8 @@
 		float: right;
 		font-size: .75em;
 		width: 280px;
-		margin-top: 1px;
+		padding: 0;
+		margin: 2px 5px 0 0;
 	}
 
 	/* Active Gov Bar Search Box */
@@ -434,13 +523,30 @@
 	/* Site Header */
 
 	.site-bar {
-		background: green;
-		height: 72px;
+		background: #666666;
+		height: 90px;
+		position: relative;
+		width: 100%
+	}
+
+	.site-bar,
+	.active-gov-bar .site-bar {
+		top: 0;
+		transition: top 0s ease-in;
+		-moz-transition: top 0s ease-in; /* Firefox 4 */
+		-webkit-transition: top 0s ease-in; /* Safari and Chrome */
+		-o-transition: top 0s ease-in; /* Opera */
+		z-index: 0;
+	}
+
+	.site-bar a.site-logo {
+		font-size: 2em;
+		margin: 0 0 0 .3em;
+		padding: 0.5em 0 0 0;
 	}
 
 	.site-bar .site-functions {
 		height: 100%;
-		position:relative;
 	}
 
 	.site-bar .mobile-functions {
@@ -455,7 +561,7 @@
 		left: auto;
 		right: 0;
 		top: 50%;
-		margin-top: -24px;
+		margin-top: -36px;
 		width: 15em;
 	}
 
@@ -464,6 +570,9 @@
 		height: 48px;
 		overflow: hidden;
 		position: relative;
+		top: 0;
+		margin-top: -24px;
+		border-radius: 4px;
 	}
 
 	.global-nav .nav-container {
@@ -480,9 +589,33 @@
 
 	.page {
 		position: relative;
+		top: 0;
 	}
 
 }
+
+/* Page Lock at 960px */
+@media only screen and (min-width: 60em) {
+	.gov-bar .gov-wrap,
+	.site-bar .site-wrap,
+	.global-nav,
+	.page {
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60em !important;
+	}
+
+	.site-bar .site-wrap {
+		position: relative;
+	}
+
+	.site-bar .site-functions {
+		position: relative;
+	}
+}
+
+
 
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {

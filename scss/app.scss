@@ -58,13 +58,15 @@ table {
 }
 
 em,
-i {
+i,
+.italic {
   font-family: $font-sans-italic;
   font-style: normal;
 }
 
 strong,
-b {
+b,
+.bold {
   font-family: $font-sans-bold;
   font-weight: normal;
 }

@@ -71,12 +71,14 @@ table tr th {
   font-weight: normal; }
 
 em,
-i {
+i,
+.italic {
   font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: normal; }
 
 strong,
-b {
+b,
+.bold {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal; }
 

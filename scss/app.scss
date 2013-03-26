@@ -113,6 +113,15 @@ ul.f-dropdown li {
   padding: 0;
 }
 
+.button small {
+  font-size: 75%;
+}
+
+.button.large {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 // Generic Classes
 
 .no-wrap {

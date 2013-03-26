@@ -8,15 +8,16 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
-
 form {
   margin: 0 0 20px;
 }
+
 fieldset {
   padding: 0;
   margin: 0;
   border: 0;
 }
+
 fieldset legend { /* Need specificity to override Foundation */
   display: block;
   width: 100%;
@@ -28,11 +29,12 @@ fieldset legend { /* Need specificity to override Foundation */
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
+
 legend small {
   font-size: 15px;
   color: #999999;
 }
-/*label,*/
+
 input,
 button,
 select,
@@ -42,10 +44,6 @@ textarea {
   line-height: 20px;
 }
 
-/*label {
-  display: block;
-  margin-bottom: 5px;
-}*/
 select,
 textarea,
 input[type="text"],
@@ -85,13 +83,12 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"],
-input[type="color"],
-.uneditable-input {
+input[type="color"] {
   background-color: #ffffff;
   border: 1px solid #cccccc;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border linear .2s, box-shadow linear .2s;
-  transition: border linear .2s, box-shadow linear .2s;
+          transition: border linear .2s, box-shadow linear .2s;
 }
 
 textarea:focus,
@@ -116,11 +113,10 @@ input[type="color"]:focus,
   /* IE6-9 */
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
 }
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
-  *margin-top: 0;
-  /* IE7 */
   margin-top: 1px \9;
   /* IE8-9 */
   line-height: normal;
@@ -135,23 +131,24 @@ input[type="radio"],
 input[type="checkbox"] {
   width: auto;
 }
+
 select,
 input[type="file"] {
   height: 30px;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size */
-  *margin-top: 4px;
-  /* For IE7, add top margin to align select with labels */
   line-height: 30px;
 }
+
 select {
   width: 220px;
   border: 1px solid #cccccc;
   background-color: #ffffff;
 }
+
 select[multiple],
 select[size] {
   height: auto;
 }
+
 select:focus,
 input[type="file"]:focus,
 input[type="radio"]:focus,
@@ -165,24 +162,29 @@ input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #999999;
 }
+
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #999999;
 }
+
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
 }
+
 .radio,
 .checkbox {
   min-height: 20px;
   padding-left: 20px;
 }
+
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
   float: left;
   margin-left: -20px;
 }
+
 .radio.inline,
 .checkbox.inline {
   display: inline-block;
@@ -190,25 +192,32 @@ textarea::-webkit-input-placeholder {
   margin-bottom: 0;
   vertical-align: middle;
 }
+
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
   margin-left: 10px;
 }
+
 .input-mini {
   width: 60px;
 }
+
 .input-small {
   width: 90px;
 }
+
 .input-medium {
   width: 150px;
 }
+
 .input-large {
   width: 210px;
 }
+
 .input-xlarge {
   width: 270px;
 }
+
 .input-xxlarge {
   width: 530px;
 }
@@ -217,7 +226,6 @@ input,
 textarea {
   margin-left: 0;
 }
-
 
 input[disabled],
 select[disabled],
@@ -228,6 +236,7 @@ textarea[readonly] {
   cursor: not-allowed;
   background-color: #eeeeee;
 }
+
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
 input[type="radio"][readonly],
@@ -240,6 +249,7 @@ input[type="checkbox"][readonly] {
 .error .help-inline {
   color: #b94a48;
 }
+
 .error .checkbox,
 .error .radio,
 .error input,
@@ -247,18 +257,21 @@ input[type="checkbox"][readonly] {
 .error textarea {
   color: #b94a48;
 }
+
 .error input,
 .error select,
 .error textarea {
   border-color: #b94a48;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
+
 .error input:focus,
 .error select:focus,
 .error textarea:focus {
   border-color: #953b39;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
 }
+
 .error .input-prepend .add-on,
 .error .input-append .add-on {
   color: #b94a48;
@@ -278,39 +291,42 @@ select:focus:invalid:focus {
   border-color: #e9322d;
   box-shadow: 0 0 6px #f8b9b7;
 }
+
 .form-actions {
   padding: 19px 20px 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
-  *zoom: 1;
 }
+
 .form-actions:before,
 .form-actions:after {
   display: table;
   content: "";
   line-height: 0;
 }
+
 .form-actions:after {
   clear: both;
 }
+
 .help-block,
 .help-inline {
   color: #595959;
 }
+
 .help-block {
   display: block;
   margin-bottom: 10px;
 }
+
 .help-inline {
   display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-  *zoom: 1;
   vertical-align: middle;
   padding-left: 5px;
 }
+
 .input-append,
 .input-prepend {
   display: inline-block;
@@ -319,6 +335,7 @@ select:focus:invalid:focus {
   font-size: 0;
   white-space: nowrap;
 }
+
 .input-append input,
 .input-prepend input,
 .input-append select,
@@ -331,6 +348,7 @@ select:focus:invalid:focus {
 .input-prepend .popover {
   font-size: 14px;
 }
+
 .input-append input,
 .input-prepend input,
 .input-append select,
@@ -339,10 +357,10 @@ select:focus:invalid:focus {
 .input-prepend .uneditable-input {
   position: relative;
   margin-bottom: 0;
-  *margin-left: 0;
   vertical-align: top;
   border-radius: 0 4px 4px 0;
 }
+
 .input-append input:focus,
 .input-prepend input:focus,
 .input-append select:focus,
@@ -351,6 +369,7 @@ select:focus:invalid:focus {
 .input-prepend .uneditable-input:focus {
   z-index: 2;
 }
+
 .input-append .add-on,
 .input-prepend .add-on {
   display: inline-block;
@@ -366,6 +385,7 @@ select:focus:invalid:focus {
   background-color: #eeeeee;
   border: 1px solid #ccc;
 }
+
 .input-append .add-on,
 .input-prepend .add-on,
 .input-append .btn,
@@ -375,59 +395,71 @@ select:focus:invalid:focus {
   vertical-align: top;
   border-radius: 0;
 }
+
 .input-append .active,
 .input-prepend .active {
   background-color: #a9dba9;
   border-color: #46a546;
 }
+
 .input-prepend .add-on,
 .input-prepend .btn {
   margin-right: -1px;
 }
+
 .input-prepend .add-on:first-child,
 .input-prepend .btn:first-child {
   border-radius: 4px 0 0 4px;
 }
+
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
   border-radius: 4px 0 0 4px;
 }
+
 .input-append input + .btn-group .btn:last-child,
 .input-append select + .btn-group .btn:last-child,
 .input-append .uneditable-input + .btn-group .btn:last-child {
   border-radius: 0 4px 4px 0;
 }
+
 .input-append .add-on,
 .input-append .btn,
 .input-append .btn-group {
   margin-left: -1px;
 }
+
 .input-append .add-on:last-child,
 .input-append .btn:last-child,
 .input-append .btn-group:last-child > .dropdown-toggle {
   border-radius: 0 4px 4px 0;
 }
+
 .input-prepend.input-append input,
 .input-prepend.input-append select,
 .input-prepend.input-append .uneditable-input {
   border-radius: 0;
 }
+
 .input-prepend.input-append input + .btn-group .btn,
 .input-prepend.input-append select + .btn-group .btn,
 .input-prepend.input-append .uneditable-input + .btn-group .btn {
   border-radius: 0 4px 4px 0;
 }
+
 .input-prepend.input-append .add-on:first-child,
 .input-prepend.input-append .btn:first-child {
   margin-right: -1px;
   border-radius: 4px 0 0 4px;
 }
+
 .input-prepend.input-append .add-on:last-child,
 .input-prepend.input-append .btn:last-child {
   margin-left: -1px;
   border-radius: 0 4px 4px 0;
 }
+
 .input-prepend.input-append .btn-group:first-child {
   margin-left: 0;
 }

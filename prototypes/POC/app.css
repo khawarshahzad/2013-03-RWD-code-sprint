@@ -432,7 +432,7 @@
 	/* Active Site Search */
 	.active-site-search .site-bar .mobile-functions .mobile-icons.active,
 	.active-site-menu .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close-x.svg) no-repeat 12px 12px #3B3B3B;
+		background: url(images/close.svg) no-repeat 12px 12px #3B3B3B;
 		background-size: 24px 24px;
 	}
 

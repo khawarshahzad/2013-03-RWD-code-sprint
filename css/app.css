@@ -114,3 +114,7 @@ legend {
     margin-right: 0.5em; }
   .rt-table-dropdown label {
     display: inline-block; }
+
+.rt-table-menu > a.button {
+  padding-bottom: 0.9375em;
+  padding-top: 1.125em; }

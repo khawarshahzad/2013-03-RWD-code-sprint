@@ -53,14 +53,10 @@
 	}
 
 	.off-canvas .global-nav .menu-controls .menu-back {
-		background: url(images/menu-back.svg) no-repeat 12px 14px transparent;
-		background-size: 24px;
 		color: #FFF;
 		float: right;
-		height: 53px;
-		text-indent: -9999px;
+		padding: 17px;
 		visibility: hidden;
-		width: 53px;
 	}
 
 	.off-canvas.active-sub-menu .global-nav .menu-controls .menu-back {

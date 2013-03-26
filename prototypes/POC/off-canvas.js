@@ -5,7 +5,7 @@
 $(document).ready(function(){
 
 	// Add control div to the top of the global nav element
-	$('<div id="menu-controls" class="menu-controls"><a href="#" id="menu-back" class="menu-back">Back</a></div>').prependTo('#global-nav')
+	$('<div id="menu-controls" class="menu-controls"><a href="#" id="menu-back" class="menu-back icon-left-open">Back</a></div>').prependTo('#global-nav')
 
 	// Find the global Dom and look for all a that have a child ul
 	var rootMenu = $('#global-nav').find('a[href="#"]');

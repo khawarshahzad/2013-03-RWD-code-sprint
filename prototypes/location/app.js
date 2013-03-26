@@ -4,15 +4,22 @@ $(document).ready(function(){
   var $img = $('#map');
 
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function show_map(position) {
-      console.log(position);
-      var latitude = position.coords.latitude;
-      var longitude = position.coords.longitude;
-      $img.attr('src', 'http://maps.googleapis.com/maps/api/staticmap?center=' + latitude + ',' + longitude + '&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C' + latitude + ',' + longitude + '&sensor=false');
-    }, showDefaultMap('You\'re not allowing your location to be found.'));
+    navigator.geolocation.getCurrentPosition(
+      // Success:
+      show_map,
+      // Failure:
+      showDefaultMap('Could not find your location.')
+    );
   }
   else {
     showDefaultMap();
+  }
+
+  function show_map(position) {
+    var latitude = position.coords.latitude,
+        longitude = position.coords.longitude;
+    $('#status').html('You are at ' + latitude + ', ' + longitude);
+    $img.attr('src', 'http://maps.googleapis.com/maps/api/staticmap?center=' + latitude + ',' + longitude + '&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C' + latitude + ',' + longitude + '&sensor=false');
   }
 
   function showDefaultMap(msg) {

@@ -15,10 +15,8 @@
 		width: 100%;
 		z-index: 500;
 
-		transition: top 0.2s ease-in;
-		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
 		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
-		-o-transition: top 0.2s ease-in; /* Opera */
+		transition: top 0.2s ease-in;
 	}
 
 	.off-canvas .global-nav {
@@ -46,10 +44,8 @@
 	.off-canvas.active-site-menu .page {
 		position: fixed;
 		left: -85%;
-		transition: left 0.2s ease-in;
-		-moz-transition: left 0.2s ease-in; /* Firefox 4 */
 		-webkit-transition: left 0.2s ease-in; /* Safari and Chrome */
-		-o-transition: left 0.2s ease-in; /* Opera */
+		transition: left 0.2s ease-in;
 	}
 
 	.off-canvas.active-site-menu .global-nav {

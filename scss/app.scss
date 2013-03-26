@@ -1,3 +1,4 @@
+@import "foundation/foundation-global";
 @import "fonts";
 
 $font-sans-fallback: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -117,5 +118,10 @@ legend {
   label {
     display: inline-block;
   }
+}
+
+.rt-table-menu > a.button {
+  padding-bottom: emCalc(15px);
+  padding-top: emCalc(18px);
 }
 

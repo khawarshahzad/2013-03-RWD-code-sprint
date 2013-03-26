@@ -1,4 +1,90 @@
 @import "foundation/foundation-global";
+@import "fonts";
+
+$font-sans-fallback: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-sans: "SourceSansPro", $font-sans-fallback;
+$font-sans-bold: "SourceSansProBold", $font-sans-fallback;
+$font-sans-italic: "SourceSansProItalic", $font-sans-fallback;
+$font-sans-bold-italic: "SourceSansProBoldItalic", $font-sans-fallback;
+$font-serif: "Merriweather", Georgia, serif;
+
+// Foundation Overrides
+
+body {
+  font-family: $font-sans;
+}
+
+input, select, textarea {
+  font-family: $font-sans;
+}
+
+button,
+.button {
+  font-family: $font-sans;
+  font-weight: normal !important;
+  border-radius: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-serif;
+  font-weight: normal;
+}
+
+p {
+  font-family: $font-sans;
+}
+
+ul, ol, dl {
+  font-family: $font-sans;
+}
+
+table {
+
+  thead,
+  tfoot {
+    tr {
+      th {
+        font-family: $font-sans-bold;
+        font-weight: normal;
+      }
+    }
+  }
+
+  tr {
+    th {
+      font-family: $font-sans-bold;
+      font-weight: normal;
+    }
+  }
+}
+
+em,
+i,
+.italic {
+  font-family: $font-sans-italic;
+  font-style: normal;
+}
+
+strong,
+b,
+.bold {
+  font-family: $font-sans-bold;
+  font-weight: normal;
+}
+
+strong em,
+em strong {
+  font-family: $font-sans-bold-italic;
+  font-style: normal;
+  font-weight: normal;
+}
+
+legend {
+  font-family: $font-sans-bold;
+  font-weight: normal;
+}
+
+// Generic Classes
 
 .no-wrap {
   white-space: nowrap;
@@ -7,3 +93,35 @@
 .list-bullets-inside {
   list-style-position: inside;
 }
+
+.list-bullets-none {
+  list-style: none outside none;
+}
+
+.padding-sides-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+// Responsive tables
+
+.rt-table-dropdown {
+  max-width: 300px !important;
+
+  li {
+    padding: 1em;
+  }
+  input {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+  label {
+    display: inline-block;
+  }
+}
+
+.rt-table-menu > a.button {
+  padding-bottom: emCalc(15px);
+  padding-top: emCalc(18px);
+}
+

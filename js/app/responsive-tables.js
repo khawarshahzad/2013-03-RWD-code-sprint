@@ -154,7 +154,7 @@ jQuery.fn.reverse = [].reverse;
           $dropdown = $('<div class="rt-table-menu" id="' + tableId + '-check-container"></div>');
           $dropdown.insertBefore($table);
         }
-        $dropdown.prepend('<a href="#" data-dropdown="drop-' + tableId + '" class="small button dropdown radius">Columns</a>');
+        $dropdown.prepend('<a href="#" data-dropdown="drop-' + tableId + '" class="small button secondary dropdown radius">Columns</a>');
         $dropdown.append('<ul id="drop-' + tableId + '" class="f-dropdown rt-table-dropdown"></ul>');
       }
 
@@ -209,9 +209,9 @@ jQuery.fn.reverse = [].reverse;
 
         // Create the hide/show toggles
         if ($dropdown && !$th.is('.rt-persist') ) {
-          var $toggle = $('<li><input type="checkbox" name="toggle-cols" id="toggle-col-' + i +
-                          '" value="' + id + '"><label for="toggle-col-' + i +
-                          '">' + $th.text() + '</label></li>');
+          var $toggle = $('<li><label for="toggle-col-' + i + '">' +
+                          '<input type="checkbox" name="toggle-cols" id="toggle-col-' + i + '" value="' + id + '">' +
+                          ' ' + $th.text() + '</label></li>');
 
           $dropdown.find('ul').append($toggle);
 

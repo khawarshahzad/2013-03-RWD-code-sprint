@@ -40,7 +40,7 @@
 		height: 100%;
 		left: 100%;
 		position: fixed;
-		top: 0;
+		top: 53px;
 		width: 100%;
 		background: #3B3B3B;
 
@@ -48,11 +48,26 @@
 		transition: left 0.2s ease-in;
 	}
 
-	.off-canvas .global-nav .menu-contorls {
+	.off-canvas .global-nav .menu-controls {
 		height: 53px;
 	}
 
-	.off-canvas .global-nav .active-sub-menu {
+	.off-canvas .global-nav .menu-controls .menu-back {
+		background: url(images/menu-back.svg) no-repeat 12px 14px transparent;
+		background-size: 24px;
+		color: #FFF;
+		float: right;
+		height: 53px;
+		text-indent: -9999px;
+		visibility: hidden;
+		width: 53px;
+	}
+
+	.off-canvas.active-sub-menu .global-nav .menu-controls .menu-back {
+		visibility: visible;
+	}
+
+	.off-canvas .global-nav .active-menu {
 		left: 0;
 	}
 
@@ -106,6 +121,10 @@
 
 	.off-canvas .global-nav {
 		height: 48px;
+	}
+
+	.off-canvas .global-nav .menu-contorls {
+		display: none;
 	}
 
 	.off-canvas .global-nav .nav-container,

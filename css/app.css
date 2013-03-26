@@ -59,6 +59,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
+ul, ol, dl {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
 table thead tr th,
 table tfoot tr th {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -92,21 +95,6 @@ legend {
 
 .list-bullets-inside {
   list-style-position: inside; }
-
-/* lightbox */
-.lbox-no-list
-{
-	list-style-type: none;
-	display:block;
-}
-.lbox-no-list li
-{
-	float:left;
-	padding-right:5px;
-	
-	display: list-item;
-	text-align: -webkit-match-parent;
-}
 
 .rt-table-dropdown {
   max-width: 300px !important; }

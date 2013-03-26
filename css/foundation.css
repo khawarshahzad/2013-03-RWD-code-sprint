@@ -3786,7 +3786,8 @@ table {
   .f-dropdown li {
     font-size: 0.875em;
     cursor: pointer;
-    padding: 0.3125em 0.625em;
+    /* NYS DTF remove (add padding to label instead) */
+    /*padding: 0.3125em 0.625em;*/
     line-height: 1.125em;
     margin: 0; }
     .f-dropdown li:hover, .f-dropdown li:focus {

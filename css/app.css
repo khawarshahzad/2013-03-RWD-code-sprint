@@ -108,12 +108,13 @@ legend {
 .rt-table-dropdown {
   max-width: 300px !important; }
   .rt-table-dropdown li {
-    padding: 1em; }
+     }
   .rt-table-dropdown input {
     display: inline-block;
     margin-right: 0.5em; }
   .rt-table-dropdown label {
-    display: inline-block; }
+    display: block; 
+    padding: 1em; }
 
 .rt-table-menu > a.button {
   padding-bottom: 0.9375em;

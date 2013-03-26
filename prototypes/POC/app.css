@@ -214,7 +214,6 @@
 
 	.site-bar .site-functions {
 		overflow: auto;
-		position: relative;
 	}
 
 	.site-bar .site-functions .site-search {
@@ -481,6 +480,7 @@
 		background: #666666;
 		height: 90px;
 		position: relative;
+		width: 100%
 	}
 
 	.site-bar,

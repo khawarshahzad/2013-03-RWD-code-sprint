@@ -8,7 +8,6 @@ window.resbook = {};
         devices = null,
         close = null,
         keyboard = null,
-        refreshBtn = null,
         body = null,
         size = null,
         auto = true,
@@ -17,31 +16,15 @@ window.resbook = {};
         sizes = {
             smartphonePortrait: [320, 480],
             smartphoneLandscape: [480, 320],
-            tabletPortrait: [1024, 768],
-            tabletLandscape: [768, 1024],
+            tabletPortrait: [768, 1024],
+            tabletLandscape: [1024, 768],
             auto: 'auto'
-        }, refreshCss = function (disable) {
-            var ifrm = d.querySelector('#wrapper iframe');
-            ifrm = (ifrm.contentWindow) ? ifrm.contentWindow : (ifrm.contentDocument.document) ? ifrm.contentDocument.document : ifrm.contentDocument;
-            var b = ifrm.document.querySelector('body');
-            if (disable) {
-                var el = ifrm.document.getElementById('cssrefresh');
-                if (el) {
-                    el.parentNode.removeChild(el);
-                    b.classList.remove('cssrefresh')
-                }
-            } else {
-                var t = ifrm.document.createTextNode("(function(){var script=document.createElement('script');script.setAttribute('src','js/cssrefresh.js');script.setAttribute('id','cssrefresh');var head=document.getElementsByTagName('head');head[0].appendChild(script)})()"),
-                    s = ifrm.document.createElement("script");
-                b.classList.add('cssrefresh');
-                s.appendChild(t);
-                ifrm.document.body.appendChild(s)
-            }
         }, resize = function (w, h, f) {
             w = w || wrapper.clientWidth;
             h = h || wrapper.clientHeight;
-            size.innerHTML = w + 'x' + h
-        }, setPosition = function (wh, t, cl) {
+            f = f || "Desktop";
+            size.innerHTML = f//w + 'x' + h
+        }, setPosition = function (wh, t, cl, myTxt) {
             var width = (wh == 'auto') ? w.innerWidth : wh[0],
                 height = (wh == 'auto') ? w.innerHeight : wh[1],
                 style = 'width:' + width + 'px;height:' + height + 'px;margin-top:20px;';
@@ -50,7 +33,7 @@ window.resbook = {};
             wrapper.setAttribute('style', style);
             wrapper.setAttribute('data-device', cl);
             body.setAttribute('style', 'min-height:' + height + 'px;min-width:' + width + 'px;');
-            resize(width, height);
+            resize(width, height, myTxt);
             if (wh === 'auto' && !t) {
                 isResized = false;
                 setTimeout(function () {
@@ -70,18 +53,12 @@ window.resbook = {};
             }, 60)
         };
     rb.changeUrl = function (u, t) {
-        d.title = t + ' - Responsive test';
+        d.title = t;
         if (history.pushState) {
             try {
                 history.pushState({}, "New Page", u)
             } catch (e) {}
         }
-        if (refreshBtn.classList.contains('active')) {
-            refreshCss()
-        } else {
-            refreshCss(true)
-        }
-
     };
     readyElement('wrapper', function () {
         wrapper = d.getElementById('wrapper');
@@ -89,12 +66,9 @@ window.resbook = {};
         size = d.getElementById('size');
         close = d.querySelector('.close a');
         keyboard = d.querySelector('.keyboard a');
-        refreshBtn = d.querySelector('.cssrefresh a');
         body = d.querySelector('body');
         if (window.chrome || (window.getComputedStyle && !window.globalStorage && !window.opera)) {}
-        if (w.location.protocol !== 'http:') {
-            refreshBtn.setAttribute('style', 'display:none')
-        }[].forEach.call(document.querySelectorAll('#devices a'), function (el) {
+        [].forEach.call(document.querySelectorAll('#devices a'), function (el) {
             el.addEventListener('click', function (e) {
                 [].forEach.call(document.querySelectorAll('#devices a'), function (el) {
                     el.classList.remove('active')
@@ -106,20 +80,20 @@ window.resbook = {};
                 isAnimated = true;
                 if (isResized === false) {
                     isResized = true;
-                    setPosition(sizes.auto, true)
+                    setPosition(sizes.auto, true, 'auto', 'auto')
                 }
                 setTimeout(function () {
                     self.classList.add('active');
                     if (self.classList.contains('smartphone-portrait')) {
-                        setPosition(sizes.smartphonePortrait, false, 'smartphonePortrait')
+                        setPosition(sizes.smartphonePortrait, false, 'smartphonePortrait', "Phone Portrait")
                     } else if (self.classList.contains('smartphone-landscape')) {
-                        setPosition(sizes.smartphoneLandscape, false, 'smartphoneLandscape')
+                        setPosition(sizes.smartphoneLandscape, false, 'smartphoneLandscape', "Phone Landscape")
                     } else if (self.classList.contains('tablet-portrait')) {
-                        setPosition(sizes.tabletPortrait, false, 'tabletPortrait')
+                        setPosition(sizes.tabletPortrait, false, 'tabletPortrait', "Tablet Portrait")
                     } else if (self.classList.contains('tablet-landscape')) {
-                        setPosition(sizes.tabletLandscape, false, 'tabletLandscape')
+                        setPosition(sizes.tabletLandscape, false, 'tabletLandscape', "Tablet Landscape")
                     } else if (self.classList.contains('auto')) {
-                        setPosition(sizes.auto, false, 'auto')
+                        setPosition(sizes.auto, false, 'auto', "Desktop")
                     }
                 }, 10)
             })
@@ -129,16 +103,6 @@ window.resbook = {};
             e.stopPropagation();
             keyboard.classList.toggle('active');
             wrapper.classList.toggle('keyboard')
-        }, false);
-        refreshBtn.addEventListener('click', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            refreshBtn.classList.toggle('active');
-            if (refreshBtn.classList.contains('active')) {
-                refreshCss()
-            } else {
-                refreshCss(true)
-            }
         }, false);
         w.addEventListener('resize', function () {
             resize()
@@ -153,7 +117,7 @@ window.resbook = {};
                     53: 'auto'
                 };
             if (typeof (keys[key]) == 'undefined') return false;
-            setPosition(sizes[keys[key]], false, keys[key])
+            setPosition(sizes[keys[key]], false, keys[key], "auto")
         }, false);
         resize();
         size.style.minWidth = 0

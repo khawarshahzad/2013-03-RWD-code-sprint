@@ -96,6 +96,9 @@ legend {
 .list-bullets-inside {
   list-style-position: inside; }
 
+.list-bullets-none {
+  list-style: none outside none; }
+
 .rt-table-dropdown {
   max-width: 300px !important; }
   .rt-table-dropdown li {

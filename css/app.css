@@ -108,3 +108,19 @@ legend {
     margin-right: 0.5em; }
   .rt-table-dropdown label {
     display: inline-block; }
+    
+
+/* lightbox */
+.lbox-no-list
+{
+  list-style-type: none;
+	display:block;
+}
+.lbox-no-list li
+{
+	float:left;
+	padding-right:5px;
+	
+	display: list-item;
+	text-align: -webkit-match-parent;
+}

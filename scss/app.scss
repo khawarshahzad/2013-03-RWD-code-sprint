@@ -95,6 +95,11 @@ legend {
   list-style: none outside none;
 }
 
+.padding-sides-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 // Responsive tables
 
 .rt-table-dropdown {

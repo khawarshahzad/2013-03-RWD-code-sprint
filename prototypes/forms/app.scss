@@ -2,9 +2,7 @@
 @import "../../scss/foundation/foundation-global";
 
 label {
-  // float: left;
   display: inline-block;
-  // padding-right: 0.75em;
   position: relative;
 }
 
@@ -14,16 +12,16 @@ label {
   position: absolute;
   top: 0;
   right: -10px;
-  color: #{$alert-color}; //#f30;
+  color: #{$alert-color};
 }
 
 .form-field-info {
   display: none;
   margin-top: -10px;
-  font-family: $font-sans-italic;
+  @extend .italic;
 }
 
-.show-form-field-info .form-field-info {
+.show .form-field-info {
   display: block;
 }
 

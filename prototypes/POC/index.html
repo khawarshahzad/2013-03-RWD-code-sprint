@@ -11,55 +11,67 @@
 		<script src="../../js/vendor/custom.modernizr.js"></script>
 	</head>
 	<body>
-		<a href="#" class="skip-to">Skip to Navigation</a>
-		<a href="#" class="skip-to">Skip to Content</a>
+		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
+		<a href="#page" class="skip-to">Skip to Content</a>
+		<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
+			Open New York State Search
+		</a>
 		<div id="gov-bar" class="gov-bar">
-			<div class="state-links">
-				<a href="#" class="gov-link-1">
-					New York State
+			<div class="gov-wrap">
+				<div class="state-links">
+					<a href="#" class="gov-link-1">
+						New York State
+					</a>
+					<a href="#" class="gov-link-2">
+						State Agencies
+					</a>
+				</div>
+				<a href="#" id="gov-link-3" class="gov-link-3">
+					Search all of NY.gov
 				</a>
-				<a href="#" class="gov-link-2">
-					Agencies Lists
-				</a>
+				<form action="/">
+					<fieldset>
+						<legend>Legend</legend>
+						<label for="site-search-box">Search</label>
+						<div class="search-container">
+							<input type="search" />
+							<input type="submit" value="Search NY"  />
+						</div>
+					</fieldset>
+				</form>	
 			</div>
-			<a href="#" id="gov-link-3" class="gov-link-3">
-				Search all of NY.gov
-			</a>
-			<form>
-				<input type="text" class="gov-search-box" />
-				<input type="submit" value="Search NY" class="gov-search-button" />
-			</form>
 		</div>
 		<div id="site-bar" class="site-bar">
-			<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
-				Open New York State Search
-			</a>
-			<a class="site-logo">
-				NYS State Agency
-			</a>
-			<div class="site-functions">
-				<ul class="mobile-functions">
-					<li>
-						<a href="#" id="mobile-site-search" class="mobile-icons mobile-search-buttton" data-active="active-site-search">
-							Search Toggle
-						</a>
-					</li>
-					<li>
-						<a href="#" id="mobile-site-menu" class="mobile-icons mobile-menu-button" data-active="active-site-menu">
-							Menu Toggle
-						</a>
-					</li>
-				</ul>
-				<!-- Link to show the menu -->
-				<div class="site-search">
-					<form action="/">
-						<fieldset>
-							<legend>Legend</legend>
-							<label for="site-search-box">Search</label>
-							<input type="search" id="site-search-box" class="site-search-box" />
-							<input type="submit" class="site-search-button" value="Search Agency"  />
-						</fieldset>
-					</form>		
+			<div class="site-wrap">
+				<a class="site-logo">
+					NYS State Agency
+				</a>
+				<div class="site-functions">
+					<ul class="mobile-functions">
+						<li>
+							<a href="#" id="mobile-site-search" class="mobile-icons mobile-search-buttton" data-active="active-site-search">
+								Search Toggle
+							</a>
+						</li>
+						<li>
+							<a href="#" id="mobile-site-menu" class="mobile-icons mobile-menu-button" data-active="active-site-menu">
+								Menu Toggle
+							</a>
+						</li>
+					</ul>
+					<!-- Link to show the menu -->
+					<div class="site-search">
+						<form action="/">
+							<fieldset>
+								<legend>Legend</legend>
+								<label for="site-search-box">Search</label>
+								<div class="search-container">
+									<input type="search" id="site-search-box" class="site-search-box" />
+									<input type="submit" class="site-search-button" value="Search Agency"  />
+								</div>
+							</fieldset>
+						</form>		
+					</div>
 				</div>
 			</div>
 		</div>
@@ -94,12 +106,16 @@
 			<div class="content-section">
 
 				<div class="row">
+
+					<h1>Title</h1>
 					<p>
 						Bacon ipsum dolor sit amet pork loin pancetta frankfurter, pork swine ham hock doner pork belly andouille flank beef ribs biltong meatloaf. Corned beef tenderloin ball tip leberkas beef swine, pastrami kielbasa flank. Chuck frankfurter tenderloin venison, swine turkey pork chop cow rump turducken ball tip corned beef. Pork flank ball tip chicken shankle shoulder.
 					</p>
 					<p>
 						Cow pig meatloaf spare ribs biltong beef ribs, prosciutto short loin. Prosciutto turducken shank, meatloaf pastrami tongue ball tip corned beef boudin. Pork t-bone bacon ribeye frankfurter. Chuck turkey swine ball tip sirloin, shoulder t-bone ground round pork meatball capicola. Sirloin turkey ribeye kielbasa pastrami fatback, pork chop cow.
 					</p>
+
+					<h2>Heading 2</h2>
 					<p>
 						Bacon corned beef pig, prosciutto filet mignon turkey jowl. Bresaola pork strip steak turkey jerky ball tip. Pork belly swine kielbasa capicola drumstick rump filet mignon pig beef ribs t-bone. Corned beef chuck filet mignon spare ribs.
 					</p>

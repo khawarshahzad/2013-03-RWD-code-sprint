@@ -423,7 +423,7 @@
 	}
 
 	.active-gov-bar .gov-pull-down {
-		background: url(images/close-x.svg) no-repeat 10px 8px #036;
+		background: url(images/close.svg) no-repeat 10px 8px #036;
 		background-size: 24px 24px;
 		top: 96px;
 	}

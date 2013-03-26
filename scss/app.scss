@@ -91,6 +91,10 @@ legend {
   list-style-position: inside;
 }
 
+.list-bullets-none {
+  list-style: none outside none;
+}
+
 // Responsive tables
 
 .rt-table-dropdown {

@@ -187,7 +187,7 @@ body>section {
   -webkit-transform: translate3d(0, 0, 0);
   color: #EEE;
   border: 1px solid #040404;
-  text-transform: uppercase;
+  xtext-transform: uppercase;
   text-align: center;
   padding: 9px 12px 7px;
   margin: 9px 0 0 8px;
@@ -242,7 +242,7 @@ header .keyboard a,.cssrefresh a,.close a {
   height: 30px;
   outline: none;
   line-height: 30px;
-  text-transform: uppercase;
+  xtext-transform: uppercase;
   font-size: 16px;
   text-align: center;
 }
@@ -393,7 +393,7 @@ header .keyboard a,header .cssrefresh a {
 #devices .auto span {
   text-indent: 0;
   line-height: 30px;
-  text-transform: uppercase;
+  xtext-transform: uppercase;
   font-size: 14px;
   margin: 0 auto;
   width:80px;
@@ -434,12 +434,14 @@ header .keyboard a,header .cssrefresh a {
 .joyride-tip-guide {
   display: none;
   position: absolute;
-  background: black;
-  color: white;
+  background: #DEDEDE!important;
+  color: #333!important;
   z-index: 101;
-  top: 0;
+  top: 60px!important;
   left: 2.5%;
   font-family: inherit;
+  text-shadow:none!important;
+  box-shadow:0 0 4px #666;
   font-weight: normal;
   width: 95%; }
 
@@ -463,7 +465,7 @@ header .keyboard a,header .cssrefresh a {
   height: 0;
   border: solid 14px; }
   .joyride-tip-guide .joyride-nub.top {
-    border-color: black;
+    border-color: #DEDEDE!important;
     border-top-color: transparent !important;
     border-left-color: transparent !important;
     border-right-color: transparent !important;
@@ -491,7 +493,7 @@ header .keyboard a,header .cssrefresh a {
   line-height: 1.25;
   margin: 0;
   font-weight: bold;
-  color: white; }
+  color: #333!important; }
 
 .joyride-tip-guide p {
   margin: 0 0 1.125em 0;

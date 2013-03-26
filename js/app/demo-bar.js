@@ -1,4 +1,4 @@
-$(window).load(function(){
+$(function(){
   if ( parent.$("#devices").length <=0 ) {
     javascript:void(
       (function(){

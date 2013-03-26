@@ -147,7 +147,7 @@
 		border: 1px solid #FFF;
 		border-radius: 4px;
 		font-size: 1.1em;
-		margin: 5px 0.4em;
+		margin: 5px 0.2em;
 		padding: 7px 0.7em;
 	}
 
@@ -184,6 +184,53 @@
 	.gov-bar input {
 		border-radius: 4px;
 		margin: 0;
+	}
+
+
+	.gov-bar form {
+		margin: 3px 0 0 0;
+		padding: 5px;
+		width: 100%;
+	}
+
+	.gov-bar form legend,
+	.gov-bar form label {
+		display: none;
+	}
+
+	.gov-bar form fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.gov-bar input {
+		-webkit-appearance:none;
+		border: 1px solid #808080;
+		padding: 0;
+		display: block;
+		float: left;
+		margin: 0;
+	}
+
+	.gov-bar input[type=search] {
+		border-radius: 5px 0 0 5px;
+		padding-left: 10px;
+		width: 70%;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.gov-bar input[type=submit] {
+		background: #808080;
+		border-color: #808080;
+		border-radius: 0 5px 5px 0;
+		border: 0;
+		color: #FFF;
+		height: 100%;
+		line-height: 2em;
+		width: 30%;
 	}
 
 
@@ -263,6 +310,7 @@
 		margin: 0;
 	}
 	.site-bar .site-functions .site-search input[type=search] {
+		border-radius: 5px 0 0 5px;
 		padding-left: 10px;
 		width: 86%;
 		-moz-box-sizing: border-box;
@@ -273,6 +321,7 @@
 		background: url(images/search.svg) no-repeat center center #808080;
 		background-size: 24px;
 		border-color: #808080;
+		border-radius: 0 5px 5px 0;
 		border: 0;
 		height: 100%;
 		width: 14%;
@@ -462,7 +511,8 @@
 		float: right;
 		font-size: .75em;
 		width: 280px;
-		margin-top: 1px;
+		padding: 0;
+		margin: 2px 5px 0 0;
 	}
 
 	/* Active Gov Bar Search Box */

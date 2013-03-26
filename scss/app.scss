@@ -1,4 +1,7 @@
 @import "foundation/foundation-global";
+@import "bootstrap/forms";
+@import "bootstrap/tables";
+@import "bootstrap/buttons";
 @import "fonts";
 
 $font-sans-fallback: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -14,7 +17,24 @@ body {
   font-family: $font-sans;
 }
 
-input, select, textarea {
+select,
+textarea,
+button,
+input, // Need to list all of these types to override Foundation's specificity
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
   font-family: $font-sans;
 }
 
@@ -22,7 +42,7 @@ button,
 .button {
   font-family: $font-sans;
   font-weight: normal !important;
-  border-radius: 3px;
+  // border-radius: 3px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,6 +104,11 @@ legend {
   font-weight: normal;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 // Generic Classes
 
 .no-wrap {
@@ -119,9 +144,3 @@ legend {
     display: inline-block;
   }
 }
-
-.rt-table-menu > a.button {
-  padding-bottom: emCalc(15px);
-  padding-top: emCalc(18px);
-}
-

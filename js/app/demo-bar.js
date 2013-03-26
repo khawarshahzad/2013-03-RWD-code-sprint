@@ -20,29 +20,25 @@ $(function(){
         '  <a href="#" id="desktop-view" class="auto active"><span>Desktop<\/span><\/a>' +
         '  <\/div><\/header><section><div id="wrapper"><iframe src="'+d.URL+'" onLoad="resbook.changeUrl(this.contentWindow.location,this.contentDocument.title);"><\/iframe><span class="keyboard-bg"><\/span><\/div><\/section><ol class="joyride-list" data-joyride>'+
         '  <li data-button="Next">'+
-        '   <h4>Welcome to the demo!<\/h4>'+
+        '   <h4>Getting Started!<\/h4>'+
         '   <p>This tutorial will teach you how to use the "Resize Bar" available throughout the demo site.<\/p>'+
         '  <\/li>'+
         '  <li data-id="devices">'+
         '   <h4>Choose a Device<\/h4>'+
-        '   <p>Click any of these buttons to see how this site would look on a mobile device.<\/p><p>Go ahead, click one now.<\/p>'+
+        '   <p>Click any of these buttons to see how this site would look on various devices.<\/p><p><strong>Go ahead, click one now!<\/strong><\/p>'+
         '  <\/li>'+
         '  <li data-button="Next">'+
-        '   <h4>What happened?<\/h4>'+
+        '   <h4>Notice a Difference?<\/h4>'+
         '   <p>You are now viewing the same page at a smaller size.<\/p>'+
         '  <\/li>'+
-        '  <li data-id="size" data-button="Next">'+
-        '   <p>This is your current viewing device.<\/p>'+
-        '   <p>It will update for each device you click in the list.<\/p>'+
-        '  <\/li>'+
         '  <li data-id="keyboard" data-button="Next">'+
-        '   <h4>Keyboard Overlay<\/h4>'+
-        '   <p>Clicking this button will toggle a keyboard overlay onto the page.<\/p>'+
+        '   <h4>Show a Keyboard<\/h4>'+
+        '   <p>Clicking this button will show/hide a keyboard overlay.<\/p>'+
         '  <\/li>'+
-        '  <li data-id="desktop-view" data-button="Done!">'+
+        '  <li data-id="desktop-view" data-button="Close">'+
         '   <h4>Desktop View<\/h4>'+
-        '   <p>Click the "Desktop" button to go back to full screen mode.<\/p>'+
-        '   <p>Congrats on completing the tutorial!<\/p>'+
+        '   <p>Clicking "Desktop" will bring you back to full screen mode.<\/p>'+
+        '   <p>Go ahead and explore the Responsive demos now!<\/p>'+
         '  <\/li>'+
         '  </ol>  <script src="..\/..\/js\/vendor\/jquery.js"><\/script>'+
         '<script src="..\/..\/js\/foundation\/foundation.js"><\/script>'+

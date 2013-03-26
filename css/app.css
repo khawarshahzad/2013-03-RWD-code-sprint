@@ -919,6 +919,11 @@ ul.f-dropdown li {
   padding-left: 1.5em;
   padding-right: 1.5em; }
 
+.dropdown.button.tiny:before,
+.dropdown.button.small:before,
+.dropdown.button.large:before {
+  border-color: black transparent transparent transparent; }
+
 .no-wrap {
   white-space: nowrap; }
 
@@ -941,7 +946,10 @@ ul.f-dropdown li {
     display: block;
     padding: 1em; }
 
-.rt-table-menu > a.button {
+.rt-table-menu + table {
+  margin-top: 1em; }
+
+.touch .rt-table-menu > a.button {
   padding-bottom: 0.9375em;
   padding-top: 1.125em; }
 
@@ -964,12 +972,7 @@ ul.f-dropdown li {
 
 #wrapper {
   -webkit-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
-  -moz-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
-  -ms-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
-  -o-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
   transition: height 240ms ease, width 240ms ease, margin 240ms ease;
-  -webkit-box-shadow: 0 0 12px 1px black;
-  -moz-box-shadow: 0 0 12px 1px black;
   box-shadow: 0 0 12px 1px black;
   -webkit-transform: translate3d(0, 0, 0);
   position: relative;
@@ -991,9 +994,6 @@ ul.f-dropdown li {
 
 #wrapper.noTransitions {
   -webkit-transition: 0;
-  -moz-transition: 0;
-  -ms-transition: 0;
-  -o-transition: 0;
   transition: 0; }
 
 #wrapper .keyboard-bg {
@@ -1035,14 +1035,8 @@ ul.f-dropdown li {
   padding-bottom: 307px; }
 
 body > header {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(52, 52, 52, 0.75)), color-stop(100%, rgba(36, 36, 36, 0.75)));
   background: -webkit-linear-gradient(rgba(52, 52, 52, 0.75), rgba(36, 36, 36, 0.75));
-  background: -moz-linear-gradient(rgba(52, 52, 52, 0.75), rgba(36, 36, 36, 0.75));
-  background: -o-linear-gradient(rgba(52, 52, 52, 0.75), rgba(36, 36, 36, 0.75));
-  background: -ms-linear-gradient(rgba(52, 52, 52, 0.75), rgba(36, 36, 36, 0.75));
   background: linear-gradient(rgba(52, 52, 52, 0.75), rgba(36, 36, 36, 0.75));
-  -webkit-box-shadow: inset 0 1px 0 #5f6164, inset 0 -1px 0 #2e2f2f, 0 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 1px 0 #5f6164, inset 0 -1px 0 #2e2f2f, 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 0 #5f6164, inset 0 -1px 0 #2e2f2f, 0 1px 3px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -1062,25 +1056,14 @@ body > section {
 
 #size {
   -webkit-transition: padding 240ms ease;
-  -moz-transition: padding 240ms ease;
-  -ms-transition: padding 240ms ease;
-  -o-transition: padding 240ms ease;
   transition: padding 240ms ease;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #202021), color-stop(100%, #222223));
   background-image: -webkit-linear-gradient(#202021, #222223);
-  background-image: -moz-linear-gradient(#202021, #222223);
-  background-image: -o-linear-gradient(#202021, #222223);
-  background-image: -ms-linear-gradient(#202021, #222223);
   background-image: linear-gradient(#202021, #222223);
-  -webkit-box-shadow: 0 1px 0 #363738;
-  -moz-box-shadow: 0 1px 0 #363738;
   box-shadow: 0 1px 0 #363738;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
   color: #EEE;
   border: 1px solid #040404;
   xtext-transform: uppercase;
@@ -1098,10 +1081,6 @@ body > section {
     padding-left: 6px;
     padding-right: 6px; } }
 header .keyboard, .cssrefresh, .close {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   color: #EEE;
   position: absolute;
@@ -1111,19 +1090,9 @@ header .keyboard, .cssrefresh, .close {
   border: 1px solid #363738; }
 
 header .keyboard a, .cssrefresh a, .close a {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #343434), color-stop(100%, #242424));
   background: -webkit-linear-gradient(#343434, #242424);
-  background: -moz-linear-gradient(#343434, #242424);
-  background: -o-linear-gradient(#343434, #242424);
-  background: -ms-linear-gradient(#343434, #242424);
   background: linear-gradient(#343434, #242424);
-  -webkit-box-shadow: inset 0 1px 0 #3c3c3c;
-  -moz-box-shadow: inset 0 1px 0 #3c3c3c;
   box-shadow: inset 0 1px 0 #3c3c3c;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   text-decoration: none;
   border: 1px solid #040404;
@@ -1138,22 +1107,12 @@ header .keyboard a, .cssrefresh a, .close a {
   text-align: center; }
 
 header .keyboard a:hover, .cssrefresh a:hover, .close a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #313131), color-stop(100%, #242424));
   background: -webkit-linear-gradient(#313131, #242424);
-  background: -moz-linear-gradient(#313131, #242424);
-  background: -o-linear-gradient(#313131, #242424);
-  background: -ms-linear-gradient(#313131, #242424);
   background: linear-gradient(#313131, #242424); }
 
 header .keyboard a.active, header .keyboard a:active, .cssrefresh a.active, .cssrefresh a:active, .close a.active, .close a:active {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1c1c1c), color-stop(100%, #242424));
   background: -webkit-linear-gradient(#1c1c1c, #242424);
-  background: -moz-linear-gradient(#1c1c1c, #242424);
-  background: -o-linear-gradient(#1c1c1c, #242424);
-  background: -ms-linear-gradient(#1c1c1c, #242424);
   background: linear-gradient(#1c1c1c, #242424);
-  -webkit-box-shadow: inset 0 1px 0 #242424;
-  -moz-box-shadow: inset 0 1px 0 #242424;
   box-shadow: inset 0 1px 0 #242424;
   outline: none; }
 
@@ -1174,15 +1133,8 @@ header .keyboard a, header .cssrefresh a {
   text-indent: -9999px; }
 
 #devices {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
   transition: all 200ms ease;
   position: absolute;
   z-index: 1;
@@ -1192,30 +1144,16 @@ header .keyboard a, header .cssrefresh a {
   border: 1px solid #363738; }
 
 #devices a:first-of-type {
-  -webkit-border-radius: 4px 0 0 4px;
-  -moz-border-radius: 4px 0 0 4px;
-  -ms-border-radius: 4px 0 0 4px;
-  -o-border-radius: 4px 0 0 4px;
   border-radius: 4px 0 0 4px; }
 
 #devices a:last-of-type {
-  -webkit-border-radius: 0 4px 4px 0;
-  -moz-border-radius: 0 4px 4px 0;
-  -ms-border-radius: 0 4px 4px 0;
-  -o-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
   border-right-width: 1px;
   width: 80px; }
 
 #devices a {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #313131), color-stop(100%, #242424));
   background: -webkit-linear-gradient(#313131, #242424);
-  background: -moz-linear-gradient(#313131, #242424);
-  background: -o-linear-gradient(#313131, #242424);
-  background: -ms-linear-gradient(#313131, #242424);
   background: linear-gradient(#313131, #242424);
-  -webkit-box-shadow: inset 0 1px 0 #3c3c3c;
-  -moz-box-shadow: inset 0 1px 0 #3c3c3c;
   box-shadow: inset 0 1px 0 #3c3c3c;
   text-decoration: none;
   border: 1px solid #040404;
@@ -1227,22 +1165,12 @@ header .keyboard a, header .cssrefresh a {
   outline: none; }
 
 #devices a:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2c2c2c), color-stop(100%, #242424));
   background: -webkit-linear-gradient(#2c2c2c, #242424);
-  background: -moz-linear-gradient(#2c2c2c, #242424);
-  background: -o-linear-gradient(#2c2c2c, #242424);
-  background: -ms-linear-gradient(#2c2c2c, #242424);
   background: linear-gradient(#2c2c2c, #242424); }
 
 #devices a.active, #devices a:active {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1c1c1c), color-stop(100%, #242424));
   background: -webkit-linear-gradient(#1c1c1c, #242424);
-  background: -moz-linear-gradient(#1c1c1c, #242424);
-  background: -o-linear-gradient(#1c1c1c, #242424);
-  background: -ms-linear-gradient(#1c1c1c, #242424);
   background: linear-gradient(#1c1c1c, #242424);
-  -webkit-box-shadow: inset 0 1px 0 #242424;
-  -moz-box-shadow: inset 0 1px 0 #242424;
   box-shadow: inset 0 1px 0 #242424;
   outline: none; }
 
@@ -1279,9 +1207,6 @@ header .keyboard a, header .cssrefresh a {
   #devices {
     margin-left: -25px;
     -webkit-transition: all 0s ease;
-    -moz-transition: all 0s ease;
-    -ms-transition: all 0s ease;
-    -o-transition: all 0s ease;
     transition: all 0s ease; } }
 @media screen and (max-width: 480px) {
   #devices {

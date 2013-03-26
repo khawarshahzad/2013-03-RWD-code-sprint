@@ -523,8 +523,8 @@ header .keyboard a,header .cssrefresh a {
   font-size: 30px;
   font-weight: normal;
   line-height: 0.5 !important; }
-  .joyride-close-tip:hover, .joyride-close-tip:focus {
-    color: #eeeeee !important; }
+  body .joyride-close-tip:hover, .joyride-close-tip:focus {
+    color: #000 !important; }
 
 .joyride-modal-bg {
   position: fixed;

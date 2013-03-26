@@ -919,6 +919,11 @@ ul.f-dropdown li {
   padding-left: 1.5em;
   padding-right: 1.5em; }
 
+.dropdown.button.tiny:before,
+.dropdown.button.small:before,
+.dropdown.button.large:before {
+  border-color: black transparent transparent transparent; }
+
 .no-wrap {
   white-space: nowrap; }
 
@@ -941,7 +946,10 @@ ul.f-dropdown li {
     display: block;
     padding: 1em; }
 
-.rt-table-menu > a.button {
+.rt-table-menu + table {
+  margin-top: 1em; }
+
+.touch .rt-table-menu > a.button {
   padding-bottom: 0.9375em;
   padding-top: 1.125em; }
 
@@ -964,9 +972,6 @@ ul.f-dropdown li {
 
 #wrapper {
   -webkit-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
-  -moz-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
-  -ms-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
-  -o-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
   transition: height 240ms ease, width 240ms ease, margin 240ms ease;
   -webkit-box-shadow: 0 0 12px 1px black;
   -moz-box-shadow: 0 0 12px 1px black;
@@ -991,9 +996,6 @@ ul.f-dropdown li {
 
 #wrapper.noTransitions {
   -webkit-transition: 0;
-  -moz-transition: 0;
-  -ms-transition: 0;
-  -o-transition: 0;
   transition: 0; }
 
 #wrapper .keyboard-bg {
@@ -1062,9 +1064,6 @@ body > section {
 
 #size {
   -webkit-transition: padding 240ms ease;
-  -moz-transition: padding 240ms ease;
-  -ms-transition: padding 240ms ease;
-  -o-transition: padding 240ms ease;
   transition: padding 240ms ease;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #202021), color-stop(100%, #222223));
   background-image: -webkit-linear-gradient(#202021, #222223);
@@ -1180,9 +1179,6 @@ header .keyboard a, header .cssrefresh a {
   -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
   transition: all 200ms ease;
   position: absolute;
   z-index: 1;
@@ -1279,9 +1275,6 @@ header .keyboard a, header .cssrefresh a {
   #devices {
     margin-left: -25px;
     -webkit-transition: all 0s ease;
-    -moz-transition: all 0s ease;
-    -ms-transition: all 0s ease;
-    -o-transition: all 0s ease;
     transition: all 0s ease; } }
 @media screen and (max-width: 480px) {
   #devices {

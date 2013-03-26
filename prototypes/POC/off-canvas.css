@@ -108,6 +108,10 @@
 		height: 48px;
 	}
 
+	.off-canvas .global-nav .menu-contorls {
+		display: none;
+	}
+
 	.off-canvas .global-nav .nav-container,
 	.off-canvas.active-site-menu .global-nav .nav-container {
 		overflow: hidden;

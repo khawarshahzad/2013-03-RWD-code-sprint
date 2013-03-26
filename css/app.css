@@ -93,6 +93,21 @@ legend {
 .list-bullets-inside {
   list-style-position: inside; }
 
+/* lightbox */
+.lbox-no-list
+{
+	list-style-type: none;
+	display:block;
+}
+.lbox-no-list li
+{
+	float:left;
+	padding-right:5px;
+	
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
 .rt-table-dropdown {
   max-width: 300px !important; }
   .rt-table-dropdown li {

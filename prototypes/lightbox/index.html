@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Foundation 4</title>
+
+  <link rel="stylesheet" href="../../css/normalize.css" />
+  <link rel="stylesheet" href="../../css/foundation.css" />
+  <link rel="stylesheet" href="../../css/app.css" />
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
+  <link rel="icon" href="../../images/favicon.ico">
+
+</head>
+<body>
+  <div class="row">
+    <div class="large-10 columns">
+      <h1>Clearing (lightbox)</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../">Prototypes Home</a></li>
+        <li class="current"><a href="#">Clearing (lightbox)</a></li>
+      </ul>
+	  <p>Clearing, also known as lightbox, requires the use of Foundations carousel and touch events (for mobile). You should check out those prototypes for better understanding of this one.</p>
+      <!-- Component code goes here -->
+	<div class="clearing-assembled">
+		<div class="">
+			<a href="#" class="clearing-close">×</a>
+			<div class="visible-img" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1); display: none;">
+				<img src="http://foundation.zurb.com/docs/img/demos/demo1.jpg" style="margin-left: -361.5px; margin-top: -248.5px;">
+				<p class="clearing-caption" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);">caption here...</p>
+				<a href="#" class="clearing-main-left disabled"><span></span></a>
+				<a href="#" class="clearing-main-right"><span></span></a>
+			</div>
+			<div class="carousel">
+				<ul class="clearing-thumbs lbox-no-list" data-clearing="" data-clearing-id="clearing-1364233642145-O5ufm" style="">
+				  <li class="fix-height visible"><a class="th" href="http://foundation.zurb.com/docs/img/demos/demo1.jpg"><img data-caption="caption here..." src="http://foundation.zurb.com/docs/img/demos/demo1-th.jpg"></a></li>
+				  <li class="fix-height"><a class="th" href="http://foundation.zurb.com/docs/img/demos/demo2.jpg"><img data-caption="caption 2 here..." src="http://foundation.zurb.com/docs/img/demos/demo2-th.jpg"></a></li>
+				  <li class="fix-height"><a class="th" href="http://foundation.zurb.com/docs/img/demos/demo3.jpg"><img data-caption="caption 3 here..." src="http://foundation.zurb.com/docs/img/demos/demo3-th.jpg"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+      <!-- END Component code goes here -->
+   </div>
+  </div>
+
+
+  <script src='../../js/vendor/jquery.js'></script>
+  <script src="../../js/foundation/foundation.js"></script>
+
+  <script src="../../js/foundation/foundation.clearing.js"></script>
+
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

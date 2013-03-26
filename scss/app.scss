@@ -1,4 +1,3 @@
-@import "foundation/foundation-global";
 @import "fonts";
 
 $font-sans-fallback: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -34,10 +33,6 @@ p {
   font-family: $font-sans;
 }
 
-ul, ol, dl {
-  font-family: $font-sans;
-}
-
 table {
 
   thead,
@@ -59,15 +54,13 @@ table {
 }
 
 em,
-i,
-.italic {
+i {
   font-family: $font-sans-italic;
   font-style: normal;
 }
 
 strong,
-b,
-.bold {
+b {
   font-family: $font-sans-bold;
   font-weight: normal;
 }
@@ -94,15 +87,6 @@ legend {
   list-style-position: inside;
 }
 
-.list-bullets-none {
-  list-style: none outside none;
-}
-
-.padding-sides-none {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
 // Responsive tables
 
 .rt-table-dropdown {
@@ -120,8 +104,26 @@ legend {
   }
 }
 
-.rt-table-menu > a.button {
-  padding-bottom: emCalc(15px);
-  padding-top: emCalc(18px);
+// lightbox 
+.lbox-no-list
+{
+	list-style-type: none;
+	display:block;
+}
+.lbox-no-list li
+{
+	float:left;
+	padding-right:5px;
+	
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+// Responsive Images
+  img .respimg{
+	width: auto\9;
+	max-width:100%;
+	height:auto;
+	border:0;
 }
 

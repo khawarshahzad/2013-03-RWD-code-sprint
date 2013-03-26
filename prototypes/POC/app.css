@@ -79,6 +79,30 @@
 		display: none;
 	}
 
+	.gov-pull-down {
+		background: url(images/nys-small.png) no-repeat 4px 4px #036;
+		background-size: 32px 32px;
+		border-radius: 0 0 8px 8px;
+		-webkit-box-shadow: 2px 2px 4px #000;
+		-moz-box-shadow: 2px 2px 4px #000;
+		box-shadow: 2px 2px 4px #000;
+		display: block;
+		height: 40px;
+		margin: -3px 5px 8px;
+		padding: 4px;
+		position: absolute;
+		text-indent: -9999px;
+		top: 5px;
+		width: 44px;
+		z-index: 50;
+
+		transition: top 0.2s ease-in;
+		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: top 0.2s ease-in; /* Opera */
+	}
+
+
 	/* temp font - Helvetica doesn't look great */
 	.gov-bar, .site-bar, h1 {
 		font-family: "Segoe UI", Helvetica, Arial, sans-serif;
@@ -86,12 +110,18 @@
 
 	.gov-bar {
 		background: #036;
+		-webkit-box-shadow: 0 -1px 4px #000 inset;
+		-moz-box-shadow: 0 -1px 4px #000 inset;
+		box-shadow: 0 -1px 4px #000 inset;
 		height: 5px;
+		position: absolute;
 		overflow: hidden;
 		transition: height 0.2s ease-in;
 		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
 		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
 		-o-transition: height 0.2s ease-in; /* Opera */
+		width: 100%;
+		z-index: 40;
 	}
 
 	.gov-bar a {
@@ -162,20 +192,15 @@
 	.site-bar {
 		background: red;
 		height: 48px;
-		position: relative;
-	}
+		position: absolute;
+		top: 5px;
+		width: 100%;
+		z-index: 30;
 
-	.site-bar .gov-pull-down {
-		background: url(images/nys-small.png) no-repeat 4px 4px #036;
-		background-size: 32px 32px;
-		border-radius: 0 0 8px 8px;
-		display: inline-block;
-		float: left;
-		height: 40px;
-		margin: 0 5px 8px;
-		padding: 4px;
-		text-indent: -9999px;
-		width: 44px;
+		transition: top 0.2s ease-in;
+		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: top 0.2s ease-in; /* Opera */
 	}
 
 	.site-bar a.site-logo {
@@ -183,7 +208,7 @@
 		float: left;
 		font-size: 1.1em;
 		font-weight: normal;
-		margin: 0;
+		margin: 0 0 0 50px;
 		padding: 0.5em 0 0 0.5em;
 	}
 
@@ -328,7 +353,8 @@
 		background: #FFF;
 		height: 100%;
 		position: absolute;
-		z-index: 10
+		top: 53px;
+		z-index: 10;
 	}
 
 
@@ -342,9 +368,14 @@
 		height: 96px;
 	}
 
-	.active-gov-bar .site-bar .gov-pull-down {
+	.active-gov-bar .site-bar {
+		top: 96px;
+	}
+
+	.active-gov-bar .gov-pull-down {
 		background: url(images/close-x.svg) no-repeat 10px 8px #036;
 		background-size: 24px 24px;
+		top: 96px;
 	}
 
 
@@ -372,6 +403,10 @@
 
 
 	.gov-bar {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		position: relative;
 		transition: height 0s ease-in;
 		-moz-transition: height 0s ease-in; /* Firefox 4 */
 		-webkit-transition: height 0s ease-in; /* Safari and Chrome */
@@ -442,6 +477,17 @@
 	.site-bar {
 		background: green;
 		height: 72px;
+		position: relative;
+	}
+
+	.site-bar,
+	.active-gov-bar .site-bar {
+		top: 0;
+		transition: top 0s ease-in;
+		-moz-transition: top 0s ease-in; /* Firefox 4 */
+		-webkit-transition: top 0s ease-in; /* Safari and Chrome */
+		-o-transition: top 0s ease-in; /* Opera */
+		z-index: 0;
 	}
 
 	.site-bar .site-functions {
@@ -469,7 +515,7 @@
 		height: 48px;
 		overflow: hidden;
 		position: relative;
-		top: -10px;
+		margin-top: -10px;
 	}
 
 	.global-nav .nav-container {
@@ -486,6 +532,7 @@
 
 	.page {
 		position: relative;
+		top: 0;
 	}
 
 }

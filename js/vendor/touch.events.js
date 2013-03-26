@@ -35,10 +35,10 @@
   }
 
   function cancelAll() {
-    if (touchTimeout) clearTimeout(touchTimeout);
-    if (tapTimeout) clearTimeout(tapTimeout);
-    if (swipeTimeout) clearTimeout(swipeTimeout);
-    if (longTapTimeout) clearTimeout(longTapTimeout);
+    if (touchTimeout) { clearTimeout(touchTimeout); }
+    if (tapTimeout) { clearTimeout(tapTimeout); }
+    if (swipeTimeout) { clearTimeout(swipeTimeout); }
+    if (longTapTimeout) { clearTimeout(longTapTimeout); }
     touchTimeout = tapTimeout = swipeTimeout = longTapTimeout = null;
     touch = {};
   }
@@ -59,7 +59,9 @@
         }
         touch.x1 = e.touches[0].pageX;
         touch.y1 = e.touches[0].pageY;
-        if (delta > 0 && delta <= 250) touch.isDoubleTap = true;
+        if (delta > 0 && delta <= 250) {
+          touch.isDoubleTap = true;
+        }
         touch.last = now;
         longTapTimeout = setTimeout(longTap, longTapDelay);
       })
@@ -88,7 +90,7 @@
           }, 0);
         }
         // normal tap
-        else if ('last' in touch)
+        else if ('last' in touch) {
 
           // delay by one tick so we can cancel the 'tap' event if 'scroll' fires
           // ('tap' fires before 'scroll')
@@ -116,14 +118,14 @@
             }
 
           }, 0);
-
+        }
       })
       .bind('touchcancel', cancelAll);
 
     $(window).bind('scroll', cancelAll);
-  })
+  });
 
-  ;['swipe', 'swipeLeft', 'swipeRight', 'swipeUp', 'swipeDown', 'doubleTap', 'tap', 'singleTap', 'longTap'].forEach(function(m){
+  ['swipe', 'swipeLeft', 'swipeRight', 'swipeUp', 'swipeDown', 'doubleTap', 'tap', 'singleTap', 'longTap'].forEach(function(m){
     $.fn[m] = function(callback){ return this.bind(m, callback); };
   });
 })();

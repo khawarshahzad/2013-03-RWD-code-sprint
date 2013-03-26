@@ -1,3 +1,118 @@
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/source-sans-pro/SourceSansPro-Regular.eot");
+  src: url("../fonts/source-sans-pro/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans-pro/SourceSansPro-Regular.woff") format("woff"), url("../fonts/source-sans-pro/SourceSansPro-Regular.ttf") format("truetype"), url("../fonts/source-sans-pro/SourceSansPro-Regular.svg#SourceSansProRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SourceSansProItalic";
+  src: url("../fonts/source-sans-pro/SourceSansPro-It.eot");
+  src: url("../fonts/source-sans-pro/SourceSansPro-It.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans-pro/SourceSansPro-It.woff") format("woff"), url("../fonts/source-sans-pro/SourceSansPro-It.ttf") format("truetype"), url("../fonts/source-sans-pro/SourceSansPro-It.svg#SourceSansProItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SourceSansProBold";
+  src: url("../fonts/source-sans-pro/SourceSansPro-Bold.eot");
+  src: url("../fonts/source-sans-pro/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans-pro/SourceSansPro-Bold.woff") format("woff"), url("../fonts/source-sans-pro/SourceSansPro-Bold.ttf") format("truetype"), url("../fonts/source-sans-pro/SourceSansPro-Bold.svg#SourceSansProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SourceSansProBoldItalic";
+  src: url("../fonts/source-sans-pro/SourceSansPro-BoldIt.eot");
+  src: url("../fonts/source-sans-pro/SourceSansPro-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans-pro/SourceSansPro-BoldIt.woff") format("woff"), url("../fonts/source-sans-pro/SourceSansPro-BoldIt.ttf") format("truetype"), url("../fonts/source-sans-pro/SourceSansPro-BoldIt.svg#SourceSansProBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MerriweatherRegular";
+  src: url("../fonts/merriweather/Merriweather.eot");
+  src: url("../fonts/merriweather/Merriweather.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather/Merriweather.woff") format("woff"), url("../fonts/merriweather/Merriweather.ttf") format("truetype"), url("../fonts/merriweather/Merriweather.svg#MerriweatherRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MerriweatherBold";
+  src: url("../fonts/merriweather/Merriweather-Bold.eot");
+  src: url("../fonts/merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather/Merriweather-Bold.woff") format("woff"), url("../fonts/merriweather/Merriweather-Bold.ttf") format("truetype"), url("../fonts/merriweather/Merriweather-Bold.svg#MerriweatherBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+input, select, textarea {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+button,
+.button {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal !important;
+  border-radius: 3px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: normal; }
+
+p {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+ul, ol, dl {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+table thead tr th,
+table tfoot tr th {
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+table tr th {
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+
+em,
+i {
+  font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal; }
+
+strong,
+b {
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+
+strong em,
+em strong {
+  font-family: "SourceSansProBoldItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+
+legend {
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+
+.no-wrap {
+  white-space: nowrap; }
+
+.list-bullets-inside {
+  list-style-position: inside; }
+
+.list-bullets-none {
+  list-style: none outside none; }
+
+.padding-sides-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.rt-table-dropdown {
+  max-width: 300px !important; }
+  .rt-table-dropdown li {
+    padding: 1em; }
+  .rt-table-dropdown input {
+    display: inline-block;
+    margin-right: 0.5em; }
+  .rt-table-dropdown label {
+    display: inline-block; }
+
 label {
   display: inline-block;
   position: relative; }
@@ -10,22 +125,16 @@ label {
   right: -10px;
   color: #c60f13; }
 
-.has-addendum input,
-.has-addendum select,
-.has-addendum textarea {
-  width: 90%;
-  float: left; }
+.form-field-info {
+  display: none;
+  margin-top: -10px;
+  font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-.has-addendum .data-addendum {
-  width: 10%;
-  float: left;
-  padding-left: 0.75em;
-  padding-top: 0.5em; }
+.show-form-field-info .form-field-info {
+  display: block; }
 
-.data-addendum label {
-  float: left;
-  padding-right: 1em; }
+.form-field-info p {
+  font-family: inherit; }
 
-.padding-sides-none {
-  padding-left: 0 !important;
-  padding-right: 0 !important; }
+.form-field-info p:last-child {
+  margin-bottom: 10px; }

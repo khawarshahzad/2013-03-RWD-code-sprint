@@ -364,6 +364,7 @@
 	.global-nav {
 		background: #3B3B3B;
 		position: absolute;
+		top: 53px;
 		width: 100%;
 		z-index: 20;
 	}
@@ -407,11 +408,6 @@
 		z-index: 10;
 		padding: 1em;
 	}
-
-
-	/* 
-	 * Active Mobile State Items
-	 */
 	
 
 	/* Active Govenor Banner */
@@ -574,6 +570,7 @@
 		height: 48px;
 		overflow: hidden;
 		position: relative;
+		top: 0;
 		margin-top: -24px;
 		border-radius: 4px;
 	}
@@ -607,6 +604,14 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 60em !important;
+	}
+
+	.site-bar .site-wrap {
+		position: relative;
+	}
+
+	.site-bar .site-functions {
+		position: relative;
 	}
 }
 

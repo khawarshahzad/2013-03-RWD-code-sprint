@@ -1,65 +1,10 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption,th,td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q,blockquote {
-  quotes: none;
-}
-
-q:before,q:after,blockquote:before,blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {
-  display: block;
-}
-
-html,body {
-  height: 100%;
-}
-
-body {
-  overflow: hidden;
+#resize-bar-body{
   background: #333!important;
-  position: relative;
-  font: 14px/1 "Lucida Console","Lucida Sans Typewriter",Monaco,"Bitstream Vera Sans Mono",monospace;
-  color: #FFF;
-  text-shadow: 0 -1px 0 #000;
 }
 
-a {
-  color: white;
+#devices a{
+  color:#FFF;
 }
-
 #wrapper {
   -webkit-transition: height 240ms ease,width 240ms ease,margin 240ms ease;
   -moz-transition: height 240ms ease,width 240ms ease,margin 240ms ease;
@@ -426,62 +371,17 @@ header .keyboard a,header .cssrefresh a {
 
 /*  Try to separate out Joyride CSS*/
 
-/* Foundation Joyride */
-.joyride-list {
-  display: none; }
-
-/* Default styles for the container */
 .joyride-tip-guide {
-  display: none;
-  position: absolute;
   background: #DEDEDE!important;
   color: #333!important;
-  z-index: 101;
   top: 60px!important;
-  left: 2.5%;
-  font-family: inherit;
   text-shadow:none!important;
   box-shadow:0 0 4px #666;
-  font-weight: normal;
-  width: 95%; }
+  }
 
-.lt-ie9 .joyride-tip-guide {
-  max-width: 800px;
-  left: 50%;
-  margin-left: -400px; }
-
-.joyride-content-wrapper {
-  width: 100%;
-  padding: 1.125em 1.25em 1.5em; }
-  .joyride-content-wrapper .button {
-    margin-bottom: 0 !important; }
-
-/* Add a little css triangle pip, older browser just miss out on the fanciness of it */
-.joyride-tip-guide .joyride-nub {
-  display: block;
-  position: absolute;
-  left: 22px;
-  width: 0;
-  height: 0;
-  border: solid 14px; }
   .joyride-tip-guide .joyride-nub.top {
     border-color: #DEDEDE!important;
-    border-top-color: transparent !important;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
-    top: -28px;
-    bottom: none; }
-  .joyride-tip-guide .joyride-nub.bottom {
-    border-color: black !important;
-    border-bottom-color: transparent !important;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
-    bottom: -28px;
-    bottom: none; }
-  .joyride-tip-guide .joyride-nub.right {
-    right: -28px; }
-  .joyride-tip-guide .joyride-nub.left {
-    left: -28px; }
+   }
 
 /* Typography */
 .joyride-tip-guide h1,
@@ -490,84 +390,15 @@ header .keyboard a,header .cssrefresh a {
 .joyride-tip-guide h4,
 .joyride-tip-guide h5,
 .joyride-tip-guide h6 {
-  line-height: 1.25;
-  margin: 0;
-  font-weight: bold;
   color: #333!important; }
 
-.joyride-tip-guide p {
-  margin: 0 0 1.125em 0;
-  font-size: 0.875em;
-  line-height: 1.3; }
-
-.joyride-timer-indicator-wrap {
-  width: 50px;
-  height: 3px;
-  border: solid 1px #555555;
-  position: absolute;
-  right: 1.0625em;
-  bottom: 1em; }
-
-.joyride-timer-indicator {
-  display: block;
-  width: 0;
-  height: inherit;
-  background: #666666; }
-
-.joyride-close-tip {
-  position: absolute;
-  right: 12px;
-  top: 10px;
-  color: #777777 !important;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: normal;
-  line-height: 0.5 !important; }
   body .joyride-close-tip:hover, .joyride-close-tip:focus {
     color: #000 !important; }
 
-.joyride-modal-bg {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: transparent;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 100;
-  display: none;
-  top: 0;
-  left: 0;
-  cursor: pointer; }
+#devices .tablet-portrait span,#devices .tablet-landscape span {
+  background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAQAAAAqnqXBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALdJREFUKM/VkjEKwkAQRd/EVQKClYgIgmKnjWXu4C3sPIClrZXHsRQEPYG1qKCNINaCyexaBGIKN2jpdH/+4/8pRuyIBS184zgwkeREB8V5oICAjbF1Eom4eoKGLGkatSDn8PYZejQANQpQ8Z2kZQCTUDSp+x2khVDqmrgQin+o+1tIAe8PoO6dZL1JFsBYoeRW22e2v1OmliVVBQJjL/QZ5PrGdJm9pYOjrCM3p5dr2BPSzumdTF90y0NcVdvNJQAAAABJRU5ErkJggg==') 50% 50% no-repeat;
+}
 
-/* Styles for screens that are atleast 768px; */
-@media only screen and (min-width: 48em) {
-  .joyride-tip-guide {
-    width: 300px;
-    left: 0; }
-    .joyride-tip-guide .joyride-nub.bottom {
-      border-color: black !important;
-      border-bottom-color: transparent !important;
-      border-left-color: transparent !important;
-      border-right-color: transparent !important;
-      bottom: -28px;
-      bottom: none; }
-    .joyride-tip-guide .joyride-nub.right {
-      border-color: black !important;
-      border-top-color: transparent !important;
-      border-right-color: transparent !important;
-      border-bottom-color: transparent !important;
-      top: 22px;
-      bottom: none;
-      left: auto;
-      right: -28px; }
-    .joyride-tip-guide .joyride-nub.left {
-      border-color: black !important;
-      border-top-color: transparent !important;
-      border-left-color: transparent !important;
-      border-bottom-color: transparent !important;
-      top: 22px;
-      left: -28px;
-      right: auto;
-      bottom: none; } }
-.joyride-tip-guide:first-child + .joyride-tip-guide .joyride-next-tip{
-	display:none;
+#devices .smartphone-portrait span,#devices .smartphone-landscape span {
+  background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJNJREFUGFeVjDEKwkAUBefHhUAQG8HGwguIR7Czs/Munkq8hunTWohoIWlUBBf3r99CA64g6CuHeSP3hU05sZeSq83oY1JJOFJRc2ZLYEhHMpvgd35AMr9xCsU7uuQqTlMNBVz4gAH4w/wdfmvGxIzgFGuXBSCAwS3PRFaH5oMQAKHntEUXgCVr5s+Ei/aKjRk13QeKojmLEk117AAAAABJRU5ErkJggg==') 50% 50% no-repeat;
 }

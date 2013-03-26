@@ -2,32 +2,36 @@
  Additional Login needed for off canvas Menus
 */
 
-// Add control div to the top of the global nav element
-$('<div id="menu-contorls" class="menu-contorls"><a href="#" id="menu-back" class="menu-back">Back</a></div>').prependTo('#global-nav')
+$(document).ready(function(){
 
-// Find the global Dom and look for all a that have a child ul
-var rootMenu = $('#global-nav').find('a[href="#"]');
+	// Add control div to the top of the global nav element
+	$('<div id="menu-contorls" class="menu-contorls"><a href="#" id="menu-back" class="menu-back">Back</a></div>').prependTo('#global-nav')
 
-rootMenu.each(function() {
-	
-	// Save off the link item just in case
-	var link = $(this),
-		subMenu = link.next('ul');
+	// Find the global Dom and look for all a that have a child ul
+	var rootMenu = $('#global-nav').find('a[href="#"]');
 
-	// Check to see if there is a ul next to the anchor
-	if (subMenu.length) {
+	rootMenu.each(function() {
 		
-		// We have a sub menu item so create the click event
-		link.on('click', function(event){
+		// Save off the link item just in case
+		var link = $(this),
+			subMenu = link.next('ul');
 
-			// Prevent default link action
-			event.preventDefault();
+		// Check to see if there is a ul next to the anchor
+		if (subMenu.length) {
+			
+			// We have a sub menu item so create the click event
+			link.on('click', function(event){
 
-			// Add a class to the menu.
-			subMenu.addClass("active-sub-menu");
-		});
-	}
+				// Prevent default link action
+				event.preventDefault();
 
-})
+				// Add a class to the menu.
+				subMenu.addClass("active-sub-menu");
+			});
+		}
 
-console.log(rootMenu);
+	})
+
+	console.log(rootMenu);
+
+});

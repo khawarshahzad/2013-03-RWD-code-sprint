@@ -18,7 +18,9 @@
 }
 */
 [class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class*=" icon-"]:before,
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
   font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
@@ -71,6 +73,13 @@
 .icon-phone:before { content: '📞'; } /* '\1f4de' */
 .icon-phone-1:before { content: '\e800'; } /* '' */
 .icon-search:before { content: '🔍'; } /* '\1f50d' */
+.icon-right-open-after:after { 
+	content: '\e75e';
+	float: right;
+	font-size: 1.2em;
+	line-height: inherit;
+	margin-top: -.10em;
+ } /* '' */
 /* POC Styles */
 
 @media only screen {

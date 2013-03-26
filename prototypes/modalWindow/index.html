@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Foundation 4</title>
+
+  <link rel="stylesheet" href="../../css/normalize.css" />
+  <link rel="stylesheet" href="../../css/foundation.css" />
+  <link rel="stylesheet" href="../../css/app.css" />
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
+  <link rel="icon" href="../../images/favicon.ico">
+
+</head>
+<body>
+  <div class="row">
+    <div class="large-10 columns">
+      <h1>Modal Window (Reveal)</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../">Prototypes Home</a></li>
+        <li class="current"><a href="#">Modal Window (Reveal)</a></li>
+      </ul>
+      <p>Modal Window, also known as Reveal, allows pop-up windows to appear dynamically.</p>
+     
+     <!-- User Display code goes here -->
+     <a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+     <!-- END User Display code goes here -->
+   
+    </div>
+  </div>
+
+	<!-- Component code goes here - Content that displays in pop-up window -->
+	  <div id="myModal" class="reveal-modal">
+		<h2>I'm First Window</h2>
+		<p class="lead">You want another</p>
+		<p>In order to get another even cooler window <a href="#" data-reveal-id="myModal2">Follow Me</a></p>
+		<a class="close-reveal-modal">&#215;</a>
+	 </div>
+	 
+	 <div id="myModal2" class="reveal-modal">
+		<h2>I'm Second Window</h2>
+		<p class="lead">I'm the finale</p>
+		<p>That is all there is...pretty simple.</p>
+		<a class="close-reveal-modal">&#215;</a>
+	 </div>
+	<!-- END Component code goes here -->
+
+  <script src='../../js/vendor/jquery.js'></script>
+  <script src="../../js/foundation/foundation.js"></script>
+
+  <script src="../../js/foundation/foundation.reveal.js"></script> <!-- need to be included only to add the ability to close an alert-->
+
+
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

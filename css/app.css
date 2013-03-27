@@ -923,11 +923,17 @@ ul.f-dropdown li {
 .section-container.accordion .section .title {
   font-weight: bold; }
 
-.section-container.tabs section .title:first-child,
-.section-container.tabs .section .title:first-child {
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  font-weight: bold; }
+.section-container.tabs section:first-child .title,
+.section-container.tabs .section:first-child .title {
+  border-top-left-radius: 0.375em;
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+.section-container.tabs section:last-child .title,
+.section-container.tabs .section:last-child .title {
+  border-top-right-radius: 0.375em; }
+
+.section-container section .title a, .section-container .section .title a, .section-container.auto section .title a, .section-container.auto .section .title a {
+  padding: 8px 14px; }
 
 .section-container.auto section .title,
 .section-container.auto .section .title {

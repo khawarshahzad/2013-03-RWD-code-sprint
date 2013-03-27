@@ -11,13 +11,15 @@
 
 		<script src="../../js/vendor/custom.modernizr.js"></script>
 	</head>
-	<body class="sticky-header">
+	<body class="">
 		<!-- Skip links -->
 		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
 		<a href="#page" class="skip-to">Skip to Content</a>
-		<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
-			Open New York State Search
-		</a>
+		<div class="gov-pull-down-container show-for-small">
+			<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
+				Open New York State Search
+			</a>
+		</div>
 		<!-- Governor's header bar -->
 		<div id="gov-bar" class="gov-bar">
 			<div class="gov-wrap">
@@ -71,7 +73,9 @@
 								<label for="site-search-box">Search</label>
 								<div class="search-container">
 									<input type="search" id="site-search-box" class="site-search-box" />
-									<input type="submit" class="site-search-button" value="Search Agency"  />
+									<div class="site-button">
+										<input type="submit" class="site-search-button" value="Search Agency"  />
+									</div>
 								</div>
 							</fieldset>
 						</form>
@@ -144,10 +148,5 @@
 	<script src="../../js/vendor/zepto.js"></script>
 	<script src="app.js"></script>
 	<script src="sticky_header.js"></script>
-	<script>
-	if($('body').hasClass('sticky-header')) {
-		sticky_page_scroll.initialize();
-	}
-	</script>
 </html>
 

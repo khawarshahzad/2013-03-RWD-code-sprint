@@ -26,6 +26,15 @@
 		z-index: 0;
 	}
 
+	.off-canvas .global-nav .sub-menu-title {
+		display: inline-block;
+		color: #CFCFCF;
+		font-size: 2em;
+		position: relative;
+		left: 20%;
+		padding-top: .4em;
+	}
+
 	.off-canvas .global-nav .nav-container {
 		height: inherit;
 		overflow-y: scroll;
@@ -33,6 +42,10 @@
 
 	.off-canvas .global-nav ul {
 		margin-left: 16%;
+	}
+
+	.off-canvas .global-nav ul li {
+		padding-left: 3%;
 	}
 
 	.off-canvas .global-nav ul ul {
@@ -117,6 +130,12 @@
 
 	.off-canvas .global-nav {
 		height: 48px;
+		overflow: visible;
+		z-index: 30;
+	}
+
+	.off-canvas .global-nav ul li {
+		padding-left: 0;
 	}
 	
 	.off-canvas .global-nav .menu-controls {
@@ -134,8 +153,15 @@
 	}
 
 	.off-canvas .global-nav ul ul {
+		display: none;
 		position: absolute;
 		width: auto;
+	}
+
+	.off-canvas .global-nav ul ul.active-menu {
+		display: block;
+		top: 48px;
+		width: 100%;
 	}
 
 	.off-canvas .page {

@@ -919,6 +919,11 @@ ul.f-dropdown li {
 .dropdown.button.large:before {
   border-color: black transparent transparent transparent; }
 
+.breadcrumbs li a,
+.breadcrumbs li span {
+  text-transform: none;
+  font-size: 0.9em; }
+
 .section-container.accordion section .title,
 .section-container.accordion .section .title {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;

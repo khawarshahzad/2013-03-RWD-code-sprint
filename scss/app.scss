@@ -121,6 +121,14 @@ ul.f-dropdown li {
   border-color: black transparent transparent transparent;
 }
 
+// Breadcrumbs
+
+.breadcrumbs li a,
+.breadcrumbs li span {
+  text-transform: none;
+  font-size: 0.9em;
+}
+
 // Sections
 
 .section-container.accordion section .title,
@@ -135,11 +143,6 @@ ul.f-dropdown li {
   border-top-right-radius: emCalc(6px);
   font-family: $font-sans-bold;
   font-weight: normal;
-}
-
-.section-container.tabs section:first-child .title,
-.section-container.tabs .section:first-child .title {
-
 }
 
 .section-container section .title a,

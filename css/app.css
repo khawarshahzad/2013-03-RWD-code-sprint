@@ -59,6 +59,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
+ul, ol, dl {
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
 table thead tr th,
 table tfoot tr th {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -68,12 +71,14 @@ table tr th {
   font-weight: normal; }
 
 em,
-i {
+i,
+.italic {
   font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: normal; }
 
 strong,
-b {
+b,
+.bold {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
@@ -93,6 +98,13 @@ legend {
 .list-bullets-inside {
   list-style-position: inside; }
 
+.list-bullets-none {
+  list-style: none outside none; }
+
+.padding-sides-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 .rt-table-dropdown {
   max-width: 300px !important; }
   .rt-table-dropdown li {
@@ -102,3 +114,7 @@ legend {
     margin-right: 0.5em; }
   .rt-table-dropdown label {
     display: inline-block; }
+
+.rt-table-menu > a.button {
+  padding-bottom: 0.9375em;
+  padding-top: 1.125em; }

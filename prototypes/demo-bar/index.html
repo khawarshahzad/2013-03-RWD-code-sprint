@@ -48,7 +48,7 @@
       </div>
     </div>
   </div>
-  <script src='../../js/vendor/jquery.js'></script>
+  <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
 
 <!-- BE SURE TO UNCOMMENT OUT THE SCRIPT YOU NEED TO USE FROM FOUNDATION IF YOU NEED TO USE ONE!
@@ -80,15 +80,33 @@
   <script src="../../js/foundation/foundation.topbar.js"></script>
 
 -->
-  <script>
-    $(document).foundation();
-  </script>
+<script>
+  $(document).foundation();
+</script>
+
+<script src="../../js/app/demo-bar.js"></script>
+
 <script>
 
 $(window).load(function(){
-  if ( !window.top.location.hash ) {
-    window.top.location.hash= "#responsive";
-    javascript:void((function(){var d=document;d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+d.title+' - Responsive test<\/title><link rel="stylesheet" href="http:\/\/responsive.victorcoulon.fr\/assets\/css\/app.css"><script src="http:\/\/responsive.victorcoulon.fr\/assets\/js\/app.min.js"><\/script><\/head><body><header><div class="close"><a href="#">%C3%97<\/a><\/div><div id="size"><\/div><div class="keyboard"><a href="#">I<\/a><\/div><div class="cssrefresh"><a href="#">I<\/a><\/div><div id="devices"><a href="#" class="tablet-portrait"><span>Tablet Portrait<\/span><\/a><a href="#" class="tablet-landscape"><span>Tablet Landscape<\/span><\/a><a href="#" class="smartphone-landscape"><span>iPhone Landscape<\/span><\/a><a href="#" class="smartphone-portrait"><span>iPhone Portrait<\/span><\/a><a href="#" class="auto active"><span>Auto<\/span><\/a><\/div><\/header><section><div id="wrapper"><iframe src="'+d.URL+'" onLoad="resbook.changeUrl(this.contentWindow.location,this.contentDocument.title);"><\/iframe><span class="keyboard-bg"><\/span><\/div><\/section><\/body><\/html>')})());
+  if ( parent.$("#devices").length <=0 ) {
+    javascript:void((function(){var d=document;
+      d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
+        d.title+
+      '<\/title><link rel="stylesheet" href="css/app.css"><script src="js/app.js"><\/script><\/head>' +
+      '<body>' +
+      '<header>' +
+        //'<div class="close"><a href="#">%C3%97<\/a><\/div>' +
+        '<div id="size"><\/div>' +
+        '<div class="keyboard"><a href="#">I<\/a><\/div>' +
+        '<div class="cssrefresh"><a href="#">I<\/a><\/div>' +
+        '<div id="devices">' +
+          '<a href="#" class="tablet-portrait"><span>Tablet Portrait<\/span><\/a>' +
+          '<a href="#" class="tablet-landscape"><span>Tablet Landscape<\/span><\/a>' +
+          '<a href="#" class="smartphone-landscape"><span>iPhone Landscape<\/span><\/a>' +
+          '<a href="#" class="smartphone-portrait"><span>iPhone Portrait<\/span><\/a>' +
+          '<a href="#" class="auto active"><span>Auto<\/span><\/a>' +
+          '<\/div><\/header><section><div id="wrapper"><iframe src="'+d.URL+'" onLoad="resbook.changeUrl(this.contentWindow.location,this.contentDocument.title);"><\/iframe><span class="keyboard-bg"><\/span><\/div><\/section><\/body><\/html>')})());
   }
 });
 </script>

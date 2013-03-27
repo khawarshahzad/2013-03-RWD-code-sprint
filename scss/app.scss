@@ -128,29 +128,35 @@ ul.f-dropdown li {
   font-weight: bold;
 }
 
+.section-container.tabs section .title,
+.section-container.tabs .section .title {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .section-container.tabs section:first-child .title,
 .section-container.tabs .section:first-child .title {
   border-top-left-radius: emCalc(6px);
-  // border-top-right-radius: emCalc(6px);
-  // padding:
+  border-top-right-radius: 0;
   font-family: $font-sans-bold;
 }
 
 .section-container.tabs section:last-child .title,
 .section-container.tabs .section:last-child .title {
-  // border-top-left-radius: emCalc(6px);
+  border-top-left-radius: 0;
   border-top-right-radius: emCalc(6px);
-  // padding:
-
 }
 
-.section-container section .title a, .section-container .section .title a, .section-container.auto section .title a, .section-container.auto .section .title a {
+.section-container section .title a,
+.section-container .section .title a,
+.section-container.auto section .title a,
+.section-container.auto .section .title a {
   padding: 8px 14px
 }
 
 .section-container.auto section .title,
 .section-container.auto .section .title {
-  font-weight: bold;
+  font-family: $font-sans-bold;
 }
 
 /* ************************************** */

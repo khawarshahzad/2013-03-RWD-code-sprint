@@ -15,6 +15,8 @@ $(document).ready(function(){
 		// Prevent Defaults
 		event.preventDefault();
 
+		console.log('test');
+
 		// Function is used to close a pre-existing active items.
 		function removeOtherActive(active) {
 
@@ -34,6 +36,13 @@ $(document).ready(function(){
 			switch (activeElm) {
 				case "active-site-search":
 					$('#site-search-box').focus();
+					break;
+				case "active-site-menu":
+
+					if ($('body').hasClass('active-sub-menu')) {
+						//$('body').removeClass('active-sub-menu')
+					}
+
 					break;
 			}
 		}
@@ -72,12 +81,11 @@ $(document).ready(function(){
 			// Add active state class from clicked element
 			$(this).addClass(selectedClass);
 
-			// Check to see if anything special has to happen based on data-active value
-			specialEvents(activeClass);
-
 		}
+
+		// Check to see if anything special has to happen based on data-active value
+		specialEvents(activeClass);
 
 	});
 
 });
-

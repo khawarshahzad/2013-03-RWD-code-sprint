@@ -919,6 +919,23 @@ ul.f-dropdown li {
 .dropdown.button.large:before {
   border-color: black transparent transparent transparent; }
 
+.section-container.accordion section .title,
+.section-container.accordion .section .title {
+  font-weight: bold; }
+
+.section-container.tabs section .title:first-child,
+.section-container.tabs .section .title:first-child {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  font-weight: bold; }
+
+.section-container.auto section .title,
+.section-container.auto .section .title {
+  font-weight: bold; }
+
+/* ************************************** */
+/* ****** End Foundation Overrides ****** */
+/* ************************************** */
 .no-wrap {
   white-space: nowrap; }
 

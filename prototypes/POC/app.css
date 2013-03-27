@@ -1,7 +1,7 @@
 input[type='text'],
 input[type='number'],
 input[type='search'],
-textarea {font-size:16px;}
+textarea {font-size:1em;}
 
 @charset "UTF-8";
 
@@ -238,6 +238,10 @@ textarea {font-size:16px;}
 		width: 30%;
 	}
 
+	.gov-bar .search-container {
+		height: 37px;
+	}
+
 	/* Site Header */
 	.site-bar {
 		background: #454545;
@@ -285,7 +289,7 @@ textarea {font-size:16px;}
 	}
 
 	.site-bar .site-functions .site-search .search-container {
-		height: 32px;
+		height: 37px;
 		padding: 0 0.3em !important;
 	}
 
@@ -457,7 +461,7 @@ textarea {font-size:16px;}
 	}
 
 	.active-site-search .site-functions .site-search {
-		height: 48px;
+		height: 53px;
 	}
 
 	/* Active Site Menu */
@@ -583,6 +587,10 @@ textarea {font-size:16px;}
 		top: 50%;
 		margin-top: -36px;
 		width: 15em;
+	}
+
+	.site-bar .site-functions .site-search form {
+		margin: 0;
 	}
 
 	.site-bar .site-functions .site-search input[type=search] {

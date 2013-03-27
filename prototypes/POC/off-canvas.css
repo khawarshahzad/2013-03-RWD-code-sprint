@@ -35,7 +35,7 @@
 
 	.off-canvas .global-nav .sub-menu-title {
 		display: inline-block;
-		color: #fff;
+		color: #939393;
 		font-size: 1.45em;
 		position: relative;
 		left: 20%;
@@ -64,10 +64,14 @@
 		position: fixed;
 		top: 53px;
 		width: 100%;
-		background: #3B3B3B;
+		background: #033;
 
 		-webkit-transition: left 0.2s ease-in;
 		transition: left 0.2s ease-in;
+	}
+
+	.off-canvas .global-nav ul ul li {
+		padding-left: 1.5%;
 	}
 
 	.off-canvas .global-nav .menu-controls {
@@ -142,6 +146,10 @@
 	.off-canvas.active-site-menu .page {
 		left: auto;
 		position: relative;
+	}
+
+	.off-canvas.active-gov-bar .site-bar {
+		top: 0;
 	}
 
 	.off-canvas .global-nav {

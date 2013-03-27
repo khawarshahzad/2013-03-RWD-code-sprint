@@ -94,13 +94,13 @@
 	.gov-pull-down-container {
 		background: #036;
     	border-radius: 0 0 5px 5px;
-    	box-shadow: 1px 2px 4px #000;
+    	box-shadow: 1px 0px 2px #000;
     	height: 40px;
     	width: 44px;
 		margin: 0 5px 8px;
 		padding: 0 4px 4px 4px;
 		position: relative;
-		z-index: 50;
+		z-index: 35;
 
 		transition: top 0.2s ease-in;
 		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
@@ -251,10 +251,10 @@
 	.site-bar a.site-logo {
 		color: #FFF;
 		float: left;
-		font-size: 1.1em;
+		font-size: 1.2em;
 		font-weight: normal;
-		margin: -2px 0 0 50px;
-		padding: 0 0 0 0.3em;
+		margin: -2px 0 0 52px;
+		padding: 0.1em 0 0 0.3em;
 		line-height: 48px;
 	}
 
@@ -374,7 +374,7 @@
 	/* Global Navigation Bar */
 
 	.global-nav {
-		background: #666;
+		background: #033;
 		position: absolute;
 		top: 48px;
 		width: 100%;
@@ -396,12 +396,12 @@
 	}
 
 	.global-nav ul li {
-		border-right: 1px solid #757575;
-		border-bottom: 1px solid #757575;
+		border-right: 1px solid #444;
+		border-bottom: 1px solid #444;
 	}
 
 	.global-nav ul li a {
-		background: #666;
+		background: #033;
 		color: #FFF;
 	  	display: block;
 	  	font-size: 1.15em;
@@ -447,7 +447,7 @@
 
 	/* Active Menu */
 	.active-site-menu .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close.svg) no-repeat 10px 12px #666;
+		background: url(images/close.svg) no-repeat 10px 12px #033;
 		background-size: 28px;
 	}
 

@@ -88,18 +88,34 @@
 		display: none;
 	}
 
-	.gov-pull-down {
-		background: url(images/nys-small.png) no-repeat 4px 4px #036;
-		background-size: 32px 32px;
-		border-radius: 0 0 8px 8px;
-		display: block;
-		height: 40px;
+	.gov-pull-down-container {
+		background-image: -webkit-linear-gradient(#036, #369);
+    	background-image:         linear-gradient(#036, #369);
+    	border-radius: 0 0 10px 10px;
+    	height: 40px;
+    	width: 44px;
 		margin: 0 5px 8px;
 		padding: 0 4px 4px 4px;
+		position: relative;
+		z-index: 50;
+
+		transition: top 0.2s ease-in;
+		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
+		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
+		-o-transition: top 0.2s ease-in; /* Opera */
+	}
+
+	.gov-pull-down {
+		background: url(images/nys-small.png) no-repeat 1px 4px transparent;
+		background-size: 32px 32px;
+		
+		border-top: none;
+		display: block;
+		height: 100%;
+		width: 100%;
 		position: absolute;
 		text-indent: -9999px;
 		top: 0px;
-		width: 44px;
 		z-index: 50;
 
 		-webkit-transition: top 0.2s ease-in;
@@ -109,7 +125,9 @@
 
 	.gov-bar {
 		background: #036;
-		/*box-shadow: 0 1px 2px #000000; */
+		background-image: -webkit-linear-gradient(#002851, #036);
+    	background-image:         linear-gradient(#002851, #036);
+
 		position: absolute;
 		top: 0;
 		height: 0;
@@ -132,23 +150,18 @@
 		float: left;
 		font-size: 1.3em;
 		text-align: center;
-		padding-bottom: 6px;
-		margin: 10px 0.2em 6px 0.4em;
+		padding-bottom: 5px;
+		margin: 8px 0.2em 0 0.5em;
 	}
 
 	.gov-bar a.gov-link-2 {
 		float: right;
-		background: #2ba6cb;
+		background: url(images/hamburger-no-dots.svg) no-repeat 2px 2px transparent;
+		background-size: 24px 24px;
 		color: #FFF;
-		border: 1px solid #FFF;
-		border-radius: 4px;
-		font-size: 1.1em;
-		margin: 5px 0.2em;
-		padding: 7px 0.7em;
-	}
-
-	.gov-bar a.gov-link-2:hover {
-		background: #2284a1;
+		font-size: 1em;
+		margin: 5px 0.4em;
+		padding: 6px 0.2em 2px 32px;
 	}
 
 	.gov-bar a.gov-link-3 {
@@ -158,34 +171,20 @@
 
 	.gov-bar form {
 		overflow: auto;
-		margin: 5px 0;
-	}
-
-	.gov-bar form .gov-search-box {
-		float: left;
-		font-size: 0.85em;
-		color: #333;
-		padding: 0.2em 0.25em;
-		margin-left: 0.5em;
-		width: 68%;
 	}
 
 	.gov-bar form .gov-search-button {
 		float: right;
 		font-size: 0.95em;
-		margin: 0.2em 0.4em 0 0.4em;
 		width: 26%;
 	}
 
 	.gov-bar input {
 		border-radius: 4px;
-		margin: 0;
 	}
 
-
 	.gov-bar form {
-		margin: 3px 0 0 0;
-		padding: 5px;
+		padding: 0.5em 0.5em 0 0.5em;
 		width: 100%;
 	}
 
@@ -202,7 +201,7 @@
 
 	.gov-bar input {
 		-webkit-appearance:none;
-		border: 1px solid #808080;
+		border: 1px solid #999;
 		padding: 0;
 		display: block;
 		float: left;
@@ -213,14 +212,16 @@
 		border-radius: 5px 0 0 5px;
 		padding-left: 10px;
 		width: 70%;
+		color: #333;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
 	.gov-bar input[type=submit] {
-		background: #808080;
-		border-color: #808080;
+		background-image: -webkit-linear-gradient(#999, #505050);
+    	background-image:         linear-gradient(#999, #505050);
+		border-color: #999;
 		border-radius: 0 5px 5px 0;
 		border: 0;
 		color: #FFF;
@@ -231,15 +232,14 @@
 
 	/* Site Header */
 	.site-bar {
-		background: #666666;
-		background-image: -webkit-linear-gradient(#505050, #333);
-    background-image:         linear-gradient(#505050, #333);
+		background: #454545;
+		background-image: -webkit-linear-gradient(#5f5f5f, #282828);
+    	background-image:         linear-gradient(#5f5f5f, #282828);
 		height: 48px;
 		position: absolute;
 		top: 0;
 		width: 100%;
 		z-index: 30;
-		border-bottom: 1px solid #666;
 
 		-webkit-transition: top 0.2s ease-in;
 		transition: top 0.2s ease-in;
@@ -260,9 +260,8 @@
 	}
 
 	.site-bar .site-functions .site-search {
-		background: #3B3B3B;
-		background-image: -webkit-linear-gradient(#333, #454545);
-    	background-image:         linear-gradient(#333, #454545);
+		background: #FFF;
+		border-bottom: 1px solid #666;
 		display: block;
 		height: 0;
 		left: 0;
@@ -278,11 +277,12 @@
 
 	.site-bar .site-functions .site-search .search-container {
 		height: 32px;
+		padding: 0 0.3em !important;
 	}
 
 	.site-bar .site-functions .site-search form {
 		margin: 3px 0 0 0;
-		padding: 5px;
+		padding: 5px 8px;
 		width: 100%;
 	}
 
@@ -299,28 +299,39 @@
 
 	.site-bar .site-functions .site-search input {
 		-webkit-appearance:none;
-		border: 1px solid #808080;
 		padding: 0;
 		display: block;
 		float: left;
 		margin: 0;
 	}
 	.site-bar .site-functions .site-search input[type=search] {
+		float: left;
 		border-radius: 5px 0 0 5px;
-		padding-left: 10px;
+		padding-left: 6px;
 		width: 86%;
+		border-color: #999;
+		color: #333;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+
+	.site-bar .site-functions .site-button {
+		float: left;
+	    background-image: -webkit-linear-gradient(#999, #505050);
+	    background-image:         linear-gradient(#999, #505050);	
+	    border-radius: 0 5px 5px 0;
+	    border-color: #999;
+		width: 14%;
+		height: 100%;
+	}
+
 	.site-bar .site-functions .site-search input[type=submit] {
-		background: url(images/search.svg) no-repeat center center #808080;
+		background: url(images/search.svg) no-repeat center center transparent;
 		background-size: 24px;
-		border-color: #808080;
-		border-radius: 0 5px 5px 0;
 		border: 0;
 		height: 100%;
-		width: 14%;
+		width: 100%;
 		color: #fff;
 		text-indent: -9999px;
 		padding-bottom: 0.69em;
@@ -359,7 +370,7 @@
 	/* Global Navigation Bar */
 
 	.global-nav {
-		background: #3B3B3B;
+		background: #666;
 		position: absolute;
 		top: 48px;
 		width: 100%;
@@ -376,16 +387,16 @@
 	.global-nav ul {
 		list-style: none;
 		margin: 0;
-		padding: 0 0 0 .3em;
+		padding: 0;
 	}
 
 	.global-nav ul li {
-		border-top: 1px solid #484848;
-		border-bottom: 1px solid #2e2e2e;
+		border-right: 1px solid #757575;
+		border-bottom: 1px solid #757575;
 	}
 
 	.global-nav ul li a {
-		background: #3e3e3e;
+		background: #666;
 		color: #FFF;
 	  	display: block;
 	  	font-size: 1.2em;
@@ -407,24 +418,31 @@
 
 	/* Active Govenor Banner */
 	.active-gov-bar .gov-bar {
-		height: 96px;
+		height: 88px;
 	}
 
 	.active-gov-bar .site-bar {
-		top: 96px;
+		top: 88px;
+	}
+
+	.active-gov-bar .gov-pull-down-container {
+		top: 88px;
 	}
 
 	.active-gov-bar .gov-pull-down {
-		background: url(images/close.svg) no-repeat 10px 8px #036;
+		background: url(images/close-x-white.svg) no-repeat 6px 8px transparent;
 		background-size: 24px 24px;
-		top: 96px;
 	}
 
+	/* Active Site Search */
+	.active-site-search .site-bar .mobile-functions .mobile-icons.active {
+		background: url(images/close-x-gray.svg) no-repeat 12px 12px #fff;
+		background-size: 24px 24px;
+	}
 
 	/* Active Site Search */
-	.active-site-search .site-bar .mobile-functions .mobile-icons.active,
 	.active-site-menu .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close.svg) no-repeat 12px 12px #3B3B3B;
+		background: url(images/close-x-white.svg) no-repeat 12px 12px #666;
 		background-size: 24px 24px;
 	}
 
@@ -434,7 +452,7 @@
 
 	/* Active Site Menu */
 	.active-site-menu .global-nav .nav-container {
-		height: 364px;
+		height: 356px;
 	}
 
 	/* Utility Classes */
@@ -443,9 +461,9 @@
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 48em) {
 
-
 	.gov-bar {
-		box-shadow: 0 1px 1px #000000;
+		background: #036;
+		border-bottom: 1px solid #555;
 		position: relative;
 		-webkit-transition: height 0s ease-in;
 		        transition: height 0s ease-in;
@@ -514,7 +532,8 @@
 	/* Site Header */
 
 	.site-bar {
-		background: #666666;
+		background-image: -webkit-linear-gradient(#363636, #282828);
+    	background-image:         linear-gradient(#363636, #282828);
 		height: 90px;
 		position: relative;
 		width: 100%
@@ -531,7 +550,7 @@
 	.site-bar a.site-logo {
 		font-size: 2em;
 		margin: 0 0 0 .3em;
-		padding: 0.5em 0 0 0;
+		padding: 0.22em 0 0 0;
 	}
 
 	.site-bar .site-functions {
@@ -544,6 +563,7 @@
 	}
 
 	.site-bar .site-functions .site-search {
+		border-bottom: none;
 		background: transparent;
 		height: 48px;
 		overflow: visible;
@@ -552,6 +572,14 @@
 		top: 50%;
 		margin-top: -36px;
 		width: 15em;
+	}
+
+	.site-bar .site-functions .site-search input[type=search] {
+		width: 82%;
+	}
+
+	.site-bar .site-functions .site-button {
+		width: 18%;
 	}
 
 	.global-nav {
@@ -566,6 +594,9 @@
 
 	.global-nav .nav-container {
 		height: auto;
+		border-color: #555 #555 #454545 #555;
+		border-style: solid;
+		border-width: 0 1px 1px 1px;
 	}
 
 	.global-nav ul li {
@@ -585,6 +616,11 @@
 
 /* Page Lock at 960px */
 @media only screen and (min-width: 60em) {
+
+	.gov-bar {
+		background: #036;
+	}
+
 	.gov-bar .gov-wrap,
 	.site-bar .site-wrap,
 	.global-nav,
@@ -608,10 +644,15 @@
 
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {
-
+	.gov-bar {
+		background: #036;
+	}
 }
 
 /* X-Large Displays: 1400px and up */
 @media only screen and (min-width: 90em) {
+	.gov-bar {
+		background: #036;
+	}
+}
 
-}}

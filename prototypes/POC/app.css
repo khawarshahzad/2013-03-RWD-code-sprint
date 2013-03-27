@@ -374,7 +374,7 @@
 	/* Global Navigation Bar */
 
 	.global-nav {
-		background: #666;
+		background: #033;
 		position: absolute;
 		top: 48px;
 		width: 100%;
@@ -396,12 +396,12 @@
 	}
 
 	.global-nav ul li {
-		border-right: 1px solid #757575;
-		border-bottom: 1px solid #757575;
+		border-right: 1px solid #444;
+		border-bottom: 1px solid #444;
 	}
 
 	.global-nav ul li a {
-		background: #666;
+		background: #033;
 		color: #FFF;
 	  	display: block;
 	  	font-size: 1.15em;
@@ -447,7 +447,7 @@
 
 	/* Active Menu */
 	.active-site-menu .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close.svg) no-repeat 10px 12px #666;
+		background: url(images/close.svg) no-repeat 10px 12px #033;
 		background-size: 28px;
 	}
 

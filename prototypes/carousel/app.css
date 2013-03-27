@@ -37,3 +37,6 @@
 	border-color: transparent transparent transparent #fff;
 	top: 16px;
 }
+.orbit-bullets{
+	display: none;
+}

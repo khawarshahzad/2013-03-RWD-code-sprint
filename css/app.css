@@ -928,20 +928,23 @@ ul.f-dropdown li {
 .section-container.tabs .section .title,
 .section-container.auto section .title,
 .section-container.auto .section .title {
-  border-top-left-radius: 0.375em;
-  border-top-right-radius: 0.375em;
-  background-clip: padding-box;
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal; }
+
+.section-container.tabs section .title,
+.section-container.tabs .section .title {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-clip: padding-box; }
 
 .section-container section .content,
 .section-container .section .content,
 .section-container.auto section .content,
 .section-container.auto .section .content {
   background-color: transparent;
-  border-top-right-radius: 0.1875em;
-  border-bottom-left-radius: 0.1875em;
-  border-bottom-right-radius: 0.1875em;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   background-clip: padding-box; }
 
 .section-container section .title a,
@@ -958,17 +961,20 @@ ul.f-dropdown li {
 .section-container.accordion .section .title {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
+.auto section.section,
 .accordion section.section {
   margin-bottom: 0.5em;
-  border-radius: 0.1875em;
+  border-radius: 3px;
   background-clip: padding-box;
   border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc; }
 
+.auto section.section:last-child,
 .accordion section.section:last-child {
   margin-bottom: 0; }
 
+.auto section.section p a,
 .accordion section.section p a {
   text-overflow: ellipsis; }
 

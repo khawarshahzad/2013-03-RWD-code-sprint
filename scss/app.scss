@@ -135,11 +135,15 @@ ul.f-dropdown li {
 .section-container.tabs .section .title,
 .section-container.auto section .title,
 .section-container.auto .section .title {
-  border-top-left-radius: emCalc(6px);
-  border-top-right-radius: emCalc(6px);
-  background-clip: padding-box;
   font-family: $font-sans-bold;
   font-weight: normal;
+}
+
+.section-container.tabs section .title,
+.section-container.tabs .section .title {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-clip: padding-box;
 }
 
 .section-container section .content,
@@ -147,9 +151,9 @@ ul.f-dropdown li {
 .section-container.auto section .content,
 .section-container.auto .section .content {
   background-color: transparent; // Bleeds over the border radius
-  border-top-right-radius: emCalc(3px);
-  border-bottom-left-radius: emCalc(3px);
-  border-bottom-right-radius: emCalc(3px);
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   background-clip: padding-box;
 }
 
@@ -172,19 +176,22 @@ ul.f-dropdown li {
   font-family: $font-sans;
 }
 
+.auto section.section,
 .accordion section.section {
   margin-bottom: 0.5em;
-  border-radius: emCalc(3px);
+  border-radius: 3px;
   background-clip: padding-box;
   border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
 }
 
+.auto section.section:last-child,
 .accordion section.section:last-child {
   margin-bottom: 0;
 }
 
+.auto section.section p a,
 .accordion section.section p a {
   text-overflow: ellipsis;
 }

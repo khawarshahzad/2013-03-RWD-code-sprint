@@ -240,7 +240,6 @@ select {
     float: none !important; } }
 /* Styles for screens that are atleast 768px; */
 @media only screen and (min-width: 48em) {
-	
   .row .large-1 {
     position: relative;
     width: 8.33333%; }
@@ -3786,8 +3785,7 @@ table {
   .f-dropdown li {
     font-size: 0.875em;
     cursor: pointer;
-    /* NYS DTF remove (add padding to label instead) */
-    /*padding: 0.3125em 0.625em;*/
+    padding: 0.3125em 0.625em;
     line-height: 1.125em;
     margin: 0; }
     .f-dropdown li:hover, .f-dropdown li:focus {

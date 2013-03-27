@@ -1,13 +1,3 @@
-/*.icon-sub-content:after {
-    content: '\e75e';
-    float: right;
-    font-size: 1.2em;
-    line-height: inherit;
-    margin-top: -.10em;
-  }
-*/
-.auto section.auto.active p a:after,
-.auto section.section.active p a:after,
 .accordion section.auto.active p a:after,
 .accordion section.section.active p a:after {
   content: '∧';
@@ -18,8 +8,6 @@
   margin-top: -.10em;
 }
 
-.auto section.auto p a:after,
-.auto section.section p a:after,
 .accordion section.auto p a:after,
 .accordion section.section p a:after {
   content: '∨';
@@ -28,4 +16,27 @@
   font-size: 1.2em;
   line-height: inherit;
   margin-top: -.10em;
+}
+
+/* Same styles as above */
+@media screen and (max-width: 768px) {
+  .auto section.auto.active p a:after,
+  .auto section.section.active p a:after {
+    content: '∧';
+    /*content: '\e75e';*/
+    float: right;
+    font-size: 1.2em;
+    line-height: inherit;
+    margin-top: -.10em;
+  }
+
+  .auto section.auto p a:after,
+  .auto section.section p a:after {
+    content: '∨';
+    /*content: '\e75e';*/
+    float: right;
+    font-size: 1.2em;
+    line-height: inherit;
+    margin-top: -.10em;
+  }
 }

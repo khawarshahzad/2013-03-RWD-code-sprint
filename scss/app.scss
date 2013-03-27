@@ -146,6 +146,23 @@ ul.f-dropdown li {
   background-clip: padding-box;
 }
 
+.section-container.auto section .title,
+.section-container.auto .section .title{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-clip: padding-box;
+}
+
+/* Same styles as above */
+@media screen and (min-width: 768px) {
+  .section-container.auto section .title,
+  .section-container.auto .section .title {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-clip: padding-box;
+  }
+}
+
 .section-container section .content,
 .section-container .section .content,
 .section-container.auto section .content,
@@ -171,6 +188,8 @@ ul.f-dropdown li {
 
 // Accordion
 
+.section-container.auto section .title,
+.section-container.auto .section .title,
 .section-container.accordion section .title,
 .section-container.accordion .section .title {
   font-family: $font-sans;

@@ -921,26 +921,14 @@ ul.f-dropdown li {
 
 .section-container.accordion section .title,
 .section-container.accordion .section .title {
-  font-weight: bold; }
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
 
 .section-container.tabs section .title,
 .section-container.tabs .section .title {
   border-top-left-radius: 0.375em;
   border-top-right-radius: 0.375em;
-  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal; }
-
-.section-container.tabs section:first-child .title,
-.section-container.tabs .section:first-child .title {
-  border-top-left-radius: 0.375em;
-  border-top-right-radius: 0;
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal; }
-
-.section-container.tabs section:last-child .title,
-.section-container.tabs .section:last-child .title {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0.375em;
   font-weight: normal; }
 
 .section-container section .title a,
@@ -952,6 +940,22 @@ ul.f-dropdown li {
 .section-container.auto section .title,
 .section-container.auto .section .title {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+.section-container,
+.section-container.auto {
+  border: none; }
+
+.accordion section.section {
+  margin-bottom: 0.5em;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc; }
+
+.accordion section.section:last-child {
+  margin-bottom: 0; }
+
+.accordion section.section p a {
+  text-overflow: ellipsis; }
 
 /* ************************************** */
 /* ****** End Foundation Overrides ****** */

@@ -148,6 +148,10 @@
 		position: relative;
 	}
 
+	.off-canvas.active-gov-bar .site-bar {
+		top: 0;
+	}
+
 	.off-canvas .global-nav {
 		height: 46px;
 		overflow: visible;

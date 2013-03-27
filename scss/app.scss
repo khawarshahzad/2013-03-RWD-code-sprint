@@ -131,18 +131,24 @@ ul.f-dropdown li {
 
 // Sections
 
-.section-container.accordion section .title,
-.section-container.accordion .section .title {
-  font-family: $font-sans-bold;
-  font-weight: normal;
-}
-
 .section-container.tabs section .title,
 .section-container.tabs .section .title {
   border-top-left-radius: emCalc(6px);
   border-top-right-radius: emCalc(6px);
+  background-clip: padding-box;
   font-family: $font-sans-bold;
   font-weight: normal;
+}
+
+.section-container section .content,
+.section-container .section .content,
+.section-container.auto section .content,
+.section-container.auto .section .content {
+  background-color: transparent; // Bleeds over the border radius
+  border-top-right-radius: emCalc(3px);
+  border-bottom-left-radius: emCalc(3px);
+  border-bottom-right-radius: emCalc(3px);
+  background-clip: padding-box;
 }
 
 .section-container section .title a,
@@ -154,7 +160,8 @@ ul.f-dropdown li {
 
 .section-container.auto section .title,
 .section-container.auto .section .title {
-  font-family: $font-sans-bold;
+  font-family: $font-sans;
+  font-weight: normal;
 }
 
 .section-container,
@@ -162,8 +169,17 @@ ul.f-dropdown li {
   border: none;
 }
 
+// Accordion
+
+.section-container.accordion section .title,
+.section-container.accordion .section .title {
+  font-family: $font-sans;
+}
+
 .accordion section.section {
   margin-bottom: 0.5em;
+  border-radius: emCalc(3px);
+  background-clip: padding-box;
   border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;

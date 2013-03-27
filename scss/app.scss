@@ -264,8 +264,8 @@ img .respimg {
   color:#FFF;
 }
 #wrapper {
-  -webkit-transition: height 240ms ease,width 240ms ease,margin 240ms ease;
-  transition: height 240ms ease,width 240ms ease,margin 240ms ease;
+  -webkit-transition: height 1250ms ease,width 1250ms ease,margin 1250ms ease;
+  transition: height 1250ms ease,width 1250ms ease,margin 1250ms ease;
   box-shadow: 0 0 12px 1px #000;
   -webkit-transform: translate3d(0, 0, 0);
   position: relative;
@@ -310,14 +310,20 @@ img .respimg {
   pointer-events: none;
 }
 
-#wrapper[data-device="smartphonePortrait"].keyboard,#wrapper[data-device="smartphoneLandscape"].keyboard,#wrapper[data-device="tabletLandscape"].keyboard,#wrapper[data-device="tabletPortrait"].keyboard {
+#wrapper[data-device="smartphonePortrait"].keyboard,
+#wrapper[data-device="smartphoneLandscape"].keyboard,
+#wrapper[data-device="tabletLandscape"].keyboard,
+#wrapper[data-device="tabletPortrait"].keyboard {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 20px;
 }
 
-#wrapper[data-device="smartphonePortrait"].keyboard .keyboard-bg,#wrapper[data-device="smartphoneLandscape"].keyboard .keyboard-bg,#wrapper[data-device="tabletLandscape"].keyboard .keyboard-bg,#wrapper[data-device="tabletPortrait"].keyboard .keyboard-bg {
+#wrapper[data-device="smartphonePortrait"].keyboard .keyboard-bg,
+#wrapper[data-device="smartphoneLandscape"].keyboard .keyboard-bg,
+#wrapper[data-device="tabletLandscape"].keyboard .keyboard-bg,
+#wrapper[data-device="tabletPortrait"].keyboard .keyboard-bg {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -555,7 +561,7 @@ header .keyboard a,header .cssrefresh a {
 }
 
 .joyride-tip-guide .joyride-nub.top {
-  border-color: #DEDEDE!important;
+  border-color: transparent transparent #DEDEDE !important;
 }
 
 /* Typography */
@@ -566,6 +572,7 @@ header .keyboard a,header .cssrefresh a {
 .joyride-tip-guide h5,
 .joyride-tip-guide h6 {
   color: #333!important;
+  margin-bottom: 0.5em;
 }
 
 body .joyride-close-tip:hover, .joyride-close-tip:focus {

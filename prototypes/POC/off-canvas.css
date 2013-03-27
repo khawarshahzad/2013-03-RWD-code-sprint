@@ -1,6 +1,8 @@
 @media only screen {
 
-	html {
+	html,
+	body {
+		background: #FFF;
 		height: 100%;
 	}
 
@@ -33,16 +35,18 @@
 
 	.off-canvas .global-nav .sub-menu-title {
 		display: inline-block;
-		color: #CFCFCF;
-		font-size: 2em;
+		color: #fff;
+		font-size: 1.45em;
 		position: relative;
 		left: 20%;
-		padding-top: .4em;
+		line-height: 48px;
+		padding-top: 0.15em;
 	}
 
 	.off-canvas .global-nav .nav-container {
 		height: inherit;
 		overflow-y: scroll;
+		border-radius: 4px;
 	}
 
 	.off-canvas .global-nav ul {
@@ -87,6 +91,7 @@
 
 	.off-canvas .page {
 		position: relative;
+		height: auto;
 		min-height: 100%;
 		top: 0;
 		width: 100%;
@@ -136,7 +141,7 @@
 	}
 
 	.off-canvas .global-nav {
-		height: 48px;
+		height: 46px;
 		overflow: visible;
 		z-index: 30;
 	}
@@ -160,15 +165,16 @@
 	}
 
 	.off-canvas .global-nav ul ul {
-		display: none;
+		top: 46px;
 		position: absolute;
-		width: auto;
+		visibility: hidden;
+		width: 100%;
+		-webkit-transition: left 0;
+		transition: left 0s;
 	}
 
 	.off-canvas .global-nav ul ul.active-menu {
-		display: block;
-		top: 48px;
-		width: 100%;
+		visibility: visible;
 	}
 
 	.off-canvas .page {

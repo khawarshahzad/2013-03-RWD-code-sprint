@@ -1,5 +1,10 @@
 var sticky_page_scroll = function(){
 	var sticky_element_id="site-bar"; //enter your sticky element's ID here...
+	var additional_elements = {
+		"global-nav": {
+			top: "48"
+		}
+	}
 	var min_y_distance=0; //enter the number of px from the viewport edge you wish to pad your sticky element by...
 	var initial_y_pos;
 	var initialize = function(){
@@ -45,6 +50,12 @@ var sticky_page_scroll = function(){
 			document.getElementById(sticky_element_id).style.position="fixed";
 			document.getElementById(sticky_element_id).style.top=min_y_distance + "px";
 			document.getElementById(sticky_element_id).style.zIndex=3000;
+
+			// Check to see if there are additional elements being watched
+			if (additional_elements.length) {
+				console.log('addtional elements');
+			}
+
 		}
 		else{
 			//otherwise, we assign absolute positioning and clear out the "top" value (setting it to zero, for my needs)...

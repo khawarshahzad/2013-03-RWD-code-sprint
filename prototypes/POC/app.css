@@ -376,7 +376,7 @@
 	.global-nav {
 		background: #3B3B3B;
 		position: absolute;
-		top: 53px;
+		top: 48px;
 		width: 100%;
 		z-index: 20;
 	}

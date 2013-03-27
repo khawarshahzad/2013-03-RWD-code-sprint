@@ -32,14 +32,13 @@ $(document).ready(function(){
 		// Function for special functionality determined by the data-active value
 		function specialEvents(activeElm) {
 			switch (activeElm) {
-				case "active-site-search": 
+				case "active-site-search":
 					$('#site-search-box').focus();
 					break;
-
 			}
 		}
 
-		// Active attribute class 
+		// Active attribute class
 		var activeClass = $(this).attr('data-active'),
 			selectedClass = "active";
 

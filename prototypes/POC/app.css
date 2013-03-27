@@ -1,3 +1,8 @@
+input[type='text'],
+input[type='number'],
+input[type='search'],
+textarea {font-size:1em;}
+
 @charset "UTF-8";
 
 @font-face {
@@ -84,7 +89,7 @@
 		float: right;
 		font-size: 1.2em;
 		line-height: inherit;
-		margin-top: -.10em;
+		margin-top: -0.25em;
  	} 
 
 	.skip-to {
@@ -92,15 +97,15 @@
 	}
 
 	.gov-pull-down-container {
-		background-image: -webkit-linear-gradient(#036, #369);
-    	background-image:         linear-gradient(#036, #369);
-    	border-radius: 0 0 10px 10px;
+		background: #036;
+    	border-radius: 0 0 5px 5px;
+    	box-shadow: 1px 0px 2px #000;
     	height: 40px;
     	width: 44px;
 		margin: 0 5px 8px;
 		padding: 0 4px 4px 4px;
 		position: relative;
-		z-index: 50;
+		z-index: 35;
 
 		transition: top 0.2s ease-in;
 		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
@@ -233,6 +238,10 @@
 		width: 30%;
 	}
 
+	.gov-bar .search-container {
+		height: 37px;
+	}
+
 	/* Site Header */
 	.site-bar {
 		background: #454545;
@@ -251,10 +260,10 @@
 	.site-bar a.site-logo {
 		color: #FFF;
 		float: left;
-		font-size: 1.1em;
+		font-size: 1.2em;
 		font-weight: normal;
-		margin: -2px 0 0 50px;
-		padding: 0 0 0 0.3em;
+		margin: -2px 0 0 52px;
+		padding: 0.1em 0 0 0.3em;
 		line-height: 48px;
 	}
 
@@ -265,6 +274,7 @@
 	.site-bar .site-functions .site-search {
 		background: #FFF;
 		border-bottom: 1px solid #666;
+    	box-shadow: 2px 2px 4px #999;
 		display: block;
 		height: 0;
 		left: 0;
@@ -279,7 +289,7 @@
 	}
 
 	.site-bar .site-functions .site-search .search-container {
-		height: 32px;
+		height: 37px;
 		padding: 0 0.3em !important;
 	}
 
@@ -310,7 +320,7 @@
 	.site-bar .site-functions .site-search input[type=search] {
 		float: left;
 		border-radius: 5px 0 0 5px;
-		padding-left: 6px;
+		padding: 1px 0 0 6px;
 		width: 86%;
 		border-color: #999;
 		color: #333;
@@ -373,7 +383,7 @@
 	/* Global Navigation Bar */
 
 	.global-nav {
-		background: #666;
+		background: #333;
 		position: absolute;
 		top: 48px;
 		width: 100%;
@@ -388,21 +398,22 @@
 	}
 
 	.global-nav ul {
+		font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 
 	.global-nav ul li {
-		border-right: 1px solid #757575;
-		border-bottom: 1px solid #757575;
+		border-right: 1px solid #444;
+		border-bottom: 1px solid #444;
 	}
 
 	.global-nav ul li a {
-		background: #666;
+		background: #333;
 		color: #FFF;
 	  	display: block;
-	  	font-size: 1.2em;
+	  	font-size: 1.15em;
 	  	padding: 10px 15px;
 	}
 
@@ -433,24 +444,24 @@
 	}
 
 	.active-gov-bar .gov-pull-down {
-		background: url(images/close-x-white.svg) no-repeat 6px 8px transparent;
-		background-size: 24px 24px;
+		background: url(images/close.svg) no-repeat 5px 7px transparent;
+		background-size: 28px;
 	}
 
 	/* Active Site Search */
 	.active-site-search .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close-x-gray.svg) no-repeat 12px 12px #fff;
-		background-size: 24px 24px;
+		background: url(images/close-x-gray.svg) no-repeat 10px 12px #fff;
+		background-size: 28px;
 	}
 
-	/* Active Site Search */
+	/* Active Menu */
 	.active-site-menu .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close-x-white.svg) no-repeat 12px 12px #666;
-		background-size: 24px 24px;
+		background: url(images/close.svg) no-repeat 10px 12px #333;
+		background-size: 28px;
 	}
 
 	.active-site-search .site-functions .site-search {
-		height: 48px;
+		height: 53px;
 	}
 
 	/* Active Site Menu */
@@ -553,7 +564,7 @@
 	.site-bar a.site-logo {
 		font-size: 2em;
 		margin: 0 0 0 .3em;
-		padding: 0.22em 0 0 0;
+		padding: 0.4em 0 0 0;
 	}
 
 	.site-bar .site-functions {
@@ -568,6 +579,7 @@
 	.site-bar .site-functions .site-search {
 		border-bottom: none;
 		background: transparent;
+		box-shadow: none;
 		height: 48px;
 		overflow: visible;
 		left: auto;
@@ -575,6 +587,10 @@
 		top: 50%;
 		margin-top: -36px;
 		width: 15em;
+	}
+
+	.site-bar .site-functions .site-search form {
+		margin: 0;
 	}
 
 	.site-bar .site-functions .site-search input[type=search] {
@@ -586,20 +602,19 @@
 	}
 
 	.global-nav {
+		border-radius: 5px;
 		display: block;
-		height: 48px;
+		height: 46px;
 		overflow: hidden;
 		position: relative;
 		top: 0;
 		margin-top: -24px;
-		border-radius: 4px;
 	}
 
 	.global-nav .nav-container {
+		border-radius: 5px;
 		height: auto;
-		border-color: #555 #555 #454545 #555;
-		border-style: solid;
-		border-width: 0 1px 1px 1px;
+		background: #666;
 	}
 
 	.global-nav ul li {
@@ -607,6 +622,7 @@
 	}
 
 	.global-nav ul li a {
+		background: #666;
 		font-size: 1em;
 	}
 

@@ -374,7 +374,7 @@
 	/* Global Navigation Bar */
 
 	.global-nav {
-		background: #033;
+		background: #333;
 		position: absolute;
 		top: 48px;
 		width: 100%;
@@ -401,7 +401,7 @@
 	}
 
 	.global-nav ul li a {
-		background: #033;
+		background: #333;
 		color: #FFF;
 	  	display: block;
 	  	font-size: 1.15em;
@@ -447,7 +447,7 @@
 
 	/* Active Menu */
 	.active-site-menu .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close.svg) no-repeat 10px 12px #033;
+		background: url(images/close.svg) no-repeat 10px 12px #333;
 		background-size: 28px;
 	}
 
@@ -601,6 +601,7 @@
 	.global-nav .nav-container {
 		border-radius: 5px;
 		height: auto;
+		background: #666;
 	}
 
 	.global-nav ul li {
@@ -608,6 +609,7 @@
 	}
 
 	.global-nav ul li a {
+		background: #666;
 		font-size: 1em;
 	}
 

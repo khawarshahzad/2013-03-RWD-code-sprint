@@ -950,11 +950,6 @@ ul.f-dropdown li {
 .section-container.auto .section .title a {
   padding: 8px 14px; }
 
-.section-container.auto section .title,
-.section-container.auto .section .title {
-  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal; }
-
 .section-container,
 .section-container.auto {
   border: none; }

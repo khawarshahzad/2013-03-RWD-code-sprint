@@ -925,7 +925,9 @@ ul.f-dropdown li {
   font-size: 0.9em; }
 
 .section-container.tabs section .title,
-.section-container.tabs .section .title {
+.section-container.tabs .section .title,
+.section-container.auto section .title,
+.section-container.auto .section .title {
   border-top-left-radius: 0.375em;
   border-top-right-radius: 0.375em;
   background-clip: padding-box;
@@ -992,6 +994,9 @@ ul.f-dropdown li {
   .rt-table-dropdown label {
     display: block;
     padding: 1em; }
+
+.rt-table-menu {
+  margin-bottom: 1em; }
 
 .rt-table-menu + table {
   margin-top: 1em; }

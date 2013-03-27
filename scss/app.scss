@@ -132,7 +132,9 @@ ul.f-dropdown li {
 // Sections
 
 .section-container.tabs section .title,
-.section-container.tabs .section .title {
+.section-container.tabs .section .title,
+.section-container.auto section .title,
+.section-container.auto .section .title {
   border-top-left-radius: emCalc(6px);
   border-top-right-radius: emCalc(6px);
   background-clip: padding-box;
@@ -220,6 +222,10 @@ ul.f-dropdown li {
     display: block;
     padding: 1em;
   }
+}
+
+.rt-table-menu {
+  margin-bottom: 1em;
 }
 
 .rt-table-menu + table {

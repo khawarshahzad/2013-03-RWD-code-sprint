@@ -7,7 +7,7 @@ window.resbook = {};
         wrapper = null,
         devices = null,
         close = null,
-        keyboard = null,
+        //keyboard = null,
         body = null,
         size = null,
         auto = true,
@@ -65,7 +65,7 @@ window.resbook = {};
         devices = d.getElementById('devices');
         size = d.getElementById('size');
         close = d.querySelector('.close a');
-        keyboard = d.querySelector('.keyboard a');
+        //keyboard = d.querySelector('.keyboard a');
         body = d.querySelector('body');
         if (window.chrome || (window.getComputedStyle && !window.globalStorage && !window.opera)) {}
         [].forEach.call(document.querySelectorAll('#devices a'), function (el) {
@@ -98,12 +98,12 @@ window.resbook = {};
                 }, 10)
             })
         });
-        keyboard.addEventListener('click', function (e) {
+        /*keyboard.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
             keyboard.classList.toggle('active');
             wrapper.classList.toggle('keyboard')
-        }, false);
+        }, false);*/
         w.addEventListener('resize', function () {
             resize()
         }, false);

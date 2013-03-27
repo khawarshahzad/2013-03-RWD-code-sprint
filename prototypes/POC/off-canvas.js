@@ -11,14 +11,14 @@ $(document).ready(function(){
 	var rootMenu = $('#global-nav').find('a[href="#"]');
 
 	rootMenu.each(function() {
-		
+
 		// Save off the link item just in case
 		var link = $(this),
 			subMenu = link.next('ul');
 
 		// Check to see if there is a ul next to the anchor
 		if (subMenu.length) {
-			
+
 			// We have a sub menu item so create the click event
 			link.on('click', function(event){
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
 			});
 		}
 
-	})
+	});
 
 	// Bind for menu-back
 	$('#menu-back').on('click', function(){
@@ -48,7 +48,7 @@ $(document).ready(function(){
 			numberOfSubs.last().removeClass('active-menu');
 
 			// See if there are other menus
-			if ($('.active-menu').length == 0) {
+			if ($('.active-menu').length === 0) {
 				$('body').removeClass('active-sub-menu');
 			}
 
@@ -57,6 +57,6 @@ $(document).ready(function(){
 
 	});
 
-	console.log(rootMenu);
+	// console.log(rootMenu);
 
 });

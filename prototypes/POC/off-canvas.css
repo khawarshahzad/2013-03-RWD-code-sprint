@@ -4,6 +4,11 @@
 		height: 100%;
 	}
 
+	.off-canvas .gov-pull-down {
+		height: 40px;
+		width: 44px;
+	}
+
 	.off-canvas .gov-bar {
 		position: absolute;
 		width: 100%;
@@ -83,11 +88,12 @@
 	.off-canvas .page {
 		position: relative;
 		min-height: 100%;
-		top: 48px;
+		top: 0;
 		width: 100%;
 	}
 
 	.off-canvas .gov-pull-down,
+	.off-canvas .gov-pull-down-container,
 	.off-canvas .gov-bar,
 	.off-canvas .site-bar,
 	.off-canvas .page {
@@ -96,10 +102,11 @@
 	}
 
 	.off-canvas.active-gov-bar .site-bar {
-		top: 96px;
+		top: 88px;
 	}
 
 	.off-canvas.active-site-menu .gov-pull-down,
+	.off-canvas.active-site-menu .gov-pull-down-container,
 	.off-canvas.active-site-menu .gov-bar,
 	.off-canvas.active-site-menu .site-bar,
 	.off-canvas.active-site-menu .page {

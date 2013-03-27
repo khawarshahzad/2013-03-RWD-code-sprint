@@ -73,7 +73,7 @@
 .icon-phone:before { content: '📞'; } /* '\1f4de' */
 .icon-phone-1:before { content: '\e800'; } /* '' */
 .icon-search:before { content: '🔍'; } /* '\1f50d' */
-.icon-right-open-after:after { 
+.icon-right-open-after:after {
 	content: '\e75e';
 	float: right;
 	font-size: 1.2em;
@@ -102,31 +102,20 @@
 		width: 44px;
 		z-index: 50;
 
+		-webkit-transition: top 0.2s ease-in;
 		transition: top 0.2s ease-in;
-		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
-		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
-		-o-transition: top 0.2s ease-in; /* Opera */
 	}
 
-
-	/* temp font - Helvetica doesn't look great */
-	.gov-bar, .site-bar, h1 {
-		font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-	}
 
 	.gov-bar {
 		background: #036;
-		/*-webkit-box-shadow: 0 1px 2px #000000;
-		-moz-box-shadow: 0 1px 2px #000000;
-		box-shadow: 0 1px 2px #000000; */
+		/*box-shadow: 0 1px 2px #000000; */
 		position: absolute;
 		top: 0;
 		height: 0;
 		overflow: hidden;
+		-webkit-transition: height 0.2s ease-in;
 		transition: height 0.2s ease-in;
-		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
-		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
-		-o-transition: height 0.2s ease-in; /* Opera */
 		width: 100%;
 		z-index: 40;
 	}
@@ -244,7 +233,7 @@
 	.site-bar {
 		background: #666666;
 		background-image: -webkit-linear-gradient(#505050, #333);
-    	background-image:         linear-gradient(#505050, #333);
+    background-image:         linear-gradient(#505050, #333);
 		height: 48px;
 		position: absolute;
 		top: 0;
@@ -252,10 +241,8 @@
 		z-index: 30;
 		border-bottom: 1px solid #666;
 
+		-webkit-transition: top 0.2s ease-in;
 		transition: top 0.2s ease-in;
-		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
-		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
-		-o-transition: top 0.2s ease-in; /* Opera */
 	}
 
 	.site-bar a.site-logo {
@@ -285,10 +272,8 @@
 		width: 100%;
 		z-index: 15;
 
+		-webkit-transition: height 0.2s ease-in;
 		transition: height 0.2s ease-in;
-		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
-		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
-		-o-transition: height 0.2s ease-in; /* Opera */
 	}
 
 	.site-bar .site-functions .site-search .search-container {
@@ -376,7 +361,7 @@
 	.global-nav {
 		background: #3B3B3B;
 		position: absolute;
-		top: 53px;
+		top: 47px;
 		width: 100%;
 		z-index: 20;
 	}
@@ -384,10 +369,8 @@
 	.global-nav .nav-container {
 		height: 0;
 		overflow: hidden;
+		-webkit-transition: height 0.2s ease-in;
 		transition: height 0.2s ease-in;
-		-moz-transition: height 0.2s ease-in; /* Firefox 4 */
-		-webkit-transition: height 0.2s ease-in; /* Safari and Chrome */
-		-o-transition: height 0.2s ease-in; /* Opera */
 	}
 
 	.global-nav ul {
@@ -420,7 +403,7 @@
 		z-index: 10;
 		padding: 1em;
 	}
-	
+
 
 	/* Active Govenor Banner */
 	.active-gov-bar .gov-bar {
@@ -462,14 +445,10 @@
 
 
 	.gov-bar {
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
 		box-shadow: 0 1px 1px #000000;
 		position: relative;
-		transition: height 0s ease-in;
-		-moz-transition: height 0s ease-in; /* Firefox 4 */
-		-webkit-transition: height 0s ease-in; /* Safari and Chrome */
-		-o-transition: height 0s ease-in; /* Opera */
+		-webkit-transition: height 0s ease-in;
+		        transition: height 0s ease-in;
 	}
 
 	.gov-bar,
@@ -544,10 +523,8 @@
 	.site-bar,
 	.active-gov-bar .site-bar {
 		top: 0;
+		-webkit-transition: top 0s ease-in;
 		transition: top 0s ease-in;
-		-moz-transition: top 0s ease-in; /* Firefox 4 */
-		-webkit-transition: top 0s ease-in; /* Safari and Chrome */
-		-o-transition: top 0s ease-in; /* Opera */
 		z-index: 0;
 	}
 

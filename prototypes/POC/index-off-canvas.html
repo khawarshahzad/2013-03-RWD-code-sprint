@@ -15,9 +15,11 @@
 	<body class="off-canvas">
 		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
 		<a href="#page" class="skip-to">Skip to Content</a>
-		<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
-			Open New York State Search
-		</a>
+		<div class="gov-pull-down-container show-for-small">
+			<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
+				Open New York State Search
+			</a>
+		</div>
 		<div id="gov-bar" class="gov-bar">
 			<div class="gov-wrap">
 				<div class="state-links">
@@ -69,7 +71,9 @@
 								<label for="site-search-box">Search</label>
 								<div class="search-container">
 									<input type="search" id="site-search-box" class="site-search-box" />
-									<input type="submit" class="site-search-button" value="Search Agency"  />
+									<div class="site-button">
+										<input type="submit" class="site-search-button" value="Search Agency"  />
+									</div>
 								</div>
 							</fieldset>
 						</form>
@@ -81,27 +85,44 @@
 			<div class="nav-container">
 				<ul>
 					<li>
-						<a href="#" class="icon-right-open-after">Menu Item 1</a>
+						<a href="#" class="icon-sub-content">Menu Item 1</a>
 						<ul>
 							<li>
-								<a href="#">Sub-Menu Item 1</a>
+								<a href="#">Sub-Menu Item 1.1</a>
 							</li>
 							<li>
-								<a href="#">Sub-Menu Item 2</a>
+								<a href="#">Sub-Menu Item 1.2</a>
 							</li>
 							<li>
-								<a href="#">Sub-Menu Item 3</a>
+								<a href="#">Sub-Menu Item 1.3</a>
 							</li>
 							<li>
-								<a href="#">Sub-Menu Item 4</a>
+								<a href="#">Sub-Menu Item 1.4</a>
 							</li>
 							<li>
-								<a href="#">Sub-Menu Item 5</a>
+								<a href="#">Sub-Menu Item 1.5</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#">Menu Item 2</a>
+						<a href="#" class="icon-sub-content">Menu Item 2</a>
+						<ul>
+							<li>
+								<a href="#">Sub-Menu Item 2.1</a>
+							</li>
+							<li>
+								<a href="#">Sub-Menu Item 2.2</a>
+							</li>
+							<li>
+								<a href="#">Sub-Menu Item 2.3</a>
+							</li>
+							<li>
+								<a href="#">Sub-Menu Item 2.4</a>
+							</li>
+							<li>
+								<a href="#">Sub-Menu Item 2.5</a>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="#">Menu Item 3</a>

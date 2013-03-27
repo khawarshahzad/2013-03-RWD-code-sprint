@@ -1,11 +1,12 @@
+/*global Modernizr: false */
+
 $(function(){
-  if ( parent.$("#devices").length <=0 && window.matchMedia("(min-width: 48em)").matches ) {
-    javascript:void(
+  if ( parent.$("#devices").length <=0 && !Modernizr.touch ) {
       (function(){
-        var d=document;
+        var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title+
-        '<\/title><link rel="stylesheet" href="..\/css/app.css"><link rel="stylesheet" href="..\/css/foundation.css"><\/head>' +
+        '<\/title><link rel="stylesheet" href="../css/foundation.css"><link rel="stylesheet" href="../css/app.css"><\/head>' +
         '<body id="resize-bar-body">' +
         '<header>' +
         //'<div class="close"><a href="#">X<\/a><\/div>' +
@@ -14,7 +15,7 @@ $(function(){
         //'<div class="cssrefresh"><a href="#">I<\/a><\/div>' +
         '<div id="devices">' +
         '  <a href="#" class="tablet-landscape"><span>Tablet Landscape<\/span><\/a>' +
-        '  <a href="#" class="tablet-portrait"><span>Tablet Portrait<\/span><\/a>' +
+        '  <a href="#" class="tablet-portrait" id="tablet-landscape-joyride"><span>Tablet Portrait<\/span><\/a>' +
         '  <a href="#" class="smartphone-landscape"><span>iPhone Landscape<\/span><\/a>' +
         '  <a href="#" class="smartphone-portrait"><span>iPhone Portrait<\/span><\/a>' +
         '  <a href="#" id="desktop-view" class="auto active"><span>Desktop<\/span><\/a>' +
@@ -23,30 +24,30 @@ $(function(){
         '   <h4>Getting Started!<\/h4>'+
         '   <p>This tutorial will teach you how to use the "Resize Bar" available throughout the demo site.<\/p>'+
         '  <\/li>'+
-        '  <li data-id="devices">'+
+        '  <li data-id="tablet-landscape-joyride">'+
         '   <h4>Choose a Device<\/h4>'+
         '   <p>Click any of these buttons to see how this site would look on various devices.<\/p><p><strong>Go ahead, click one now!<\/strong><\/p>'+
         '  <\/li>'+
-        '  <li data-button="Next">'+
+        '  <li data-button="Yes!">'+
         '   <h4>Notice a Difference?<\/h4>'+
         '   <p>You are now viewing the same page at a smaller size.<\/p>'+
         '  <\/li>'+
-        '  <li data-id="keyboard" data-button="Next">'+
-        '   <h4>Show a Keyboard<\/h4>'+
-        '   <p>Clicking this button will show/hide a keyboard overlay.<\/p>'+
-        '  <\/li>'+
+        // '  <li data-id="keyboard" data-button="Next">'+
+        // '   <h4>Show a Keyboard<\/h4>'+
+        // '   <p>Clicking this button will show/hide a keyboard overlay.<\/p>'+
+        // '  <\/li>'+
         '  <li data-id="desktop-view" data-button="Close">'+
         '   <h4>Desktop View<\/h4>'+
         '   <p>Clicking "Desktop" will bring you back to full screen mode.<\/p>'+
         '   <p>Go ahead and explore the Responsive demos now!<\/p>'+
         '  <\/li>'+
-        '  </ol>  <script src="..\/js\/vendor\/jquery.js"><\/script>'+
-        '<script src="..\/js\/foundation\/foundation.js"><\/script>'+
-        '<script src="..\/js\/foundation\/foundation.joyride.js"><\/script>'+
-        '<script src="..\/js\/app\/demo-bar-post.js"><\/script>'+
-        '<\/body><\/html>')
-        })
-    ()); 
+        '  </ol>  ' +
+        //'<script src="../../js/vendor/jquery.js">' + '</sc' + 'ript>'+
+        // '<script src="../js/foundation/foundation.js"></script>'+
+        '<script src="../js/foundation/foundation.joyride.js"></script>'+
+        '<script src="../js/app/demo-bar-post.js"></script>'+
+        '<\/body><\/html>');
+    }());
     window.resbook = {};
     (function (rb) {
         var d = document,
@@ -72,12 +73,12 @@ $(function(){
                 w = w || wrapper.clientWidth;
                 //h = h || wrapper.clientHeight;
                 f = f || "Desktop";
-                size.innerHTML = f//w + 'x' + h
+                size.innerHTML = f; //w + 'x' + h
             }, setPosition = function (wh, t, cl, myTxt) {
-                var width = (wh == 'auto') ? w.innerWidth : wh[0],
-                    height = (wh == 'auto') ? w.innerHeight : wh[1],
+                var width = (wh === 'auto') ? w.innerWidth : wh[0],
+                    height = (wh === 'auto') ? w.innerHeight : wh[1],
                     style = 'width:' + width + 'px;';
-                if (typeof (width) == 'undefined' || typeof (height) == 'undefined') return false;
+                if (typeof (width) === 'undefined' || typeof (height) === 'undefined') { return false; }
                 style += (wh === 'auto') ? 'margin-top:0;' : '';
                 wrapper.setAttribute('style', style);
                 wrapper.setAttribute('data-device', cl);
@@ -88,24 +89,24 @@ $(function(){
                     setTimeout(function () {
                         wrapper.setAttribute('style', '');
                         body.setAttribute('style', '');
-                        isAnimated = false
-                    }, 260)
+                        isAnimated = false;
+                    }, 260);
                 } else {
-                    isAnimated = false
+                    isAnimated = false;
                 }
             }, readyElement = function (id, callback) {
                 var interval = setInterval(function () {
                     if (d.getElementById(id)) {
                         callback(d.getElementById(id));
-                        clearInterval(interval)
+                        clearInterval(interval);
                     }
-                }, 60)
+                }, 60);
             };
         rb.changeUrl = function (u, t) {
             d.title = t;
             if (history.pushState) {
                 try {
-                    history.pushState({}, "New Page", u)
+                    history.pushState({}, "New Page", u);
                 } catch (e) {}
             }
         };
@@ -120,7 +121,7 @@ $(function(){
             [].forEach.call(document.querySelectorAll('#devices a'), function (el) {
                 el.addEventListener('click', function (e) {
                     [].forEach.call(document.querySelectorAll('#devices a'), function (el) {
-                        el.classList.remove('active')
+                        el.classList.remove('active');
                     });
                     e.preventDefault();
                     e.stopPropagation();
@@ -129,23 +130,23 @@ $(function(){
                     isAnimated = true;
                     if (isResized === false) {
                         isResized = true;
-                        setPosition(sizes.auto, true, 'auto', 'auto')
+                        setPosition(sizes.auto, true, 'auto', 'auto');
                     }
                     setTimeout(function () {
                         self.classList.add('active');
                         if (self.classList.contains('smartphone-portrait')) {
-                            setPosition(sizes.smartphonePortrait, false, 'smartphonePortrait', "Phone Portrait")
+                            setPosition(sizes.smartphonePortrait, false, 'smartphonePortrait', "Phone Portrait");
                         } else if (self.classList.contains('smartphone-landscape')) {
-                            setPosition(sizes.smartphoneLandscape, false, 'smartphoneLandscape', "Phone Landscape")
+                            setPosition(sizes.smartphoneLandscape, false, 'smartphoneLandscape', "Phone Landscape");
                         } else if (self.classList.contains('tablet-portrait')) {
-                            setPosition(sizes.tabletPortrait, false, 'tabletPortrait', "Tablet Portrait")
+                            setPosition(sizes.tabletPortrait, false, 'tabletPortrait', "Tablet Portrait");
                         } else if (self.classList.contains('tablet-landscape')) {
-                            setPosition(sizes.tabletLandscape, false, 'tabletLandscape', "Tablet Landscape")
+                            setPosition(sizes.tabletLandscape, false, 'tabletLandscape', "Tablet Landscape");
                         } else if (self.classList.contains('auto')) {
-                            setPosition(sizes.auto, false, 'auto', "Desktop")
+                            setPosition(sizes.auto, false, 'auto', "Desktop");
                         }
-                    }, 10)
-                })
+                    }, 10);
+                });
             });
             /*keyboard.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -154,7 +155,7 @@ $(function(){
                 wrapper.classList.toggle('keyboard')
             }, false);*/
             w.addEventListener('resize', function () {
-                resize()
+                resize();
             }, false);
             w.addEventListener('keyup', function (e) {
                 var key = e.keyCode ? e.keyCode : e.charCode,
@@ -166,11 +167,11 @@ $(function(){
                         53: 'auto'
                     };
                 if (typeof (keys[key]) == 'undefined') return false;
-                setPosition(sizes[keys[key]], false, keys[key], "auto")
+                setPosition(sizes[keys[key]], false, keys[key], "auto");
             }, false);
             resize();
-            size.style.minWidth = 0
-        })
-    })(resbook);
-  } 
+            size.style.minWidth = 0;
+        });
+    })(window.resbook);
+  }
 });

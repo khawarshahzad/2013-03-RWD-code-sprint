@@ -4,6 +4,11 @@
 		height: 100%;
 	}
 
+	.off-canvas .gov-pull-down {
+		height: 40px;
+		width: 44px;
+	}
+
 	.off-canvas .gov-bar {
 		position: absolute;
 		width: 100%;
@@ -26,6 +31,15 @@
 		z-index: 0;
 	}
 
+	.off-canvas .global-nav .sub-menu-title {
+		display: inline-block;
+		color: #CFCFCF;
+		font-size: 2em;
+		position: relative;
+		left: 20%;
+		padding-top: .4em;
+	}
+
 	.off-canvas .global-nav .nav-container {
 		height: inherit;
 		overflow-y: scroll;
@@ -33,6 +47,10 @@
 
 	.off-canvas .global-nav ul {
 		margin-left: 16%;
+	}
+
+	.off-canvas .global-nav ul li {
+		padding-left: 3%;
 	}
 
 	.off-canvas .global-nav ul ul {
@@ -70,11 +88,12 @@
 	.off-canvas .page {
 		position: relative;
 		min-height: 100%;
-		top: 48px;
+		top: 0;
 		width: 100%;
 	}
 
 	.off-canvas .gov-pull-down,
+	.off-canvas .gov-pull-down-container,
 	.off-canvas .gov-bar,
 	.off-canvas .site-bar,
 	.off-canvas .page {
@@ -83,10 +102,11 @@
 	}
 
 	.off-canvas.active-gov-bar .site-bar {
-		top: 96px;
+		top: 88px;
 	}
 
 	.off-canvas.active-site-menu .gov-pull-down,
+	.off-canvas.active-site-menu .gov-pull-down-container,
 	.off-canvas.active-site-menu .gov-bar,
 	.off-canvas.active-site-menu .site-bar,
 	.off-canvas.active-site-menu .page {
@@ -117,6 +137,12 @@
 
 	.off-canvas .global-nav {
 		height: 48px;
+		overflow: visible;
+		z-index: 30;
+	}
+
+	.off-canvas .global-nav ul li {
+		padding-left: 0;
 	}
 	
 	.off-canvas .global-nav .menu-controls {
@@ -134,8 +160,15 @@
 	}
 
 	.off-canvas .global-nav ul ul {
+		display: none;
 		position: absolute;
 		width: auto;
+	}
+
+	.off-canvas .global-nav ul ul.active-menu {
+		display: block;
+		top: 48px;
+		width: 100%;
 	}
 
 	.off-canvas .page {

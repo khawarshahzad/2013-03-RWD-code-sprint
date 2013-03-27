@@ -130,8 +130,10 @@ ul.f-dropdown li {
 
 .section-container.tabs section .title,
 .section-container.tabs .section .title {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-top-left-radius: emCalc(6px);
+  border-top-right-radius: emCalc(6px);
+  font-family: $font-sans;
+  font-weight: normal;
 }
 
 .section-container.tabs section:first-child .title,
@@ -139,19 +141,21 @@ ul.f-dropdown li {
   border-top-left-radius: emCalc(6px);
   border-top-right-radius: 0;
   font-family: $font-sans-bold;
+  font-weight: normal;
 }
 
 .section-container.tabs section:last-child .title,
 .section-container.tabs .section:last-child .title {
   border-top-left-radius: 0;
   border-top-right-radius: emCalc(6px);
+  font-weight: normal;
 }
 
 .section-container section .title a,
 .section-container .section .title a,
 .section-container.auto section .title a,
 .section-container.auto .section .title a {
-  padding: 8px 14px
+  padding: 8px 14px;
 }
 
 .section-container.auto section .title,

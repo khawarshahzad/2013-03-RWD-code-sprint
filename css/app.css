@@ -925,19 +925,23 @@ ul.f-dropdown li {
 
 .section-container.tabs section .title,
 .section-container.tabs .section .title {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
+  border-top-left-radius: 0.375em;
+  border-top-right-radius: 0.375em;
+  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
 
 .section-container.tabs section:first-child .title,
 .section-container.tabs .section:first-child .title {
   border-top-left-radius: 0.375em;
   border-top-right-radius: 0;
-  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
 
 .section-container.tabs section:last-child .title,
 .section-container.tabs .section:last-child .title {
   border-top-left-radius: 0;
-  border-top-right-radius: 0.375em; }
+  border-top-right-radius: 0.375em;
+  font-weight: normal; }
 
 .section-container section .title a,
 .section-container .section .title a,

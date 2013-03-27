@@ -136,7 +136,7 @@
 	}
 
 	.off-canvas .global-nav {
-		height: 48px;
+		height: 46px;
 		overflow: visible;
 		z-index: 30;
 	}
@@ -160,15 +160,16 @@
 	}
 
 	.off-canvas .global-nav ul ul {
-		display: none;
+		top: 46px;
 		position: absolute;
-		width: auto;
+		visibility: hidden;
+		width: 100%;
+		-webkit-transition: left 0;
+		transition: left 0s;
 	}
 
 	.off-canvas .global-nav ul ul.active-menu {
-		display: block;
-		top: 48px;
-		width: 100%;
+		visibility: visible;
 	}
 
 	.off-canvas .page {

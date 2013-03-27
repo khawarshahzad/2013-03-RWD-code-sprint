@@ -220,15 +220,6 @@
           if ($this.closest('.tabs').length || (!!$this.closest('.accordion').length && $this.closest('.auto').length && window.matchMedia('screen and (max-width: 768px)').matches)) {
             $this.css('left', previous_width);
             previous_width += self.outerWidth($(this));
-            if (!$this.closest('.accordion').length && $this.closest('.auto').length) {
-              console.log('is a tab 1 ', this);
-            }
-            else {
-              console.log('is a tab 2 ', this);
-            }
-          }
-          else {
-            console.log('not a tab ', this);
           }
         });
       }

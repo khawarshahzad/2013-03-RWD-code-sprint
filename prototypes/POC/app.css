@@ -440,8 +440,8 @@
 
 	/* Active Site Search */
 	.active-site-search .site-bar .mobile-functions .mobile-icons.active {
-		background: url(images/close-x-gray.svg) no-repeat 12px 12px #fff;
-		background-size: 24px 24px;
+		background: url(images/close-x-gray.svg) no-repeat 8px 9px #fff;
+		background-size: 32px;
 	}
 
 	/* Active Menu */

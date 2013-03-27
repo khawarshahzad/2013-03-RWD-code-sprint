@@ -1,6 +1,8 @@
 @media only screen {
 
-	html {
+	html,
+	body {
+		background: #FFF;
 		height: 100%;
 	}
 
@@ -87,6 +89,7 @@
 
 	.off-canvas .page {
 		position: relative;
+		height: auto;
 		min-height: 100%;
 		top: 0;
 		width: 100%;

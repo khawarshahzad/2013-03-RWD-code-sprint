@@ -15,9 +15,11 @@
 	<body class="off-canvas">
 		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
 		<a href="#page" class="skip-to">Skip to Content</a>
-		<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
-			Open New York State Search
-		</a>
+		<div class="gov-pull-down-container show-for-small">
+			<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
+				Open New York State Search
+			</a>
+		</div>
 		<div id="gov-bar" class="gov-bar">
 			<div class="gov-wrap">
 				<div class="state-links">
@@ -69,7 +71,9 @@
 								<label for="site-search-box">Search</label>
 								<div class="search-container">
 									<input type="search" id="site-search-box" class="site-search-box" />
-									<input type="submit" class="site-search-button" value="Search Agency"  />
+									<div class="site-button">
+										<input type="submit" class="site-search-button" value="Search Agency"  />
+									</div>
 								</div>
 							</fieldset>
 						</form>

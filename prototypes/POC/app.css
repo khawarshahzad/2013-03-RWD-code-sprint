@@ -84,7 +84,7 @@
 		float: right;
 		font-size: 1.2em;
 		line-height: inherit;
-		margin-top: -.10em;
+		margin-top: -0.25em;
  	} 
 
 	.skip-to {
@@ -266,6 +266,7 @@
 	.site-bar .site-functions .site-search {
 		background: #FFF;
 		border-bottom: 1px solid #666;
+    	box-shadow: 2px 2px 4px #999;
 		display: block;
 		height: 0;
 		left: 0;
@@ -311,7 +312,7 @@
 	.site-bar .site-functions .site-search input[type=search] {
 		float: left;
 		border-radius: 5px 0 0 5px;
-		padding-left: 6px;
+		padding: 1px 0 0 6px;
 		width: 86%;
 		border-color: #999;
 		color: #333;
@@ -389,6 +390,7 @@
 	}
 
 	.global-nav ul {
+		font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -403,7 +405,7 @@
 		background: #666;
 		color: #FFF;
 	  	display: block;
-	  	font-size: 1.2em;
+	  	font-size: 1.15em;
 	  	padding: 10px 15px;
 	}
 
@@ -569,6 +571,7 @@
 	.site-bar .site-functions .site-search {
 		border-bottom: none;
 		background: transparent;
+		box-shadow: none;
 		height: 48px;
 		overflow: visible;
 		left: auto;

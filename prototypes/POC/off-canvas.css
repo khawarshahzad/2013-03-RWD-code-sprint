@@ -35,16 +35,18 @@
 
 	.off-canvas .global-nav .sub-menu-title {
 		display: inline-block;
-		color: #CFCFCF;
-		font-size: 2em;
+		color: #fff;
+		font-size: 1.45em;
 		position: relative;
 		left: 20%;
-		padding-top: .4em;
+		line-height: 48px;
+		padding-top: 0.15em;
 	}
 
 	.off-canvas .global-nav .nav-container {
 		height: inherit;
 		overflow-y: scroll;
+		border-radius: 4px;
 	}
 
 	.off-canvas .global-nav ul {

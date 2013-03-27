@@ -42,8 +42,9 @@
       });
 
       $('*, html, body').on('click.fndtn.dropdown', function (e) {
-        if (!$(e.target).data('dropdown')) {
-          $('[data-dropdown-content]')
+        // changed by NYS DTF to close menu when it's inactive
+        if (!$(e.target).data('dropdown') && !$(e.target).closest('.f-dropdown').length) {
+          $('.f-dropdown')
             .css('left', '-99999px')
             .removeClass(self.settings.activeClass);
         }

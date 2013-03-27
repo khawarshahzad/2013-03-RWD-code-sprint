@@ -1,6 +1,6 @@
 /*global Modernizr:false */
 
-var its = (function _its () {
+var exlsr = (function _exlsr () {
   var activateEventName = 'click',
       ua = navigator.userAgent,
       iOS= false;
@@ -26,7 +26,7 @@ var its = (function _its () {
   };
 }());
 
-$(document).ready(function(){its.init();});
+$(document).ready(function(){exlsr.init();});
 
 if (Modernizr.touch) {
   // Zepto.js Touch Events
@@ -164,7 +164,7 @@ if (Modernizr.touch) {
  * iOS Fixes
  * Contains fixes for various iOS bugs
  */
-if (its.iOS) {
+if (exlsr.iOS) {
   /*! A fix for the iOS orientationchange zoom bug.
    Script by @scottjehl, rebound by @wilto.
    MIT / GPLv2 License.

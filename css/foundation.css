@@ -2117,7 +2117,7 @@ form.custom {
   .section-container .section, .section-container.auto section,
   .section-container.auto .section {
     border-top: 1px solid #cccccc;
-    position: relative; }
+	 position: relative; }
     .section-container section .title,
     .section-container .section .title, .section-container.auto section .title,
     .section-container.auto .section .title {
@@ -2125,6 +2125,7 @@ form.custom {
       cursor: pointer;
       width: 100%;
       margin: 0;
+	  font-weight:bold;
       background-color: #efefef; }
       .section-container section .title a,
       .section-container .section .title a, .section-container.auto section .title a,
@@ -2180,6 +2181,9 @@ form.custom {
       border: 1px solid #cccccc;
       border-right: 0;
       border-bottom: 0;
+	  border-top-left-radius:1em;
+	  border-top-right-radius:1em;
+	  font-weight:bold;
       position: absolute;
       z-index: 1; }
       .section-container.tabs section .title a,
@@ -2216,6 +2220,9 @@ form.custom {
       .section-container.auto .section .title {
         width: auto;
         border: 1px solid #cccccc;
+		font-weight: bold;
+	    border-top-left-radius:1em;
+	 	border-top-right-radius:1em;
         border-right: 0;
         border-bottom: 0;
         position: absolute;
@@ -2242,7 +2249,11 @@ form.custom {
         position: relative; }
 
   .section-container.accordion .section {
-    padding-top: 0 !important; }
+    padding-top: 0 !important;}
+	
+	 .section-container.accordion section .title,
+	 .section-container.accordion .section .title {
+		 font-weight: bold;}
 
   .section-container.vertical-nav {
     border: 1px solid #cccccc;

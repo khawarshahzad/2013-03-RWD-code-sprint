@@ -981,6 +981,10 @@ ul.f-dropdown li {
 .list-bullets-inside {
   list-style-position: inside; }
 
+.padding-sides-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 .rt-table-dropdown {
   max-width: 300px !important; }
   .rt-table-dropdown input {

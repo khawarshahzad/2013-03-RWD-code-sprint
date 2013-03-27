@@ -872,9 +872,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-ul, ol, dl {
-  font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-
 table thead tr th,
 table tfoot tr th {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -884,14 +881,12 @@ table tr th {
   font-weight: normal; }
 
 em,
-i,
-.italic {
+i {
   font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: normal; }
 
 strong,
-b,
-.bold {
+b {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
@@ -930,13 +925,6 @@ ul.f-dropdown li {
 .list-bullets-inside {
   list-style-position: inside; }
 
-.list-bullets-none {
-  list-style: none outside none; }
-
-.padding-sides-none {
-  padding-left: 0 !important;
-  padding-right: 0 !important; }
-
 .rt-table-dropdown {
   max-width: 300px !important; }
   .rt-table-dropdown input {
@@ -953,7 +941,6 @@ ul.f-dropdown li {
   padding-bottom: 0.9375em;
   padding-top: 1.125em; }
 
-/* Lightbox */
 .lbox-no-list {
   list-style-type: none;
   display: block; }
@@ -963,6 +950,12 @@ ul.f-dropdown li {
   padding-right: 5px;
   display: list-item;
   text-align: -webkit-match-parent; }
+
+img .respimg {
+  width: auto\9;
+  max-width: 100%;
+  height: auto;
+  border: 0; }
 
 #resize-bar-body {
   background: #333!important; }

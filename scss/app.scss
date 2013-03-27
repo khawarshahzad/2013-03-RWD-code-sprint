@@ -53,10 +53,6 @@ p {
   font-family: $font-sans;
 }
 
-ul, ol, dl {
-  font-family: $font-sans;
-}
-
 table {
 
   thead,
@@ -78,15 +74,13 @@ table {
 }
 
 em,
-i,
-.italic {
+i {
   font-family: $font-sans-italic;
   font-style: normal;
 }
 
 strong,
-b,
-.bold {
+b {
   font-family: $font-sans-bold;
   font-weight: normal;
 }
@@ -137,15 +131,6 @@ ul.f-dropdown li {
   list-style-position: inside;
 }
 
-.list-bullets-none {
-  list-style: none outside none;
-}
-
-.padding-sides-none {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
 // Responsive tables
 
 .rt-table-dropdown {
@@ -172,18 +157,27 @@ ul.f-dropdown li {
   padding-top: 1.125em;
 }
 
-/* Lightbox */
+// Lightbox
 
 .lbox-no-list {
-  list-style-type: none;
-  display:block;
+	list-style-type: none;
+	display:block;
 }
 
 .lbox-no-list li {
-  float:left;
-  padding-right:5px;
-  display: list-item;
-  text-align: -webkit-match-parent;
+	float:left;
+	padding-right:5px;
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+// Responsive Images
+
+img .respimg {
+	width: auto\9;
+	max-width: 100%;
+	height: auto;
+	border: 0;
 }
 
 #resize-bar-body{

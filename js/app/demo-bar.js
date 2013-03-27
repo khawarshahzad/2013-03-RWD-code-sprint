@@ -70,18 +70,18 @@ $(function(){
                 auto: 'auto'
             }, resize = function (w, h, f) {
                 w = w || wrapper.clientWidth;
-                h = h || wrapper.clientHeight;
+                //h = h || wrapper.clientHeight;
                 f = f || "Desktop";
                 size.innerHTML = f//w + 'x' + h
             }, setPosition = function (wh, t, cl, myTxt) {
                 var width = (wh == 'auto') ? w.innerWidth : wh[0],
                     height = (wh == 'auto') ? w.innerHeight : wh[1],
-                    style = 'width:' + width + 'px;height:' + height + 'px;margin-top:20px;';
+                    style = 'width:' + width + 'px;';
                 if (typeof (width) == 'undefined' || typeof (height) == 'undefined') return false;
                 style += (wh === 'auto') ? 'margin-top:0;' : '';
                 wrapper.setAttribute('style', style);
                 wrapper.setAttribute('data-device', cl);
-                body.setAttribute('style', 'min-height:' + height + 'px;min-width:' + width + 'px;');
+                body.setAttribute('style', 'min-width:' + width + 'px;');
                 resize(width, height, myTxt);
                 if (wh === 'auto' && !t) {
                     isResized = false;

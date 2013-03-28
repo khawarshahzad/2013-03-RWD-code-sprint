@@ -95,11 +95,23 @@
 		float: right;
 		font-size: 1.4em;
 		line-height: inherit;
-		margin-top: -0.2em;
+		margin-top: -0.2em;zxs
  	} 
 
 	.skip-to {
-		display: none;
+		background: #000;
+		border: 1px solid #FFF;
+		border-radius: 5px;
+		clip: rect(0px, 0px, 0px, 0px);
+		color: #FFF !important;
+		padding: 10px;
+		margin: 15px;
+		position: absolute;
+		z-index: 100;
+	}
+
+	.skip-to:focus {
+		clip: auto;
 	}
 
 	.gov-pull-down-container {

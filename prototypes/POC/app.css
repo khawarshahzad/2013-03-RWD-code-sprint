@@ -1,7 +1,4 @@
-input[type='text'],
-input[type='number'],
-input[type='search'],
-textarea {font-size:1em;}
+
 
 @charset "UTF-8";
 
@@ -12,6 +9,7 @@ textarea {font-size:1em;}
   font-weight: normal;
   font-style: normal;
 }
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -83,13 +81,21 @@ textarea {font-size:1em;}
 /* POC Styles */
 @media only screen {
 
+	/* iOS focus fix */
+	input[type='text'],
+	input[type='number'],
+	input[type='search'],
+	textarea {
+		font-size:1em;
+	}
+
 	/* Highjacked icon font to create after arrows */
 	.icon-sub-content:after {
 		content: '\e75e';
 		float: right;
-		font-size: 1.2em;
+		font-size: 1.4em;
 		line-height: inherit;
-		margin-top: -0.25em;
+		margin-top: -0.2em;
  	} 
 
 	.skip-to {
@@ -423,10 +429,11 @@ textarea {font-size:1em;}
 	.page {
 		background: #FFF;
 		height: 100%;
+		padding: 1em;
 		position: absolute;
+		overflow: visible;
 		top: 53px;
 		z-index: 10;
-		padding: 1em;
 	}
 
 
@@ -625,6 +632,10 @@ textarea {font-size:1em;}
 		background: #666;
 		font-size: 1em;
 	}
+
+	.icon-sub-content:after {
+		margin-top: -0.25em;
+ 	} 
 
 	.page {
 		position: relative;

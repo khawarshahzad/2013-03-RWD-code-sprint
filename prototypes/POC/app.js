@@ -1,19 +1,26 @@
 $(document).ready(function(){
 
+	var $body = $('body');
+
 	// Standard Gov Banner display code
 	$('#gov-link-3').on('click', function(e) {
 
 		e.preventDefault();
 
-		$('body').addClass('active-gov-bar-search');
+		$body.addClass('active-gov-bar-search');
 
 	});
 
 	// Active Elements
-	$('a[data-active]').on('click', function(event){
+	$("[data-active]").on('click', function(event){
 
 		// Prevent Defaults
 		event.preventDefault();
+
+		// Active attribute class
+		var $activeClass = $(this).attr('data-active'),
+			$activeElm = $('.active'),
+			selectedClass = "active";
 
 		// Function is used to close a pre-existing active items.
 		function removeOtherActive(active) {
@@ -22,7 +29,7 @@ $(document).ready(function(){
 			var activeClass = active.attr('data-active');
 
 			// Remove the old active class
-			$('body').removeClass(activeClass);
+			$body.removeClass(activeClass);
 
 			// Remove the active class from the old active item
 			active.removeClass('active');
@@ -41,7 +48,7 @@ $(document).ready(function(){
 
 				case "active-site-menu":
 
-					if ($('body').hasClass('active-sub-menu')) {
+					if ($body.hasClass('active-sub-menu')) {
 						//$('body').removeClass('active-sub-menu');
 					}
 
@@ -49,43 +56,39 @@ $(document).ready(function(){
 			}
 		}
 
-		// Active attribute class
-		var activeClass = $(this).attr('data-active'),
-			selectedClass = "active";
-
 		// Check to see if there is already and active item
-		if ($('.active').length > 0) {
+		if ($activeElm.length > 0) {
 
 			// Check to make sure its not the same as the currently clicked item
 
-			if ($('.active').attr('data-active') != $(this).attr('data-active')) {
+			if ($activeElm.attr('data-active') != $(this).attr('data-active')) {
 
-				removeOtherActive($('.active'));
+				removeOtherActive($activeElm);
 			}
 
 		}
 
 		// Check to see if the item is active
-		if ($('body').hasClass(activeClass)) {
+		if ($body.hasClass($activeClass)) {
 
 			// Remove active state class from header
-			$('body').removeClass(activeClass);
+			$body.removeClass($activeClass);
 
 			// Remove active state class from the clicked element
-			$(this).removeClass(selectedClass);
+			$activeClass.removeClass(selectedClass);
 
 		} else {
 
 			// Add active state class from header
-			$('body').addClass(activeClass);
+			$body.addClass($activeClass);
 
 			// Add active state class from clicked element
-			$(this).addClass(selectedClass);
+			$activeClass.addClass(selectedClass);
 
 		}
 
 		// Check to see if anything special has to happen based on data-active value
-		specialEvents(activeClass);
+		specialEvents($activeClass);
 
 	});
 

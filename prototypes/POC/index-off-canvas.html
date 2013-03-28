@@ -13,7 +13,7 @@
 
 		<script src="../../js/vendor/custom.modernizr.js"></script>
 	</head>
-	<body class="off-canvas sticky-header">
+	<body class="off-canvas">
 		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
 		<a href="#page" class="skip-to">Skip to Content</a>
 		<div class="gov-pull-down-container show-for-small">
@@ -54,12 +54,12 @@
 				<div class="site-functions">
 					<ul class="mobile-functions">
 						<li>
-							<a href="#" id="mobile-site-search" class="mobile-icons mobile-search-buttton" data-active="active-site-search">
+							<a href="#" class="mobile-icons mobile-search-buttton" data-active="active-site-search">
 								Search Toggle
 							</a>
 						</li>
 						<li>
-							<a href="#" id="mobile-site-menu" class="mobile-icons mobile-menu-button" data-active="active-site-menu">
+							<a href="#" class="mobile-icons mobile-menu-button" data-active="active-site-menu">
 								Menu Toggle
 							</a>
 						</li>
@@ -200,13 +200,4 @@
 	<script src="../../js/vendor/jquery.js"></script>
 	<script src="app.js"></script>
 	<script src="off-canvas.js"></script>
-	<script src="sticky_header.js"></script>
-	<script>
-	
-		// Check to see if the page is setup to be sticky	
-		if ($('body').hasClass('sticky-header')) {
-			sticky_page_scroll.initialize();
-		}
-	
-	</script>
 </html>

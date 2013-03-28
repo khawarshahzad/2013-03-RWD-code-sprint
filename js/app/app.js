@@ -230,7 +230,8 @@ $(document).ready(function(){
     event.preventDefault();
 
     // Active attribute class
-    var $activeClass = $(this).attr('data-active'),
+    var $clickedElm = $(this),
+      $activeClass = $clickedElm.attr('data-active'),
       $activeElm = $('.active'),
       selectedClass = "active";
 
@@ -287,7 +288,7 @@ $(document).ready(function(){
       $body.removeClass($activeClass);
 
       // Remove active state class from the clicked element
-      $activeClass.removeClass(selectedClass);
+      $clickedElm.removeClass(selectedClass);
 
     } else {
 
@@ -295,7 +296,7 @@ $(document).ready(function(){
       $body.addClass($activeClass);
 
       // Add active state class from clicked element
-      $activeClass.addClass(selectedClass);
+      $body.addClass(selectedClass);
 
     }
 

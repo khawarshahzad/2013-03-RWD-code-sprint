@@ -8,7 +8,7 @@ jQuery.fn.reverse = [].reverse;
 */
 
 (function( $ ) {
-  $.widget('nysits.responsiveTable', {
+  $.widget('exlsr.responsiveTable', {
     options: {},
 
     // Set up the widget

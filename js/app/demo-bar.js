@@ -6,7 +6,7 @@ $(function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title+
-        '<\/title><link rel="stylesheet" href="../css/foundation.css"><link rel="stylesheet" href="../css/app.css"><\/head>' +
+        '<\/title><link rel="stylesheet" href="../css/excelsior.css"><link rel="stylesheet" href="../css/styles.css"><\/head>' +
         '<body id="resize-bar-body">' +
         '<header>' +
         //'<div class="close"><a href="#">X<\/a><\/div>' +
@@ -126,7 +126,9 @@ $(function(){
                     e.preventDefault();
                     e.stopPropagation();
                     var self = this;
-                    if ((self.classList.contains('auto') && isResized === false) || isAnimated === true) return false;
+                    if ((self.classList.contains('auto') && isResized === false) || isAnimated === true) {
+                        return false;
+                    }
                     isAnimated = true;
                     if (isResized === false) {
                         isResized = true;
@@ -166,7 +168,9 @@ $(function(){
                         52: 'smartphoneLandscape',
                         53: 'auto'
                     };
-                if (typeof (keys[key]) == 'undefined') return false;
+                if (typeof (keys[key]) === 'undefined') {
+                    return false;
+                }
                 setPosition(sizes[keys[key]], false, keys[key], "auto");
             }, false);
             resize();

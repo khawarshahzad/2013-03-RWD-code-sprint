@@ -12,16 +12,21 @@
   padding-bottom: emCalc(8px);
 }
 
-@media #{$tiny} {
-  div {
-
-  }
+.switch-label {
+  float: left;
+  height: 36px;
+  vertical-align: middle;
+  line-height: 36px;
+  margin-right: 1em;
 }
 
-@media #{$xsmall} {
-  /*.medium-6 {
-    width:
-  }*/
+.switch.radius {
+  float: left;
+  width: auto;
+}
+
+.switch.radius > span {
+  box-shadow: 2px 0 10px 0 rgba(0,0,0,0.07), 1000px 0 0 1000px #BAC9F7, -2px 0 10px 0 rgba(0,0,0,0.07), -1000px 0 0 1000px #f5f5f5
 }
 
 /* Playground */

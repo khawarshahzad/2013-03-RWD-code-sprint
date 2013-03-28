@@ -36,32 +36,34 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h2>Links</h2>
-      <p>Watch as these links turn into larger, more easily tappable targets when the page is viewed on a mobile device:</p>
-      <div class="row link-buttons-list">
-        <div class="large-3 medium-6 small-12 columns">
-          <a href="#">Link 1</a>
-        </div>
-        <div class="large-3 medium-6 small-12 columns">
-          <a href="#">Link 2</a>
-        </div>
-        <div class="large-3 medium-6 small-12 columns">
-          <a href="#">Link 3</a>
-        </div>
-        <div class="large-3 medium-6 small-12 columns">
-          <a href="#">Link 4</a>
-        </div>
-      </div>
+      <h2>Tap Targets</h2>
+      <p>Watch as the links turn into larger, more easily tappable targets when the page is viewed on a mobile device.</p>
       <div class="row">
-        <div class="large-12 columns">
-          <p>Switch views:</p>
-          <div class="large-3 small-3 switch">
-            <input id="z" name="switch-z" type="radio">
-            <label for="z">Desktop</label>
-            <input id="z1" name="switch-z" type="radio" checked>
-            <label for="z1">Mobile</label>
+        <div class="large-3 small-3 columns"></div>
+        <div class="large-6 small-6 columns">
+          <div class="switch-label">View:</div>
+          <div class="switch radius">
+            <input id="desktop" name="switch-z" type="radio" checked>
+            <label for="desktop">Desktop</label>
+            <input id="mobile" name="switch-z" type="radio">
+            <label for="mobile">Mobile</label>
             <span></span>
           </div>
+        </div>
+        <div class="large-3 small-3 columns"></div>
+      </div>
+      <div class="row link-buttons-list">
+        <div class="large-3 medium-6 small-12 columns">
+          <a href="#">Department of Taxation &amp; Finance</a>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+          <a href="#">Department of Labor</a>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+          <a href="#">Department of Motor Vehicles</a>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+          <a href="#">Department of Criminal Justice Services</a>
         </div>
       </div>
     </div>
@@ -73,5 +75,6 @@
   <script>
     $(document).foundation();
   </script>
+  <script src="app.js"></script>
 </body>
 </html>

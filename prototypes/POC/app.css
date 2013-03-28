@@ -1,7 +1,4 @@
-input[type='text'],
-input[type='number'],
-input[type='search'],
-textarea {font-size:1em;}
+
 
 @charset "UTF-8";
 
@@ -12,6 +9,7 @@ textarea {font-size:1em;}
   font-weight: normal;
   font-style: normal;
 }
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -22,6 +20,7 @@ textarea {font-size:1em;}
   }
 }
 */
+
 [class^="icon-"]:before,
 [class*=" icon-"]:before,
 [class^="icon-"]:after,
@@ -79,21 +78,40 @@ textarea {font-size:1em;}
 .icon-phone-1:before { content: '\e800'; } /* '' */
 .icon-search:before { content: '🔍'; } /* '\1f50d' */
 
-
 /* POC Styles */
 @media only screen {
+
+	/* iOS focus fix */
+	input[type='text'],
+	input[type='number'],
+	input[type='search'],
+	textarea {
+		font-size:1em;
+	}
 
 	/* Highjacked icon font to create after arrows */
 	.icon-sub-content:after {
 		content: '\e75e';
 		float: right;
-		font-size: 1.2em;
+		font-size: 1.4em;
 		line-height: inherit;
-		margin-top: -0.25em;
+		margin-top: -0.2em;zxs
  	} 
 
 	.skip-to {
-		display: none;
+		background: #000;
+		border: 1px solid #FFF;
+		border-radius: 5px;
+		clip: rect(0px, 0px, 0px, 0px);
+		color: #FFF !important;
+		padding: 10px;
+		margin: 15px;
+		position: absolute;
+		z-index: 100;
+	}
+
+	.skip-to:focus {
+		clip: auto;
 	}
 
 	.gov-pull-down-container {
@@ -106,7 +124,6 @@ textarea {font-size:1em;}
 		padding: 0 4px 4px 4px;
 		position: relative;
 		z-index: 35;
-
 		transition: top 0.2s ease-in;
 		-moz-transition: top 0.2s ease-in; /* Firefox 4 */
 		-webkit-transition: top 0.2s ease-in; /* Safari and Chrome */
@@ -116,26 +133,22 @@ textarea {font-size:1em;}
 	.gov-pull-down {
 		background: url(images/nys-small.png) no-repeat 1px 4px transparent;
 		background-size: 32px 32px;
-		
 		border-top: none;
 		display: block;
 		height: 100%;
 		width: 100%;
 		position: absolute;
-		text-indent: -9999px;
 		top: 0px;
 		z-index: 50;
-
+		text-indent: -9999px;
 		-webkit-transition: top 0.2s ease-in;
 		transition: top 0.2s ease-in;
 	}
-
 
 	.gov-bar {
 		background: #036;
 		background-image: -webkit-linear-gradient(#002851, #036);
     	background-image:         linear-gradient(#002851, #036);
-
 		position: absolute;
 		top: 0;
 		height: 0;
@@ -159,7 +172,7 @@ textarea {font-size:1em;}
 		font-size: 1.3em;
 		text-align: center;
 		padding-bottom: 5px;
-		margin: 8px 0.2em 0 0.5em;
+		margin: 10px 0.2em 0 0.6em;
 	}
 
 	.gov-bar a.gov-link-2 {
@@ -168,8 +181,8 @@ textarea {font-size:1em;}
 		background-size: 24px 24px;
 		color: #FFF;
 		font-size: 1em;
-		margin: 5px 0.4em;
-		padding: 6px 0.2em 2px 32px;
+		margin: 5px 0.6em 5px 0;
+		padding: 8px 0.2em 2px 32px;
 	}
 
 	.gov-bar a.gov-link-3 {
@@ -179,6 +192,8 @@ textarea {font-size:1em;}
 
 	.gov-bar form {
 		overflow: auto;
+		padding: 0.5em 0.6em 0 0.6em;
+		width: 100%;
 	}
 
 	.gov-bar form .gov-search-button {
@@ -189,11 +204,6 @@ textarea {font-size:1em;}
 
 	.gov-bar input {
 		border-radius: 4px;
-	}
-
-	.gov-bar form {
-		padding: 0.5em 0.5em 0 0.5em;
-		width: 100%;
 	}
 
 	.gov-bar form legend,
@@ -208,7 +218,7 @@ textarea {font-size:1em;}
 	}
 
 	.gov-bar input {
-		-webkit-appearance:none;
+		-webkit-appearance: none;
 		border: 1px solid #999;
 		padding: 0;
 		display: block;
@@ -274,7 +284,6 @@ textarea {font-size:1em;}
 	.site-bar .site-functions .site-search {
 		background: #FFF;
 		border-bottom: 1px solid #666;
-    	box-shadow: 2px 2px 4px #999;
 		display: block;
 		height: 0;
 		left: 0;
@@ -423,24 +432,25 @@ textarea {font-size:1em;}
 	.page {
 		background: #FFF;
 		height: 100%;
+		padding: 1em;
 		position: absolute;
+		overflow: visible;
 		top: 53px;
 		z-index: 10;
-		padding: 1em;
 	}
 
 
 	/* Active Govenor Banner */
 	.active-gov-bar .gov-bar {
-		height: 88px;
+		height: 94px;
 	}
 
 	.active-gov-bar .site-bar {
-		top: 88px;
+		top: 94px;
 	}
 
 	.active-gov-bar .gov-pull-down-container {
-		top: 88px;
+		top: 94px;
 	}
 
 	.active-gov-bar .gov-pull-down {
@@ -462,11 +472,12 @@ textarea {font-size:1em;}
 
 	.active-site-search .site-functions .site-search {
 		height: 53px;
+    	box-shadow: 2px 2px 4px #999;
 	}
 
 	/* Active Site Menu */
 	.active-site-menu .global-nav .nav-container {
-		height: 356px;
+		height: 343px;
 	}
 
 	/* Utility Classes */
@@ -495,7 +506,7 @@ textarea {font-size:1em;}
 	}
 
 	.gov-bar a.gov-link-1 {
-		background: url(images/nys-banner-img.png) no-repeat 0 0 transparent;
+		background: url(images/nys-banner-img.png) no-repeat -6px 0 transparent;
 		display: inline-block;
 		float: left;
 		margin: 0;
@@ -505,7 +516,7 @@ textarea {font-size:1em;}
 
 	.gov-bar a.gov-link-2,
 	.gov-bar a.gov-link-2:hover {
-		background: url(images/nys-banner-img.png) no-repeat 0 -28px transparent;
+		background: url(images/nys-banner-img.png) no-repeat -6px -28px transparent;
 		border: 0;
 		float: left;
 		margin: 0;
@@ -519,9 +530,9 @@ textarea {font-size:1em;}
 	}
 
 	.gov-bar a.gov-link-3 {
-		background: url(images/nys-banner-img.png) no-repeat 0 -56px transparent;
+		background: url(images/nys-banner-img.png) no-repeat -6px -56px transparent;
 		display: inline-block;
-		float: right;
+		float: right;;
 		width: 150px;
 	}
 
@@ -541,6 +552,19 @@ textarea {font-size:1em;}
 
 	.active-gov-bar-search .gov-bar form {
 		display: block;
+	}
+
+	.gov-bar input[type=search] {
+		border-radius: 4px 0 0 4px;
+		padding: 0 0.5em;
+		margin: 0;
+		font-size: normal;
+		height: 21px;
+	}
+
+	.gov-bar .search-container {
+		height: 21px;
+		margin-top: 1px;
 	}
 
 	/* Site Header */
@@ -563,7 +587,7 @@ textarea {font-size:1em;}
 
 	.site-bar a.site-logo {
 		font-size: 2em;
-		margin: 0 0 0 .3em;
+		margin: 0 0 0 0.25em;
 		padding: 0.4em 0 0 0;
 	}
 
@@ -618,13 +642,19 @@ textarea {font-size:1em;}
 	}
 
 	.global-nav ul li {
-		float: left
+		float: left;
+		border-right: 1px solid #444;
+		border-bottom: 0;
 	}
 
 	.global-nav ul li a {
 		background: #666;
 		font-size: 1em;
 	}
+
+	.icon-sub-content:after {
+		margin-top: -0.25em;
+ 	} 
 
 	.page {
 		position: relative;

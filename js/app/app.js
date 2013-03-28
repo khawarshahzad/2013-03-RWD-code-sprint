@@ -201,9 +201,6 @@ $(document).ready(function(){exlsr.init();});
           restoreZoom();
         }
       }
-      else if( !enabled ){
-        restoreZoom();
-      }
     }
 
     w.addEventListener( "orientation change", restoreZoom, false );
@@ -254,9 +251,9 @@ $(document).ready(function(){
     // Function for special functionality determined by the data-active value
     function specialEvents(activeElm) {
       switch (activeElm) {
-        
+
         case "active-site-search":
-          
+
           $('#site-search-box').focus();
 
           break;

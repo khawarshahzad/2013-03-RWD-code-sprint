@@ -160,7 +160,7 @@ $(document).ready(function(){exlsr.init();});
   } // end if(Modernizr.touch)
 
   // Detect iOS
-  if( /iPhone|iPad|iPod/.test( navigator.platform ) && /OS [1-5]_[0-9_]* like Mac OS X/i.test(exlsr.ua) && exlsr.ua.indexOf( "AppleWebKit" ) > -1 ){
+  if ( /iPhone|iPad|iPod/.test( navigator.platform ) && /OS [1-5]_[0-9_]* like Mac OS X/i.test(exlsr.ua) && exlsr.ua.indexOf( "AppleWebKit" ) > -1 ){
     exlsr.iOS = true;
 
     /*! A fix for the iOS orientationchange zoom bug.
@@ -201,17 +201,14 @@ $(document).ready(function(){exlsr.init();});
           restoreZoom();
         }
       }
-      else if( !enabled ){
-        restoreZoom();
-      }
-    }
 
-    w.addEventListener( "orientation change", restoreZoom, false );
-    w.addEventListener( "devicemotion", checkTilt, false );
+      w.addEventListener( "orientation change", restoreZoom, false );
+      w.addEventListener( "devicemotion", checkTilt, false );
+    })( window );
 
-  })( this );
+  } // end if(iOS)
 
-} // end if(iOS)
+}());
 
 $(document).ready(function(){
 
@@ -227,13 +224,14 @@ $(document).ready(function(){
   });
 
   // Active Elements
-  $("[data-active]").on('click', function(event){
+  $("[data-active]").on('click', function(e){
 
     // Prevent Defaults
-    event.preventDefault();
+    e.preventDefault();
 
     // Active attribute class
-    var $activeClass = $(this).attr('data-active'),
+    var $clickedElm = $(this),
+      activeClass = $clickedElm.attr('data-active'),
       $activeElm = $('.active'),
       selectedClass = "active";
 
@@ -254,18 +252,10 @@ $(document).ready(function(){
     // Function for special functionality determined by the data-active value
     function specialEvents(activeElm) {
       switch (activeElm) {
-        
+
         case "active-site-search":
-          
+
           $('#site-search-box').focus();
-
-          break;
-
-        case "active-site-menu":
-
-          if ($body.hasClass('active-sub-menu')) {
-            //$('body').removeClass('active-sub-menu');
-          }
 
           break;
       }
@@ -275,35 +265,33 @@ $(document).ready(function(){
     if ($activeElm.length > 0) {
 
       // Check to make sure its not the same as the currently clicked item
-
-      if ($activeElm.attr('data-active') != $(this).attr('data-active')) {
-
+      if ($activeElm.attr('data-active') !== $clickedElm.attr('data-active')) {
         removeOtherActive($activeElm);
       }
 
     }
 
     // Check to see if the item is active
-    if ($body.hasClass($activeClass)) {
+    if ($body.hasClass(activeClass)) {
 
       // Remove active state class from header
-      $body.removeClass($activeClass);
+      $body.removeClass(activeClass);
 
       // Remove active state class from the clicked element
-      $activeClass.removeClass(selectedClass);
+      $clickedElm.removeClass(selectedClass);
 
     } else {
 
       // Add active state class from header
-      $body.addClass($activeClass);
+      $body.addClass(activeClass);
 
       // Add active state class from clicked element
-      $activeClass.addClass(selectedClass);
+      $clickedElm.addClass(selectedClass);
 
     }
 
     // Check to see if anything special has to happen based on data-active value
-    specialEvents($activeClass);
+    specialEvents(activeClass);
 
   });
 

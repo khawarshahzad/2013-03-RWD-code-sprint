@@ -2,27 +2,14 @@
 @import "../foundation";
 @import "_variables";
 @import "_mixins";
+@import "global";
 @import "foundation-override";
 @import "navigation";
 @import "fonts";
 @import "images";
 @import "tables";
 @import "buttons";
+@import "blockToStart";
 @import "forms";
 @import "demo-bar";
 @import "lightbox";
-
-// Generic Classes
-
-.no-wrap {
-  white-space: nowrap;
-}
-
-.list-bullets-inside {
-  list-style-position: inside;
-}
-
-.padding-sides-none {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}

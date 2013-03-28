@@ -6,9 +6,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Name of Component</title>
+  <title>Touch</title>
   <link rel="stylesheet" href="../../css/excelsior.css" />
   <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="app.css" />
   <script src="../../js/vendor/custom.modernizr.js"></script>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
@@ -16,63 +17,53 @@
   <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
   <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
   <link rel="icon" href="../../images/favicon.ico">
-
 </head>
 <body>
   <div class="row">
     <div class="large-12 columns">
-      <h1>Name of Component</h1>
+      <h1>Touch</h1>
       <ul class="breadcrumbs">
-        <li><a href="../">Prototypes Home</a></li>
-        <li class="current"><a href="#">Name of Component</a></li>
+        <li><a href="../index.html">Prototypes Home</a></li>
+        <li class="current"><a href="#">Touch</a></li>
       </ul>
       <dl class="sub-nav">
-        <dt>Name of Component:</dt>
-        <dd><a href="#">opt1</a></dd>
-        <dd class="active"><a href="#">opt2</a></dd>
-        <dd><a href="#">opt3</a></dd>
-        <dd><a href="#">opt4</a></dd>
+        <dt>Touch:</dt>
+        <dd><a href="index.html">Tap Targets</a></dd>
+        <dd class="active"><a href="#">Playground</a></dd>
       </dl>
-
-      <!-- Component code goes here -->
-
     </div>
   </div>
 
+  <div class="row">
+    <div class="large-12 columns callout" id="in">
+      <div id="hastouch" style="display:none;">
+        <p>Perform touch actions in this box. Recognized events will appear below (most recent first).</p>
+        <ul>
+          <li><code>tap</code></li>
+          <li><code>longTap</code></li>
+          <li><code>swipeLeft</code></li>
+          <li><code>swipeRight</code></li>
+        </ul>
+        <p>The library also supports singleTap, doubleTap, swipeUp, swipeDown, and swipe.</p>
+      </div>
+      <div id="notouch">
+        <p>Click inside this box. Recognized events will appear below (most recent first).</p>
+        <p class="error">Touch events are not supported on this browser. Only <code>click</code> events will be recognized.</p>
+        <p>To test on desktop, open Chrome's Dev Tool settings (gear icon) and enable touch events.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <p></p>
+      <ul id="out"></ul>
+    </div>
+  </div>
 
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
-
-<!-- BE SURE TO UNCOMMENT OUT THE SCRIPT YOU NEED TO USE FROM FOUNDATION IF YOU NEED TO USE ONE!
-
-  <script src="../../js/foundation/foundation.alerts.js"></script>
-
-  <script src="../../js/foundation/foundation.clearing.js"></script>
-
-  <script src="../../js/foundation/foundation.cookie.js"></script>
-
-  <script src="../../js/foundation/foundation.dropdown.js"></script>
-
-  <script src="../../js/foundation/foundation.forms.js"></script>
-
-  <script src="../../js/foundation/foundation.joyride.js"></script>
-
-  <script src="../../js/foundation/foundation.magellan.js"></script>
-
-  <script src="../../js/foundation/foundation.orbit.js"></script>
-
-  <script src="../../js/foundation/foundation.placeholder.js"></script>
-
-  <script src="../../js/foundation/foundation.reveal.js"></script>
-
-  <script src="../../js/foundation/foundation.section.js"></script>
-
-  <script src="../../js/foundation/foundation.tooltips.js"></script>
-
-  <script src="../../js/foundation/foundation.topbar.js"></script>
-
--->
+  <script src="app.js"></script>
   <script>
     $(document).foundation();
   </script>

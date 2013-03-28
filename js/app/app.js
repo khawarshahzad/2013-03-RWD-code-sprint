@@ -160,7 +160,7 @@ $(document).ready(function(){exlsr.init();});
   } // end if(Modernizr.touch)
 
   // Detect iOS
-  if( /iPhone|iPad|iPod/.test( navigator.platform ) && /OS [1-5]_[0-9_]* like Mac OS X/i.test(exlsr.ua) && exlsr.ua.indexOf( "AppleWebKit" ) > -1 ){
+  if ( /iPhone|iPad|iPod/.test( navigator.platform ) && /OS [1-5]_[0-9_]* like Mac OS X/i.test(exlsr.ua) && exlsr.ua.indexOf( "AppleWebKit" ) > -1 ){
     exlsr.iOS = true;
 
     /*! A fix for the iOS orientationchange zoom bug.
@@ -201,14 +201,14 @@ $(document).ready(function(){exlsr.init();});
           restoreZoom();
         }
       }
-    }
 
-    w.addEventListener( "orientation change", restoreZoom, false );
-    w.addEventListener( "devicemotion", checkTilt, false );
+      w.addEventListener( "orientation change", restoreZoom, false );
+      w.addEventListener( "devicemotion", checkTilt, false );
+    })( window );
 
-  })( this );
+  } // end if(iOS)
 
-} // end if(iOS)
+}());
 
 $(document).ready(function(){
 

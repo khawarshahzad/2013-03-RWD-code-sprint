@@ -224,14 +224,14 @@ $(document).ready(function(){
   });
 
   // Active Elements
-  $("[data-active]").on('click', function(event){
+  $("[data-active]").on('click', function(e){
 
     // Prevent Defaults
-    event.preventDefault();
+    e.preventDefault();
 
     // Active attribute class
     var $clickedElm = $(this),
-      $activeClass = $clickedElm.attr('data-active'),
+      activeClass = $clickedElm.attr('data-active'),
       $activeElm = $('.active'),
       selectedClass = "active";
 
@@ -258,14 +258,6 @@ $(document).ready(function(){
           $('#site-search-box').focus();
 
           break;
-
-        case "active-site-menu":
-
-          if ($body.hasClass('active-sub-menu')) {
-            //$('body').removeClass('active-sub-menu');
-          }
-
-          break;
       }
     }
 
@@ -273,19 +265,17 @@ $(document).ready(function(){
     if ($activeElm.length > 0) {
 
       // Check to make sure its not the same as the currently clicked item
-
-      if ($activeElm.attr('data-active') != $(this).attr('data-active')) {
-
+      if ($activeElm.attr('data-active') !== $clickedElm.attr('data-active')) {
         removeOtherActive($activeElm);
       }
 
     }
 
     // Check to see if the item is active
-    if ($body.hasClass($activeClass)) {
+    if ($body.hasClass(activeClass)) {
 
       // Remove active state class from header
-      $body.removeClass($activeClass);
+      $body.removeClass(activeClass);
 
       // Remove active state class from the clicked element
       $clickedElm.removeClass(selectedClass);
@@ -293,15 +283,15 @@ $(document).ready(function(){
     } else {
 
       // Add active state class from header
-      $body.addClass($activeClass);
+      $body.addClass(activeClass);
 
       // Add active state class from clicked element
-      $body.addClass(selectedClass);
+      $clickedElm.addClass(selectedClass);
 
     }
 
     // Check to see if anything special has to happen based on data-active value
-    specialEvents($activeClass);
+    specialEvents(activeClass);
 
   });
 

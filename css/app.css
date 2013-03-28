@@ -989,10 +989,6 @@ ul.f-dropdown li {
 .accordion section.section:last-child {
   margin-bottom: 0; }
 
-.auto section.section p a,
-.accordion section.section p a {
-  text-overflow: ellipsis; }
-
 /* ************************************** */
 /* ****** End Foundation Overrides ****** */
 /* ************************************** */

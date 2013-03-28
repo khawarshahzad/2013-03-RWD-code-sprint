@@ -9,10 +9,11 @@
 		<link rel="stylesheet" href="../../css/app.css">
 		<link rel="stylesheet" href="app.css">
 		<link rel="stylesheet" type="text/css" href="off-canvas.css">
+		<link rel="stylesheet" type="text/css" href="sticky_header.css">
 
 		<script src="../../js/vendor/custom.modernizr.js"></script>
 	</head>
-	<body class="off-canvas">
+	<body class="off-canvas sticky-header">
 		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
 		<a href="#page" class="skip-to">Skip to Content</a>
 		<div class="gov-pull-down-container show-for-small">
@@ -139,23 +140,6 @@
 					<li>
 						<a href="#">Menu Item 7</a>
 					</li>
-					<!--
-					<li>
-						<a href="#">Menu Item 1</a>
-					</li>
-					<li>
-						<a href="#">Menu Item 2</a>
-					</li>
-					<li>
-						<a href="#">Menu Item 3</a>
-					</li>
-					<li>
-						<a href="#">Menu Item 4</a>
-					</li>
-					<li>
-						<a href="#">Menu Item 5</a>
-					</li>
-					-->
 				</ul>
 			</div>
 		</nav>
@@ -182,6 +166,28 @@
 					<p>
 						Bresaola ribeye short ribs filet mignon boudin t-bone. Beef ribs short ribs tail, frankfurter ball tip rump ribeye shankle. Corned beef flank pork loin short loin pork jowl. Drumstick ball tip turducken sausage venison t-bone filet mignon pastrami ham ribeye pork chop shank spare ribs shankle bacon. Boudin chuck t-bone, pork loin ham hock biltong cow.
 					</p>
+
+					<h3>Heading 3</h3>
+					<p>
+						Bacon corned beef pig, prosciutto filet mignon turkey jowl. Bresaola pork strip steak turkey jerky ball tip. Pork belly swine kielbasa capicola drumstick rump filet mignon pig beef ribs t-bone. Corned beef chuck filet mignon spare ribs.
+					</p>
+					<p>
+						Meatball bacon frankfurter chicken pork chop pork belly jerky beef ribs short ribs swine fatback t-bone. Meatball chuck kielbasa, hamburger swine pork chop beef ribs prosciutto bresaola shank corned beef pastrami shankle. Biltong chicken cow shank andouille frankfurter filet mignon. Cow brisket leberkas jerky beef ribs corned beef, pork loin doner short ribs shankle tail capicola. Sausage pork jerky, frankfurter fatback filet mignon tail tri-tip spare ribs tongue hamburger. Filet mignon kielbasa meatloaf, pastrami turkey chuck venison capicola tenderloin ball tip jerky.
+					</p>
+					<p>
+						Bresaola ribeye short ribs filet mignon boudin t-bone. Beef ribs short ribs tail, frankfurter ball tip rump ribeye shankle. Corned beef flank pork loin short loin pork jowl. Drumstick ball tip turducken sausage venison t-bone filet mignon pastrami ham ribeye pork chop shank spare ribs shankle bacon. Boudin chuck t-bone, pork loin ham hock biltong cow.
+					</p>
+
+					<h4>Heading 4</h4>
+					<p>
+						Bacon corned beef pig, prosciutto filet mignon turkey jowl. Bresaola pork strip steak turkey jerky ball tip. Pork belly swine kielbasa capicola drumstick rump filet mignon pig beef ribs t-bone. Corned beef chuck filet mignon spare ribs.
+					</p>
+					<p>
+						Meatball bacon frankfurter chicken pork chop pork belly jerky beef ribs short ribs swine fatback t-bone. Meatball chuck kielbasa, hamburger swine pork chop beef ribs prosciutto bresaola shank corned beef pastrami shankle. Biltong chicken cow shank andouille frankfurter filet mignon. Cow brisket leberkas jerky beef ribs corned beef, pork loin doner short ribs shankle tail capicola. Sausage pork jerky, frankfurter fatback filet mignon tail tri-tip spare ribs tongue hamburger. Filet mignon kielbasa meatloaf, pastrami turkey chuck venison capicola tenderloin ball tip jerky.
+					</p>
+					<p>
+						Bresaola ribeye short ribs filet mignon boudin t-bone. Beef ribs short ribs tail, frankfurter ball tip rump ribeye shankle. Corned beef flank pork loin short loin pork jowl. Drumstick ball tip turducken sausage venison t-bone filet mignon pastrami ham ribeye pork chop shank spare ribs shankle bacon. Boudin chuck t-bone, pork loin ham hock biltong cow.
+					</p>
 				</div>
 
 
@@ -194,4 +200,13 @@
 	<script src="../../js/vendor/jquery.js"></script>
 	<script src="app.js"></script>
 	<script src="off-canvas.js"></script>
+	<script src="sticky_header.js"></script>
+	<script>
+	
+		// Check to see if the page is setup to be sticky	
+		if ($('body').hasClass('sticky-header')) {
+			sticky_page_scroll.initialize();
+		}
+	
+	</script>
 </html>

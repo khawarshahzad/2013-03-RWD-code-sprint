@@ -15,8 +15,6 @@ $(document).ready(function(){
 		// Prevent Defaults
 		event.preventDefault();
 
-		console.log('test');
-
 		// Function is used to close a pre-existing active items.
 		function removeOtherActive(active) {
 
@@ -34,13 +32,17 @@ $(document).ready(function(){
 		// Function for special functionality determined by the data-active value
 		function specialEvents(activeElm) {
 			switch (activeElm) {
+				
 				case "active-site-search":
+					
 					$('#site-search-box').focus();
+
 					break;
+
 				case "active-site-menu":
 
 					if ($('body').hasClass('active-sub-menu')) {
-						//$('body').removeClass('active-sub-menu')
+						//$('body').removeClass('active-sub-menu');
 					}
 
 					break;
@@ -57,7 +59,6 @@ $(document).ready(function(){
 			// Check to make sure its not the same as the currently clicked item
 
 			if ($('.active').attr('data-active') != $(this).attr('data-active')) {
-
 
 				removeOtherActive($('.active'));
 			}

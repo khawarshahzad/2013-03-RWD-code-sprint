@@ -60,18 +60,19 @@ var sticky_page_scroll = function() {
 		var y = posTop(); //number of px we have so far scrolled down the page
 		if(y>initial_y_pos-min_y_distance-1){
 			
-			// if we have scrolled more than our initial position, less the padding, less 1, then we switch up to fixed positioning and set our "top" value to the amount of padding we wanted...
+			// Execute sticky header
 			document.getElementById(sticky_element_id).style.position="fixed";
 			document.getElementById(sticky_element_id).style.top=min_y_distance + "px";
 			document.getElementById(sticky_element_id).style.zIndex=3000;
 
-		}
-		else{
-			//otherwise, we assign absolute positioning and clear out the "top" value (setting it to zero, for my needs)...
+		} else {
+
+			// At the point where the sticky header should blend back into the page.
 			document.getElementById(sticky_element_id).style.position="absolute";
 			document.getElementById(sticky_element_id).style.top="0px";
 			document.getElementById(sticky_element_id).style.zIndex="";
 		}
+
 	}
 
 	return {

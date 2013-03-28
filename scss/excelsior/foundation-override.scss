@@ -23,6 +23,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   font-family: $font-sans;
+  font-size: 16px; // Prevents iOS from zooming in when an input gains focus
 }
 
 button,
@@ -32,8 +33,9 @@ button,
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-serif;
-  font-weight: normal;
+  // font-family: $font-serif;
+  // font-weight: normal;
+  @include font-serif;
 }
 
 p {

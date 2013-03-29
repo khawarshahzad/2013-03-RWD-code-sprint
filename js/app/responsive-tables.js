@@ -1,13 +1,11 @@
-jQuery.fn.reverse = [].reverse;
-
-/* Responsive Table
-   Author: Craig Patik, NYS ITS, https://github.com/nys-its/RWD-Demo
-   Date: March 2013
-   Dependencies: jQuery, jQuery UI widget factory
-   Based on https://github.com/filamentgroup/RWD-Table-Patterns
-*/
-
-(function( $ ) {
+/**
+ * Responsive Table
+ * Author: NYS ITS, https://github.com/nys-its/RWD-Demo
+ * Date: March 2013
+ * Dependencies: jQuery 1.9 or Zepto 1.0, jQuery UI widget factory 1.8.16
+ * Based on https://github.com/filamentgroup/RWD-Table-Patterns
+ */
+(function() {
   $.widget('exlsr.responsiveTable', {
     options: {},
 
@@ -218,7 +216,7 @@ jQuery.fn.reverse = [].reverse;
           $toggle
             .find('input')
               .prop('checked', true) // Check all by default
-              .on('change', function(){
+              .on('change', function () {
                 var $input = $(this),
                     val = $input.val(),
                     cols = $('#' + val + ', [data-headers="' + val + '"]');
@@ -239,7 +237,7 @@ jQuery.fn.reverse = [].reverse;
       totalMinWidth = getTotalMinWidth();
 
       // Update the view now on each resize
-      $(window).on('orientationchange resize', function() {
+      $(window).on('orientationchange resize', function () {
         showCols();
       });
 
@@ -247,7 +245,7 @@ jQuery.fn.reverse = [].reverse;
       showCols();
     } // end _create
   });
-}(jQuery));
+}());
 
 $(function(){
   $('table').responsiveTable();

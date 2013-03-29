@@ -217,7 +217,7 @@
         titles.each(function () {
           var $this = $(this);
           // Only position tabs
-          if ($this.closest('.tabs').length || (!!$this.closest('.accordion').length && $this.closest('.auto').length && window.matchMedia('screen and (max-width: 768px)').matches)) {
+          if ($this.closest('.tabs').length || (!$this.closest('.accordion').length && $this.closest('.auto').length && window.matchMedia('screen and (min-width: 768px)').matches)) {
             $this.css('left', previous_width);
             previous_width += self.outerWidth($(this));
           }

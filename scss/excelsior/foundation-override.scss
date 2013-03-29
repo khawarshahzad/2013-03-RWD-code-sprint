@@ -121,15 +121,9 @@ ul.f-dropdown li {
 // Sections
 
 .section-container.tabs section .title,
-.section-container.tabs .section .title,
-.section-container.auto section .title,
-.section-container.auto .section .title {
+.section-container.tabs .section .title{
   font-family: $font-sans-bold;
   font-weight: normal;
-}
-
-.section-container.tabs section .title,
-.section-container.tabs .section .title {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background-clip: padding-box;
@@ -146,6 +140,8 @@ ul.f-dropdown li {
 @media screen and (min-width: 768px) {
   .section-container.auto section .title,
   .section-container.auto .section .title {
+    font-family: $font-sans-bold;
+    font-weight: normal;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     background-clip: padding-box;
@@ -177,8 +173,6 @@ ul.f-dropdown li {
 
 // Accordion
 
-.section-container.auto section .title,
-.section-container.auto .section .title,
 .section-container.accordion section .title,
 .section-container.accordion .section .title {
   font-family: $font-sans;
@@ -197,4 +191,73 @@ ul.f-dropdown li {
 .auto section.section:last-child,
 .accordion section.section:last-child {
   margin-bottom: 0;
+}
+
+.title a {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.accordion section.auto > .title,
+.accordion section.section > .title {
+  position: relative;
+  padding-right: 26px; /* width of chevron plus its right position offset */
+}
+
+.accordion section.auto .title:after,
+.accordion section.section .title:after {
+  content: "\e75e";
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-family: $font-icons;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.accordion section.auto.active .title:after,
+.accordion section.section.active .title:after {
+  top: 8px;
+  right: 10px;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+/* Same styles as above */
+@media screen and (max-width: 768px) {
+  .auto section.auto .title:after,
+  .auto section.section .title:after {
+    content: "\e75e";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-family: $font-icons;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
+  .auto section.auto.active .title:after,
+  .auto section.section.active .title:after {
+    top: 6px;
+    right: 10px;
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+// Orbit
+
+// Do not show bullets on touch
+@media #{$small} {
+  .touch {
+    .orbit-bullets { display: none; }
+  }
 }

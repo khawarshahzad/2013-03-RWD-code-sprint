@@ -8,6 +8,9 @@
 .img-list a{
 	text-decoration: none;
 }
+.img-list li:hover h4{text-decoration: underline;}
+.img-list h4 {color:#2ba6cb;}
+.img-list p {color:#333; line-height:1.15em;}
 .list li {
   margin-bottom:.75em;
   display: table;
@@ -22,7 +25,7 @@
   display: table-cell;
   vertical-align: top;
   width: 30%;
-  padding-right: 1em;
+  padding-right: .5em;
 }
 .li-img img {
   display: block;
@@ -33,7 +36,7 @@
   display: table-cell;
   vertical-align: top;
   width: 70%;
-  padding-right:5%;
+  padding-right:7%;
 }
 .li-head {
   margin: 0;

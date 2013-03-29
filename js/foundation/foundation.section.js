@@ -21,7 +21,7 @@
       this.scope = scope || this.scope;
       Foundation.inherit(this, 'throttle data_options');
 
-      if (typeof method != 'string') {
+      if (typeof method !== 'string') {
         this.set_active_from_hash();
         this.events();
 
@@ -65,7 +65,7 @@
 
     },
 
-    toggle_active : function (e, self) {
+    toggle_active : function (e) {
       var $this = $(this),
           section = $this.closest('section, .section'),
           content = section.find('.content'),
@@ -80,15 +80,16 @@
       }
 
       if (section.hasClass('active')) {
-        if (self.small(parent)
-          || self.is_vertical(parent)
-          || self.is_horizontal(parent)
-          || self.is_accordion(parent)) {
+        if (self.small(parent) ||
+            self.is_vertical(parent) ||
+            self.is_horizontal(parent) ||
+            self.is_accordion(parent)) {
           section
             .removeClass('active')
             .attr('style', '');
         }
-      } else {
+      }
+      else {
         var prev_active_section = null,
             title_height = self.outerHeight(section.find('.title'));
 
@@ -104,7 +105,8 @@
 
         if (self.small(parent)) {
           section.attr('style', '');
-        } else {
+        }
+        else {
           section.css('padding-top', title_height);
         }
 
@@ -136,24 +138,28 @@
             .not(':first')
             .removeClass('active')
             .attr('style', '');
-        } else if (active_section.length < 1
-          && !self.is_vertical($this)
-          && !self.is_horizontal($this)
-          && !self.is_accordion($this)) {
+        }
+        else if (active_section.length < 1 &&
+                 !self.is_vertical($this) &&
+                 !self.is_horizontal($this) &&
+                 !self.is_accordion($this)) {
 
           var first = $this.find('section, .section').first();
+
           first.addClass('active');
 
           if (self.small($this)) {
             first.attr('style', '');
-          } else {
+          }
+          else {
             first.css('padding-top', self.outerHeight(first.find('.title')));
           }
         }
 
         if (self.small($this)) {
           active_section.attr('style', '');
-        } else {
+        }
+        else {
           active_section.css('padding-top', self.outerHeight(active_section.find('.title')));
         }
 
@@ -161,7 +167,8 @@
 
         if (self.is_horizontal($this) && !self.small($this)) {
           self.position_content($this);
-        } else {
+        }
+        else {
           self.position_content($this, false);
         }
       });
@@ -212,11 +219,12 @@
 
       if (typeof off === 'boolean') {
         titles.attr('style', '');
-
-      } else {
+      }
+      else {
         titles.each(function () {
           var $this = $(this);
-          // Only position tabs
+          // Only position tabs, not accordions
+          // This if() was added because of the chevrons in accordions; otherwise, just run the code inside it
           if ($this.closest('.tabs').length || (!$this.closest('.accordion').length && $this.closest('.auto').length && window.matchMedia('screen and (min-width: 768px)').matches)) {
             $this.css('left', previous_width);
             previous_width += self.outerWidth($(this));
@@ -233,7 +241,8 @@
       if (typeof off === 'boolean') {
         content.attr('style', '');
         section.attr('style', '');
-      } else {
+      }
+      else {
         section.find('section, .section').each(function () {
           var title = $(this).find('.title'),
               content = $(this).find('.content');
@@ -244,7 +253,8 @@
         // temporary work around for Zepto outerheight calculation issues.
         if (typeof Zepto === 'function') {
           section.height(this.outerHeight(titles.first()));
-        } else {
+        }
+        else {
           section.height(this.outerHeight(titles.first()) - 2);
         }
       }
@@ -252,17 +262,18 @@
     },
 
     small : function (el) {
-      var settings = $.extend({}, this.settings, this.data_options(el));
+      var settings = $.extend({}, this.settings, this.data_options(el)),
+          $html = $('html');
       if (this.is_tabs(el)) {
         return false;
       }
       if (el && this.is_accordion(el)) {
         return true;
       }
-      if ($('html').hasClass('lt-ie9')) {
+      if ($html.hasClass('lt-ie9')) {
         return true;
       }
-      if ($('html').hasClass('ie8compat')) {
+      if ($html.hasClass('ie8compat')) {
         return true;
       }
       return $(this.scope).width() < 768;
@@ -271,7 +282,7 @@
     off : function () {
       $(this.scope).off('.fndtn.section');
       $(window).off('.fndtn.section');
-      $(document).off('.fndtn.section')
+      $(document).off('.fndtn.section');
     }
   };
 }(Foundation.zj, this, this.document));

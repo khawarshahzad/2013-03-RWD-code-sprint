@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Tooltips</title>
+  <link rel="stylesheet" href="../../css/excelsior.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
+  <link rel="icon" href="../../images/favicon.ico">
+
+</head>
+<body>
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Tooltips</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../">Prototypes Home</a></li>
+        <li class="current"><a href="#">Tooltips</a></li>
+      </ul>
+      <p>Tooltips allow useful information to be displayed to users when they hover over any sort of object or text.</p>
+
+      <!-- Component code goes here -->
+      <!-- 
+      Available class options:
+		tip-top: Align the tip above the element you attach it to.
+		tip-bottom: Align the tip below the element you attach it to.
+		tip-left: Align the tip to the left the element you attach it to.
+		tip-right: Align the tip to the right the element you attach it to.
+       -->
+		<span data-tooltip class="has-tip" title="Tooltips are awesome, you should totally use them!">Default Tool Tip</span>
+		<br><br>
+		<span style="padding-left:250px;"></span>
+		<span data-tooltip class="tip-left" title="Tooltips are awesome, you should totally use them!">tip-left</span>
+		<br><br>
+		<span data-tooltip class="has-tip tip-right" title="Tooltips are awesome, you should totally use them!">default with specified stlye tip-right</span>
+		<br><br>
+		<span data-tooltip class="tip-top" title="Tooltips are awesome, you should totally use them!">tip-top</span>
+		<br><br>
+		<span data-tooltip class="tip-bottom" title="Tooltips are awesome, you should totally use them!">tip-bottom</span>
+    </div>
+  </div>
+
+
+  <script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/app/app.js"></script>
+  <script src="../../js/foundation/foundation.js"></script>
+
+
+  <script src="../../js/foundation/foundation.tooltips.js"></script>
+
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

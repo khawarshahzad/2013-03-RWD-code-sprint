@@ -1,4 +1,5 @@
-/*jslint unparam: true, browser: true, indent: 2 */
+/*global Modernizr: false, Foundation: false */
+/*jslint unparam: true, browser: true, indent: 2, console: true */
 
 ;(function ($, window, document, undefined) {
   'use strict';
@@ -11,7 +12,7 @@
     settings : {
       deep_linking: false,
       one_up: true,
-      callback: function (){}
+      callback: function () {}
     },
 
     init : function (scope, method, options) {
@@ -46,7 +47,7 @@
           self.resize.call(this);
         }, 30))
         .on('hashchange', function () {
-          if (!self.settings.toggled){
+          if (!self.settings.toggled) {
             self.set_active_from_hash();
             $(this).trigger('resize');
           }
@@ -167,11 +168,11 @@
     },
 
     is_vertical : function (el) {
-      return /vertical-nav/i.test(el.data('section'));
+      return /vertical\-nav/i.test(el.data('section'));
     },
 
     is_horizontal : function (el) {
-      return /horizontal-nav/i.test(el.data('section'));
+      return /horizontal\-nav/i.test(el.data('section'));
     },
 
     is_accordion : function (el) {
@@ -214,8 +215,12 @@
 
       } else {
         titles.each(function () {
-          $(this).css('left', previous_width);
-          previous_width += self.outerWidth($(this));
+          var $this = $(this);
+          // Only position tabs
+          if ($this.closest('.tabs').length || (!!$this.closest('.accordion').length && $this.closest('.auto').length && window.matchMedia('screen and (max-width: 768px)').matches)) {
+            $this.css('left', previous_width);
+            previous_width += self.outerWidth($(this));
+          }
         });
       }
     },

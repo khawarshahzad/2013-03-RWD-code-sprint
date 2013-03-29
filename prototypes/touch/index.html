@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if lt IE 8]><html class="no-js lt-ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Touch</title>
-
-  <link rel="stylesheet" href="../../css/normalize.css" />
-  <link rel="stylesheet" href="../../css/foundation.css" />
-  <link rel="stylesheet" href="../../css/app.css" />
+  <link rel="stylesheet" href="../../css/excelsior.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="app.css" />
   <script src="../../js/vendor/custom.modernizr.js"></script>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
@@ -16,94 +17,65 @@
   <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
   <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
   <link rel="icon" href="../../images/favicon.ico">
-
 </head>
 <body>
   <div class="row">
-    <div class="large-10 columns">
+    <div class="large-12 columns">
       <h1>Touch</h1>
-      <p>Zepto's touch library modified to work with either Zepto or with jQuery</p>
       <ul class="breadcrumbs">
-        <li><a href="../">Prototypes Home</a></li>
+        <li><a href="../index.html">Prototypes Home</a></li>
         <li class="current"><a href="#">Touch</a></li>
       </ul>
+      <dl class="sub-nav">
+        <dt>Touch:</dt>
+        <dd class="active"><a href="#">Tap Targets</a></dd>
+        <dd><a href="playground.html">Playground</a></dd>
+        <dd><a href="developer.html">Developer Notes</a></dd>
+      </dl>
     </div>
   </div>
 
-  <div class="row">
-    <div class="large-12 columns callout" id="in">
-      <div id="hastouch" style="display:none;">
-        <p>Perform touch actions in this box. Recognized events will appear below (most recent first).</p>
-        <ul>
-          <li><code>tap</code></li>
-          <li><code>longTap</code></li>
-          <li><code>swipeLeft</code></li>
-          <li><code>swipeRight</code></li>
-        </ul>
-        <p>The library also supports singleTap, doubleTap, swipeUp, swipeDown, and swipe.</p>
-      </div>
-      <div id="notouch">
-        <p>Click inside this box. Recognized events will appear below (most recent first).</p>
-        <p class="error">Touch events are not supported on this browser. Only <code>click</code> events will be recognized.</p>
-        <p>To test on desktop, open Chrome's Dev Tool settings (gear icon) and enable touch events.</p>
-      </div>
-    </div>
-  </div>
   <div class="row">
     <div class="large-12 columns">
-      <p></p>
-      <ul id="out"></ul>
+      <h2>Tap Targets</h2>
+      <p>Watch as the links turn into larger, more easily tappable targets when the page is viewed on a mobile device.</p>
+      <div class="row">
+        <div class="large-3 small-3 columns"></div>
+        <div class="large-6 small-6 columns">
+          <div class="switch-label">View:</div>
+          <div class="switch radius">
+            <input id="desktop" name="switch-z" type="radio" checked>
+            <label for="desktop">Desktop</label>
+            <input id="mobile" name="switch-z" type="radio">
+            <label for="mobile">Mobile</label>
+            <span></span>
+          </div>
+        </div>
+        <div class="large-3 small-3 columns"></div>
+      </div>
+      <div class="row link-buttons-list">
+        <div class="large-3 medium-6 small-12 columns">
+          <a href="#">Department of Taxation &amp; Finance</a>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+          <a href="#">Department of Labor</a>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+          <a href="#">Department of Motor Vehicles</a>
+        </div>
+        <div class="large-3 medium-6 small-12 columns">
+          <a href="#">Department of Criminal Justice Services</a>
+        </div>
+      </div>
     </div>
   </div>
-
-  <style>
-    #in {
-      border: 1px solid #444;
-      background-color: #f4f4f4;
-      padding: 10px;
-    }
-    ul {
-      list-style-position: inside;
-    }
-    .error {
-      color: maroon;
-      font-style: italic;
-    }
-  </style>
 
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
-
   <script>
     $(document).foundation();
-
-    $(document).ready(function() {
-      var $out = $('#out'),
-          logType = function (type) {
-            $out.prepend('<li>' + type + '</li>');
-          };
-
-      // Touch is supported
-      if (Modernizr.touch) {
-        $('#notouch').hide();
-        $('#hastouch').show();
-      }
-
-      $('#in')
-        .on(its.activateEventName, function (evt) {
-          logType(evt.type);
-        })
-        .on('longTap', function (evt) {
-          logType(evt.type);
-        })
-        .on('swipeLeft', function (evt) {
-          logType(evt.type);
-        })
-        .on('swipeRight', function (evt) {
-          logType(evt.type);
-        });
-    });
   </script>
+  <script src="app.js"></script>
 </body>
 </html>

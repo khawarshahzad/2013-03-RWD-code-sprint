@@ -4,19 +4,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-		<link rel="stylesheet" href="../../css/normalize.css" />
-		<link rel="stylesheet" href="../../css/foundation.css" />
+		<link rel="stylesheet" href="../../css/excelsior.css">
+		<link rel="stylesheet" href="../../css/styles.css">
 		<link rel="stylesheet" href="app.css">
 
 		<script src="../../js/vendor/custom.modernizr.js"></script>
 	</head>
-	<body>
+	<body class="">
 		<!-- Skip links -->
 		<a href="#global-nav" class="skip-to">Skip to Navigation</a>
 		<a href="#page" class="skip-to">Skip to Content</a>
-		<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
-			Open New York State Search
-		</a>
+		<div class="gov-pull-down-container show-for-small">
+			<a href="#" id="gov-pull-down" class="gov-pull-down show-for-small" data-active="active-gov-bar">
+				Open New York State Search
+			</a>
+		</div>
 		<!-- Governor's header bar -->
 		<div id="gov-bar" class="gov-bar">
 			<div class="gov-wrap">
@@ -40,13 +42,13 @@
 							<input type="submit" value="Search NY" />
 						</div>
 					</fieldset>
-				</form>	
+				</form>
 			</div>
 		</div>
 		<!-- Site's header bar -->
-		<div id="site-bar" class="site-bar">
+		<header role="banner" id="site-bar" class="site-bar">
 			<div class="site-wrap">
-				<a href="#" class="site-logo">
+				<a href="../index.html" class="site-logo">
 					NYS State Agency
 				</a>
 				<div class="site-functions">
@@ -64,22 +66,24 @@
 					</ul>
 					<!-- Link to show the menu -->
 					<div class="site-search">
-						<form action="/">
+						<form action="/" role="search">
 							<fieldset>
 								<legend>Search Agency</legend>
 								<label for="site-search-box">Search</label>
 								<div class="search-container">
 									<input type="search" id="site-search-box" class="site-search-box" />
-									<input type="submit" class="site-search-button" value="Search Agency"  />
+									<div class="site-button">
+										<input type="submit" class="site-search-button" value="Search Agency"  />
+									</div>
 								</div>
 							</fieldset>
-						</form>		
+						</form>
 					</div>
 				</div>
 			</div>
-		</div>
+		</header>
 		<!-- Main navigation -->
-		<nav id="global-nav" class="global-nav">
+		<nav id="global-nav" class="global-nav" role="navigation">
 			<div class="nav-container">
 				<ul>
 					<li>
@@ -107,7 +111,7 @@
 			</div>
 		</nav>
 		<!-- Page content -->
-		<div id="page" class="page">
+		<section role="main" id="page" class="page">
 			<div class="content-section">
 
 				<div class="row">
@@ -134,12 +138,13 @@
 
 
 			</div>
-		</div>
+		</section>
 		<!-- Footer -->
-		<footer>
+		<footer role="contentinfo">
 
 		</footer>
 	</body>
 	<script src="../../js/vendor/zepto.js"></script>
 	<script src="app.js"></script>
 </html>
+

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if lt IE 8]><html class="no-js lt-ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Forms</title>
-  <link rel="stylesheet" href="../../css/normalize.css" />
-  <link rel="stylesheet" href="../../css/foundation.css" />
-  <link rel="stylesheet" href="../../css/app.css" />
-  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="../../css/excelsior.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="../POC/app.css" />
   <script src="../../js/vendor/custom.modernizr.js"></script>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
@@ -21,12 +23,19 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h2>Forms</h2>
+      <h1>Forms</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../index.html">Prototypes Home</a></li>
+        <li class="current"><a href="#">Forms</a></li>
+      </ul>
+    </div>
+  </div>
 
-      <form class="">
+  <div class="row">
+    <div class="large-12 columns">
+      <form>
         <fieldset>
-          <legend>Contact Us</legend>
-
+          <legend>Contact Us</legend>          
           <div class="row">
             <div class="large-3 small-12 columns">
               <label for="name" class="required">Name<span class="hide"> Required field.</span></label>
@@ -44,6 +53,27 @@
               <input type="email" name="email" id="email" tabindex="1" value="">
             </div>
           </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="addr1" class="required">Street address<span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="text" name="addr1" id="addr1" value="" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="zip" class="required">ZIP<span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns"><!-- has-addendum -->
+              <input type="text" pattern="(^\d{5}(-\d{4})?$)|(^[A-Za-z]{1}\d{1}[A-Za-z]{1}\s*\d{1}[A-Za-z]{1}\d{1}$)" name="zip" id="zip" value="" required>
+              <div class="form-field-info">
+                <p>US: 55555 or 55555-4444<br>Canada: A1A 1A1 (space is optional)</p>
+              </div>
+            </div>
+          </div>          
 
           <div class="row">
             <div class="large-3 small-12 columns">
@@ -78,89 +108,24 @@
 
           <div class="row">
             <div class="small-12 columns center">
-              <input type="submit" class="button" value="Submit">
+              <input type="submit" class="button success" value="Submit">
             </div>
           </div>
 
         </fieldset>
       </form>
-
-      <form class="">
-        <fieldset>
-          <legend>Your Info</legend>
-
-          <div class="row">
-            <div class="large-3 small-12 columns">
-              <label for="name2" class="required">Name<span class="hide"> Required field.</span></label>
-            </div>
-            <div class="large-9 small-12 columns">
-              <input type="text" name="name2" id="name" value="" required>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-3 small-12 columns">
-              <label for="addr1" class="required">Street address<span class="hide"> Required field.</span></label>
-            </div>
-            <div class="large-9 small-12 columns">
-              <input type="text" name="addr1" id="addr1" value="" required>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-3 small-12 columns">
-              <label for="zip" class="required">ZIP<span class="hide"> Required field.</span></label>
-            </div>
-            <div class="large-9 small-12 columns"><!-- has-addendum -->
-              <input type="text" pattern="(^\d{5}(-\d{4})?$)|(^[A-Za-z]{1}\d{1}[A-Za-z]{1}\s*\d{1}[A-Za-z]{1}\d{1}$)" name="zip" id="zip" value="" required>
-              <div class="form-field-info">
-                <p>US: 55555 or 55555-4444<br>Canada: A1A 1A1 (space is optional)</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-3 small-12 columns">
-              <label for="email2">Email</label>
-            </div>
-            <div class="large-9 small-12 columns">
-              <input type="email" name="email2" id="email2" value="">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-3 small-12 columns">
-              <label for="phone2">Phone</label>
-            </div>
-            <div class="large-9 small-12 columns">
-              <div class="large-4 small-12 columns padding-sides-none">
-                <input type="tel" name="phone2" id="phone" value="">
-              </div>
-              <div class="large-8 small-12 columns">
-                <div class="large-4 small-4 columns">
-                  <label for="phone21" class="inline">Mobile <input name="phoneType2" type="radio" id="phone21" checked></label>
-                </div>
-                <div class="large-4 small-4 columns">
-                    <label for="phone22" class="inline">Work <input name="phoneType2" type="radio" id="phone22" checked></label>
-                </div>
-                <div class="large-4 small-4 columns">
-                    <label for="phone23" class="inline">Home <input name="phoneType2" type="radio" id="phone23" checked></label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="small-12 columns center">
-              <input type="submit" class="button" value="Submit">
-            </div>
-          </div>
-
-        </fieldset>
-      </form>
-
     </div>
   </div>
+
+<div class="immediate-assistance row alert-box">
+  <div class="large-12 columns"><strong>Need Immediate Assistance?</strong></div>
+  <div class="large-6 columns">
+    <a href="tel:15184427669" class="call-now large button radius expand"><span class="icon-phone-1"></span>Call 1-518-442-SNOW</a>
+  </div>
+  <div class="large-6 columns">
+    <a href="sms:15184748275" class="large button radius expand"><span class="icon-comment"></span>Txt 1-518-474-8275</a>
+  </div>
+</div>
 
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/app/app.js"></script>

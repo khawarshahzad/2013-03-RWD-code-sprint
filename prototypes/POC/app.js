@@ -1,80 +1,98 @@
-// Standard Gov Banner display code
-$('#gov-link-3').on('click', function(e) {
+$(document).ready(function(){
 
-	e.preventDefault();
+	var $body = $('body');
 
-	$('body').addClass('active-gov-bar-search');
+	// Standard Gov Banner display code
+	$('#gov-link-3').on('click', function(e) {
 
-});
+		e.preventDefault();
 
-// Active Elements
-$('a[data-active]').on('click', function(event){
+		$body.addClass('active-gov-bar-search');
 
-	// Prevent Defaults
-	event.preventDefault();
+	});
 
-	// Function is used to close a pre-existing active items.
-	function removeOtherActive(active) {
+	// Active Elements
+	$("[data-active]").on('click', function(event){
 
-		// Get the old active class to remove from the body tag
-		var activeClass = active.attr('data-active');
+		// Prevent Defaults
+		event.preventDefault();
 
-		// Remove the old active class
-		$('body').removeClass(activeClass);
+		// Active attribute class
+		var $activeClass = $(this).attr('data-active'),
+			$activeElm = $('.active'),
+			selectedClass = "active";
 
-		// Remove the active class from the old active item
-		active.removeClass('active');
+		// Function is used to close a pre-existing active items.
+		function removeOtherActive(active) {
 
-	}
+			// Get the old active class to remove from the body tag
+			var activeClass = active.attr('data-active');
 
-	// Function for special functionality determined by the data-active value
-	function specialEvents(activeElm) {
-		switch (activeElm) {
-			case "active-site-search": 
-				$('#site-search-box').focus();
-				break;
+			// Remove the old active class
+			$body.removeClass(activeClass);
+
+			// Remove the active class from the old active item
+			active.removeClass('active');
 
 		}
-	}
 
-	// Active attribute class 
-	var activeClass = $(this).attr('data-active'),
-		selectedClass = "active";
+		// Function for special functionality determined by the data-active value
+		function specialEvents(activeElm) {
+			switch (activeElm) {
+				
+				case "active-site-search":
+					
+					$('#site-search-box').focus();
 
-	// Check to see if there is already and active item
-	if ($('.active').length > 0) {
+					break;
 
-		// Check to make sure its not the same as the currently clicked item
+				case "active-site-menu":
 
-		if ($('.active').attr('data-active') != $(this).attr('data-active')) {
+					if ($body.hasClass('active-sub-menu')) {
+						//$('body').removeClass('active-sub-menu');
+					}
 
-
-			removeOtherActive($('.active'));
+					break;
+			}
 		}
 
-	}
+		// Check to see if there is already and active item
+		if ($activeElm.length > 0) {
 
-	// Check to see if the item is active
-	if ($('body').hasClass(activeClass)) {
+			// Check to make sure its not the same as the currently clicked item
 
-		// Remove active state class from header
-		$('body').removeClass(activeClass);
+			console.log ($activeElm.attr('data-active'));
+			console.log ($(this).attr('data-active'));
+			
+			if ($activeElm.attr('data-active') !== $(this).attr('data-active')) {
 
-		// Remove active state class from the clicked element
-		$(this).removeClass(selectedClass);
+				removeOtherActive($activeElm);
+			}
 
-	} else {
+		}
 
-		// Add active state class from header
-		$('body').addClass(activeClass);
+		// Check to see if the item is active
+		if ($body.hasClass($activeClass)) {
 
-		// Add active state class from clicked element
-		$(this).addClass(selectedClass);
+			// Remove active state class from header
+			$body.removeClass($activeClass);
+
+			// Remove active state class from the clicked element
+			$activeClass.removeClass(selectedClass);
+
+		} else {
+
+			// Add active state class from header
+			$body.addClass($activeClass);
+
+			// Add active state class from clicked element
+			$activeClass.addClass(selectedClass);
+
+		}
 
 		// Check to see if anything special has to happen based on data-active value
-		specialEvents(activeClass);
+		specialEvents($activeClass);
 
-	}
+	});
 
 });
-

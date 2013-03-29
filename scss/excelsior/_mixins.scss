@@ -20,6 +20,11 @@
   font-style: normal !important;
 }
 
+@mixin radius($val) {
+  border-radius: $val;
+  background-clip: padding-box;
+}
+
 @mixin button() {
   display: inline-block;
   margin-bottom: 0;

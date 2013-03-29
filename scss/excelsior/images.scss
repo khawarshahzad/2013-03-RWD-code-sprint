@@ -1,6 +1,39 @@
+// Responsive images
+
 .respimg {
   width: auto\9;
   max-width: 100%;
   height: auto;
   border: 0;
+}
+
+// Thumbnail container
+
+.thumbnail {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 emCalc(4px) #444;
+  @include radius(3px);
+  margin: emCalc(6px); /* room for the shadow */
+  padding: emCalc(5px) !important; /* overriding Foundation styles for first element in a section */
+
+  &.left {
+    float: left;
+    margin: 0 emCalc(12px) emCalc(6px) 0;
+  }
+
+  &.right {
+    float: right;
+    clear: right;
+    margin: 0 emCalc(6px) emCalc(12px);
+  }
+
+  figcaption {
+    font-size: emCalc(12px);
+    padding: emCalc(6px) emCalc(4px);
+    text-align: center;
+  }
+}
+
+.section .thumbnail {
+  width: 33%; // Pretty arbitrary, just made up for the tabs demo
 }

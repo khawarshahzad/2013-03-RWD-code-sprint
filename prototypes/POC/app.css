@@ -96,7 +96,7 @@
 		font-size: 1.4em;
 		line-height: inherit;
 		margin-top: -0.2em;zxs
- 	} 
+ 	}
 
 	.skip-to {
 		background: #000;
@@ -341,7 +341,7 @@
 	.site-bar .site-functions .site-button {
 		float: left;
 	    background-image: -webkit-linear-gradient(#999, #505050);
-	    background-image:         linear-gradient(#999, #505050);	
+	    background-image:         linear-gradient(#999, #505050);
 	    border-radius: 0 5px 5px 0;
 	    border-color: #999;
 		width: 14%;
@@ -370,7 +370,7 @@
 		border-left: 1px solid #666;
 	}
 
-	.site-bar .mobile-functions .mobile-search-buttton {
+	.site-bar .mobile-functions .mobile-search-button {
 		background: url(images/search.svg) no-repeat 12px 12px transparent;
 		background-size: 24px 24px;
 	}
@@ -654,7 +654,7 @@
 
 	.icon-sub-content:after {
 		margin-top: -0.25em;
- 	} 
+ 	}
 
 	.page {
 		position: relative;

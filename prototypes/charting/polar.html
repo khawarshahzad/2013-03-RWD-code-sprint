@@ -37,7 +37,79 @@
       </dl>
 
       <!-- Component code goes here -->
-      <canvas id="myChart" width="400" height="400"></canvas>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-6 columns">
+              <canvas id="myChart"></canvas>
+            </div>
+            <div class="large-6 columns">
+              <table>
+                <caption></caption>
+                <thead>
+                  <tr>
+                    <th>Polar Area Color</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>
+                      D97041
+                    </th>
+                    <td>
+                      30
+                    </td>
+                  </tr>
+                 <tr>
+                    <th>
+                      #C7604C
+                    </th>
+                    <td>
+                      90
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      #21323D
+                    </th>
+                    <td>
+                      24
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      #9D9B7F
+                    </th>
+                    <td>
+                      58
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      #7D4F6D
+                    </th>
+                    <td>
+                      82
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      #584A5E
+                    </th>
+                    <td>
+                      8
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
     </div>
   </div>
@@ -49,11 +121,10 @@
   <script src="../../js/vendor/chart.min.js"></script>
 
   <script>
-    //Get context with jQuery - using jQuery's .get() method.
-    var ctx = $("#myChart").get(0).getContext("2d");
-    //This will get the first returned node in the jQuery collection.
-    var myNewChart = new Chart(ctx);
 
+    $(document).ready(function(){
+
+    // Chart Data
     var data = [
       {
         value : 30,
@@ -81,7 +152,34 @@
       }
     ]
 
-    myNewChart.PolarArea(data,{});
+    function chartRedraw() {
+
+      // Determine the size of the canvas on the page.
+      var graph = $("#myChart"),
+          graphWidth = parseInt(graph.parent().width()),
+          graphHeight = Math.floor(graphWidth / 1.6667);
+
+      //graph.css({'height':graphHeight,'width':graphWidth});
+      graph.attr('height', graphHeight);
+      graph.attr('width', graphWidth);
+
+      //Get context with jQuery - using jQuery's .get() method.
+      var ctx = $("#myChart").get(0).getContext("2d");
+      //This will get the first returned node in the jQuery collection.
+      var myNewChart = new Chart(ctx);
+
+      // Draw the chart
+      myNewChart.PolarArea(data,{});
+
+    }
+    
+    // Rerun this function on all resize events.
+    $(window).resize( chartRedraw );
+
+    // Call the page to run it the first time
+    chartRedraw();
+
+    });
 
   </script>
 

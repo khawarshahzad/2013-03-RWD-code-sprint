@@ -37,7 +37,52 @@
       </dl>
 
       <!-- Component code goes here -->
-      <canvas id="myChart" width="400" height="400"></canvas>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-6 columns">
+              <canvas id="myChart"></canvas>
+            </div>
+            <div class="large-6 columns">
+              <table>
+                <caption></caption>
+                <thead>
+                  <tr>
+                    <th>Pie Color</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>
+                      F38630
+                    </th>
+                    <td>
+                      30
+                    </td>
+                  </tr>
+                 <tr>
+                    <th>
+                      #E0E4CC
+                    </th>
+                    <td>
+                      50
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      #69D2E7
+                    </th>
+                    <td>
+                      100
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -49,27 +94,52 @@
   <script src="../../js/vendor/chart.min.js"></script>
 
   <script>
-    //Get context with jQuery - using jQuery's .get() method.
-    var ctx = $("#myChart").get(0).getContext("2d");
-    //This will get the first returned node in the jQuery collection.
-    var myNewChart = new Chart(ctx);
 
-    var data = [
-      {
-        value: 30,
-        color:"#F38630"
-      },
-      {
-        value : 50,
-        color : "#E0E4CC"
-      },
-      {
-        value : 100,
-        color : "#69D2E7"
-      }     
-    ]
+    $(document).ready(function() {
 
-    myNewChart.Pie(data,{});
+      var data = [
+        {
+          value: 30,
+          color:"#F38630"
+        },
+        {
+          value : 50,
+          color : "#E0E4CC"
+        },
+        {
+          value : 100,
+          color : "#69D2E7"
+        }     
+      ]
+
+      function chartRedraw() {
+
+        // Determine the size of the canvas on the page.
+        var graph = $("#myChart"),
+            graphWidth = parseInt(graph.parent().width()),
+            graphHeight = Math.floor(graphWidth / 1.6667);
+
+        //graph.css({'height':graphHeight,'width':graphWidth});
+        graph.attr('height', graphHeight);
+        graph.attr('width', graphWidth);
+
+        //Get context with jQuery - using jQuery's .get() method.
+        var ctx = $("#myChart").get(0).getContext("2d");
+        //This will get the first returned node in the jQuery collection.
+        var myNewChart = new Chart(ctx);
+
+        // Draw the chart
+        myNewChart.Pie(data,{});
+
+      }
+      
+      // Rerun this function on all resize events.
+      $(window).resize( chartRedraw );
+
+      // Call the page to run it the first time
+      chartRedraw();
+
+    });
 
   </script>
 

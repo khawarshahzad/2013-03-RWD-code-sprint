@@ -216,19 +216,18 @@ $(document).ready(function(){exlsr.init();});
  */
 $(document).ready(function(){
 
-  var $body = $('body');
+  if (!exlsr.$body) {
+    exlsr.$body = $('body');
+  }
 
   // Standard Gov Banner display code
   $('#gov-link-3').on('click', function(e) {
-
     e.preventDefault();
-
-    $body.addClass('active-gov-bar-search');
-
+    exlsr.$body.addClass('active-gov-bar-search');
   });
 
   // Active Elements
-  $("[data-active]").on('click', function(e){
+  $('[data-active]').on('click', function(e) {
 
     // Prevent Defaults
     e.preventDefault();
@@ -237,7 +236,7 @@ $(document).ready(function(){
     var $clickedElm = $(this),
       activeClass = $clickedElm.attr('data-active'),
       $activeElm = $('.active'),
-      selectedClass = "active";
+      selectedClass = 'active';
 
     // Function is used to close a pre-existing active items.
     function removeOtherActive(active) {
@@ -246,7 +245,7 @@ $(document).ready(function(){
       var activeClass = active.attr('data-active');
 
       // Remove the old active class
-      $body.removeClass(activeClass);
+      exlsr.$body.removeClass(activeClass);
 
       // Remove the active class from the old active item
       active.removeClass('active');
@@ -255,43 +254,34 @@ $(document).ready(function(){
 
     // Function for special functionality determined by the data-active value
     function specialEvents(activeElm) {
-      switch (activeElm) {
-
-        case "active-site-search":
-
-          $('#site-search-box').focus();
-
-          break;
+      if (activeElm === 'active-site-search') {
+        $('#site-search-box').focus();
       }
     }
 
     // Check to see if there is already and active item
     if ($activeElm.length > 0) {
-
       // Check to make sure its not the same as the currently clicked item
       if ($activeElm.attr('data-active') !== $clickedElm.attr('data-active')) {
         removeOtherActive($activeElm);
       }
-
     }
 
     // Check to see if the item is active
-    if ($body.hasClass(activeClass)) {
+    if (exlsr.$body.hasClass(activeClass)) {
 
       // Remove active state class from header
-      $body.removeClass(activeClass);
+      exlsr.$body.removeClass(activeClass);
 
       // Remove active state class from the clicked element
       $clickedElm.removeClass(selectedClass);
-
-    } else {
-
+    }
+    else {
       // Add active state class from header
-      $body.addClass(activeClass);
+      exlsr.$body.addClass(activeClass);
 
       // Add active state class from clicked element
       $clickedElm.addClass(selectedClass);
-
     }
 
     // Check to see if anything special has to happen based on data-active value

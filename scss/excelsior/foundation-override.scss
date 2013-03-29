@@ -198,3 +198,13 @@ ul.f-dropdown li {
 .accordion section.section:last-child {
   margin-bottom: 0;
 }
+
+/* Override Orbit display to not show bullets on touch */
+
+@media #{$small} {
+
+  .touch { 
+    .orbit-bullets { display: none; }
+  }
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Charting</title>
+  <link rel="stylesheet" href="../../css/excelsior.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
+  <link rel="icon" href="../../images/favicon.ico">
+
+</head>
+<body>
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Charting</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../">Prototypes Home</a></li>
+        <li class="current"><a href="#">Charting</a></li>
+      </ul>
+      <dl class="sub-nav">
+        <dt>Charting:</dt>
+        <dd><a href="index.html">Line Chart</a></dd>
+        <dd class="active"><a href="bar.html">Bar Chart</a></dd>
+        <dd><a href="radar.html">Radar Chart</a></dd>
+        <dd><a href="polar.html">Polar Area Chart</a></dd>
+        <dd><a href="pie.html">Pie Chart</a></dd>
+        <dd><a href="doughnut.html">Doughnut Chart</a></dd>
+      </dl>
+
+      <!-- Component code goes here -->
+      <canvas id="myChart" width="400" height="400"></canvas>
+
+    </div>
+  </div>
+
+
+  <script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/app/app.js"></script>
+  <script src="../../js/foundation/foundation.js"></script>
+  <script src="../../js/vendor/chart.min.js"></script>
+
+  <script>
+    //Get context with jQuery - using jQuery's .get() method.
+    var ctx = $("#myChart").get(0).getContext("2d");
+    //This will get the first returned node in the jQuery collection.
+    var myNewChart = new Chart(ctx);
+
+    var data = {
+      labels : ["January","February","March","April","May","June","July"],
+      datasets : [
+        {
+          fillColor : "rgba(220,220,220,0.5)",
+          strokeColor : "rgba(220,220,220,1)",
+          data : [65,59,90,81,56,55,40]
+        },
+        {
+          fillColor : "rgba(151,187,205,0.5)",
+          strokeColor : "rgba(151,187,205,1)",
+          data : [28,48,40,19,96,27,100]
+        }
+      ]
+    }
+
+    myNewChart.Bar(data,{});
+
+  </script>
+
+<!-- BE SURE TO UNCOMMENT OUT THE SCRIPT YOU NEED TO USE FROM FOUNDATION IF YOU NEED TO USE ONE!
+
+  <script src="../../js/foundation/foundation.alerts.js"></script>
+
+  <script src="../../js/foundation/foundation.clearing.js"></script>
+
+  <script src="../../js/foundation/foundation.cookie.js"></script>
+
+  <script src="../../js/foundation/foundation.dropdown.js"></script>
+
+  <script src="../../js/foundation/foundation.forms.js"></script>
+
+  <script src="../../js/foundation/foundation.joyride.js"></script>
+
+  <script src="../../js/foundation/foundation.magellan.js"></script>
+
+  <script src="../../js/foundation/foundation.orbit.js"></script>
+
+  <script src="../../js/foundation/foundation.placeholder.js"></script>
+
+  <script src="../../js/foundation/foundation.reveal.js"></script>
+
+  <script src="../../js/foundation/foundation.section.js"></script>
+
+  <script src="../../js/foundation/foundation.tooltips.js"></script>
+
+  <script src="../../js/foundation/foundation.topbar.js"></script>
+
+-->
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

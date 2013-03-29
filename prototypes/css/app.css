@@ -27,8 +27,4 @@ label {
   margin-top: 2em; }
 
 .immediate-assistance {
-  margin-top: 30px; }
-
-@media screen and (max-width: 768px) {
-  .immediate-assistance .call-now {
-    margin-bottom: 15px; } }
+  margin-top: 25px; }

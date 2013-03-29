@@ -61,7 +61,10 @@ $(document).ready(function(){
 
 			// Check to make sure its not the same as the currently clicked item
 
-			if ($activeElm.attr('data-active') != $(this).attr('data-active')) {
+			console.log ($activeElm.attr('data-active'));
+			console.log ($(this).attr('data-active'));
+			
+			if ($activeElm.attr('data-active') !== $(this).attr('data-active')) {
 
 				removeOtherActive($activeElm);
 			}

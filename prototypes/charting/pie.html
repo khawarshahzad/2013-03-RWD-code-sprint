@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Name of Component</title>
+  <title>Charting</title>
   <link rel="stylesheet" href="../../css/excelsior.css" />
   <link rel="stylesheet" href="../../css/styles.css" />
   <script src="../../js/vendor/custom.modernizr.js"></script>
@@ -21,20 +21,23 @@
 <body>
   <div class="row">
     <div class="large-12 columns">
-      <h1>Name of Component</h1>
+      <h1>Charting</h1>
       <ul class="breadcrumbs">
         <li><a href="../">Prototypes Home</a></li>
-        <li class="current"><a href="#">Name of Component</a></li>
+        <li class="current"><a href="#">Charting</a></li>
       </ul>
       <dl class="sub-nav">
-        <dt>Name of Component:</dt>
-        <dd><a href="#">opt1</a></dd>
-        <dd class="active"><a href="#">opt2</a></dd>
-        <dd><a href="#">opt3</a></dd>
-        <dd><a href="#">opt4</a></dd>
+        <dt>Charting:</dt>
+        <dd><a href="index.html">Line Chart</a></dd>
+        <dd><a href="bar.html">Bar Chart</a></dd>
+        <dd><a href="radar.html">Radar Chart</a></dd>
+        <dd><a href="polar.html">Polar Area Chart</a></dd>
+        <dd class="active"><a href="pie.html">Pie Chart</a></dd>
+        <dd><a href="doughnut.html">Doughnut Chart</a></dd>
       </dl>
 
       <!-- Component code goes here -->
+      <canvas id="myChart" width="400" height="400"></canvas>
 
     </div>
   </div>
@@ -43,6 +46,32 @@
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
+  <script src="../../js/vendor/chart.min.js"></script>
+
+  <script>
+    //Get context with jQuery - using jQuery's .get() method.
+    var ctx = $("#myChart").get(0).getContext("2d");
+    //This will get the first returned node in the jQuery collection.
+    var myNewChart = new Chart(ctx);
+
+    var data = [
+      {
+        value: 30,
+        color:"#F38630"
+      },
+      {
+        value : 50,
+        color : "#E0E4CC"
+      },
+      {
+        value : 100,
+        color : "#69D2E7"
+      }     
+    ]
+
+    myNewChart.Pie(data,{});
+
+  </script>
 
 <!-- BE SURE TO UNCOMMENT OUT THE SCRIPT YOU NEED TO USE FROM FOUNDATION IF YOU NEED TO USE ONE!
 

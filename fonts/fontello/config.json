@@ -332,6 +332,20 @@
     },
     {
       "search": [
+        "search",
+        "find",
+        "magnify"
+      ],
+      "code": 62733,
+      "uid": "ec21fe3492bb04d9e29103c319556ed8",
+      "css": "search-3",
+      "orig_css": "search",
+      "orig_code": 62733,
+      "src": "mfglabs",
+      "from": 62733
+    },
+    {
+      "search": [
         "phone",
         "telephone",
         "call"
@@ -370,6 +384,32 @@
       "orig_code": 128269,
       "src": "entypo",
       "from": 128269
+    },
+    {
+      "search": [
+        "search",
+        "find"
+      ],
+      "code": 59393,
+      "from": 128269,
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search-1",
+      "orig_css": "search",
+      "orig_code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "search",
+        "find"
+      ],
+      "code": 59394,
+      "from": 128269,
+      "uid": "id8wp0cygl9trzbhlbd9o0fygiesi629",
+      "css": "search-2",
+      "orig_css": "search",
+      "orig_code": 59394,
+      "src": "modernpics"
     }
   ]
 }

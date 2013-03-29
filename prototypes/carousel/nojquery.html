@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Carousel Prototype</title>
+  <link rel="stylesheet" href="../../css/excelsior.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="app.css" />
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
+  <link rel="icon" href="../../images/favicon.ico">
+
+</head>
+<body>
+  <div class="row">
+    <div class="large-9 columns">
+      <h1>Carousel</h1>
+      <ul class="breadcrumbs">
+        <li><a href="../index.html">Prototypes Home</a></li>
+        <li class="current"><a href="#">Carousel</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-9 small-centered columns">
+      <ul data-orbit>
+        <li data-orbit-slide="statue">
+          <img src="img/demos/demo1.jpg" />
+          <div class="orbit-caption"><h4>Statue of Liberty</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/suewaters/">Sue Walters</a></span></div>
+        </li>
+        <li data-orbit-slide="falls">
+          <img src="img/demos/demo2.jpg" />
+          <div class="orbit-caption"><h4>Niagara Falls</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/raresmdutu/">Rares M. Dutu</a></span></div>
+        </li>
+        <li data-orbit-slide="capitol">
+          <img src="img/demos/demo3.jpg" />
+          <div class="orbit-caption"><h4>Capitol Building</h4><span class="hide-for-small">Photo by <a href="http://www.flickr.com/photos/31451603@N02/">PeteDz Photography</a></span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="../../js/vendor/zepto.js"></script>
+  <script src="../../js/foundation/foundation.js"></script>
+
+<!--
+
+  <script src="../../js/foundation/foundation.alerts.js"></script>
+
+  <script src="../../js/foundation/foundation.clearing.js"></script>
+
+  <script src="../../js/foundation/foundation.cookie.js"></script>
+
+  <script src="../../js/foundation/foundation.dropdown.js"></script>
+
+  <script src="../../js/foundation/foundation.forms.js"></script>
+
+  <script src="../../js/foundation/foundation.joyride.js"></script>
+
+  <script src="../../js/foundation/foundation.magellan.js"></script>
+-->
+  <script src="../../js/foundation/foundation.orbit.js"></script>
+<!--
+  <script src="../../js/foundation/foundation.placeholder.js"></script>
+
+  <script src="../../js/foundation/foundation.reveal.js"></script>
+
+  <script src="../../js/foundation/foundation.section.js"></script>
+
+  <script src="../../js/foundation/foundation.tooltips.js"></script>
+
+  <script src="../../js/foundation/foundation.topbar.js"></script>
+
+-->
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

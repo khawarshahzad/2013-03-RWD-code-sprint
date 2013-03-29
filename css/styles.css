@@ -3,3 +3,41 @@
  *
  * These will eventually move to /scss/_excelsior.scss or a component file
 */
+
+/* thumbnails */
+.img-list a{
+text-decoration: none;
+}
+.list li {
+  margin-bottom:.75em;
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+.inner {
+  display: table-row;
+  overflow: hidden;
+}
+.li-img {
+  display: table-cell;
+  vertical-align: top;
+  width: 30%;
+  padding-right: 1em;
+}
+.li-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.li-text {
+  display: table-cell;
+  vertical-align: top;
+  width: 70%;
+  padding-right:5%;
+}
+.li-head {
+  margin: 0;
+}
+.li-sub {
+  margin: 0;
+}

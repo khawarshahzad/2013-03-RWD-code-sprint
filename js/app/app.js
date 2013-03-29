@@ -15,6 +15,7 @@ var exlsr = {
  */
 exlsr.init = function _init () {
   // Init code here...
+  exlsr.$body = $('body');
 };
 
 $(document).ready(function(){exlsr.init();});
@@ -210,6 +211,9 @@ $(document).ready(function(){exlsr.init();});
 
 }());
 
+/**
+ * Navigation
+ */
 $(document).ready(function(){
 
   var $body = $('body');
@@ -296,3 +300,10 @@ $(document).ready(function(){
   });
 
 });
+
+/**
+ * Plugins
+ */
+
+// Simple array-reversal plugin
+try { $.fn.reverse = [].reverse; } catch (e) { }

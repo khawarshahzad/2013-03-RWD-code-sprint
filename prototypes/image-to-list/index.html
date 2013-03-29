@@ -19,9 +19,20 @@
   <style>
     .image-to-list {
       list-style: none;
+      margin-left: 20px;
     }
 
+    .image-to-list li a {
+      display: inline-block;
+      height: 100px;
+      width: 250px;
+      text-indent: -9999px;
+      margin-bottom: 10px;
+    }
 
+    .albany {
+      background: url(albany.jpg) no-repeat -29px -78px transparent;
+    }
 
   </style>
 </head>
@@ -35,17 +46,16 @@
       </ul>
 
       <!-- Component code goes here -->
-
       <div class="row">
-        <ul class="image-to-list">
-          <li><a class="responsive-tables" href="../responsive-tables/">Responsive Tables</a></li>
-          <li><a class="off-canvas" href="../../index-off-canvas.html">Off-Canvas Navigation</a></li>
-          <li><a class="toggle-navigation" href="../../index-toggle.html">Toggle Navigation</a></li>
-          <li><a class="charting" href="../charting/index.html">Charting</a></li>
-          <li><a class="lightbox" href="../lightbox/">Lightbox</a></li>
-          <li><a class="block-to-stock" href="../blockToStack/">Block to Stack</a></li>
-          <li><a class="carousel" href="../carousel/">Carousel</a></li>
-        </ul>
+        <div class="">
+          <ul class="image-to-list">
+            <li><a class="albany" href="">Albany</a></li>
+            <li><a class="nyc" href="">New York City</a></li>
+            <li><a class="niagara-falls" href="">Niagara Falls</a></li>
+            <li><a class="syracuse" href="">Syracuse</a></li>
+            <li><a class="saratoga" href="">Saratoga</a></li>
+          </ul> 
+        </div>
       </div>
 
     </div>

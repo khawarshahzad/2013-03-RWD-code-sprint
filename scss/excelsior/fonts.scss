@@ -66,9 +66,12 @@
 }
 
 @font-face {
-  font-family: 'fontello';
-  src: url("../font/fontello.eot?17048788");
-  src: url("../font/fontello.eot?17048788#iefix") format('embedded-opentype'), url("../font/fontello.woff?17048788") format('woff'), url("../font/fontello.ttf?17048788") format('truetype'), url("../font/fontello.svg?17048788#fontello") format('svg');
+  font-family: "fontello";
+  src: url("../fonts/fontello/fontello.eot?17048788");
+  src: url("../fonts/fontello/fontello.eot?17048788#iefix") format("embedded-opentype"),
+       url("../fonts/fontello/fontello.woff?17048788") format("woff"),
+       url("../fonts/fontello/fontello.ttf?17048788") format("truetype"),
+       url("../fonts/fontello/fontello.svg?17048788#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }

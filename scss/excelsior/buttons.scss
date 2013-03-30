@@ -319,6 +319,7 @@ input[type="submit"].button::-moz-focus-inner {
 
 .close {
   float: right;
+  font-family: $font-sans-fallback;
   font-size: 20px;
   font-weight: bold;
   line-height: 20px;

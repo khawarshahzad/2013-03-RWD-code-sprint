@@ -4,6 +4,25 @@ body {
   font-family: $font-sans;
 }
 
+a {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.gov-pull-down-container,
+#gov-bar,
+#site-bar,
+nav {
+  a,
+  a:hover,
+  a:active {
+    text-decoration: none;
+  }
+}
+
 select,
 textarea,
 button,
@@ -110,6 +129,41 @@ ul.f-dropdown li {
   border-color: black transparent transparent transparent;
 }
 
+// Panels
+
+.panel h4 a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Sub nav
+
+.sub-nav {
+  dt:not(.active) a,
+  dd:not(.active) a {
+    padding: emCalc(3px) emCalc(9px);
+
+    &:hover {
+      border-radius: 1000px;
+      background: #999;
+      color: #fff;
+    }
+  }
+}
+
+// Reveal Modal
+
+.close-reveal-modal {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 // Breadcrumbs
 
 .breadcrumbs li a,
@@ -118,7 +172,28 @@ ul.f-dropdown li {
   font-size: 0.9em;
 }
 
+.breadcrumbs li a {
+  &:hover {
+    text-decoration: none;
+  }
+
+  &[href="#"],
+  &[href="#"]:hover {
+    cursor: default;
+    text-decoration: none;
+  }
+}
+
 // Sections
+
+section .title a,
+.section .title a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 .section-container.tabs section .title,
 .section-container.tabs .section .title{
@@ -259,5 +334,15 @@ ul.f-dropdown li {
 @media #{$small} {
   .touch {
     .orbit-bullets { display: none; }
+  }
+}
+
+// Clearing (Lightbox)
+
+.clearing-close {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
   }
 }

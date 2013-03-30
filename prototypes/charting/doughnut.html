@@ -28,16 +28,84 @@
       </ul>
       <dl class="sub-nav">
         <dt>Charting:</dt>
-        <dd class="active"><a href="index.html">Line Chart</a></dd>
+        <dd><a href="index.html">Line Chart</a></dd>
         <dd><a href="bar.html">Bar Chart</a></dd>
         <dd><a href="radar.html">Radar Chart</a></dd>
         <dd><a href="polar.html">Polar Area Chart</a></dd>
         <dd><a href="pie.html">Pie Chart</a></dd>
-        <dd><a href="doughnut.html">Doughnut Chart</a></dd>
+        <dd class="active"><a href="doughnut.html">Doughnut Chart</a></dd>
       </dl>
 
       <!-- Component code goes here -->
-      <canvas id="myChart" width="400" height="400"></canvas>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-6 columns">
+              <canvas id="myChart"></canvas>
+            </div>
+            <div class="large-6 columns">
+              <table>
+                <caption>Doughnut Chart</caption>
+                <thead>
+                  <tr>
+                    <th>
+                      Area Value
+                    </th>
+                    <th>
+                      Color
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      30
+                    </td>
+                    <td>
+                      #F7464A
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      50
+                    </td>
+                    <td>
+                      #E2EAE9
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      100
+                    </td>
+                    <td>
+                      #D4CCC5
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      40
+                    </td>
+                    <td>
+                      #949FB1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      120
+                    </td>
+                    <td>
+                      #4D5360
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
     </div>
   </div>
@@ -49,10 +117,7 @@
   <script src="../../js/vendor/chart.min.js"></script>
 
   <script>
-    //Get context with jQuery - using jQuery's .get() method.
-    var ctx = $("#myChart").get(0).getContext("2d");
-    //This will get the first returned node in the jQuery collection.
-    var myNewChart = new Chart(ctx);
+  $(document).ready(function(){
 
     var data = [
       {
@@ -78,7 +143,34 @@
 
     ]
 
-    myNewChart.Doughnut(data,{});
+    function chartRedraw() {
+
+      // Determine the size of the canvas on the page.
+      var graph =  $('#myChart'),
+          graphWidth = parseInt(graph.parent().width()),
+          graphHeight = Math.floor(graphWidth / 1.6667);
+
+      //graph.css({'height':graphHeight,'width':graphWidth});
+      graph.attr('height', graphHeight);
+      graph.attr('width', graphWidth);
+
+      //Get context with jQuery - using jQuery's .get() method.
+      var ctx = $("#myChart").get(0).getContext("2d");
+      //This will get the first returned node in the jQuery collection.
+      var myNewChart = new Chart(ctx);
+
+      // Draw the chart
+      myNewChart.Doughnut(data,{});
+
+    }
+
+    // Rerun this function on all resize events.
+    $(window).resize( chartRedraw );
+
+    // Call the page to run it the first time
+    chartRedraw();
+
+  });
 
   </script>
 

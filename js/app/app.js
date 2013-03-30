@@ -7,7 +7,8 @@ var exlsr = {
   activateEventName: 'click',
   ua: navigator.userAgent,
   iOS: false,
-  $body: null
+  $body: null,
+  $window: null
 };
 
 /**
@@ -16,6 +17,7 @@ var exlsr = {
 exlsr.init = function _init () {
   // Init code here...
   exlsr.$body = $('body');
+  exlsr.$window = $(window);
 };
 
 $(document).ready(function(){exlsr.init();});

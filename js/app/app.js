@@ -174,13 +174,14 @@ $(document).ready(function(){exlsr.init();});
     (function(w){
       var doc = w.document;
       if( !doc.querySelector ){ return; }
+      console.log('running');
       var meta = doc.querySelector( "meta[name=viewport]" ),
           initialContent = meta && meta.getAttribute( "content" ),
           disabledZoom = initialContent + ",maximum-scale=1",
           enabledZoom = initialContent + ",maximum-scale=10",
           enabled = true,
           x, y, z, aig;
-      if( !meta ){ return; }
+      if( !meta ){ console.log('quitting'); return; }
       function restoreZoom(){
         meta.setAttribute( "content", enabledZoom );
         enabled = true;

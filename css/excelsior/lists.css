@@ -1,0 +1,42 @@
+/* Image to lists */
+@media only screen {
+  /* line 3, ../../scss/excelsior/lists.scss */
+  .image-to-list a {
+    color: #FFF;
+    display: block;
+    text-decoration: none;
+  }
+
+  /* line 9, ../../scss/excelsior/lists.scss */
+  .image-to-list a span {
+    background: rgba(0, 0, 0, 0.7);
+    display: block;
+    padding: 7px;
+    position: relative;
+    margin-top: -46px;
+  }
+}
+@media only screen and (max-width: 24em) {
+  /* line 20, ../../scss/excelsior/lists.scss */
+  .image-to-list li {
+    float: none;
+  }
+
+  /* line 24, ../../scss/excelsior/lists.scss */
+  .image-to-list a {
+    color: #2ba6cb;
+    text-decoration: underline;
+  }
+
+  /* line 29, ../../scss/excelsior/lists.scss */
+  .image-to-list a img {
+    display: none;
+    speak: none;
+  }
+
+  /* line 34, ../../scss/excelsior/lists.scss */
+  .image-to-list a span {
+    background: none;
+    margin-top: 0;
+  }
+}

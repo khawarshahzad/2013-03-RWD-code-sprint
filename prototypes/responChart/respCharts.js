@@ -1,23 +1,23 @@
 (function( $ ){
-  	
-  	$.respCharts = function(chartObj) {
-        
+
+    $.respCharts = function(chartObj) {
+
         var chartObj = chartObj;
 
         // Function for building the default charts
         function chartBuilder(canvasElm, chartType, chartData) {
 
           // Select the canvas element in that is being used
-          var graph = $(canvasElm),
-              graphWidth = parseInt(graph.parent().width()),
+          var $graph = $(canvasElm),
+              graphWidth = $graph.parent().width(),
               graphHeight = Math.floor(graphWidth / 1.6667);
 
           //graph.css({'height':graphHeight,'width':graphWidth});
-          graph.attr('height', graphHeight);
-          graph.attr('width', graphWidth);
+          $graph.attr('height', graphHeight);
+          $graph.attr('width', graphWidth);
 
           //Get context with jQuery - using jQuery's .get() method.
-          var ctx = graph.get(0).getContext("2d");
+          var ctx = $graph.get(0).getContext("2d");
           //This will get the first returned node in the jQuery collection.
           var myNewChart = new Chart(ctx);
 
@@ -49,9 +49,9 @@
         function loopChartArray() {
 
           for (var i=0, len = chartObj.length; i < len; i++) {
-             
+
              // For each chart object found call the build function
-             var chart = chartBuilder(chartObj[i].cId, chartObj[i].cType, chartObj[i].cData);
+             chartBuilder(chartObj[i].cId, chartObj[i].cType, chartObj[i].cData);
 
           }
         }
@@ -62,6 +62,6 @@
         // Setup the window resize event
         $(window).resize(loopChartArray);
 
-  	};
+    };
 
 })( jQuery );

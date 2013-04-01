@@ -4,8 +4,9 @@
   white-space: nowrap;
 }
 
-.list-bullets-inside {
-  list-style-position: inside;
+.bulleted-list {
+  list-style-position: outside;
+  margin-left: 1em;
 }
 
 .padding-sides-none {

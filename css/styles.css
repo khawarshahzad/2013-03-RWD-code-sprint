@@ -4,11 +4,11 @@
  * These will eventually move to /scss/_excelsior.scss or a component file
 */
 .chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-    text-align:center;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+  text-align:center;
 }
 /* thumbnails */
 .img-list a{

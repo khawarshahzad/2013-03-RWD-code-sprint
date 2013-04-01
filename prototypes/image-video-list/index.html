@@ -4,11 +4,11 @@
 <!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>Image-to-List</title>
-  <link rel="stylesheet" href="../../css/excelsior.css" />
-  <link rel="stylesheet" href="../../css/styles.css" />
+  <title>Image &amp; Video List</title>
+  <link rel="stylesheet" href="../../css/excelsior.css">
+  <link rel="stylesheet" href="../../css/styles.css">
   <script src="../../js/vendor/custom.modernizr.js"></script>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
@@ -24,19 +24,20 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h1>Image-to-List</h1>
+      <h1>Image &amp; Video List</h1>
       <ul class="breadcrumbs">
         <li><a href="../index.html">Prototypes Home</a></li>
-        <li class="current"><a href="#">Image-to-List</a></li>
+        <li class="current"><a href="#">Image &amp; Video List</a></li>
       </ul>
 
-      <div class="row">
+      <div class="row hide-for-touch">
         <div class="large-8 small-centered columns">
           <div class="alert-box callout radius" data-alert>
             <a href="#" class="close">&times;</a>
             <h4>What to watch for:</h4>
             <ul class="bulleted-list">
-              <li>Watch how smaller screens show only 2 images per row to keep the images from being too small to see</li>
+              <li class="hide-for-small">Notice how the images are hidden on small screens to converse space and improve performance</li>
+              <li>Watch how medium-sizes screens show only 2 images per row to keep the images from being too small to see</li>
             </ul>
           </div>
         </div>
@@ -44,14 +45,14 @@
 
       <!-- Component code goes here -->
       <div class="row">
-        <div class="large-12 columns">
-          <ul class="image-to-list small-block-grid-2 large-block-grid-4">
-            <li><a class="albany" href="#"><img alt="Photo of Albany" src="albany.jpg"> <span>Albany NY</span></a></li>
-            <li><a class="nyc" href="#"><img alt="Photo of New York City" src="new-york-city.jpg"><span>New York City</span></a></li>
-            <li><a class="niagara-falls" href="#"><img alt="Photo of Niagara Falls" src="niagara-falls.jpg"><span>Niagara Falls</span></a></li>
-            <li><a class="saratoga" href="#"><img alt="Photo of Saratoga" src="saratoga.jpg"><span>Saratoga</span></a></li>
-          </ul>
-        </div>
+        <ul class="large-block-grid-4 small-block-grid-2 image-to-list">
+          <li class="large-3 small-6 columns"><a class="albany" href="#"><img alt="Photo of Albany" src="albany.jpg"> <span>Albany NY</span></a></li>
+          <li class="large-3 small-6 columns"><a class="nyc" href="#"><img alt="Photo of New York City" src="new-york-city.jpg"><span>New York City</span></a></li>
+          <li class="large-3 small-6 columns"><a class="niagara-falls" href="#"><img alt="Photo of Niagara Falls" src="niagara-falls.jpg"><span>Niagara Falls</span></a></li>
+          <li class="large-3 small-6 columns"><a class="saratoga" href="#"><img alt="Photo of Saratoga" src="saratoga.jpg"><span>Saratoga</span></a></li>
+          <li class="large-3 small-6 columns has-video"><a href="#"><iframe width="100%" height="100%" src="http://www.youtube.com/embed/EBnffd3cHVI?rel=0" frameborder="0" allowfullscreen></iframe><span>Mobile Summit</span></a></li>
+          <li class="large-3 small-6 columns has-video"><a href="#"><iframe width="100%" height="100%" src="http://www.youtube.com/embed/f-iY1Ap9OJM?rel=0" frameborder="0" allowfullscreen></iframe><span>ITS Town Hall Meeting</span></a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -60,8 +61,6 @@
   <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
   <script src="../../js/foundation/foundation.alerts.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script>$(document).foundation();</script>
 </body>
 </html>

@@ -118,6 +118,12 @@ ul.f-dropdown li {
   padding: 0;
 }
 
+@media only screen and (min-width: 48em) {
+  li.hide-for-small {
+    list-style-type: disc;
+  }
+}
+
 .button small {
   font-size: 75%;
 }
@@ -288,7 +294,7 @@ section .title a,
   content: "\e75e";
   position: absolute;
   top: 6px;
-  right: 10px;
+  right: 18px;
   font-family: $font-icons;
   font-style: normal;
   font-weight: normal;
@@ -300,7 +306,7 @@ section .title a,
 .accordion section.auto.active .title:after,
 .accordion section.section.active .title:after {
   top: 8px;
-  right: 10px;
+  right: 18px;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -313,7 +319,7 @@ section .title a,
     content: "\e75e";
     position: absolute;
     top: 8px;
-    right: 10px;
+    right: 18px;
     font-family: $font-icons;
     font-style: normal;
     font-weight: normal;
@@ -325,7 +331,7 @@ section .title a,
   .auto section.auto.active .title:after,
   .auto section.section.active .title:after {
     top: 6px;
-    right: 10px;
+    right: 18px;
     -webkit-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
             transform: rotate(270deg);

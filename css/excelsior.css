@@ -6791,39 +6791,45 @@ ul.f-dropdown li {
   padding: 0;
 }
 
-/* line 121, ../scss/excelsior/_foundation-override.scss */
+@media only screen and (min-width: 48em) {
+  /* line 122, ../scss/excelsior/_foundation-override.scss */
+  li.hide-for-small {
+    list-style-type: disc;
+  }
+}
+/* line 127, ../scss/excelsior/_foundation-override.scss */
 .button small {
   font-size: 75%;
 }
 
-/* line 125, ../scss/excelsior/_foundation-override.scss */
+/* line 131, ../scss/excelsior/_foundation-override.scss */
 .button.large {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
 
-/* line 132, ../scss/excelsior/_foundation-override.scss */
+/* line 138, ../scss/excelsior/_foundation-override.scss */
 .dropdown.button.tiny:before,
 .dropdown.button.small:before,
 .dropdown.button.large:before {
   border-color: black transparent transparent transparent;
 }
 
-/* line 138, ../scss/excelsior/_foundation-override.scss */
+/* line 144, ../scss/excelsior/_foundation-override.scss */
 .panel h4 a {
   text-decoration: none;
 }
-/* line 141, ../scss/excelsior/_foundation-override.scss */
+/* line 147, ../scss/excelsior/_foundation-override.scss */
 .panel h4 a:hover {
   text-decoration: none;
 }
 
-/* line 150, ../scss/excelsior/_foundation-override.scss */
+/* line 156, ../scss/excelsior/_foundation-override.scss */
 .sub-nav dt:not(.active) a,
 .sub-nav dd:not(.active) a {
   padding: 0.1875em 0.5625em;
 }
-/* line 153, ../scss/excelsior/_foundation-override.scss */
+/* line 159, ../scss/excelsior/_foundation-override.scss */
 .sub-nav dt:not(.active) a:hover,
 .sub-nav dd:not(.active) a:hover {
   border-radius: 1000px;
@@ -6831,44 +6837,44 @@ ul.f-dropdown li {
   color: #fff;
 }
 
-/* line 163, ../scss/excelsior/_foundation-override.scss */
+/* line 169, ../scss/excelsior/_foundation-override.scss */
 .close-reveal-modal {
   text-decoration: none;
 }
-/* line 166, ../scss/excelsior/_foundation-override.scss */
+/* line 172, ../scss/excelsior/_foundation-override.scss */
 .close-reveal-modal:hover {
   text-decoration: none;
 }
 
-/* line 174, ../scss/excelsior/_foundation-override.scss */
+/* line 180, ../scss/excelsior/_foundation-override.scss */
 .breadcrumbs li a,
 .breadcrumbs li span {
   text-transform: none;
   font-size: 0.9em;
 }
 
-/* line 180, ../scss/excelsior/_foundation-override.scss */
+/* line 186, ../scss/excelsior/_foundation-override.scss */
 .breadcrumbs li a:hover {
   text-decoration: none;
 }
-/* line 185, ../scss/excelsior/_foundation-override.scss */
+/* line 191, ../scss/excelsior/_foundation-override.scss */
 .breadcrumbs li a[href="#"], .breadcrumbs li a[href="#"]:hover {
   cursor: default;
   text-decoration: none;
 }
 
-/* line 194, ../scss/excelsior/_foundation-override.scss */
+/* line 200, ../scss/excelsior/_foundation-override.scss */
 section .title a,
 .section .title a {
   text-decoration: none;
 }
-/* line 197, ../scss/excelsior/_foundation-override.scss */
+/* line 203, ../scss/excelsior/_foundation-override.scss */
 section .title a:hover,
 .section .title a:hover {
   text-decoration: none;
 }
 
-/* line 203, ../scss/excelsior/_foundation-override.scss */
+/* line 209, ../scss/excelsior/_foundation-override.scss */
 .section-container.tabs section .title,
 .section-container.tabs .section .title {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -6878,7 +6884,7 @@ section .title a:hover,
   background-clip: padding-box;
 }
 
-/* line 212, ../scss/excelsior/_foundation-override.scss */
+/* line 218, ../scss/excelsior/_foundation-override.scss */
 .section-container.auto section .title,
 .section-container.auto .section .title {
   border-top-left-radius: 0;
@@ -6888,7 +6894,7 @@ section .title a:hover,
 
 /* Same styles as above */
 @media screen and (min-width: 768px) {
-  /* line 221, ../scss/excelsior/_foundation-override.scss */
+  /* line 227, ../scss/excelsior/_foundation-override.scss */
   .section-container.auto section .title,
   .section-container.auto .section .title {
     font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -6898,7 +6904,7 @@ section .title a:hover,
     background-clip: padding-box;
   }
 }
-/* line 233, ../scss/excelsior/_foundation-override.scss */
+/* line 239, ../scss/excelsior/_foundation-override.scss */
 .section-container section .content,
 .section-container .section .content,
 .section-container.auto section .content,
@@ -6910,7 +6916,7 @@ section .title a:hover,
   background-clip: padding-box;
 }
 
-/* line 244, ../scss/excelsior/_foundation-override.scss */
+/* line 250, ../scss/excelsior/_foundation-override.scss */
 .section-container section .title a,
 .section-container .section .title a,
 .section-container.auto section .title a,
@@ -6918,19 +6924,19 @@ section .title a:hover,
   padding: 8px 14px;
 }
 
-/* line 249, ../scss/excelsior/_foundation-override.scss */
+/* line 255, ../scss/excelsior/_foundation-override.scss */
 .section-container,
 .section-container.auto {
   border: none;
 }
 
-/* line 256, ../scss/excelsior/_foundation-override.scss */
+/* line 262, ../scss/excelsior/_foundation-override.scss */
 .section-container.accordion section .title,
 .section-container.accordion .section .title {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 261, ../scss/excelsior/_foundation-override.scss */
+/* line 267, ../scss/excelsior/_foundation-override.scss */
 .auto section.section,
 .accordion section.section {
   margin-bottom: 0.5em;
@@ -6941,19 +6947,19 @@ section .title a:hover,
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 271, ../scss/excelsior/_foundation-override.scss */
+/* line 277, ../scss/excelsior/_foundation-override.scss */
 .auto section.section:last-child,
 .accordion section.section:last-child {
   margin-bottom: 0;
 }
 
-/* line 275, ../scss/excelsior/_foundation-override.scss */
+/* line 281, ../scss/excelsior/_foundation-override.scss */
 .title a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-/* line 281, ../scss/excelsior/_foundation-override.scss */
+/* line 287, ../scss/excelsior/_foundation-override.scss */
 .accordion section.auto > .title,
 .accordion section.section > .title {
   position: relative;
@@ -6961,13 +6967,13 @@ section .title a:hover,
   /* width of chevron plus its right position offset */
 }
 
-/* line 287, ../scss/excelsior/_foundation-override.scss */
+/* line 293, ../scss/excelsior/_foundation-override.scss */
 .accordion section.auto .title:after,
 .accordion section.section .title:after {
   content: "\e75e";
   position: absolute;
   top: 6px;
-  right: 10px;
+  right: 18px;
   font-family: "Fontello";
   font-style: normal;
   font-weight: normal;
@@ -6976,11 +6982,11 @@ section .title a:hover,
   transform: rotate(90deg);
 }
 
-/* line 301, ../scss/excelsior/_foundation-override.scss */
+/* line 307, ../scss/excelsior/_foundation-override.scss */
 .accordion section.auto.active .title:after,
 .accordion section.section.active .title:after {
   top: 8px;
-  right: 10px;
+  right: 18px;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
@@ -6988,13 +6994,13 @@ section .title a:hover,
 
 /* Same styles as above */
 @media screen and (max-width: 768px) {
-  /* line 312, ../scss/excelsior/_foundation-override.scss */
+  /* line 318, ../scss/excelsior/_foundation-override.scss */
   .auto section.auto .title:after,
   .auto section.section .title:after {
     content: "\e75e";
     position: absolute;
     top: 8px;
-    right: 10px;
+    right: 18px;
     font-family: "Fontello";
     font-style: normal;
     font-weight: normal;
@@ -7003,27 +7009,27 @@ section .title a:hover,
     transform: rotate(90deg);
   }
 
-  /* line 326, ../scss/excelsior/_foundation-override.scss */
+  /* line 332, ../scss/excelsior/_foundation-override.scss */
   .auto section.auto.active .title:after,
   .auto section.section.active .title:after {
     top: 6px;
-    right: 10px;
+    right: 18px;
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 340, ../scss/excelsior/_foundation-override.scss */
+  /* line 346, ../scss/excelsior/_foundation-override.scss */
   .touch .orbit-bullets {
     display: none;
   }
 }
-/* line 346, ../scss/excelsior/_foundation-override.scss */
+/* line 352, ../scss/excelsior/_foundation-override.scss */
 .clearing-close {
   text-decoration: none;
 }
-/* line 349, ../scss/excelsior/_foundation-override.scss */
+/* line 355, ../scss/excelsior/_foundation-override.scss */
 .clearing-close:hover {
   text-decoration: none;
 }
@@ -8990,48 +8996,83 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
 }
 
 /* Image to lists */
-@media only screen {
-  /* line 3, ../scss/excelsior/components/_lists.scss */
+/* line 3, ../scss/excelsior/components/_lists.scss */
+.image-to-list li {
+  float: none;
+}
+
+/* line 7, ../scss/excelsior/components/_lists.scss */
+.image-to-list a {
+  color: #2ba6cb;
+  text-decoration: underline;
+}
+
+/* line 14, ../scss/excelsior/components/_lists.scss */
+.image-to-list a img,
+.image-to-list .has-video iframe {
+  display: none;
+  speak: none;
+}
+
+/* line 19, ../scss/excelsior/components/_lists.scss */
+.image-to-list a span {
+  background: none;
+  margin-top: 0;
+}
+
+/* line 24, ../scss/excelsior/components/_lists.scss */
+.image-to-list .has-video a span {
+  display: block;
+}
+
+@media only screen and (min-width: 24em) {
+  /* line 29, ../scss/excelsior/components/_lists.scss */
   .image-to-list a {
-    color: #FFF;
+    color: #efefef;
     display: block;
     text-decoration: none;
   }
 
-  /* line 9, ../scss/excelsior/components/_lists.scss */
+  /* line 36, ../scss/excelsior/components/_lists.scss */
+  .image-to-list a img,
+  .image-to-list .has-video iframe {
+    display: block;
+    speak: normal;
+  }
+
+  /* line 41, ../scss/excelsior/components/_lists.scss */
+  .image-to-list a iframe {
+    height: 100%;
+  }
+
+  /* line 45, ../scss/excelsior/components/_lists.scss */
   .image-to-list a span {
     background: rgba(0, 0, 0, 0.7);
     display: block;
     padding: 7px;
     position: relative;
-    margin-top: -46px;
-  }
-}
-@media only screen and (max-width: 24em) {
-  /* line 20, ../scss/excelsior/components/_lists.scss */
-  .image-to-list li {
-    float: none;
+    margin-top: -40px;
   }
 
-  /* line 24, ../scss/excelsior/components/_lists.scss */
-  .image-to-list a {
-    color: #2ba6cb;
-    text-decoration: underline;
-  }
-
-  /* line 29, ../scss/excelsior/components/_lists.scss */
-  .image-to-list a img {
+  /* line 53, ../scss/excelsior/components/_lists.scss */
+  .image-to-list .has-video a span {
     display: none;
-    speak: none;
   }
 
-  /* line 34, ../scss/excelsior/components/_lists.scss */
-  .image-to-list a span {
-    background: none;
-    margin-top: 0;
+  /* line 58, ../scss/excelsior/components/_lists.scss */
+  .image-to-list li.large-3:nth-child(5n),
+  .image-to-list li.small-3:nth-child(5n) {
+    float: left;
+    clear: both !important;
+  }
+
+  /* line 64, ../scss/excelsior/components/_lists.scss */
+  .image-to-list li[class*="large-"]:last-child,
+  .image-to-list li[class*="small-"]:last-child {
+    float: left;
   }
 }
-/* line 3, ../scss/excelsior/components/_images.scss */
+/* line 2, ../scss/excelsior/components/_images.scss */
 .thumbnail {
   background-color: #f9f9f9;
   box-shadow: 0 0 0.25em #444444;
@@ -9042,27 +9083,61 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
   padding: 0.3125em !important;
   /* overriding Foundation styles for first element in a section */
 }
-/* line 10, ../scss/excelsior/components/_images.scss */
+/* line 9, ../scss/excelsior/components/_images.scss */
 .thumbnail.left {
   float: left;
   margin: 0 0.75em 0.375em 0;
 }
-/* line 15, ../scss/excelsior/components/_images.scss */
+/* line 14, ../scss/excelsior/components/_images.scss */
 .thumbnail.right {
   float: right;
   clear: right;
   margin: 0 0.375em 0.75em;
 }
-/* line 21, ../scss/excelsior/components/_images.scss */
+/* line 20, ../scss/excelsior/components/_images.scss */
 .thumbnail figcaption {
   font-size: 0.75em;
   padding: 0.375em 0.25em;
   text-align: center;
 }
 
-/* line 28, ../scss/excelsior/components/_images.scss */
+/* line 27, ../scss/excelsior/components/_images.scss */
 .section .thumbnail {
   max-width: 33%;
+}
+
+/* line 34, ../scss/excelsior/components/_images.scss */
+.img-list a {
+  text-decoration: none;
+}
+/* line 37, ../scss/excelsior/components/_images.scss */
+.img-list a h4 {
+  text-decoration: underline;
+}
+/* line 44, ../scss/excelsior/components/_images.scss */
+.img-list li > a {
+  display: block;
+  padding: 5px;
+  background-color: transparent;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+/* line 51, ../scss/excelsior/components/_images.scss */
+.img-list li > a:hover {
+  background-color: rgba(217, 237, 247, 0.4);
+}
+/* line 56, ../scss/excelsior/components/_images.scss */
+.img-list li:hover a h4 {
+  text-decoration: none;
+}
+/* line 61, ../scss/excelsior/components/_images.scss */
+.img-list h4 {
+  color: #2ba6cb;
+}
+/* line 65, ../scss/excelsior/components/_images.scss */
+.img-list p {
+  color: #333;
+  line-height: 1.15em;
 }
 
 /* POC Styles */

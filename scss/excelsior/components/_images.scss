@@ -1,5 +1,4 @@
-// Thumbnail container
-
+// Craig's thumbnails, need to merge with Foundation's `.th` class
 .thumbnail {
   background-color: #f9f9f9;
   box-shadow: 0 0 emCalc(4px) #444;
@@ -26,5 +25,45 @@
 }
 
 .section .thumbnail {
-  max-width: 33%; // Pretty arbitrary, just made up for the tabs demo
+  max-width: 33%; // Pretty arbitrary, just made up for the accordion demo
+}
+
+// Thumbnails prototype
+
+.img-list {
+  a {
+    text-decoration: none;
+
+    h4 {
+      text-decoration: underline;
+    }
+  }
+
+  li {
+
+    & > a {
+      display: block;
+      padding: 5px;
+      background-color: transparent;
+      -webkit-transition: background-color 0.2s ease;
+              transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba(217, 237, 247, 0.4);
+      }
+    }
+
+    &:hover a h4 {
+      text-decoration: none;
+    }
+  }
+
+  h4 {
+    color: #2ba6cb;
+  }
+
+  p {
+    color:#333;
+    line-height:1.15em;
+  }
 }

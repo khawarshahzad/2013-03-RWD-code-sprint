@@ -110,6 +110,10 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
+ul, ol, dl {
+  font-family: inherit;
+}
+
 ul.f-dropdown li {
   padding: 0;
 }

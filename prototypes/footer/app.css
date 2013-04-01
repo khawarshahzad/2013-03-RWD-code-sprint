@@ -514,11 +514,13 @@
 
 	.footer li h4 a {
 		color: #fff;
+		text-decoration: none;
 	}
 
 	.footer li a {
 		font-size: 1em;
 		color: #aaa;
+		text-decoration: none;
 	}
 
 	.footer li :hover {

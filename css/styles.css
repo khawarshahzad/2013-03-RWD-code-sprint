@@ -95,7 +95,7 @@
 }
 
 /* govwidget */
-.links:hover{
+/*.links:hover{
   color: #FFFF00;
 }
 .govwidget{
@@ -166,5 +166,33 @@
   color: #fff;
   text-decoration: none;
   font-family: times new roman;
+}*/
+.govwidget{
+  width: 100%;
+  min-width: 240px;
+  /*height: 375px;*/
+  background: #036;
+  border-radius: 4px;
+}
+.govheading a{
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: times new roman;
+  font-size: 120%;
+  text-shadow: 2px 2px #333;
+  padding: 0.5em 0;
+}
+.govheading span{
+  display: block;
+}
+.govbutton{
+  margin: 0 0.5em;
+}
+.govbutton a{
+  background: #002d56;
+  /*background: #002d56 url(../prototypes/dta/images/nysafebg.png) center center no-repeat;*/
 }
 

@@ -1,12 +1,1 @@
-/* line 1, ../../scss/excelsior/lightbox.scss */
-.lbox-no-list {
-  list-style-type: none;
-  display: block;
-}
-/* line 5, ../../scss/excelsior/lightbox.scss */
-.lbox-no-list li {
-  float: left;
-  padding-right: 5px;
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
+.lbox-no-list{list-style-type:none;display:block}.lbox-no-list li{float:left;padding-right:5px;display:list-item;text-align:-webkit-match-parent}

@@ -9,10 +9,19 @@ $(document).ready(function() {
       $mobile = $('#mobile'),
       $deskop = $('#desktop');
 
+  // Show appropriate messages and check the right box
+
   // Touch is supported
   if (Modernizr.touch) {
-    $('#notouch').hide();
-    $('#hastouch').show();
+    $('.show-on-desktop').hide();
+    $('.show-on-touch').show();
+    $('#mobile').attr('checked', true);
+  }
+  // Touch not supported
+  else {
+    $('.show-on-touch').hide();
+    $('.show-on-desktop').show();
+    $('#desktop').attr('checked', true);
   }
 
   $('#in')
@@ -32,9 +41,9 @@ $(document).ready(function() {
   // Tap Targets
 
   // Force desktop display at the start
-  $html
-    .removeClass('touch')
-    .addClass('no-touch');
+  // $html
+  //   .removeClass('touch')
+  //   .addClass('no-touch');
 
   $('.switch').on(exlsr.activateEventName, function (evt) {
     if ($mobile.is(':checked')) {

@@ -19,8 +19,12 @@
 
 </head>
 <body>
+  <!--[if lte IE 7]>
+    <p class="chromeframe">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</p>
+  <![endif]-->
+
   <div class="row">
-    <div class="large-10 columns">
+    <div class="large-12 columns">
 
       <h1>Governors Widget</h1>
       <ul class="breadcrumbs">
@@ -28,6 +32,20 @@
         <li class="current"><a href="#">Governors Widget</a></li>
       </ul>
 	  <p>Governors Widget stripped to basic data elements for future styling.</p>
+
+    <div class="row">
+      <div class="large-8 small-centered columns">
+        <div class="alert-box callout radius" data-alert>
+          <a href="#" class="close">&times;</a>
+          <h4>What to watch for</h4>
+          <ul class="list-bullets-inside">
+            <li>Thing 1</li>
+            <li>Thing 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 	  <!-- Component code goes here -->
 	  <div id="GovWidget">Loading...<!-- This content will be replaced by JavaScript load --></div>
       <!-- END Component code goes here -->
@@ -35,8 +53,9 @@
   </div>
 
 
-  <script src='../../js/vendor/jquery.js'></script>
+  <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
+  <script src="../../js/foundation/foundation.alerts.js"></script>
   <script src="http://www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
   <script src='../../js/app/GoogleFeeds.js'></script>
   <script>

@@ -19,6 +19,10 @@
   <link rel="icon" href="../../images/favicon.ico">
 </head>
 <body>
+  <!--[if lte IE 7]>
+    <p class="chromeframe">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</p>
+  <![endif]-->
+
   <div class="row">
     <div class="large-12 columns">
       <h1>Touch</h1>
@@ -28,7 +32,7 @@
       </ul>
       <dl class="sub-nav">
         <dt>Touch:</dt>
-        <dd><a href="index.html">Tap Targets</a></dd>
+        <dd><a href="index.html">Easy-Tap Links</a></dd>
         <dd class="active"><a href="#">Playground</a></dd>
         <dd><a href="developer.html">Developer Notes</a></dd>
       </dl>
@@ -37,7 +41,7 @@
 
   <div class="row">
     <div class="large-12 columns callout" id="in">
-      <div id="hastouch" style="display:none;">
+      <div class="show-for-touch" style="display:none;">
         <p>Perform touch actions in this box. Recognized events will appear below (most recent first).</p>
         <ul>
           <li><code>tap</code></li>
@@ -47,7 +51,7 @@
         </ul>
         <p>The library also supports singleTap, doubleTap, swipeUp, swipeDown, and swipe.</p>
       </div>
-      <div id="notouch">
+      <div class="show-for-desktop">
         <p>Click inside this box. Recognized events will appear below (most recent first).</p>
         <p class="error">Touch events are not supported on this browser. Only <code>click</code> events will be recognized.</p>
         <p>To test on desktop, open Chrome's Dev Tool settings (gear icon) and enable touch events.</p>
@@ -64,6 +68,7 @@
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
+  <script src="../../js/foundation/foundation.alerts.js"></script>
   <script src="app.js"></script>
   <script>
     $(document).foundation();

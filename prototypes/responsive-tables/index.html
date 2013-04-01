@@ -18,6 +18,9 @@
   <link rel="icon" href="../../images/favicon.ico">
 </head>
 <body>
+  <!--[if lte IE 7]>
+    <p class="chromeframe">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</p>
+  <![endif]-->
 
   <div class="row">
     <div class="large-12 columns">
@@ -32,8 +35,22 @@
         <dd><a href="examples.html">More Examples</a></dd>
         <dd><a href="typical.html">Typical</a></dd>
       </dl>
-      <p>A responsive table automatically hides and shows columns depending on screen size. Additionally, it provides a menu where the user can explicity toggle any column.</p>
       <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for</h4>
+        <ul class="list-bullets-inside">
+          <li>Watch how smaller screens automatically show fewer columns to keep the table readable</li>
+          <li>Use the dropdown menu to select which columns you want to view</li>
+          <li>Notice that some columns, such as Date Issues, are the first to disappear to allow more space for the important columns</li>
+          <li>Note that the 'Name' column can't be hidden by the dropdown because the page design requires it to be shown at all times</li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -139,7 +156,7 @@
   <script src="../../js/app/responsive-tables.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
   <script src="../../js/foundation/foundation.dropdown.js"></script>
-  <script src="../../js/foundation/foundation.section.js"></script>
+  <script src="../../js/foundation/foundation.alerts.js"></script>
   <script>
     $(document).foundation();
   </script>

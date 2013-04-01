@@ -19,6 +19,9 @@
 
 </head>
 <body>
+  <!--[if lte IE 7]>
+    <p class="chromeframe">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</p>
+  <![endif]-->
 
   <div class="row">
     <div class="large-12 columns">
@@ -35,6 +38,19 @@
       </dl>
       <p>A responsive table automatically hides and shows columns depending on screen size. Additionally, it provides a menu where the user can explicity toggle any column.</p>
       <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Thing 1</li>
+          <li>Thing 2</li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -134,16 +150,16 @@
           <p class="title"><a href="#panel1">Developer Notes</a></p>
           <div class="content">
             <h4>Usage:</h4>
-            <ul class="list-bullets-inside">
+            <ul class="bulleted-list">
               <li>Includes:
-                <ul class="list-bullets-inside">
+                <ul class="bulleted-list">
                   <li><code>js/vendor/jquery-ui.widget.js</code></li>
                   <li><code>js/app/responsive-tables.js</code></li>
                   <li><code>js/foundation/foundation.dropdown.js</code></li>
                 </ul>
               </li>
               <li>Optionally use the following classes on <code>&lt;th&gt;</code> elements to prioritize column display:
-                <ul class="list-bullets-inside">
+                <ul class="bulleted-list">
                   <li><code>rt-persist</code> &mdash; never hides and cannot be toggled</li>
                   <li><code>rt-p<strong>2</strong></code> &mdash; hides when there is not enough space</li>
                   <li><code>rt-p<strong>1</strong></code> &mdash; hides as soon as there is not enough space and all <code>.rt-p2</code> are already hidden</li>
@@ -152,7 +168,7 @@
               <li>Add the class <code>.not-responsive</code> to a <code>&lt;table&gt;</code> to prevent the plugin from handling it.</li>
             </ul>
             <h4>ITS conventions:</h4>
-            <ul class="list-bullets-inside">
+            <ul class="bulleted-list">
               <li>When including a menu, add a <code>.row</code> above the table's <code>.row</code> with an empty <code>div.rt-table-menu</code> to hold the menu.</li>
             </ul>
             <p>The plugin is based on <a href="https://github.com/filamentgroup/RWD-Table-Patterns">Filament Group's</a> responsive tables solution.</p>
@@ -164,10 +180,11 @@
 
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/vendor/jquery-ui.widget.min.js"></script>
+  <script src="../../js/app/app.js"></script>
   <script src="../../js/app/responsive-tables.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
   <script src="../../js/foundation/foundation.dropdown.js"></script>
-  <script src="../../js/foundation/foundation.section.js"></script>
+  <script src="../../js/foundation/foundation.alerts.js"></script>
   <script>
     $(document).foundation();
   </script>

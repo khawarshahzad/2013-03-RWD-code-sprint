@@ -16,67 +16,50 @@
   <link rel="apple-touch-icon-precomposed" href="../../images/apple-touch-icon-57x57-precomposed.png">
   <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
   <link rel="icon" href="../../images/favicon.ico">
-
-  <link rel="stylesheet" type="text/css" href="../../css/excelsior/lists.css">
 </head>
 <body>
+  <!--[if lte IE 7]>
+    <p class="chromeframe">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</p>
+  <![endif]-->
+
   <div class="row">
-    <div class="large-12 columns"> 
+    <div class="large-12 columns">
       <h1>Image-to-List</h1>
       <ul class="breadcrumbs">
         <li><a href="../index.html">Prototypes Home</a></li>
-        <li class="current"><a href="index.html">Image-to-List</a></li>
+        <li class="current"><a href="#">Image-to-List</a></li>
       </ul>
+
+      <div class="row">
+        <div class="large-8 small-centered columns">
+          <div class="alert-box callout radius" data-alert>
+            <a href="#" class="close">&times;</a>
+            <h4>What to watch for:</h4>
+            <ul class="bulleted-list">
+              <li>Watch how smaller screens show only 2 images per row to keep the images from being too small to see</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <!-- Component code goes here -->
       <div class="row">
         <div class="large-12 columns">
           <ul class="image-to-list small-block-grid-2 large-block-grid-4">
-            <li><a class="albany" href=""><img alt="Picture of Albany" src="albany.jpg"/> <span>Albany NY</span></a></li>
-            <li><a class="nyc" href=""><img alt="Picture of New York City" src="new-york-city.jpg" /><span>New York City</span></a></li>
-            <li><a class="niagara-falls" href=""><img alt="Picture of Niagara Falls" src="niagara-falls.jpg" /><span>Niagara Falls</span></a></li>
-            <li><a class="saratoga" href=""><img alt="Picture of Saratoga" src="saratoga.jpg" /><span>Saratoga</span></a></li>
-          </ul> 
+            <li><a class="albany" href="#"><img alt="Photo of Albany" src="albany.jpg"> <span>Albany NY</span></a></li>
+            <li><a class="nyc" href="#"><img alt="Photo of New York City" src="new-york-city.jpg"><span>New York City</span></a></li>
+            <li><a class="niagara-falls" href="#"><img alt="Photo of Niagara Falls" src="niagara-falls.jpg"><span>Niagara Falls</span></a></li>
+            <li><a class="saratoga" href="#"><img alt="Photo of Saratoga" src="saratoga.jpg"><span>Saratoga</span></a></li>
+          </ul>
         </div>
       </div>
-
     </div>
   </div>
-
 
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
-
-<!-- BE SURE TO UNCOMMENT OUT THE SCRIPT YOU NEED TO USE FROM FOUNDATION IF YOU NEED TO USE ONE!
-
   <script src="../../js/foundation/foundation.alerts.js"></script>
-
-  <script src="../../js/foundation/foundation.clearing.js"></script>
-
-  <script src="../../js/foundation/foundation.cookie.js"></script>
-
-  <script src="../../js/foundation/foundation.dropdown.js"></script>
-
-  <script src="../../js/foundation/foundation.forms.js"></script>
-
-  <script src="../../js/foundation/foundation.joyride.js"></script>
-
-  <script src="../../js/foundation/foundation.magellan.js"></script>
-
-  <script src="../../js/foundation/foundation.orbit.js"></script>
-
-  <script src="../../js/foundation/foundation.placeholder.js"></script>
-
-  <script src="../../js/foundation/foundation.reveal.js"></script>
-
-  <script src="../../js/foundation/foundation.section.js"></script>
-
-  <script src="../../js/foundation/foundation.tooltips.js"></script>
-
-  <script src="../../js/foundation/foundation.topbar.js"></script>
-
--->
   <script>
     $(document).foundation();
   </script>

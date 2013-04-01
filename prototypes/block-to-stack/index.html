@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-
+<!--[if lt IE 8]><html class="no-js lt-ie9 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -17,6 +18,9 @@
   <link rel="icon" href="../../images/favicon.ico">
 </head>
 <body>
+  <!--[if lte IE 7]-->
+    <p class="chromeframe">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</p>
+  <!--[endif]-->
   <div class="row">
     <div class="large-12 columns">
       <h1>Block to Stack</h1>
@@ -24,6 +28,19 @@
         <li><a href="../index.html">Prototypes Home</a></li>
         <li class="current"><a href="#">Block to Stack</a></li>
       </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for</h4>
+        <ul class="list-bullets-inside">
+          <li>Thing 1</li>
+          <li>Thing 2</li>
+        </ul>
+      </div>
     </div>
   </div>
 

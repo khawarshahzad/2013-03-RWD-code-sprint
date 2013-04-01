@@ -50,3 +50,78 @@
 .li-sub {
   margin: 0;
 }
+
+/* govwidget */
+.links:hover{
+  color: #FFFF00;
+}
+.govwidget{
+  width: 240px;
+  height: 375px;
+  background: url(../prototypes/dta/images/widgetbg.jpg) top left no-repeat;
+  border-radius: 4px;
+}
+.govhead{
+  height: 64px;
+  width: 240px;
+  display: block;
+}
+.sprite a{
+  height: 80px;
+  width: 223.5px;
+  margin-left: 10px;
+  background-image: url(../prototypes/dta/images/NYSafeAct_WidgetSprite2.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 30px;
+}
+.sprite a:hover{
+  background-position: -223.5px 0px;
+}
+.news{
+  width: 212px;
+  height: 150px;
+  margin: 20px 18px 0 18px;
+}
+.feed{
+  width: 200px;
+  height: auto;
+}
+.feed strong{
+  font-weight: bold;
+  font-family: verdana;
+}
+.feed dt{
+  font-family: verdana;
+  font-size: 0.688em;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.2em;
+}
+.feed_link, .feed_link:visited{
+  color: #000;
+  padding-bottom: 4px;
+  display: block;
+}
+.feed_link:hover{
+  color: #873939;
+  text-decoration: underline;
+}
+.facebook{
+  width: 212px;
+  height: 15px;
+  font-size: 0.70em;
+  margin-top: 5px;
+  margin-left: 35px;
+}
+.govurl{
+  margin-top: 10px;
+  text-align: center;
+}
+.facebook a, .govurl a{
+  color: #fff;
+  text-decoration: none;
+  font-family: times new roman;
+}
+

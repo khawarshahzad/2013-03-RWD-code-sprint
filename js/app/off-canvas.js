@@ -50,8 +50,8 @@ $(document).ready(function(){
 					// Add a class to the menu.
 					subMenu.addClass("active-menu");
 
-					if (!$('body').hasClass('active-sub-menu')) {
-						$('body').addClass('active-sub-menu');
+					if (!exlsr.$body.hasClass('active-sub-menu')) {
+						exlsr.$body.addClass('active-sub-menu');
 					}
 
 				} else {
@@ -90,7 +90,7 @@ $(document).ready(function(){
 				$('#sub-menu-title').text("");
 
 				// Remove the active-sub-menu class from the body
-				$('body').removeClass('active-sub-menu');
+				exlsr.$body.removeClass('active-sub-menu');
 			}
 
 		}

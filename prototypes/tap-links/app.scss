@@ -1,0 +1,40 @@
+@import "../../scss/foundation/_foundation-global";
+@import "../../scss/excelsior/_mixins";
+
+/* Tap Targets */
+
+.link-buttons-list {
+  margin-bottom: 2em;
+}
+
+.touch .link-buttons-list a {
+  padding: 4px;
+  @include button();
+  display: block;
+  margin-bottom: 0.25em;
+  padding-top: emCalc(8px);
+  padding-bottom: emCalc(8px);
+}
+
+.toggle-section {
+  margin-bottom: 1em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+
+  .pre-label {
+    float: left;
+    margin-right: 1em;
+  }
+
+  label {
+    float: left;
+    margin-right: 1em;
+    font-weight: normal;
+    font-size: 1em;
+  }
+}
+
+// .switch.radius > span {
+//   box-shadow: 2px 0 10px 0 rgba(0,0,0,0.07), 1000px 0 0 1000px #BAC9F7, -2px 0 10px 0 rgba(0,0,0,0.07), -1000px 0 0 1000px #f5f5f5
+// }

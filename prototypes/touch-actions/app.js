@@ -2,48 +2,41 @@
 
 $(document).ready(function() {
   var $out = $('#out'),
-      logType = function (type) {
-        $out.prepend('<li>' + type + '</li>');
-      },
       $html = $('html'),
       $mobile = $('#mobile'),
       $deskop = $('#desktop');
 
   // Show appropriate messages and check the right box
 
+  // Playground demo only
+  if (/Chrome\/\d+/.test(navigator.userAgent)) {
+    $('html').addClass('chrome');
+  }
+
   // Touch is supported
   if (Modernizr.touch) {
-    $('.show-on-desktop').hide();
-    $('.show-on-touch').show();
     $('#mobile').attr('checked', true);
   }
   // Touch not supported
   else {
-    $('.show-on-touch').hide();
-    $('.show-on-desktop').show();
     $('#desktop').attr('checked', true);
   }
 
   $('#in')
-    .on(exlsr.activateEventName, function (evt) {
-      logType(evt.type);
+    .on('tap', function (evt) { // exlsr.activateEventName
+      $out.text('You tapped!').addClass('alert-box success');
     })
     .on('longTap', function (evt) {
-      logType(evt.type);
+      $out.text('You tapped and held!').addClass('alert-box success');
     })
     .on('swipeLeft', function (evt) {
-      logType(evt.type);
+      $out.text('You swiped left!').addClass('alert-box success');
     })
     .on('swipeRight', function (evt) {
-      logType(evt.type);
+      $out.text('You swiped right!').addClass('alert-box success');
     });
 
   // Tap Targets
-
-  // Force desktop display at the start
-  // $html
-  //   .removeClass('touch')
-  //   .addClass('no-touch');
 
   $('.switch').on(exlsr.activateEventName, function (evt) {
     if ($mobile.is(':checked')) {

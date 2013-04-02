@@ -10,13 +10,22 @@
   padding: 0.2em 0;
   text-align:center;
 }
+
 /* thumbnails */
-.img-list a{
+.img-list a {
 	text-decoration: none;
 }
+
 .img-list li:hover h4{text-decoration: underline;}
 .img-list h4 {color:#2ba6cb;}
 .img-list p {color:#333; line-height:1.15em;}
+
+.oldie .hide-for-oldie {display:none;}
+#resize-bar-body #wrapper {height:99%;}
+#resize-bar-body section {
+  overflow-y:hidden;
+}
+
 .list li {
   margin-bottom:.75em;
   display: table;

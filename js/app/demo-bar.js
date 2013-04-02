@@ -1,8 +1,6 @@
 /*global Modernizr: false */
-
-$(function(){
-  if ( parent.$("#devices").length <=0 && !Modernizr.touch ) {
-      (function(){
+var isIE = (/MSIE/.test(navigator.userAgent)),
+    demoBar = function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title+
@@ -47,7 +45,11 @@ $(function(){
         '<script src="../js/foundation/foundation.joyride.js"></script>'+
         '<script src="../js/app/demo-bar-post.js"></script>'+
         '<\/body><\/html>');
-    }());
+    };
+
+$(function(){
+  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE) {
+    demoBar();
 
     window.resbook = {};
 
@@ -187,5 +189,8 @@ $(function(){
             size.style.minWidth = 0;
         });
     })(window.resbook);
+  }
+  else if (isIE) {
+    $("body").prepend('<div class="row hide-for-oldie"><div class="large-8 small-centered columns"><div class="alert-box radius" data-alert><h4>Non-Optimal Browser Detected</h4><p>To get the best demo experience, it\'s recommended that you use a <a href="http://browsehappy.com/">different browser</a>.<br>If you cannot upgrade your browser, you can resize your browser to experience it.</div></div></div>')
   }
 });

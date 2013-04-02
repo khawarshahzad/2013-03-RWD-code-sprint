@@ -6,9 +6,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>Touch &mdash; Developer Notes</title>
+  <title>Touch Actions</title>
   <link rel="stylesheet" href="../../css/excelsior.css">
   <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="app.css">
   <script src="../../js/vendor/custom.modernizr.js"></script>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
@@ -19,37 +20,42 @@
 </head>
 <body>
   <!--[if lte IE 7]>
-    <p class="chromeframe">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</p>
+    <div class="alert-box">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</div>
   <![endif]-->
 
   <div class="row">
     <div class="large-12 columns">
-      <h1>Touch</h1>
+      <h1>Touch Actions</h1>
       <ul class="breadcrumbs">
         <li><a href="../index.html">Prototypes Home</a></li>
-        <li class="current"><a href="#">Touch</a></li>
+        <li class="current"><a href="#">Touch Actions</a></li>
       </ul>
-      <dl class="sub-nav">
-        <dt>Touch:</dt>
-        <dd><a href="index.html">Easy-Tap Links</a></dd>
-        <dd><a href="playground.html">Playground</a></dd>
-        <dd class="active"><a href="#">Developer Notes</a></dd>
-      </dl>
+    </div>
+  </div>
+
+  <div class="row hide-for-touch">
+    <div class="large-12 columns">
+      <div class="alert-box callout radius">Touch events are not supported on this browser &mdash; try opening this page on a mobile device.</div>
+      <p class="show-for-chrome">To test on a desktop verson of Chrome, open Chrome's Developer Tools (F12), go to the settings (gear icon) and enable touch events in the Overrides section. Then refresh the page, keeping the Developer Tools open.</p>
     </div>
   </div>
 
   <div class="row">
     <div class="large-12 columns">
-      <h2>Tap Targets</h2>
-      <p>Add the class <code>.link-buttons-list</code> to a parent container (e.g., <code>div.row</code>) to enable this feature on all child <code>&lt;a&gt;</code> elements.</p>
-      <p>Note that the links will only turn into buttons if <code>Modernizr.touch</code> is true. It is not dependent on screen size since that's not the reason why you'd want bigger targets.</p>
+      <div id="out">&nbsp;</div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="large-12 columns">
-      <h2>Touch Library</h2>
-      <p>Instead of binding event listeners to <code>"click"</code>, use <code>exlsr.activateEventName</code>. This value will automatically resolve to <code>"tap"</code> (if <code>Modernizr.touch</code> is true) or <code>"click"</code> otherwise. This makes the site much more responsive since mobile devices insert a noticeable delay before dispatching the <code>click</code> event.</p>
+  <div class="row playground">
+    <div class="large-12 columns callout radius" id="in">Touch Here</div>
+    <div class="large-6 small-12 small-centered columns">
+      <h4>Try these actions in the box</h4>
+      <ul>
+        <li>Tap</li>
+        <li>Long Press</li>
+        <li>Swipe Left</li>
+        <li>Swipe Right</li>
+      </ul>
     </div>
   </div>
 
@@ -57,6 +63,7 @@
   <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
   <script src="../../js/foundation/foundation.alerts.js"></script>
+  <script src="app.js"></script>
   <script>
     $(document).foundation();
   </script>

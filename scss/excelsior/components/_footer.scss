@@ -5,6 +5,9 @@
 		width: 100%;
 		background: #282828;
 		padding: 1em 0;
+		position: relative;
+		overflow: hidden;
+		z-index: 5;
 	}
 
 	.footer .footer-links, .footer .footer-images {
@@ -63,14 +66,6 @@
  		border-top: 1px solid #333;
  		height: 1px;
  		margin: 0 0 1em 0;
- 	}
-
- 	.footer-logo-1 {
- 		float: left;
- 	}
-
- 	.footer-logo-2 {
- 		float: right;
  	}
  }
 

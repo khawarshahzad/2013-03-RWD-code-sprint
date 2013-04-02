@@ -17,3 +17,21 @@
 .radius {
   @include radius(4px);
 }
+
+// IE classes
+
+.lt-ie9 .hide-for-lt-ie9 {
+  display: none !important;
+}
+
+.ie9 .hide-for-ie9 {
+  display: none !important;
+}
+
+.lt-ie9 .show-for-lt-ie9 {
+  display: inherit !important;
+}
+
+.ie9 .show-for-ie9 {
+  display: inherit !important;
+}

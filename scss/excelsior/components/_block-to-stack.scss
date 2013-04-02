@@ -39,4 +39,22 @@
 		width: 100%;
 		height: 100%;
 	}
+
+	.crop img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+	}
+
+	.crop .img1 {
+		margin-left: 0;
+	}
+
+	.crop .img2 {
+		margin-left: 0;
+	}
+
+	.crop .img3 {
+		margin-left: 0;
+	}
 }

@@ -333,10 +333,11 @@
   .page {
     background: #FFF;
     height: 100%;
-    position: absolute;
-    top: 53px;
+    padding: 1em;
+    position: relative;
+    overflow: visible;
+    top: 0;
     z-index: 10;
-    padding: 0 0 0.5em 0;
   }
 
 

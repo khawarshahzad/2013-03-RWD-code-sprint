@@ -192,16 +192,3 @@
   color: #ff0;
 }
 
-/* sections */
-.section-container .content dl dt{
-  font-weight: normal;
-}
-.section-container .content .sectitle{
-  padding-top: 0.3em;
-  font-weight: bold;
-}
-.section-container .content dt.viewall{
-  padding-top: 1em;
-  font-size: 95%;
-}
-

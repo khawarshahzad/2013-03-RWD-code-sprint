@@ -401,6 +401,10 @@ section .title a,
 
 // Clearing (Lightbox)
 
+.clearing-caption {
+  display: none !important;
+}
+
 .clearing-close {
   text-decoration: none;
 

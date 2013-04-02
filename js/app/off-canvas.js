@@ -28,18 +28,16 @@ $(document).ready(function(){
 				// Prevent menu click propagation
 				e.stopPropagation();
 
-				// Check to see if there is another already active menu item
-				var menuCheck = $('.active-menu');
-
-				if (menuCheck.length) {
-					menuCheck.removeClass('active-menu');
-					menuCheck.siblings('a').removeClass('active');
-				}
-
 				// Check to see if the direct submenu item already is active
 				if (!subMenu.hasClass('active-menu')) {
 
-					// Sub menu is not active
+					// Check to see if there is another already active menu item
+					var menuCheck = $('.active-menu');
+
+					if (menuCheck.length) {
+						menuCheck.removeClass('active-menu');
+						menuCheck.siblings('a').removeClass('active');
+					}
 
 					// Set the link text in the title span
 					$('#sub-menu-title').text(link.text());

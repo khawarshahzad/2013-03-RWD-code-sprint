@@ -18,6 +18,13 @@
   @include radius(4px);
 }
 
+.chromeframe {
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  font-size: 110%;
+  line-height: 120%;
+}
+
 // Visiblity
 
 // Touch-enabled device targeting
@@ -42,4 +49,8 @@
 
 .ie9 .show-for-ie9 {
   display: inherit !important;
+}
+
+.oldie .hide-for-oldie {
+  display:none;
 }

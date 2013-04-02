@@ -7110,44 +7110,57 @@ section .title a:hover,
   background-clip: padding-box;
 }
 
-/* line 24, ../scss/excelsior/components/_global.scss */
+/* line 21, ../scss/excelsior/components/_global.scss */
+.chromeframe {
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  font-size: 110%;
+  line-height: 120%;
+}
+
+/* line 31, ../scss/excelsior/components/_global.scss */
 .show-for-no-touch {
   display: none !important;
 }
 
-/* line 25, ../scss/excelsior/components/_global.scss */
+/* line 32, ../scss/excelsior/components/_global.scss */
 .hide-for-no-touch {
   display: inherit !important;
 }
 
-/* line 26, ../scss/excelsior/components/_global.scss */
+/* line 33, ../scss/excelsior/components/_global.scss */
 .no-touch .show-for-no-touch {
   display: inherit !important;
 }
 
-/* line 27, ../scss/excelsior/components/_global.scss */
+/* line 34, ../scss/excelsior/components/_global.scss */
 .no-touch .hide-for-no-touch {
   display: none !important;
 }
 
-/* line 31, ../scss/excelsior/components/_global.scss */
+/* line 38, ../scss/excelsior/components/_global.scss */
 .lt-ie9 .hide-for-lt-ie9 {
   display: none !important;
 }
 
-/* line 35, ../scss/excelsior/components/_global.scss */
+/* line 42, ../scss/excelsior/components/_global.scss */
 .ie9 .hide-for-ie9 {
   display: none !important;
 }
 
-/* line 39, ../scss/excelsior/components/_global.scss */
+/* line 46, ../scss/excelsior/components/_global.scss */
 .lt-ie9 .show-for-lt-ie9 {
   display: inherit !important;
 }
 
-/* line 43, ../scss/excelsior/components/_global.scss */
+/* line 50, ../scss/excelsior/components/_global.scss */
 .ie9 .show-for-ie9 {
   display: inherit !important;
+}
+
+/* line 54, ../scss/excelsior/components/_global.scss */
+.oldie .hide-for-oldie {
+  display: none;
 }
 
 @font-face {

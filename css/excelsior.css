@@ -9309,7 +9309,7 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     width: 100%;
     background: #282828;
     padding: 1em 0;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     z-index: 5;
   }

@@ -486,7 +486,7 @@ select:focus:invalid:focus {
 .form-field-info {
   display: none;
   margin-top: -10px;
-  @extend .italic;
+  /*@extend .italic;*/
 
   p {
     font-family: inherit;

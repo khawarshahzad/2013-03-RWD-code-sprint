@@ -150,12 +150,12 @@
       <table id="tadocket">
         <thead>
 <tr>
-<th>Name</th>
-<th>DTA#(s)</th>
-<th>Date Issued</th>
-<th>Corp</th>
-<th>Corp#(s)</th>
-<th>Comments</th>
+ <th class="rt-persist">Name</th>
+<th class="rt-p1">DTA #</th>
+<th class="rt-p2 no-wrap">Date Issued</th>
+<th class="rt-p1">Corp</th>
+<th class="rt-p2">Corp #</th>
+<th class="rt-p2">Comments</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -184,8 +184,14 @@
     </div>
   </div>
   <footer></footer>
-</body>
-  <script src="../../js/vendor/jquery.js"></script>
+<script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/vendor/jquery-ui.widget.min.js"></script>
   <script src="../../js/app/app.js"></script>
-  <script src="../../js/app/off-canvas.js"></script>
-</html>
+  <script src="../../js/app/responsive-tables.js"></script>
+  <script src="../../js/foundation/foundation.js"></script>
+  <script src="../../js/foundation/foundation.dropdown.js"></script>
+  <script src="../../js/foundation/foundation.alerts.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>

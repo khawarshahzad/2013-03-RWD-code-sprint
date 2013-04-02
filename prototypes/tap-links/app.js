@@ -9,7 +9,7 @@ $(document).ready(function() {
   // Show appropriate messages and check the right box
 
   // Touch is supported
-  if (Modernizr.touch) {
+  if ($html.is('.touch')) { // Modernizr.touch
     $('#mobile').attr('checked', true);
   }
   // Touch not supported
@@ -17,7 +17,7 @@ $(document).ready(function() {
     $('#desktop').attr('checked', true);
   }
 
-  $('.switch').on(exlsr.activateEventName, function (evt) {
+  $('.toggle-section').on(exlsr.activateEventName, function (evt) {
     if ($mobile.is(':checked')) {
       $html
         .addClass('touch')

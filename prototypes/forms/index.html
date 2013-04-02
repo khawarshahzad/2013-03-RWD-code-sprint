@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row show-for-screen-max-large">
     <div class="large-8 small-centered columns">
       <div class="alert-box callout radius" data-alert>
         <a href="#" class="close">&times;</a>
@@ -42,7 +42,19 @@
           <li>Notice how the labels lie above the input fields on smaller screens for easier viewing</li>
           <li>A tooltip provides additional help for the Street Address field.</li>
           <li>Modern browsers will validate your input &mdash; try entering an invalid ZIP code.</li>
-          <li>On a phone, the click-to-call and click-to-txt buttons launch a call/text</li>
+          <li class="hide-for-no-touch">On a phone, the click-to-call and click-to-text buttons launch a call/text</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row show-for-screen-max-small hide-for-no-touch">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Click-to-call and click-to-text buttons launch a call/text</li>
         </ul>
       </div>
     </div>

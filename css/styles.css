@@ -93,7 +93,6 @@
   max-width: 450px;
   background-image: linear-gradient(bottom, rgb(4,47,90) 20%, rgb(10,70,130) 60%, rgb(4,47,90) 82%);
   background-image: -webkit-linear-gradient(bottom, rgb(4,47,90) 20%, rgb(10,70,130) 60%, rgb(4,47,90) 82%);
-  border-radius: 4px;
   text-align: center;
 }
 .govheading{
@@ -110,10 +109,10 @@
   text-shadow: 0.2em 0.2em 0.2em #333;
   padding: 0.8em 0 0.4em 0;
 }
-.button{
+.govbutton .button{
   border: 1px solid #222;
 }
-.button:hover{
+.govbutton .button:hover{
   background-color: #162252;
   border: 1px solid #444;
 }
@@ -191,5 +190,18 @@
 }
 .govurl a:hover{
   color: #ff0;
+}
+
+/* sections */
+.section-container .content dl dt{
+  font-weight: normal;
+}
+.section-container .content .sectitle{
+  padding-top: 0.3em;
+  font-weight: bold;
+}
+.section-container .content dt.viewall{
+  padding-top: 1em;
+  font-size: 95%;
 }
 

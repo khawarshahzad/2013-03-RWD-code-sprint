@@ -319,3 +319,13 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
 #devices .smartphone-portrait span,#devices .smartphone-landscape span {
   background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJNJREFUGFeVjDEKwkAUBefHhUAQG8HGwguIR7Czs/Munkq8hunTWohoIWlUBBf3r99CA64g6CuHeSP3hU05sZeSq83oY1JJOFJRc2ZLYEhHMpvgd35AMr9xCsU7uuQqTlMNBVz4gAH4w/wdfmvGxIzgFGuXBSCAwS3PRFaH5oMQAKHntEUXgCVr5s+Ei/aKjRk13QeKojmLEk117AAAAABJRU5ErkJggg==') 50% 50% no-repeat;
 }
+
+// IE classes -- demo only, since the `.ie10` class will be added by JS by this component only
+
+.ie10 .hide-for-ie10 {
+  display: none !important;
+}
+
+.ie10 .show-for-ie10 {
+  display: inherit !important;
+}

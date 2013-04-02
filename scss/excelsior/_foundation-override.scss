@@ -118,6 +118,12 @@ ul.f-dropdown li {
   padding: 0;
 }
 
+@media only screen and (min-width: 48em) {
+  li.hide-for-small {
+    list-style-type: disc;
+  }
+}
+
 .button small {
   font-size: 75%;
 }
@@ -288,7 +294,7 @@ section .title a,
   content: "\e75e";
   position: absolute;
   top: 6px;
-  right: 10px;
+  right: 18px;
   font-family: $font-icons;
   font-style: normal;
   font-weight: normal;
@@ -300,7 +306,7 @@ section .title a,
 .accordion section.auto.active .title:after,
 .accordion section.section.active .title:after {
   top: 8px;
-  right: 10px;
+  right: 18px;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
@@ -313,7 +319,7 @@ section .title a,
     content: "\e75e";
     position: absolute;
     top: 8px;
-    right: 10px;
+    right: 18px;
     font-family: $font-icons;
     font-style: normal;
     font-weight: normal;
@@ -325,7 +331,7 @@ section .title a,
   .auto section.auto.active .title:after,
   .auto section.section.active .title:after {
     top: 6px;
-    right: 10px;
+    right: 18px;
     -webkit-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
             transform: rotate(270deg);
@@ -333,6 +339,58 @@ section .title a,
 }
 
 // Orbit
+@media only screen and (max-width: 767px) {
+    .orbit-timer, .orbit-slide-number{ 
+      display:none;
+    }
+}
+
+.orbit-container {
+
+  .orbit-slide-number {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: #fff;
+  }
+
+  & .orbit-slides-container .orbit-caption .hide-for-small, 
+  & .orbit-slides-container .orbit-caption .hide-for-small a {
+    color: #aaa;
+  }
+
+  & .orbit-timer .orbit-progress{
+    background: #eee;
+    height: 12px;
+  }
+  
+  & .orbit-timer > span{
+    top: 16px;
+    border: solid 4px #fff;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  & .orbit-timer.paused > span{
+    border-color: transparent transparent transparent #fff;
+    top: 16px;
+  }
+
+}
+
+.orbit-bullets li{
+  background-color: #eee;
+  box-shadow: inset 0 1px 1px 1px #333;
+  cursor: pointer;
+  border: 0;
+}
+.orbit-bullets li.active {
+  background-color: #444;
+  box-shadow: inset 0 1px 1px 1px #111;
+}
+.orbit-bullets{
+  display: none;
+}
+
 
 // Do not show bullets on touch
 @media #{$small} {
@@ -350,3 +408,4 @@ section .title a,
     text-decoration: none;
   }
 }
+

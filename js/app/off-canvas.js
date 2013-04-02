@@ -20,10 +20,13 @@ $(document).ready(function(){
 		if (subMenu.length) {
 
 			// We have a sub menu item so create the click event
-			link.on('click', function(event){
+			link.on('click', function(e){
 
 				// Prevent default link action
-				event.preventDefault();
+				e.preventDefault();
+
+				// Prevent menu click propagation
+				e.stopPropagation();
 
 				// Check to see if there is another already active menu item
 				var menuCheck = $('.active-menu');
@@ -64,7 +67,13 @@ $(document).ready(function(){
 	});
 
 	// Bind for menu-back
-	$('#menu-back').on('click', function(){
+	$('#menu-back').on('click', function(e){
+
+		// Prevent element default action
+		e.preventDefault();
+
+		// Prevent the click event from moving up
+		e.stopPropagation();
 
 		// Check to see if there is an active menu class
 		var numberOfSubs = $('.active-menu');

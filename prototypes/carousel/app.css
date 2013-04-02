@@ -1,5 +1,5 @@
-	.touch .orbit-container .orbit-prev,
-	.touch .orbit-container .orbit-next {
+.touch .orbit-container .orbit-prev,
+.touch .orbit-container .orbit-next {
 	  display: inherit; }
 @media only screen and (max-width: 767px) {
 	.orbit-timer, .orbit-slide-number{ display:none;}

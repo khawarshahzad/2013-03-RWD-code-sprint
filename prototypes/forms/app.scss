@@ -1,43 +1,5 @@
 @import "../../scss/foundation/foundation-global";
 
-label {
-  display: inline-block;
-  position: relative;
-}
-
-.required:after {
-  content: "*";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -10px;
-  color: #{$alert-color};
-}
-
-.form-field-info {
-  display: none;
-  margin-top: -10px;
-  @extend .italic;
-}
-
-.show .form-field-info {
-  display: block;
-}
-
-.form-field-info p {
-  font-family: inherit;
-}
-
-.form-field-info p:last-child {
-  margin-bottom: 10px;
-}
-
-.margin-top-xlarge {
-  margin-top: 2em;
-}
-
-
-
 .immediate-assistance {
   margin-top: 30px;
 }

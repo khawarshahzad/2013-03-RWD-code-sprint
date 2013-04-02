@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>Responsive Tables</title>
+  <title>Adaptive Tables</title>
   <link rel="stylesheet" href="../../css/excelsior.css">
   <link rel="stylesheet" href="../../css/styles.css">
   <script src="../../js/vendor/custom.modernizr.js"></script>
@@ -24,31 +24,43 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <h1>Responsive Tables</h1>
+      <h1>Adaptive Tables</h1>
       <ul class="breadcrumbs">
         <li><a href="../index.html">Prototypes Home</a></li>
-        <li class="current"><a href="#">Responsive Tables</a></li>
+        <li class="current"><a href="#">Adaptive Tables</a></li>
       </ul>
-      <dl class="sub-nav">
-        <dt>Section:</dt>
-        <dd class="active"><a href="#">Overview</a></dd>
-        <dd><a href="examples.html">More Examples</a></dd>
-        <dd><a href="typical.html">Typical</a></dd>
-      </dl>
-      <hr>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row show-for-screen-max-large">
     <div class="large-8 small-centered columns">
       <div class="alert-box callout radius" data-alert>
         <a href="#" class="close">&times;</a>
         <h4>What to watch for:</h4>
         <ul class="bulleted-list">
-          <li>Watch how smaller screens automatically show fewer columns to keep the table readable</li>
-          <li>Use the dropdown menu to select which columns you want to view</li>
-          <li>Notice that some columns, such as Date Issues, are the first to disappear to allow more space for the important columns</li>
-          <li>Note that the 'Name' column can't be hidden by the dropdown because the page design requires it to be shown at all times</li>
+          <li>Watch how smaller screens automatically show fewer columns to keep the contents readable
+            <ul>
+              <li>Notice that less important columns, such as Date Issued, disappear first to allow more space for more important columns</li>
+            </ul>
+          </li>
+          <li>Use the dropdown menu to select which columns you want to view
+            <ul>
+              <li>You can't hide the 'Name' column because the page design requires it to be shown at all times</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row show-for-screen-max-small">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box callout radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Some columns are hidden because there is not enough space &mdash; use the dropdown menu to select which columns you want to view</li>
+          <li class="show-for-touch">Try rotating your device to see if columns show and hide on their own</li>
         </ul>
       </div>
     </div>
@@ -57,7 +69,6 @@
   <div class="row">
     <div class="large-12 columns">
       <h2>Tax Appeals Tribunal February 2013 Docket</h2>
-        <!-- <h4>Administrative Law Judge Determinations Issued</h4> -->
       <div class="rt-table-menu" id="tadocket-check-container"></div>
     </div>
   </div>

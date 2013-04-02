@@ -133,8 +133,7 @@
     width: 70%;
     color: #333;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+         box-sizing: border-box;
   }
 
   .gov-bar input[type=submit] {
@@ -163,15 +162,14 @@
     top: 0;
     width: 100%;
     z-index: 30;
-
     -webkit-transition: top 0.2s ease-in;
             transition: top 0.2s ease-in;
   }
 
   .site-bar a.site-logo {
-    color: #FFF;
+    color: #fff;
     float: left;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: normal;
     margin: -2px 0 0 52px;
     padding: 0.1em 0 0 0.3em;
@@ -183,7 +181,7 @@
   }
 
   .site-bar .site-functions .site-search {
-    background: #FFF;
+    background: #fff;
     border-bottom: 1px solid #666;
     box-shadow: 2px 2px 4px #999;
     display: block;
@@ -194,7 +192,6 @@
     position: absolute;
     width: 100%;
     z-index: 15;
-
     -webkit-transition: height 0.2s ease-in;
             transition: height 0.2s ease-in;
   }
@@ -222,7 +219,7 @@
   }
 
   .site-bar .site-functions .site-search input {
-    -webkit-appearance:none;
+    -webkit-appearance: none;
     padding: 0;
     display: block;
     float: left;
@@ -235,9 +232,8 @@
     width: 86%;
     border-color: #999;
     color: #333;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
   }
 
   .site-bar .site-functions .site-button {

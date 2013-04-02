@@ -1,8 +1,8 @@
 /*global Modernizr: false */
 var isIE = (/MSIE/.test(navigator.userAgent));
-
+if (!isIE){
 $(function(){
-  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE ) {
+  if ( parent.$("#devices").length <=0 && !Modernizr.touch) {
       (function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
@@ -190,3 +190,4 @@ $(function(){
     })(window.resbook);
   }
 });
+}

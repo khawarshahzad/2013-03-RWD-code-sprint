@@ -7764,24 +7764,9 @@ tbody tr.info > td {
     height: 70px;
     max-width: none;
   }
-
-  /* line 31, ../scss/excelsior/components/_block-to-stack.scss */
-  .crop .img1 {
-    margin-left: -10px;
-  }
-
-  /* line 35, ../scss/excelsior/components/_block-to-stack.scss */
-  .crop .img2 {
-    margin-left: -60px;
-  }
-
-  /* line 39, ../scss/excelsior/components/_block-to-stack.scss */
-  .crop .img3 {
-    margin-left: -10px;
-  }
 }
 @media only screen and (min-width: 48em) {
-  /* line 46, ../scss/excelsior/components/_block-to-stack.scss */
+  /* line 35, ../scss/excelsior/components/_block-to-stack.scss */
   .block .crop {
     float: left;
     overflow: hidden;

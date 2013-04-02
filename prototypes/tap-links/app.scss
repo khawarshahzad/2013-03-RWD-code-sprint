@@ -12,17 +12,25 @@
   padding-bottom: emCalc(8px);
 }
 
-.switch-label {
-  float: left;
-  margin-top: 0.4em;
-  margin-right: 1em;
+.toggle-section {
+  margin-bottom: 1em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+
+  .pre-label {
+    float: left;
+    margin-right: 1em;
+  }
+
+  label {
+    float: left;
+    margin-right: 1em;
+    font-weight: normal;
+    font-size: 1em;
+  }
 }
 
-.switch.radius {
-  float: left;
-  width: auto;
-}
-
-.switch.radius > span {
-  box-shadow: 2px 0 10px 0 rgba(0,0,0,0.07), 1000px 0 0 1000px #BAC9F7, -2px 0 10px 0 rgba(0,0,0,0.07), -1000px 0 0 1000px #f5f5f5
-}
+// .switch.radius > span {
+//   box-shadow: 2px 0 10px 0 rgba(0,0,0,0.07), 1000px 0 0 1000px #BAC9F7, -2px 0 10px 0 rgba(0,0,0,0.07), -1000px 0 0 1000px #f5f5f5
+// }

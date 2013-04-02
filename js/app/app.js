@@ -285,39 +285,40 @@ $(document).ready(function(){
       // Remove any stray body click event
       $('body').off('click');
 
-    }
-    else {
+    } else {
       // Add active state class from header
       exlsr.$body.addClass(activeClass);
 
       // Add active state class from clicked element
       $clickedElm.addClass(selectedClass);
+
+      // Setup the on click function to close open drop down if the user clicks outside the active element.
+      exlsr.$body.on('click', function(e) {
+
+        var activeElm = $('.active'),
+            clicked = $(this);
+
+        // Check for active elements
+        if (activeElm.length > 0 && e.target.tagName !== "INPUT") {
+
+
+          // Since we have an active element get the body class we need
+          var activeClass = activeElm.attr('data-active');
+
+          // Remove the active element class
+          exlsr.$body.removeClass(activeClass);
+
+          // Remove active from the active element
+          activeElm.removeClass('active');        
+
+        }
+
+      });      
+
     }
 
     // Check to see if anything special has to happen based on data-active value
     specialEvents(activeClass);
-
-    // Setup the on click function to close open drop down if the user clicks outside the active element.
-    exlsr.$body.on('click', function(e) {
-
-      var activeElm = $('.active'),
-          clicked = $(this);
-
-      // Check for active elements
-      if (activeElm.length > 0 && e.target.tagName !== "INPUT") {
-
-        // Since we have an active element get the body class we need
-        var activeClass = activeElm.attr('data-active');
-
-        // Remove the active element class
-        exlsr.$body.removeClass(activeClass);
-
-        // Remove active from the active element
-        activeElm.removeClass('active');        
-
-      }
-
-    });
 
   });
 

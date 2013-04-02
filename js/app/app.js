@@ -15,9 +15,25 @@ var exlsr = {
  * Init methods
  */
 exlsr.init = function _init () {
+  var screenMax;
+
   // Init code here...
   exlsr.$body = $('body');
   exlsr.$window = $(window);
+
+  // Monitor-size classes
+  screenMax = Math.max(screen.width, screen.height);
+  if (screenMax <= 480) {
+    $('html').addClass('screen-max-tiny');
+  }
+  else if (screenMax > 480 && screenMax < 768) {
+    // Only Foundation's `small-` classes will ever take effect
+    $('html').addClass('screen-max-small');
+  }
+  else if (screenMax >= 768) {
+    // Foundation's `large-` classes may take effect
+    $('html').addClass('screen-max-large');
+  }
 };
 
 $(document).ready(function(){exlsr.init();});
@@ -309,14 +325,14 @@ $(document).ready(function(){
           exlsr.$body.removeClass(activeClass);
 
           // Remove active from the active element
-          activeElm.removeClass('active'); 
+          activeElm.removeClass('active');
 
           // Remove this click event
-          exlsr.$body.off('click');       
+          exlsr.$body.off('click');
 
         }
 
-      });      
+      });
 
     }
 

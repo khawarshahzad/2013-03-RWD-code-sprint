@@ -7,7 +7,7 @@
 }
 #wrapper {
   -webkit-transition: height 1250ms ease,width 1250ms ease,margin 1250ms ease;
-  transition: height 1250ms ease,width 1250ms ease,margin 1250ms ease;
+          transition: height 1250ms ease,width 1250ms ease,margin 1250ms ease;
   box-shadow: 0 0 12px 1px #000;
   -webkit-transform: translate3d(0, 0, 0);
   position: relative;
@@ -33,15 +33,13 @@
 
 #wrapper.noTransitions {
   -webkit-transition: 0;
-  transition: 0;
+          transition: 0;
 }
 
 #wrapper .keyboard-bg {
   -webkit-transform: translateY(-20px);
-  -moz-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  -o-transform: translateY(-20px);
-  transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
   display: block;
   opacity: 0;
   position: absolute;
@@ -56,9 +54,8 @@
 #wrapper[data-device="smartphoneLandscape"].keyboard,
 #wrapper[data-device="tabletLandscape"].keyboard,
 #wrapper[data-device="tabletPortrait"].keyboard {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+       box-sizing: border-box;
   padding-top: 20px;
 }
 
@@ -67,10 +64,8 @@
 #wrapper[data-device="tabletLandscape"].keyboard .keyboard-bg,
 #wrapper[data-device="tabletPortrait"].keyboard .keyboard-bg {
   -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  -o-transform: translateY(0px);
-  transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
   opacity: 1;
 }
 
@@ -81,7 +76,7 @@
 #wrapper[data-device="tabletLandscape"].keyboard{padding-bottom:307px}
 body>header {
   background: -webkit-linear-gradient(rgba(52,52,52,0.75),rgba(36,36,36,0.75));
-  background: linear-gradient(rgba(52,52,52,0.75),rgba(36,36,36,0.75));
+  background:         linear-gradient(rgba(52,52,52,0.75),rgba(36,36,36,0.75));
   box-shadow: inset 0 1px 0 #5f6164,inset 0 -1px 0 #2e2f2f,0 1px 3px rgba(0,0,0,0.3);
   position: fixed;
   top: 0;
@@ -105,12 +100,12 @@ body>section {
   -webkit-transition: padding 240ms ease;
   transition: padding 240ms ease;
   background-image: -webkit-linear-gradient(#202021,#222223);
-  background-image: linear-gradient(#202021,#222223);
+  background-image:         linear-gradient(#202021,#222223);
   box-shadow: 0 1px 0 #363738;
   border-radius: 4px;
   -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   color: #EEE;
   border: 1px solid #040404;
   text-align: center;
@@ -159,12 +154,12 @@ header .keyboard a,.cssrefresh a {
 
 header .keyboard a:hover,.cssrefresh a:hover {
   background: -webkit-linear-gradient(#313131,#242424);
-  background: linear-gradient(#313131,#242424);
+  background:         linear-gradient(#313131,#242424);
 }
 
 header .keyboard a.active,header .keyboard a:active,.cssrefresh a.active,.cssrefresh a:active {
   background: -webkit-linear-gradient(#1c1c1c,#242424);
-  background: linear-gradient(#1c1c1c,#242424);
+  background:         linear-gradient(#1c1c1c,#242424);
   box-shadow: inset 0 1px 0 #242424;
   outline: none;
 }
@@ -247,10 +242,8 @@ header .keyboard a,header .cssrefresh a {
 
 #devices .tablet-landscape span,#devices .smartphone-landscape span {
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 #devices .auto span {

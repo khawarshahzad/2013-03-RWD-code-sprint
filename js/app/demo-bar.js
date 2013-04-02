@@ -1,9 +1,6 @@
 /*global Modernizr: false */
-var isIE = (/MSIE/.test(navigator.userAgent));
-if (!isIE){
-$(function(){
-  if ( parent.$("#devices").length <=0 && !Modernizr.touch) {
-      function(){
+var isIE = (/MSIE/.test(navigator.userAgent)),
+    demoBar = function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title+
@@ -49,6 +46,10 @@ $(function(){
         '<script src="../js/app/demo-bar-post.js"></script>'+
         '<\/body><\/html>');
     };
+
+$(function(){
+  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE) {
+    demoBar();
 
     window.resbook = {};
 
@@ -190,4 +191,3 @@ $(function(){
     })(window.resbook);
   }
 });
-}

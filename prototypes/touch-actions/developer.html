@@ -6,10 +6,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>Touch</title>
+  <title>Touch &mdash; Developer Notes</title>
   <link rel="stylesheet" href="../../css/excelsior.css">
   <link rel="stylesheet" href="../../css/styles.css">
-  <link rel="stylesheet" href="app.css">
   <script src="../../js/vendor/custom.modernizr.js"></script>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
@@ -33,35 +32,25 @@
       <dl class="sub-nav">
         <dt>Touch:</dt>
         <dd><a href="index.html">Easy-Tap Links</a></dd>
-        <dd class="active"><a href="#">Playground</a></dd>
-        <dd><a href="developer.html">Developer Notes</a></dd>
+        <dd><a href="playground.html">Playground</a></dd>
+        <dd class="active"><a href="#">Developer Notes</a></dd>
       </dl>
     </div>
   </div>
 
   <div class="row">
-    <div class="large-12 columns callout" id="in">
-      <div class="show-for-touch" style="display:none;">
-        <p>Perform touch actions in this box. Recognized events will appear below (most recent first).</p>
-        <ul>
-          <li><code>tap</code></li>
-          <li><code>longTap</code></li>
-          <li><code>swipeLeft</code></li>
-          <li><code>swipeRight</code></li>
-        </ul>
-        <p>The library also supports singleTap, doubleTap, swipeUp, swipeDown, and swipe.</p>
-      </div>
-      <div class="show-for-desktop">
-        <p>Click inside this box. Recognized events will appear below (most recent first).</p>
-        <p class="error">Touch events are not supported on this browser. Only <code>click</code> events will be recognized.</p>
-        <p>To test on desktop, open Chrome's Dev Tool settings (gear icon) and enable touch events.</p>
-      </div>
+    <div class="large-12 columns">
+      <h2>Tap Targets</h2>
+      <p>Add the class <code>.link-buttons-list</code> to a parent container (e.g., <code>div.row</code>) to enable this feature on all child <code>&lt;a&gt;</code> elements.</p>
+      <p>Note that the links will only turn into buttons if <code>Modernizr.touch</code> is true. It is not dependent on screen size since that's not the reason why you'd want bigger targets.</p>
     </div>
   </div>
+
   <div class="row">
     <div class="large-12 columns">
-      <p></p>
-      <ul id="out"></ul>
+      <h2>Touch Library</h2>
+      <p>Instead of binding event listeners to <code>"click"</code>, use <code>exlsr.activateEventName</code>. This value will automatically resolve to <code>"tap"</code> (if <code>Modernizr.touch</code> is true) or <code>"click"</code> otherwise. This makes the site much more responsive since mobile devices insert a noticeable delay before dispatching the <code>click</code> event.</p>
+      <p>The library also supports singleTap, doubleTap, swipeUp, swipeDown, and swipe.</p>
     </div>
   </div>
 
@@ -69,7 +58,6 @@
   <script src="../../js/app/app.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
   <script src="../../js/foundation/foundation.alerts.js"></script>
-  <script src="app.js"></script>
   <script>
     $(document).foundation();
   </script>

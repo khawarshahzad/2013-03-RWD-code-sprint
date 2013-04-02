@@ -7110,22 +7110,42 @@ section .title a:hover,
   background-clip: padding-box;
 }
 
-/* line 23, ../scss/excelsior/components/_global.scss */
-.lt-ie9 .hide-for-lt-ie9 {
+/* line 24, ../scss/excelsior/components/_global.scss */
+.show-for-no-touch {
   display: none !important;
 }
 
+/* line 25, ../scss/excelsior/components/_global.scss */
+.hide-for-no-touch {
+  display: inherit !important;
+}
+
+/* line 26, ../scss/excelsior/components/_global.scss */
+.no-touch .show-for-no-touch {
+  display: inherit !important;
+}
+
 /* line 27, ../scss/excelsior/components/_global.scss */
-.ie9 .hide-for-ie9 {
+.no-touch .hide-for-no-touch {
   display: none !important;
 }
 
 /* line 31, ../scss/excelsior/components/_global.scss */
+.lt-ie9 .hide-for-lt-ie9 {
+  display: none !important;
+}
+
+/* line 35, ../scss/excelsior/components/_global.scss */
+.ie9 .hide-for-ie9 {
+  display: none !important;
+}
+
+/* line 39, ../scss/excelsior/components/_global.scss */
 .lt-ie9 .show-for-lt-ie9 {
   display: inherit !important;
 }
 
-/* line 35, ../scss/excelsior/components/_global.scss */
+/* line 43, ../scss/excelsior/components/_global.scss */
 .ie9 .show-for-ie9 {
   display: inherit !important;
 }
@@ -9073,20 +9093,21 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     background: #282828;
     padding: 1em 0;
     position: relative;
+    overflow: hidden;
     z-index: 5;
   }
 
-  /* line 12, ../scss/excelsior/components/_footer.scss */
+  /* line 13, ../scss/excelsior/components/_footer.scss */
   .footer .footer-links, .footer .footer-images {
     overflow: hidden;
   }
 
-  /* line 16, ../scss/excelsior/components/_footer.scss */
+  /* line 17, ../scss/excelsior/components/_footer.scss */
   .footer .footer-images {
     padding: 0 1.1em;
   }
 
-  /* line 20, ../scss/excelsior/components/_footer.scss */
+  /* line 21, ../scss/excelsior/components/_footer.scss */
   .footer ul {
     overflow: hidden;
     list-style: none;
@@ -9095,7 +9116,7 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     float: left;
   }
 
-  /* line 28, ../scss/excelsior/components/_footer.scss */
+  /* line 29, ../scss/excelsior/components/_footer.scss */
   .footer li {
     overflow: hidden;
     padding: 0 2.9em 1.1em 1.1em;
@@ -9103,7 +9124,7 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     float: left;
   }
 
-  /* line 35, ../scss/excelsior/components/_footer.scss */
+  /* line 36, ../scss/excelsior/components/_footer.scss */
   .footer h4 {
     font-size: 1.1em;
     margin-bottom: 0.2em;
@@ -9111,25 +9132,25 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     color: #fff;
   }
 
-  /* line 42, ../scss/excelsior/components/_footer.scss */
+  /* line 43, ../scss/excelsior/components/_footer.scss */
   .footer li h4 a {
     color: #fff;
     text-decoration: none;
   }
 
-  /* line 47, ../scss/excelsior/components/_footer.scss */
+  /* line 48, ../scss/excelsior/components/_footer.scss */
   .footer li a {
     font-size: 1em;
     color: #aaa;
     text-decoration: none;
   }
 
-  /* line 53, ../scss/excelsior/components/_footer.scss */
+  /* line 54, ../scss/excelsior/components/_footer.scss */
   .footer li :hover {
     color: #2ba6cb;
   }
 
-  /* line 57, ../scss/excelsior/components/_footer.scss */
+  /* line 58, ../scss/excelsior/components/_footer.scss */
   .footer ul li ul li {
     float: none;
     padding: 0;
@@ -9137,25 +9158,15 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     line-height: 1.4em;
   }
 
-  /* line 64, ../scss/excelsior/components/_footer.scss */
+  /* line 65, ../scss/excelsior/components/_footer.scss */
   .footer-line {
     border-top: 1px solid #333;
     height: 1px;
     margin: 0 0 1em 0;
   }
-
-  /* line 70, ../scss/excelsior/components/_footer.scss */
-  .footer-logo-1 {
-    float: left;
-  }
-
-  /* line 74, ../scss/excelsior/components/_footer.scss */
-  .footer-logo-2 {
-    float: right;
-  }
 }
 @media only screen and (min-width: 48em) {
-  /* line 81, ../scss/excelsior/components/_footer.scss */
+  /* line 74, ../scss/excelsior/components/_footer.scss */
   .footer .footer-links, .footer .footer-images {
     overflow: hidden;
     margin: 0 auto;

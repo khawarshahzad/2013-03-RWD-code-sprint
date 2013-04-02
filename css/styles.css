@@ -11,6 +11,10 @@
   text-align:center;
 }
 .oldie .hide-for-oldie {display:none;}
+#resize-bar-body #wrapper {height:99%;}
+#resize-bar-body section {
+  overflow-y:hidden;
+}
 
 .list li {
   margin-bottom:.75em;

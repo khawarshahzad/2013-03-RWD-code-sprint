@@ -18,6 +18,14 @@
   @include radius(4px);
 }
 
+// Visiblity
+
+// Touch-enabled device targeting
+.show-for-no-touch { display: none !important; }
+.hide-for-no-touch { display: inherit !important; }
+.no-touch .show-for-no-touch { display: inherit !important; }
+.no-touch .hide-for-no-touch { display: none !important; }
+
 // IE classes
 
 .lt-ie9 .hide-for-lt-ie9 {

@@ -18,6 +18,10 @@
   padding-right: 0 !important;
 }
 
+.margin-top-xlarge {
+  margin-top: 2em;
+}
+
 .radius {
   @include radius(4px);
 }

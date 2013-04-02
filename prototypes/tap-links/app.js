@@ -1,34 +1,26 @@
 /*global Modernizr: false, exlsr: false */
 
 $(document).ready(function() {
-  var $out = $('#out'),
-      $html = $('html'),
-      $mobile = $('#mobile'),
-      $deskop = $('#desktop');
+  var $html = $('html');
 
   // Show appropriate messages and check the right box
-
-  // Touch is supported
-  if ($html.is('.touch')) { // Modernizr.touch
+  if (Modernizr.touch) {
+    // Touch is supported
     $('#mobile').attr('checked', true);
-    console.log('[init] touch enabled, checking mobile box');
   }
-  // Touch not supported
   else {
+    // Touch not supported
     $('#desktop').attr('checked', true);
-    console.log('[init] no touch, checking desktop box');
   }
 
   $('.toggle-section').on(exlsr.activateEventName, function (evt) {
-    console.log('[A] ' + exlsr.activateEventName + ' event fired ', evt.target);
+    // Cannot determine which check box is checked because that doesn't change until after this event
     if ($(evt.target).closest('.mobile-label').length) {
-      console.log('[B] mobile radio checked');
       $html
         .addClass('touch')
         .removeClass('no-touch');
     }
     else {
-      console.log('[B] desktop radio checked');
       $html
         .removeClass('touch')
         .addClass('no-touch');

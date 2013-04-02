@@ -339,6 +339,58 @@ section .title a,
 }
 
 // Orbit
+@media only screen and (max-width: 767px) {
+    .orbit-timer, .orbit-slide-number{ 
+      display:none;
+    }
+}
+
+.orbit-container {
+
+  .orbit-slide-number {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: #fff;
+  }
+
+  & .orbit-slides-container .orbit-caption .hide-for-small, 
+  & .orbit-slides-container .orbit-caption .hide-for-small a {
+    color: #aaa;
+  }
+
+  & .orbit-timer .orbit-progress{
+    background: #eee;
+    height: 12px;
+  }
+  
+  & .orbit-timer > span{
+    top: 16px;
+    border: solid 4px #fff;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  & .orbit-timer.paused > span{
+    border-color: transparent transparent transparent #fff;
+    top: 16px;
+  }
+
+}
+
+.orbit-bullets li{
+  background-color: #eee;
+  box-shadow: inset 0 1px 1px 1px #333;
+  cursor: pointer;
+  border: 0;
+}
+.orbit-bullets li.active {
+  background-color: #444;
+  box-shadow: inset 0 1px 1px 1px #111;
+}
+.orbit-bullets{
+  display: none;
+}
+
 
 // Do not show bullets on touch
 @media #{$small} {
@@ -356,3 +408,4 @@ section .title a,
     text-decoration: none;
   }
 }
+

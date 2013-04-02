@@ -10,43 +10,43 @@
   padding: 0.2em 0;
   text-align:center;
 }
-
+/* thumbnails */
+.img-list a{
+	text-decoration: none;
+}
+.img-list li:hover h4{text-decoration: underline;}
+.img-list h4 {color:#2ba6cb;}
+.img-list p {color:#333; line-height:1.15em;}
 .list li {
   margin-bottom:.75em;
   display: table;
   border-collapse: collapse;
   width: 100%;
 }
-
 .inner {
   display: table-row;
   overflow: hidden;
 }
-
 .li-img {
   display: table-cell;
   vertical-align: top;
   width: 30%;
   padding-right: .5em;
 }
-
 .li-img img {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .li-text {
   display: table-cell;
   vertical-align: top;
   width: 70%;
   padding-right:7%;
 }
-
 .li-head {
   margin: 0;
 }
-
 .li-sub {
   margin: 0;
 }
@@ -179,17 +179,18 @@
   color: #fff;
 }
 .facebook{
-  background-image: url(../dta/images/facebooklike.png), url(../dta/images/facebooklogo.png);
-background-position: left center, right center;
-background-repeat: no-repeat;
+
 }
 .facebook a{
   font-size: 0.7em;
   color: #fff;
   text-decoration: none;
   font-family: times new roman;
-  padding: 0.3em;
+  padding: 0.3em 0;
   display: block;
+  /*background-image: url(../prototypes/dta/images/facebooklike.png), url(../prototypes/dta/images/facebooklogo.png);
+  background-position: 3% 50%, 97% 50%;
+  background-repeat: no-repeat;*/
 }
 .facebook a:hover{
   color: #ff0;

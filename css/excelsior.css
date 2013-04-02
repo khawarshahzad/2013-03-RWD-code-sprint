@@ -7019,17 +7019,70 @@ section .title a:hover,
     transform: rotate(270deg);
   }
 }
+@media only screen and (max-width: 767px) {
+  /* line 343, ../scss/excelsior/_foundation-override.scss */
+  .orbit-timer, .orbit-slide-number {
+    display: none;
+  }
+}
+/* line 350, ../scss/excelsior/_foundation-override.scss */
+.orbit-container .orbit-slide-number {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: #fff;
+}
+/* line 357, ../scss/excelsior/_foundation-override.scss */
+.orbit-container .orbit-slides-container .orbit-caption .hide-for-small, .orbit-container .orbit-slides-container .orbit-caption .hide-for-small a {
+  color: #aaa;
+}
+/* line 361, ../scss/excelsior/_foundation-override.scss */
+.orbit-container .orbit-timer .orbit-progress {
+  background: #eee;
+  height: 12px;
+}
+/* line 366, ../scss/excelsior/_foundation-override.scss */
+.orbit-container .orbit-timer > span {
+  top: 16px;
+  border: solid 4px #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+/* line 373, ../scss/excelsior/_foundation-override.scss */
+.orbit-container .orbit-timer.paused > span {
+  border-color: transparent transparent transparent #fff;
+  top: 16px;
+}
+
+/* line 380, ../scss/excelsior/_foundation-override.scss */
+.orbit-bullets li {
+  background-color: #eee;
+  box-shadow: inset 0 1px 1px 1px #333;
+  cursor: pointer;
+  border: 0;
+}
+
+/* line 386, ../scss/excelsior/_foundation-override.scss */
+.orbit-bullets li.active {
+  background-color: #444;
+  box-shadow: inset 0 1px 1px 1px #111;
+}
+
+/* line 390, ../scss/excelsior/_foundation-override.scss */
+.orbit-bullets {
+  display: none;
+}
+
 @media only screen and (min-width: 48em) {
-  /* line 346, ../scss/excelsior/_foundation-override.scss */
+  /* line 398, ../scss/excelsior/_foundation-override.scss */
   .touch .orbit-bullets {
     display: none;
   }
 }
-/* line 352, ../scss/excelsior/_foundation-override.scss */
+/* line 404, ../scss/excelsior/_foundation-override.scss */
 .clearing-close {
   text-decoration: none;
 }
-/* line 355, ../scss/excelsior/_foundation-override.scss */
+/* line 407, ../scss/excelsior/_foundation-override.scss */
 .clearing-close:hover {
   text-decoration: none;
 }

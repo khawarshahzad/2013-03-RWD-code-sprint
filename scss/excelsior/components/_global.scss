@@ -18,7 +18,8 @@
   @include radius(4px);
 }
 
-.chromeframe {
+.chromeframe, // Old name, remove once all HTML is updated
+.unsupported-browser-message {
   margin: 1em 0 0.5em 0;
   text-align: center;
   font-size: 110%;

@@ -1,7 +1,7 @@
 /*global Modernizr: false */
 
 $(function(){
-  if ( parent.$("#devices").length <=0 && !Modernizr.touch ) {
+  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !(/MSIE/.test(navigator.userAgent)) ) {
       (function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+

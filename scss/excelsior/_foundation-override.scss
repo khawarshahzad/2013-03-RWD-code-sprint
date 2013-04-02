@@ -57,6 +57,30 @@ h1, h2, h3, h4, h5, h6 {
   @include font-serif;
 }
 
+h1 {
+  font-size: emCalc(32px);
+}
+
+h2 {
+  font-size: emCalc(28px);
+}
+
+h3 {
+  font-size: emCalc(24px);
+}
+
+h4 {
+  font-size: emCalc(20px);
+}
+
+h5 {
+  font-size: emCalc(18px);
+}
+
+h6 {
+  font-size: 1em;
+}
+
 p {
   font-family: $font-sans;
 }
@@ -340,7 +364,7 @@ section .title a,
 
 // Orbit
 @media only screen and (max-width: 767px) {
-    .orbit-timer, .orbit-slide-number{ 
+    .orbit-timer, .orbit-slide-number{
       display:none;
     }
 }
@@ -353,7 +377,7 @@ section .title a,
     color: #fff;
   }
 
-  & .orbit-slides-container .orbit-caption .hide-for-small, 
+  & .orbit-slides-container .orbit-caption .hide-for-small,
   & .orbit-slides-container .orbit-caption .hide-for-small a {
     color: #aaa;
   }
@@ -362,7 +386,7 @@ section .title a,
     background: #eee;
     height: 12px;
   }
-  
+
   & .orbit-timer > span{
     top: 16px;
     border: solid 4px #fff;

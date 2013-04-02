@@ -34,28 +34,33 @@
 .no-touch .show-for-no-touch { display: inherit !important; }
 .no-touch .hide-for-no-touch { display: none !important; }
 
+// Monitor sizes
+// Only one of the following will be present and it is not affected by resizing or orientation change
+
+// Up to and including 480px
+.show-for-screen-max-tiny { display: none !important; }
+.hide-for-screen-max-tiny { display: inherit !important; }
+.screen-max-tiny .show-for-screen-max-tiny { display: inherit !important; }
+.screen-max-tiny .hide-for-screen-max-tiny { display: none !important; }
+
+// Up to 767px (only `small-` classes will apply)
+.show-for-screen-max-small { display: none !important; }
+.hide-for-screen-max-small { display: inherit !important; }
+.screen-max-small .show-for-screen-max-small { display: inherit !important; }
+.screen-max-small .hide-for-screen-max-small { display: none !important; }
+
+// 768px and higher (can show effects of both `small-` and `large-` classes)
+.show-for-screen-max-large { display: none !important; }
+.hide-for-screen-max-large { display: inherit !important; }
+.screen-max-large .show-for-screen-max-large { display: inherit !important; }
+.screen-max-large .hide-for-screen-max-large { display: none !important; }
+
 // IE classes
+.hide-for-lt-ie9 { display: none !important; }
+.lt-ie9 .show-for-lt-ie9 { display: inherit !important; }
 
-.hide-for-lt-ie9 {
-  display: none !important;
-}
+.hide-for-ie9 { display: none !important; }
+.ie9 .show-for-ie9 { display: inherit !important; }
 
-.lt-ie9 .show-for-lt-ie9 {
-  display: inherit !important;
-}
-
-.hide-for-ie9 {
-  display: none !important;
-}
-
-.ie9 .show-for-ie9 {
-  display: inherit !important;
-}
-
-.hide-for-oldie {
-  display: inherit !important;
-}
-
-.oldie .hide-for-oldie {
-  display: none !important;
-}
+.hide-for-oldie { display: inherit !important; }
+.oldie .hide-for-oldie { display: none !important; }

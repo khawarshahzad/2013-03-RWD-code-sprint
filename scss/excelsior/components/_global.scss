@@ -18,6 +18,13 @@
   @include radius(4px);
 }
 
+.chromeframe {
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  font-size: 110%;
+  line-height: 120%;
+}
+
 // Visiblity
 
 // Touch-enabled device targeting
@@ -28,11 +35,7 @@
 
 // IE classes
 
-.lt-ie9 .hide-for-lt-ie9 {
-  display: none !important;
-}
-
-.ie9 .hide-for-ie9 {
+.hide-for-lt-ie9 {
   display: none !important;
 }
 
@@ -40,6 +43,18 @@
   display: inherit !important;
 }
 
+.hide-for-ie9 {
+  display: none !important;
+}
+
 .ie9 .show-for-ie9 {
   display: inherit !important;
+}
+
+.hide-for-oldie {
+  display: inherit !important;
+}
+
+.oldie .hide-for-oldie {
+  display: none !important;
 }

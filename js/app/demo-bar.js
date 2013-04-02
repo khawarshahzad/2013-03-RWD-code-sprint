@@ -3,7 +3,7 @@ var isIE = (/MSIE/.test(navigator.userAgent));
 if (!isIE){
 $(function(){
   if ( parent.$("#devices").length <=0 && !Modernizr.touch) {
-      (function(){
+      function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title+
@@ -48,7 +48,7 @@ $(function(){
         '<script src="../js/foundation/foundation.joyride.js"></script>'+
         '<script src="../js/app/demo-bar-post.js"></script>'+
         '<\/body><\/html>');
-    }());
+    };
 
     window.resbook = {};
 

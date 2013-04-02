@@ -1,5 +1,5 @@
-@import "../../scss/foundation/foundation-global";
-@import "../../scss/excelsior/mixins";
+@import "../../scss/foundation/_foundation-global";
+@import "../../scss/excelsior/_mixins";
 
 /* Tap Targets */
 
@@ -25,19 +25,4 @@
 
 .switch.radius > span {
   box-shadow: 2px 0 10px 0 rgba(0,0,0,0.07), 1000px 0 0 1000px #BAC9F7, -2px 0 10px 0 rgba(0,0,0,0.07), -1000px 0 0 1000px #f5f5f5
-}
-
-/* Playground */
-
-#in {
-  border: 1px solid #444;
-  background-color: #f4f4f4;
-  padding: 10px;
-}
-ul {
-  list-style-position: inside;
-}
-.error {
-  color: maroon;
-  font-style: italic;
 }

@@ -1,7 +1,8 @@
 /*global Modernizr: false */
+var isIE = (/MSIE/.test(navigator.userAgent));
 
 $(function(){
-  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !(/MSIE/.test(navigator.userAgent)) ) {
+  if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE ) {
       (function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+

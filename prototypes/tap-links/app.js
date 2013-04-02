@@ -20,7 +20,7 @@ $(document).ready(function() {
   }
 
   $('.toggle-section').on(exlsr.activateEventName, function (evt) {
-    console.log('[A] ' + exlsr.activateEventName + ' event fired');
+    console.log('[A] ' + exlsr.activateEventName + ' event fired ', evt.target);
     if ($(evt.target).closest('.mobile-label').length) {
       console.log('[B] mobile radio checked');
       $html

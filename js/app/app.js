@@ -309,7 +309,10 @@ $(document).ready(function(){
           exlsr.$body.removeClass(activeClass);
 
           // Remove active from the active element
-          activeElm.removeClass('active');        
+          activeElm.removeClass('active'); 
+
+          // Remove this click event
+          exlsr.$body.off('click');       
 
         }
 

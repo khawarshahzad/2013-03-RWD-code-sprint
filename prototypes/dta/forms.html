@@ -42,6 +42,7 @@
       </form>
     </div>
   </div>
+
   <div id="site-bar" class="site-bar">
     <div class="site-wrap">
       <a href="../index.html" class="site-logo">Division of Tax Appeals and Tax Appeals Tribunal</a>
@@ -135,63 +136,128 @@
   </nav>
   <div id="page" class="page">
     <div class="content-section">
-
-    <div class="row">
-    <div class="large-12 columns">
-      <h2>February 2013 Docket</h2>
-        <!-- <h4>Administrative Law Judge Determinations Issued</h4> -->
-      <div class="rt-table-menu" id="tadocket-check-container"></div>
-    </div>
-  </div>
-
+      
+      <!-- rows and columns here -->
+<div class="row">
+  <div class="large-12 columns">
+        <h4> Contact Us</h4></div>
+       </div>
   <div class="row">
-    <div class="large-12 columns">
-      <table id="tadocket">
-        <thead>
-<tr>
- <th class="rt-persist" data-min-width="200">Name</th>
-<th class="rt-p1" data-min-width="100">DTA #</th>
-<th class="rt-p1 no-wrap" data-min-width="90">Date Issued</th>
-<th class="rt-p2" data-min-width="80">Corp</th>
-<th class="rt-p2" data-min-width="50">Corp #</th>
-<th class="rt-p2" data-min-width="100">Comments</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>David &amp; Karen Ayoub</td><td>823894</td><td>01/22/2013</td><td>Island Recycling Corporation</td><td>822193</td><td>Division of Tax Appeals and Tax Appeals Tribunal, February 2013 Docket, Administrative Law Judge Determinations Issued, Tax Appeals Tribunal Monthly Docket</td>
-</tr><tr>
-<td>Gregg A. &amp; Sharon M. Goettel</td><td>823895</td><td>&nbsp;</td><td>Omni Recycling of Babylon, Inc.</td><td>822195</td><td>&nbsp;</td>
-</tr><tr>
-<td>Carl &amp; Barbara Austin</td><td>823896</td><td>&nbsp;</td><td>Daria M. Carnesi</td><td>822194</td><td>Division of Tax Appeals and Tax Appeals Tribunal, February 2013 Docket, Administrative Law Judge Determinations Issued, Tax Appeals Tribunal Monthly Docket</td>
-</tr><tr>
-<td>James &amp; Maureen Bowers</td><td>823897</td><td>02/21/2013</td><td>Steven Dvorak</td><td>822196</td><td>&nbsp;</td>
-</tr><tr>
-<td>Donald R. &amp; Susan M. Kimber</td><td>823898</td><td>&nbsp;</td><td>Triple C Retail Corporation</td><td>822197</td><td>Division of Tax Appeals and Tax Appeals Tribunal, February 2013 Docket, Administrative Law Judge Determinations Issued, Tax Appeals Tribunal Monthly Docket</td>
-</tr><tr>
-<td>David &amp; Kathleen Misner</td><td>823899</td><td>&nbsp;</td><td>Triple C Retail Corp Tinderbox # 362</td><td>823507</td><td>&nbsp;</td>
-</tr><tr>
-<td>Gary &amp; Jean Petrick</td><td>823900</td><td>&nbsp;</td><td>IT USA, Inc.</td><td>823880</td><td>&nbsp;</td>
-</tr><tr>
-<td>Michael G. D'Avirro</td><td>823901</td><td>&nbsp;</td><td>Manifatture Associate Cashmere</td><td>823881</td><td>Division of Tax Appeals and Tax Appeals Tribunal, February 2013 Docket, Administrative Law Judge Determinations Issued, Tax Appeals Tribunal Monthly Docket</td>
-<tr>
-<td>William &amp; Kelley Kriesel</td><td>824246</td><td>&nbsp;</td><td>USA, Inc.</td><td>823780</td><td>&nbsp;</td>
-</tr>
-<tr>
-<td>Vatica Diner, Inc.</td><td>824299</td><td>02/28/2013</td><td>Great Bay Marine, Inc.</td><td>823771</td><td>Division of Tax Appeals and Tax Appeals Tribunal, February 2013 Docket, Administrative Law Judge Determinations Issued, Tax Appeals Tribunal Monthly Docket</td></tr>
-        </tbody>
-      </table>
+    <div class="large-8 columns">
+      <form>
+        <fieldset>
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="name" class="required">Name<span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="text" name="name" id="name" tabindex="1" value="" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="email">Email</label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="email" name="email" id="email" tabindex="1" value="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="addr1" class="required"><span data-tooltip class="has-tip tip-right" title="Separate multiple address lines (i.e., apartment number) with a comma">Street address</span><span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="text" name="addr1" id="addr1" value="" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="zip" class="required"><span data-tooltip class="has-tip tip-right" title="US: 55555 or 55555-4444<br>Canada: A1A 1A1 (space is optional)">ZIP</span><span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <input type="text" pattern="(^\d{5}(-\d{4})?$)|(^[A-Za-z]{1}\d{1}[A-Za-z]{1}\s*\d{1}[A-Za-z]{1}\d{1}$)" name="zip" id="zip" value="" required>
+              <div class="form-field-info">
+                <p>US: 55555 or 55555-4444<br>Canada: A1A 1A1 (space is optional)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <div class="large-4 small-12 columns padding-sides-none">
+                <input type="tel" name="phone" id="phone" tabindex="1" value="">
+              </div>
+              <div class="large-8 small-12 columns">
+                <div class="large-4 small-4 columns">
+                  <label for="phone1" class="inline">Mobile <input name="phoneType" type="radio" tabindex="1" id="phone1" checked></label>
+                </div>
+                <div class="large-4 small-4 columns">
+                  <label for="phone2" class="inline">Work <input name="phoneType" type="radio" tabindex="1" id="phone2" checked></label>
+                </div>
+                <div class="large-4 small-4 columns">
+                  <label for="phone3" class="inline">Home <input name="phoneType" type="radio" tabindex="1" id="phone3" checked></label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="large-3 small-12 columns">
+              <label class="required" for="comments">Comments<span class="hide"> Required field.</span></label>
+            </div>
+            <div class="large-9 small-12 columns">
+              <textarea id="comments" required tabindex="1"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns center">
+              <input type="submit" class="button success" value="Submit">
+            </div></div>
+
+
+<div class="row">
+ <div class="immediate-assistance row alert-box radius">
+    <div class="large-12 columns"><h5><strong>Need Immediate Assistance?</strong></h5></div>
+    <div class="row">
+      <div class="large-12 columns">
+        <a href="tel:15182663000" class="call-now large button radius expand"><span class="icon-phone-1"></span>Call 1-518-266-3000</a>
+      </div>
+      </div>
     </div>
   </div>
+</div>
+
+          <div class="large-4 columns">
+      <h5>Map</h5>
+      <p>
+        <a href="https://maps.google.com/maps?q=Empire+State+Plaza+Albany,+NY+12223+Albany,+NY+12223&hl=en&ll=42.651874,-73.756682&spn=0.00423,0.010568&sll=42.661452,-73.750234&sspn=0.008458,0.021136&t=m&hq=NY+12223&hnear=Albany,+New+York+12223&fll=42.650366,-73.757991&fspn=0.00423,0.014656&z=17"><img src="../dta/images/taxappealsmap.jpg"  alt="Map of Tax Appeals" data-reveal-id="mapModal">View Map</a>
+       </p>
+      <p>Agency Building 1<br/>
+      Empire State Plaza<br/>
+        Albany, NY 12223</p>
+    </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  </div>
+  
   <footer></footer>
-<script src="../../js/vendor/jquery.js"></script>
-  <script src="../../js/vendor/jquery-ui.widget.min.js"></script>
+ <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/app/app.js"></script>
-  <script src="../../js/app/responsive-tables.js"></script>
   <script src="../../js/foundation/foundation.js"></script>
-  <script src="../../js/foundation/foundation.dropdown.js"></script>
+  <script src="../../js/foundation/foundation.forms.js"></script>
+  <script src="../../js/foundation/foundation.tooltips.js"></script>
   <script src="../../js/foundation/foundation.alerts.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+  <script src="app.js"></script>
+  <script>$(document).foundation();</script>
 </body>
 </html>

@@ -18,11 +18,14 @@
   padding-right: 0 !important;
 }
 
+.margin-top-xlarge {
+  margin-top: 2em;
+}
+
 .radius {
   @include radius(4px);
 }
 
-.chromeframe, // Old name, remove once all HTML is updated
 .unsupported-browser-message {
   margin: 1em 0 0.5em 0;
   text-align: center;
@@ -35,7 +38,9 @@
 // Touch-enabled device targeting
 .show-for-no-touch { display: none !important; }
 .hide-for-no-touch { display: inherit !important; }
+.hide-for-no-touch li, li.hide-for-no-touch { display: list-item !important; }
 .no-touch .show-for-no-touch { display: inherit !important; }
+.no-touch .show-for-no-touch li, .no-touch li.show-for-no-touch { display: list-item !important; }
 .no-touch .hide-for-no-touch { display: none !important; }
 
 // Monitor sizes
@@ -44,27 +49,36 @@
 // Up to and including 480px
 .show-for-screen-max-tiny { display: none !important; }
 .hide-for-screen-max-tiny { display: inherit !important; }
+.hide-for-screen-max-tiny li, li.hide-for-screen-max-tiny { display: list-item !important; }
 .screen-max-tiny .show-for-screen-max-tiny { display: inherit !important; }
+.screen-max-tiny .show-for-screen-max-tiny li, .screen-max-tiny li.show-for-screen-max-tiny { display: list-item !important; }
 .screen-max-tiny .hide-for-screen-max-tiny { display: none !important; }
 
 // Up to 767px (only `small-` classes will apply)
 .show-for-screen-max-small { display: none !important; }
 .hide-for-screen-max-small { display: inherit !important; }
+.hide-for-screen-max-small li, li.hide-for-screen-max-small { display: list-item !important; }
 .screen-max-small .show-for-screen-max-small { display: inherit !important; }
+.screen-max-small .show-for-screen-max-small li, .screen-max-small li.show-for-screen-max-small { display: list-item !important; }
 .screen-max-small .hide-for-screen-max-small { display: none !important; }
 
 // 768px and higher (can show effects of both `small-` and `large-` classes)
 .show-for-screen-max-large { display: none !important; }
 .hide-for-screen-max-large { display: inherit !important; }
+.hide-for-screen-max-large li, li.hide-for-screen-max-large { display: list-item !important; }
 .screen-max-large .show-for-screen-max-large { display: inherit !important; }
+.screen-max-large .show-for-screen-max-large li, .screen-max-large li.show-for-screen-max-large { display: list-item !important; }
 .screen-max-large .hide-for-screen-max-large { display: none !important; }
 
 // IE classes
 .hide-for-lt-ie9 { display: none !important; }
 .lt-ie9 .show-for-lt-ie9 { display: inherit !important; }
+.lt-ie9 .show-for-lt-ie9 { display: inherit !important; }
 
 .hide-for-ie9 { display: none !important; }
 .ie9 .show-for-ie9 { display: inherit !important; }
+.ie9 .show-for-ie9 li, .ie9 li.show-for-ie9 { display: list-item !important; }
 
 .hide-for-oldie { display: inherit !important; }
+.hide-for-oldie li, li.hide-for-oldie { display: list-item !important; }
 .oldie .hide-for-oldie { display: none !important; }

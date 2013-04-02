@@ -3,6 +3,10 @@
 
 /* Tap Targets */
 
+.link-buttons-list {
+  margin-bottom: 2em;
+}
+
 .touch .link-buttons-list a {
   padding: 4px;
   @include button();

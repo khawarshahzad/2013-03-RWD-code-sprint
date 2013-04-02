@@ -190,4 +190,7 @@ $(function(){
         });
     })(window.resbook);
   }
+  else if (isIE) {
+    $("body").prepend('<div class="row hide-for-oldie"><div class="large-8 small-centered columns"><div class="alert-box radius" data-alert><h4>Non-Optimal Browser Detected</h4><p>To get the best demo experience, it\'s recommended that you use a <a href="http://browsehappy.com/">different browser</a>.<br>If you cannot upgrade your browser, you can resize your browser to experience it.</div></div></div>')
+  }
 });

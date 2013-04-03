@@ -240,13 +240,13 @@ $(document).ready(function(){
   }
 
   // Standard Gov Banner display code
-  $('#gov-link-3').on('click', function(e) {
+  $('#gov-link-3').on(exlsr.activateEventName, function(e) {
     e.preventDefault();
     exlsr.$body.addClass('active-gov-bar-search');
   });
 
   // Active Elements
-  $('[data-active]').on('click', function(e) {
+  $('[data-active]').on(exlsr.activateEventName, function(e) {
 
     // Prevent Defaults
     e.preventDefault();
@@ -299,7 +299,7 @@ $(document).ready(function(){
       $clickedElm.removeClass(selectedClass);
 
       // Remove any stray body click event
-      $('body').off('click');
+      exlsr.$body.off(exlsr.activateEventName);
 
     } else {
       // Add active state class from header
@@ -309,7 +309,7 @@ $(document).ready(function(){
       $clickedElm.addClass(selectedClass);
 
       // Setup the on click function to close open drop down if the user clicks outside the active element.
-      exlsr.$body.on('click', function(e) {
+      exlsr.$body.on(exlsr.activateEventName, function(e) {
 
         var activeElm = $('.active'),
             clicked = $(this);
@@ -328,7 +328,7 @@ $(document).ready(function(){
           activeElm.removeClass('active');
 
           // Remove this click event
-          exlsr.$body.off('click');
+          exlsr.$body.off(exlsr.activateEventName);
 
         }
 

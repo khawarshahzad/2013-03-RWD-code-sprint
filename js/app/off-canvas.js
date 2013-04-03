@@ -67,6 +67,9 @@ $(document).ready(function(){
 					// Menu is active
 					subMenu.removeClass("active-menu");
 
+					// Remove active link class
+					link.removeClass('active');
+
 				}
 
 			});

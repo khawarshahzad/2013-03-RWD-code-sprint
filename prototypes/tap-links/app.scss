@@ -7,6 +7,11 @@
   margin-bottom: 2em;
 }
 
+.link-buttons-list a {
+  display: inline-block;
+  margin: emCalc(8px);
+}
+
 .touch .link-buttons-list a {
   padding: 4px;
   @include button();

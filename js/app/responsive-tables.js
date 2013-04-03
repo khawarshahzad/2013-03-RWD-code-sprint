@@ -60,9 +60,8 @@
 
         $.each(selectors, function(j, selector) {
 
-          if ($table.width() >= totalMinWidth) {
+          if ($table.width() >= totalMinWidth && exlsr.$body.width() >= $table.width()) {
             // Don't need to hide any more
-            androidLog('hideCols quitting [A] because ' + $table.width() + ' >= ' + totalMinWidth);
             return false;
           }
 
@@ -73,7 +72,6 @@
 
             if ($input && $input.data('user-changed')) {
               // Respect the user's choice to explicitly hide/show this column
-              androidLog('hideCols skipping this TH because user specified it');
               return true;
             }
 
@@ -90,18 +88,8 @@
               totalMinWidth = getTotalMinWidth();
               if ($table.width() >= totalMinWidth) {
                 // Don't need to hide any more
-                androidLog('hideCols quitting [B] because ' + $table.width() + ' >= ' + totalMinWidth);
                 return false;
               }
-            }
-            if ($input.data('user-changed')) {
-              androidLog('hideCols skipping TH ' + $this.text() + ' because user changed it');
-            }
-            if (!isDisplaying($this)) {
-              androidLog('hideCols skipping TH ' + $this.text() + ' because it is not displayed');
-            }
-            if (!$this.is(selector)) {
-              androidLog('hideCols skipping TH ' + $this.text() + ' because it does not match ' + selector);
             }
           });
         });
@@ -115,7 +103,6 @@
 
           if ($table.width() <= totalMinWidth) {
             // No room to show any more
-            androidLog('showCols quitting [A] because ' + $table.width() + ' <= ' + totalMinWidth);
             return false;
           }
 
@@ -126,7 +113,6 @@
 
             if ($input && $input.data('user-changed')) {
               // Respect the user's choice to explicitly hide/show this column
-              androidLog('showCols skipping this TH because user specified it');
               return true;
             }
 
@@ -146,15 +132,8 @@
               totalMinWidth = getTotalMinWidth();
               if ($table.width() <= totalMinWidth) {
                 // No room to show any more
-                androidLog('showCols quitting [B] because ' + $table.width() + ' <= ' + totalMinWidth);
                 return false;
               }
-            }
-            if (isDisplaying($this)) {
-              androidLog('showCols skipping TH ' + $this.text() + ' because it is not displaying');
-            }
-            if (!$this.is(selector)) {
-              androidLog('showCols skipping TH ' + $this.text() + ' because it does not match ' + selector);
             }
           });
         });
@@ -177,33 +156,12 @@
         $dropdown.append('<ul id="drop-' + tableId + '" class="f-dropdown rt-table-dropdown"></ul>');
       }
 
-      // TEMP ///////////////
-      // TEMP ///////////////
-      function androidLog (msg) {
-        try {
-          if (!/android/i.test(navigator.userAgent)) { return false; }
-          if (!$('.android').length) {
-            $('.rt-table-menu').parent().append($('<div/>', {'class':'android'}));
-            $('.android').append('<h4>Android Debug Log</h4></div>');
-          }
-          $('.android').append('<p>' + msg + '</p>');
-        }
-        catch (e) { alert('oops'); }
-      }
-      if (/android/i.test(navigator.userAgent)) {
-        alert('Android 3');
-        androidLog('screen width: ' + screen.width);
-        androidLog('body width: ' + $('body').width());
-      }
-      // TEMP ///////////////
-      // TEMP ///////////////
-
       /**
        * Setup
        */
 
       // Ignore tables that request not to be responsive
-      if ($table.is('.not-responsive')) { androidLog('quitting because table is not supposed to be responsive'); return false; }
+      if ($table.is('.not-responsive')) { return false; }
 
       // Set up dropdown menu
       if (!tableId) {
@@ -277,8 +235,6 @@
       }); // end $hdrCols loop
 
       totalMinWidth = getTotalMinWidth();
-
-      androidLog('totalMinWidth at beginning is ' + totalMinWidth);
 
       // Update the view now on each resize
       $(window).on('orientationchange resize', function () {

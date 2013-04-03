@@ -327,13 +327,17 @@
   /* Page Contents */
 
   .page {
-    background: #FFF;
+    background: #282828;
     height: 100%;
-    padding: 1em 0;
     position: relative;
     overflow: visible;
     top: 0;
     z-index: 10;
+  }
+
+  .page .content-section {
+    background: #FFF;
+    padding: 1em 0;
   }
 
 
@@ -534,6 +538,7 @@
   }
 
   .page {
+    background: #FFF;
     position: relative;
     top: 0;
   }
@@ -550,7 +555,8 @@
   .gov-bar .gov-wrap,
   .site-bar .site-wrap,
   .global-nav,
-  .page {
+  .page .content-section,
+  .footer .footer-contents {
     height: 100%;
     margin-left: auto;
     margin-right: auto;

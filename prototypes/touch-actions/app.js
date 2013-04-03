@@ -2,16 +2,15 @@
 
 $(document).ready(function() {
   var $out = $('#out'),
-      $html = $('html'),
-      $mobile = $('#mobile'),
       hastapped = false,
+      $mobile = $('#mobile'),
       $deskop = $('#desktop');
 
   // Show appropriate messages and check the right box
 
   // Playground demo only
   if (/Chrome\/\d+/.test(navigator.userAgent)) {
-    $('html').addClass('chrome');
+    exlsr.$html.addClass('chrome');
   }
 
   // Touch is supported
@@ -49,12 +48,12 @@ $(document).ready(function() {
 
   $('.switch').on(exlsr.activateEventName, function (evt) {
     if ($mobile.is(':checked')) {
-      $html
+      exlsr.$html
         .addClass('touch')
         .removeClass('no-touch');
     }
     else {
-      $html
+      exlsr.$html
         .removeClass('touch')
         .addClass('no-touch');
     }

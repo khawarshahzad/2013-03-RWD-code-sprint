@@ -138,9 +138,16 @@ $nav-bar-height: 48px;
 	  &.active-site-menu .gov-pull-down-container,
 	  &.active-site-menu .gov-bar,
 	  &.active-site-menu .site-bar,
-	  &.active-site-menu .page,
-	  &.active-site-menu .footer {
+	  &.active-site-menu .page {
 	    position: fixed;
+	    left: -82%;
+	  }
+
+	  &.active-site-menu .page {
+	  	-webkit-box-shadow: 5px 2px 8px #000;
+	  }
+
+	  &.active-site-menu .footer {
 	    left: -82%;
 	  }
 

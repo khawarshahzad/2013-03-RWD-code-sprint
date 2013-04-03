@@ -129,58 +129,66 @@
   .off-canvas.active-gov-bar .gov-pull-down-container, .off-canvas.active-gov-bar .site-bar {
     top: 88px;
   }
-  /* line 142, ../scss/off-canvas.scss */
-  .off-canvas.active-site-menu .gov-pull-down, .off-canvas.active-site-menu .gov-pull-down-container, .off-canvas.active-site-menu .gov-bar, .off-canvas.active-site-menu .site-bar, .off-canvas.active-site-menu .page, .off-canvas.active-site-menu .footer {
+  /* line 141, ../scss/off-canvas.scss */
+  .off-canvas.active-site-menu .gov-pull-down, .off-canvas.active-site-menu .gov-pull-down-container, .off-canvas.active-site-menu .gov-bar, .off-canvas.active-site-menu .site-bar, .off-canvas.active-site-menu .page {
     position: fixed;
+    left: -82%;
+  }
+  /* line 146, ../scss/off-canvas.scss */
+  .off-canvas.active-site-menu .page {
+    -webkit-box-shadow: 5px 2px 8px #000;
+  }
+  /* line 150, ../scss/off-canvas.scss */
+  .off-canvas.active-site-menu .footer {
     left: -82%;
   }
 }
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 768px) {
-  /* line 154, ../scss/off-canvas.scss */
+  /* line 161, ../scss/off-canvas.scss */
   body.off-canvas {
     padding-top: 0;
   }
 
-  /* line 162, ../scss/off-canvas.scss */
+  /* line 169, ../scss/off-canvas.scss */
   .off-canvas .gov-bar,
   .off-canvas .site-bar,
   .off-canvas .global-nav,
   .off-canvas .page {
     position: relative;
   }
-  /* line 169, ../scss/off-canvas.scss */
+  /* line 176, ../scss/off-canvas.scss */
   .off-canvas.active-site-menu .gov-bar, .off-canvas.active-site-menu .site-bar, .off-canvas.active-site-menu .global-nav, .off-canvas.active-site-menu .page {
     left: auto;
     position: relative;
   }
-  /* line 174, ../scss/off-canvas.scss */
+  /* line 181, ../scss/off-canvas.scss */
   .off-canvas.active-gov-bar .site-bar {
     top: 0;
   }
-  /* line 178, ../scss/off-canvas.scss */
+  /* line 185, ../scss/off-canvas.scss */
   .off-canvas .global-nav {
     height: 46px;
     overflow: visible;
     z-index: 30;
   }
-  /* line 184, ../scss/off-canvas.scss */
+  /* line 191, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul li {
     padding-left: 0;
   }
-  /* line 188, ../scss/off-canvas.scss */
+  /* line 195, ../scss/off-canvas.scss */
   .off-canvas .global-nav .menu-controls {
     display: none;
   }
-  /* line 193, ../scss/off-canvas.scss */
+  /* line 200, ../scss/off-canvas.scss */
   .off-canvas .global-nav .nav-container, .off-canvas.active-site-menu .global-nav .nav-container {
     overflow: hidden;
   }
-  /* line 198, ../scss/off-canvas.scss */
+  /* line 205, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul, .off-canvas.active-site-menu .global-nav ul {
     margin-left: 0;
   }
-  /* line 202, ../scss/off-canvas.scss */
+  /* line 209, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul {
     top: 46px;
     left: 0;
@@ -190,15 +198,15 @@
     -webkit-transition: left 0;
     transition: left 0s;
   }
-  /* line 212, ../scss/off-canvas.scss */
+  /* line 219, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu {
     visibility: visible;
   }
-  /* line 216, ../scss/off-canvas.scss */
+  /* line 223, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li {
     padding-left: 0;
   }
-  /* line 220, ../scss/off-canvas.scss */
+  /* line 227, ../scss/off-canvas.scss */
   .off-canvas .page {
     min-height: auto;
     top: 0;

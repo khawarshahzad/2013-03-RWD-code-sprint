@@ -8,6 +8,7 @@ var exlsr = {
   ua: navigator.userAgent,
   iOS: false,
   $body: null,
+  $html: null,
   $window: null
 };
 
@@ -19,23 +20,27 @@ exlsr.init = function _init () {
 
   // Init code here...
   exlsr.$body = $('body');
+  exlsr.$html = $('html');
   exlsr.$window = $(window);
 
   // Monitor-size classes
   screenMax = Math.max(screen.width, screen.height);
   if (screenMax <= 480) {
-    $('html').addClass('screen-max-tiny');
+    exlsr.$html.addClass('screen-max-tiny');
   }
   else if (screenMax > 480 && screenMax < 768) {
     // Only Foundation's `small-` classes will ever take effect
-    $('html').addClass('screen-max-small');
+    exlsr.$html.addClass('screen-max-small');
   }
   else if (screenMax >= 768) {
     // Foundation's `large-` classes may take effect
-    $('html').addClass('screen-max-large');
+    exlsr.$html.addClass('screen-max-large');
   }
 
   // Preload assets
+  exlsr.preloader.add('<img src="../../images/close.svg">');
+  exlsr.preloader.add('<img src="../../images/close-x-gray.svg">');
+  exlsr.preloader.add('<img src="../../images/hamburger-no-dots.svg">');
   exlsr.preloader.init();
 };
 

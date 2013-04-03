@@ -164,12 +164,14 @@
       // TEMP ///////////////
       // TEMP ///////////////
       function androidLog (msg) {
-        if (!/android/i.test(navigator.userAgent)) { return false; }
-        if (!$('#android').length) {
-          $('.rt-table-menu').parent().prepend('<div id="android><h4>Android Debug Log</h4></div>');
+        try {
+          if (!/android/i.test(navigator.userAgent)) { return false; }
+          if (!$('.android').length) {
+            $('.rt-table-menu').parent().append('<div class="android><h4>Android Debug Log</h4></div>');
+          }
+          $('.android').append('<p>' + msg + '</p>');
         }
-
-        $('#android').append('<p>' + msg + '</p>');
+        catch (e) { alert('oops'); }
       }
       if (/android/i.test(navigator.userAgent)) {
         alert('Android!');

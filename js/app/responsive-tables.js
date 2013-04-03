@@ -94,6 +94,15 @@
                 return false;
               }
             }
+            if ($input.data('user-changed')) {
+              androidLog('hideCols skipping TH ' + $this.text() + ' because user changed it');
+            }
+            if (!isDisplaying($this)) {
+              androidLog('hideCols skipping TH ' + $this.text() + ' because it is not displayed');
+            }
+            if (!$this.is(selector)) {
+              androidLog('hideCols skipping TH ' + $this.text() + ' because it does not match ' + selector);
+            }
           });
         });
       } // end hideCols()
@@ -117,6 +126,7 @@
 
             if ($input && $input.data('user-changed')) {
               // Respect the user's choice to explicitly hide/show this column
+              androidLog('showCols skipping this TH because user specified it');
               return true;
             }
 
@@ -139,6 +149,12 @@
                 androidLog('showCols quitting [B] because ' + $table.width() + ' <= ' + totalMinWidth);
                 return false;
               }
+            }
+            if (isDisplaying($this)) {
+              androidLog('showCols skipping TH ' + $this.text() + ' because it is not displaying');
+            }
+            if (!$this.is(selector)) {
+              androidLog('showCols skipping TH ' + $this.text() + ' because it does not match ' + selector);
             }
           });
         });
@@ -175,8 +191,9 @@
         catch (e) { alert('oops'); }
       }
       if (/android/i.test(navigator.userAgent)) {
-        alert('Android 2');
-        androidLog('');
+        alert('Android 3');
+        androidLog('screen width: ' + screen.width);
+        androidLog('body width: ' + $('body').width());
       }
       // TEMP ///////////////
       // TEMP ///////////////

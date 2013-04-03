@@ -6,7 +6,7 @@ $nav-bar-height: 48px;
 
   html,
   body {
-    background: #fff;
+    background: #282828;
     height: 100%;
   }
 
@@ -62,6 +62,7 @@ $nav-bar-height: 48px;
 	    height: inherit;
 	    overflow-y: scroll;
 	    border-radius: 4px;
+
 	  }
 
 	  .global-nav ul {
@@ -226,8 +227,12 @@ $nav-bar-height: 48px;
 
 	  .page {
 	  	min-height: auto;
-	    top: 0;
+	    top: -23px;
 	    left: 0;
+	  }
+
+	  .page .content-section {
+	  	padding: 2em 0;
 	  }
 	}
 }

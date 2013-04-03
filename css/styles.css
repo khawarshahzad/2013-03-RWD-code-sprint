@@ -71,17 +71,17 @@
   box-shadow: inset 0 1px 1px 1px #111;
 }
 .orbit-container .orbit-timer .orbit-progress{
-  background: #eee;
+  background: rgba(0, 0, 0, 0.6);
   height: 12px;
 }
 .orbit-container .orbit-timer > span{
   top: 16px;
-  border: solid 4px #fff;
+  border: solid 4px rgba(0, 0, 0, 0.6);
   border-top: 0;
   border-bottom: 0;
 }
 .orbit-container .orbit-timer.paused > span{
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.6);
   top: 16px;
 }
 .orbit-bullets{

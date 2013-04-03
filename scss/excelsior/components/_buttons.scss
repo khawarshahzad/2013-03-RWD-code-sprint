@@ -344,3 +344,12 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+
+.button-for-touch {
+  display: inline-block;
+}
+
+.touch .button-for-touch {
+  @include button();
+  padding: 6px 12px;
+}

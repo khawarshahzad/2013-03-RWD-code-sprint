@@ -38,9 +38,9 @@ exlsr.init = function _init () {
   }
 
   // Preload assets
-  exlsr.preloader.add('<img src="../../images/close.svg">');
-  exlsr.preloader.add('<img src="../../images/close-x-gray.svg">');
-  exlsr.preloader.add('<img src="../../images/hamburger-no-dots.svg">');
+  exlsr.preloader.add('<img src="../images/close.svg">');
+  exlsr.preloader.add('<img src="../images/close-x-gray.svg">');
+  exlsr.preloader.add('<img src="../images/hamburger-no-dots.svg">');
   exlsr.preloader.init();
 };
 

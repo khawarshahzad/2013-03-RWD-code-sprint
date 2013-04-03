@@ -94,15 +94,15 @@
                 return false;
               }
             }
-            if ($input.data('user-changed')) {
-              androidLog('hideCols skipping TH ' + $this.text() + ' because user changed it');
-            }
-            if (!isDisplaying($this)) {
-              androidLog('hideCols skipping TH ' + $this.text() + ' because it is not displayed');
-            }
-            if (!$this.is(selector)) {
-              androidLog('hideCols skipping TH ' + $this.text() + ' because it does not match ' + selector);
-            }
+            // if ($input.data('user-changed')) {
+            //   androidLog('hideCols skipping TH ' + $this.text() + ' because user changed it');
+            // }
+            // if (!isDisplaying($this)) {
+            //   androidLog('hideCols skipping TH ' + $this.text() + ' because it is not displayed');
+            // }
+            // if (!$this.is(selector)) {
+            //   androidLog('hideCols skipping TH ' + $this.text() + ' because it does not match ' + selector);
+            // }
           });
         });
       } // end hideCols()
@@ -150,12 +150,12 @@
                 return false;
               }
             }
-            if (isDisplaying($this)) {
-              androidLog('showCols skipping TH ' + $this.text() + ' because it is not displaying');
-            }
-            if (!$this.is(selector)) {
-              androidLog('showCols skipping TH ' + $this.text() + ' because it does not match ' + selector);
-            }
+            // if (isDisplaying($this)) {
+            //   androidLog('showCols skipping TH ' + $this.text() + ' because it is not displaying');
+            // }
+            // if (!$this.is(selector)) {
+            //   androidLog('showCols skipping TH ' + $this.text() + ' because it does not match ' + selector);
+            // }
           });
         });
 
@@ -183,15 +183,14 @@
         try {
           if (!/android/i.test(navigator.userAgent)) { return false; }
           if (!$('.android').length) {
-            $('.rt-table-menu').parent().append($('<div/>', {'class':'android'}));
-            $('.android').append('<h4>Android Debug Log</h4></div>');
+            $('.rt-table-menu').parent().prepend($('<ul/>', {'class':'android list-bullets-inside'}));
           }
-          $('.android').append('<p>' + msg + '</p>');
+          $('.android').append('<li>' + msg + '</li>');
         }
         catch (e) { alert('oops'); }
       }
       if (/android/i.test(navigator.userAgent)) {
-        alert('Android 3');
+        androidLog('Log version 5');
         androidLog('screen width: ' + screen.width);
         androidLog('body width: ' + $('body').width());
       }

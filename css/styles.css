@@ -87,6 +87,12 @@
 .orbit-bullets{
   display: none;
 }
+.orbit-slides-container img{
+  margin: 0 auto;
+}
+.orbit-backcolor{
+  background-color: rgba(0,0,0,0.6);
+}
 
 /* gov widget */
 .govwidget{
@@ -96,6 +102,7 @@
   background-image: linear-gradient(bottom, rgb(4,47,90) 20%, rgb(10,70,130) 60%, rgb(4,47,90) 82%);
   background-image: -webkit-linear-gradient(bottom, rgb(4,47,90) 20%, rgb(10,70,130) 60%, rgb(4,47,90) 82%);
   text-align: center;
+  margin: 0 auto;
 }
 .govheading{
   background: url(../prototypes/dta/images/stateseal.png) 0.3em 0.3em no-repeat;
@@ -194,3 +201,22 @@
   color: #ff0;
 }
 
+@media screen and (max-width: 768px){
+  .margin-top-small{
+    margin-top: 1em;
+  }
+}
+
+.dta-action{
+  margin-top: 1em;
+}
+.dta-action span, .dta-action a{
+  display: block;
+  color: #000;
+}
+.dta-action a, .dta-action a:hover{
+  text-decoration: none;
+}
+.dta-action span.dta-text{
+  line-height: 1.6em;
+}

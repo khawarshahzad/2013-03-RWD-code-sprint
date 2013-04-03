@@ -207,9 +207,7 @@
   }
 }
 
-.dta-action{
-  margin-top: 1em;
-}
+.dta-action .panel {overflow:hidden;}
 .dta-action span, .dta-action a{
   display: block;
   color: #000;
@@ -219,4 +217,11 @@
 }
 .dta-action span.dta-text{
   line-height: 1.6em;
+}
+.dta-action h4 {
+text-decoration: underline;
+}
+
+.dta-action a:hover h4 {
+text-decoration: none;
 }

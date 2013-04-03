@@ -6721,77 +6721,78 @@ button,
 .button {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal !important;
+  padding-bottom: 0.5em;
 }
 
-/* line 54, ../scss/excelsior/_foundation-override.scss */
+/* line 55, ../scss/excelsior/_foundation-override.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", Georgia, serif;
   font-weight: normal !important;
   font-style: normal !important;
 }
 
-/* line 60, ../scss/excelsior/_foundation-override.scss */
+/* line 61, ../scss/excelsior/_foundation-override.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 64, ../scss/excelsior/_foundation-override.scss */
+/* line 65, ../scss/excelsior/_foundation-override.scss */
 h2 {
   font-size: 1.75em;
 }
 
-/* line 68, ../scss/excelsior/_foundation-override.scss */
+/* line 69, ../scss/excelsior/_foundation-override.scss */
 h3 {
   font-size: 1.5em;
 }
 
-/* line 72, ../scss/excelsior/_foundation-override.scss */
+/* line 73, ../scss/excelsior/_foundation-override.scss */
 h4 {
   font-size: 1.25em;
 }
 
-/* line 76, ../scss/excelsior/_foundation-override.scss */
+/* line 77, ../scss/excelsior/_foundation-override.scss */
 h5 {
   font-size: 1.125em;
 }
 
-/* line 80, ../scss/excelsior/_foundation-override.scss */
+/* line 81, ../scss/excelsior/_foundation-override.scss */
 h6 {
   font-size: 1em;
 }
 
-/* line 84, ../scss/excelsior/_foundation-override.scss */
+/* line 85, ../scss/excelsior/_foundation-override.scss */
 p {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 93, ../scss/excelsior/_foundation-override.scss */
+/* line 94, ../scss/excelsior/_foundation-override.scss */
 table thead tr th,
 table tfoot tr th {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
-/* line 101, ../scss/excelsior/_foundation-override.scss */
+/* line 102, ../scss/excelsior/_foundation-override.scss */
 table tr th {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 109, ../scss/excelsior/_foundation-override.scss */
+/* line 110, ../scss/excelsior/_foundation-override.scss */
 em,
 i {
   font-family: "SourceSansProItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: normal;
 }
 
-/* line 115, ../scss/excelsior/_foundation-override.scss */
+/* line 116, ../scss/excelsior/_foundation-override.scss */
 strong,
 b {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 121, ../scss/excelsior/_foundation-override.scss */
+/* line 122, ../scss/excelsior/_foundation-override.scss */
 strong em,
 em strong {
   font-family: "SourceSansProBoldItalic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -6799,67 +6800,67 @@ em strong {
   font-weight: normal;
 }
 
-/* line 127, ../scss/excelsior/_foundation-override.scss */
+/* line 128, ../scss/excelsior/_foundation-override.scss */
 legend {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 133, ../scss/excelsior/_foundation-override.scss */
+/* line 134, ../scss/excelsior/_foundation-override.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 137, ../scss/excelsior/_foundation-override.scss */
+/* line 138, ../scss/excelsior/_foundation-override.scss */
 ul, ol, dl {
   font-family: inherit;
 }
 
-/* line 141, ../scss/excelsior/_foundation-override.scss */
+/* line 142, ../scss/excelsior/_foundation-override.scss */
 ul.f-dropdown li {
   padding: 0;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 146, ../scss/excelsior/_foundation-override.scss */
+  /* line 147, ../scss/excelsior/_foundation-override.scss */
   li.hide-for-small {
     list-style-type: disc;
   }
 }
-/* line 151, ../scss/excelsior/_foundation-override.scss */
+/* line 152, ../scss/excelsior/_foundation-override.scss */
 .button small {
   font-size: 75%;
 }
 
-/* line 155, ../scss/excelsior/_foundation-override.scss */
+/* line 156, ../scss/excelsior/_foundation-override.scss */
 .button.large {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
 
-/* line 162, ../scss/excelsior/_foundation-override.scss */
+/* line 163, ../scss/excelsior/_foundation-override.scss */
 .dropdown.button.tiny:before,
 .dropdown.button.small:before,
 .dropdown.button.large:before {
   border-color: black transparent transparent transparent;
 }
 
-/* line 168, ../scss/excelsior/_foundation-override.scss */
+/* line 169, ../scss/excelsior/_foundation-override.scss */
 .panel h4 a {
   text-decoration: none;
 }
-/* line 171, ../scss/excelsior/_foundation-override.scss */
+/* line 172, ../scss/excelsior/_foundation-override.scss */
 .panel h4 a:hover {
   text-decoration: none;
 }
 
-/* line 180, ../scss/excelsior/_foundation-override.scss */
+/* line 181, ../scss/excelsior/_foundation-override.scss */
 .sub-nav dt:not(.active) a,
 .sub-nav dd:not(.active) a {
   padding: 0.1875em 0.5625em;
 }
-/* line 183, ../scss/excelsior/_foundation-override.scss */
+/* line 184, ../scss/excelsior/_foundation-override.scss */
 .sub-nav dt:not(.active) a:hover,
 .sub-nav dd:not(.active) a:hover {
   border-radius: 1000px;
@@ -6867,44 +6868,44 @@ ul.f-dropdown li {
   color: #fff;
 }
 
-/* line 193, ../scss/excelsior/_foundation-override.scss */
+/* line 194, ../scss/excelsior/_foundation-override.scss */
 .close-reveal-modal {
   text-decoration: none;
 }
-/* line 196, ../scss/excelsior/_foundation-override.scss */
+/* line 197, ../scss/excelsior/_foundation-override.scss */
 .close-reveal-modal:hover {
   text-decoration: none;
 }
 
-/* line 204, ../scss/excelsior/_foundation-override.scss */
+/* line 205, ../scss/excelsior/_foundation-override.scss */
 .breadcrumbs li a,
 .breadcrumbs li span {
   text-transform: none;
   font-size: 0.9em;
 }
 
-/* line 210, ../scss/excelsior/_foundation-override.scss */
+/* line 211, ../scss/excelsior/_foundation-override.scss */
 .breadcrumbs li a:hover {
   text-decoration: none;
 }
-/* line 215, ../scss/excelsior/_foundation-override.scss */
+/* line 216, ../scss/excelsior/_foundation-override.scss */
 .breadcrumbs li a[href="#"], .breadcrumbs li a[href="#"]:hover {
   cursor: default;
   text-decoration: none;
 }
 
-/* line 224, ../scss/excelsior/_foundation-override.scss */
+/* line 225, ../scss/excelsior/_foundation-override.scss */
 section .title a,
 .section .title a {
   text-decoration: none;
 }
-/* line 227, ../scss/excelsior/_foundation-override.scss */
+/* line 228, ../scss/excelsior/_foundation-override.scss */
 section .title a:hover,
 .section .title a:hover {
   text-decoration: none;
 }
 
-/* line 233, ../scss/excelsior/_foundation-override.scss */
+/* line 234, ../scss/excelsior/_foundation-override.scss */
 .section-container.tabs section .title,
 .section-container.tabs .section .title {
   font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -6914,7 +6915,7 @@ section .title a:hover,
   background-clip: padding-box;
 }
 
-/* line 242, ../scss/excelsior/_foundation-override.scss */
+/* line 243, ../scss/excelsior/_foundation-override.scss */
 .section-container.auto section .title,
 .section-container.auto .section .title {
   border-top-left-radius: 0;
@@ -6924,7 +6925,7 @@ section .title a:hover,
 
 /* Same styles as above */
 @media screen and (min-width: 768px) {
-  /* line 251, ../scss/excelsior/_foundation-override.scss */
+  /* line 252, ../scss/excelsior/_foundation-override.scss */
   .section-container.auto section .title,
   .section-container.auto .section .title {
     font-family: "SourceSansProBold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -6934,7 +6935,7 @@ section .title a:hover,
     background-clip: padding-box;
   }
 }
-/* line 263, ../scss/excelsior/_foundation-override.scss */
+/* line 264, ../scss/excelsior/_foundation-override.scss */
 .section-container section .content,
 .section-container .section .content,
 .section-container.auto section .content,
@@ -6946,7 +6947,7 @@ section .title a:hover,
   background-clip: padding-box;
 }
 
-/* line 274, ../scss/excelsior/_foundation-override.scss */
+/* line 275, ../scss/excelsior/_foundation-override.scss */
 .section-container section .title a,
 .section-container .section .title a,
 .section-container.auto section .title a,
@@ -6954,19 +6955,19 @@ section .title a:hover,
   padding: 8px 14px;
 }
 
-/* line 279, ../scss/excelsior/_foundation-override.scss */
+/* line 280, ../scss/excelsior/_foundation-override.scss */
 .section-container,
 .section-container.auto {
   border: none;
 }
 
-/* line 286, ../scss/excelsior/_foundation-override.scss */
+/* line 287, ../scss/excelsior/_foundation-override.scss */
 .section-container.accordion section .title,
 .section-container.accordion .section .title {
   font-family: "SourceSansPro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-/* line 291, ../scss/excelsior/_foundation-override.scss */
+/* line 292, ../scss/excelsior/_foundation-override.scss */
 .auto section.section,
 .accordion section.section {
   border-radius: 3px;
@@ -6976,19 +6977,19 @@ section .title a:hover,
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 300, ../scss/excelsior/_foundation-override.scss */
+/* line 301, ../scss/excelsior/_foundation-override.scss */
 .auto section.section:last-child,
 .accordion section.section:last-child {
   margin-bottom: 0;
 }
 
-/* line 304, ../scss/excelsior/_foundation-override.scss */
+/* line 305, ../scss/excelsior/_foundation-override.scss */
 .title a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-/* line 310, ../scss/excelsior/_foundation-override.scss */
+/* line 311, ../scss/excelsior/_foundation-override.scss */
 .accordion section.auto > .title,
 .accordion section.section > .title {
   position: relative;
@@ -6996,7 +6997,7 @@ section .title a:hover,
   /* width of chevron plus its right position offset */
 }
 
-/* line 316, ../scss/excelsior/_foundation-override.scss */
+/* line 317, ../scss/excelsior/_foundation-override.scss */
 .accordion section.auto .title:after,
 .accordion section.section .title:after {
   content: "\e75e";
@@ -7011,7 +7012,7 @@ section .title a:hover,
   transform: rotate(90deg);
 }
 
-/* line 330, ../scss/excelsior/_foundation-override.scss */
+/* line 331, ../scss/excelsior/_foundation-override.scss */
 .accordion section.auto.active .title:after,
 .accordion section.section.active .title:after {
   top: 8px;
@@ -7023,7 +7024,7 @@ section .title a:hover,
 
 /* Same styles as above */
 @media screen and (max-width: 768px) {
-  /* line 341, ../scss/excelsior/_foundation-override.scss */
+  /* line 342, ../scss/excelsior/_foundation-override.scss */
   .auto section.auto .title:after,
   .auto section.section .title:after {
     content: "\e75e";
@@ -7038,7 +7039,7 @@ section .title a:hover,
     transform: rotate(90deg);
   }
 
-  /* line 355, ../scss/excelsior/_foundation-override.scss */
+  /* line 356, ../scss/excelsior/_foundation-override.scss */
   .auto section.auto.active .title:after,
   .auto section.section.active .title:after {
     top: 6px;
@@ -7049,40 +7050,40 @@ section .title a:hover,
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 366, ../scss/excelsior/_foundation-override.scss */
+  /* line 367, ../scss/excelsior/_foundation-override.scss */
   .orbit-timer, .orbit-slide-number {
     display: none;
   }
 }
-/* line 373, ../scss/excelsior/_foundation-override.scss */
+/* line 374, ../scss/excelsior/_foundation-override.scss */
 .orbit-container .orbit-slide-number {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 10px;
   color: #fff;
 }
-/* line 380, ../scss/excelsior/_foundation-override.scss */
+/* line 381, ../scss/excelsior/_foundation-override.scss */
 .orbit-container .orbit-slides-container .orbit-caption .hide-for-small, .orbit-container .orbit-slides-container .orbit-caption .hide-for-small a {
   color: #aaa;
 }
-/* line 384, ../scss/excelsior/_foundation-override.scss */
+/* line 385, ../scss/excelsior/_foundation-override.scss */
 .orbit-container .orbit-timer .orbit-progress {
   background: #eee;
   height: 12px;
 }
-/* line 389, ../scss/excelsior/_foundation-override.scss */
+/* line 390, ../scss/excelsior/_foundation-override.scss */
 .orbit-container .orbit-timer > span {
   top: 16px;
   border: solid 4px #fff;
   border-top: 0;
   border-bottom: 0;
 }
-/* line 396, ../scss/excelsior/_foundation-override.scss */
+/* line 397, ../scss/excelsior/_foundation-override.scss */
 .orbit-container .orbit-timer.paused > span {
   border-color: transparent transparent transparent #fff;
   top: 16px;
 }
 
-/* line 403, ../scss/excelsior/_foundation-override.scss */
+/* line 404, ../scss/excelsior/_foundation-override.scss */
 .orbit-bullets li {
   background-color: #eee;
   box-shadow: inset 0 1px 1px 1px #333;
@@ -7090,33 +7091,33 @@ section .title a:hover,
   border: 0;
 }
 
-/* line 409, ../scss/excelsior/_foundation-override.scss */
+/* line 410, ../scss/excelsior/_foundation-override.scss */
 .orbit-bullets li.active {
   background-color: #444;
   box-shadow: inset 0 1px 1px 1px #111;
 }
 
-/* line 413, ../scss/excelsior/_foundation-override.scss */
+/* line 414, ../scss/excelsior/_foundation-override.scss */
 .orbit-bullets {
   display: none;
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 421, ../scss/excelsior/_foundation-override.scss */
+  /* line 422, ../scss/excelsior/_foundation-override.scss */
   .touch .orbit-bullets {
     display: none;
   }
 }
-/* line 427, ../scss/excelsior/_foundation-override.scss */
+/* line 428, ../scss/excelsior/_foundation-override.scss */
 .clearing-caption {
   display: none !important;
 }
 
-/* line 431, ../scss/excelsior/_foundation-override.scss */
+/* line 432, ../scss/excelsior/_foundation-override.scss */
 .clearing-close {
   text-decoration: none;
 }
-/* line 434, ../scss/excelsior/_foundation-override.scss */
+/* line 435, ../scss/excelsior/_foundation-override.scss */
 .clearing-close:hover {
   text-decoration: none;
 }
@@ -9309,7 +9310,7 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
     width: 100%;
     background: #282828;
     padding: 1em 0;
-    position: absolute;
+    position: relative;
     overflow: hidden;
     z-index: 5;
   }

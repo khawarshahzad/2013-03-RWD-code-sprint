@@ -166,10 +166,13 @@
       function androidLog (msg) {
         if (!/android/i.test(navigator.userAgent)) { return false; }
         if (!$('#android').length) {
-          $table.insertBefore('<div id="android><h4>Android Debug Log</h4></div>');
+          $table.parent().prepend('<div id="android><h4>Android Debug Log</h4></div>');
         }
 
         $('#android').append('<p>' + msg + '</p>');
+      }
+      if (/android/i.test(navigator.userAgent)) {
+        alert('Android!');
       }
       // TEMP ///////////////
       // TEMP ///////////////

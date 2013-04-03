@@ -167,14 +167,15 @@
         try {
           if (!/android/i.test(navigator.userAgent)) { return false; }
           if (!$('.android').length) {
-            $('.rt-table-menu').parent().append('<div class="android><h4>Android Debug Log</h4></div>');
+            $('.rt-table-menu').parent().append($('<div/>', {'class':'android'}));
+            $('.android').append('<h4>Android Debug Log</h4></div>');
           }
           $('.android').append('<p>' + msg + '</p>');
         }
         catch (e) { alert('oops'); }
       }
       if (/android/i.test(navigator.userAgent)) {
-        alert('Android!');
+        alert('Android 2');
         androidLog('');
       }
       // TEMP ///////////////

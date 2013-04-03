@@ -4,6 +4,8 @@
  * These will eventually move to /scss/_excelsior.scss or a component file
 */
 
+.alert-box ul {margin-bottom: 0;} /*normalizes margin when ul's are used within alert box... global setting? - not sure.*/
+
 #resize-bar-body #wrapper {height:99%;}
 #resize-bar-body section {
   overflow-y:hidden;

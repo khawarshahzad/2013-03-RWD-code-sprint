@@ -4,7 +4,7 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
         d.title+
-        '<\/title><link rel="stylesheet" href="../css/excelsior.css"><link rel="stylesheet" href="../css/styles.css"><\/head>' +
+        '<\/title><link rel="stylesheet" href="http://nys-its.github.com/RWD-Demo/css/excelsior.css"><link rel="stylesheet" href="http://nys-its.github.com/RWD-Demo/css/styles.css"><\/head>' +
         '<body id="resize-bar-body">' +
         '<header>' +
         //'<div class="close"><a href="#">X<\/a><\/div>' +
@@ -40,10 +40,10 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         '   <p>Go ahead and explore the Responsive demos now!<\/p>'+
         '  <\/li>'+
         '  </ol>  ' +
-        //'<script src="../../js/vendor/jquery.js">' + '</sc' + 'ript>'+
-        // '<script src="../js/foundation/foundation.js"></script>'+
-        '<script src="../js/foundation/foundation.joyride.js"></script>'+
-        '<script src="../js/app/demo-bar-post.js"></script>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/vendor/jquery.js">' + '</sc' + 'ript>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.js">' + '</sc' + 'ript>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.joyride.js">' + '</sc' + 'ript>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/app/demo-bar-post.js">' + '</sc' + 'ript>'+
         '<\/body><\/html>');
     };
 

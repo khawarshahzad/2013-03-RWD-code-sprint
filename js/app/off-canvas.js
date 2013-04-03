@@ -1,3 +1,4 @@
+/*global exlsr: false */
 /*
  Additional Login needed for off canvas Menus
 */
@@ -5,7 +6,7 @@
 $(document).ready(function(){
 
 	// Add control div to the top of the global nav element
-	$('<div id="menu-controls" class="menu-controls"><span id="sub-menu-title" class="sub-menu-title"></span><a href="#" id="menu-back" class="menu-back icon-left-open">Back</a></div>').prependTo('#global-nav')
+	$('<div id="menu-controls" class="menu-controls"><span id="sub-menu-title" class="sub-menu-title"></span><a href="#" id="menu-back" class="menu-back icon-left-open">Back</a></div>').prependTo('#global-nav');
 
 	// Find the global Dom and look for all a that have a child ul
 	var rootMenu = $('#global-nav').find('a[href="#"]');
@@ -20,7 +21,7 @@ $(document).ready(function(){
 		if (subMenu.length) {
 
 			// We have a sub menu item so create the click event
-			link.on('click', function(e){
+			link.on(exlsr.activateEventName, function(e){
 
 				// Prevent default link action
 				e.preventDefault();
@@ -53,7 +54,7 @@ $(document).ready(function(){
 					}
 
 					// Add click off event handler on body
-					exlsr.$body.on('click',function(){
+					exlsr.$body.on(exlsr.activateEventName,function(){
 
 						// Find all occurances off active menu, active and active-sub-menu and remove them
 						exlsr.$body.removeClass('active-sub-menu');
@@ -67,6 +68,9 @@ $(document).ready(function(){
 					// Menu is active
 					subMenu.removeClass("active-menu");
 
+					// Remove active link class
+					link.removeClass('active');
+
 				}
 
 			});
@@ -75,7 +79,7 @@ $(document).ready(function(){
 	});
 
 	// Bind for menu-back
-	$('#menu-back').on('click', function(e){
+	$('#menu-back').on(exlsr.activateEventName, function(e){
 
 		// Prevent element default action
 		e.preventDefault();

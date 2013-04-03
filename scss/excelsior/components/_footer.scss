@@ -4,9 +4,9 @@
 	.footer {
 		width: 100%;
 		background: #282828;
+		bottom: 0;
 		padding: 1em 0;
 		position: relative;
-		overflow: hidden;
 		z-index: 5;
 	}
 
@@ -74,6 +74,7 @@
 	.footer .footer-links, .footer .footer-images {
 		overflow: hidden;
 		margin: 0 auto;
-		width: 60em;
+		width: 100%;
+		max-width: 60em;
 	}
  }

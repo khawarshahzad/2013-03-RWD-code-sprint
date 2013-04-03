@@ -7,10 +7,12 @@ $(document).ready(function() {
   if (Modernizr.touch) {
     // Touch is supported
     $('#mobile').attr('checked', true);
+    $('.custom-show-for-touch').show();
   }
   else {
     // Touch not supported
     $('#desktop').attr('checked', true);
+    $('.custom-show-for-no-touch').show();
   }
 
   $('.toggle-section').on(exlsr.activateEventName, function (evt) {

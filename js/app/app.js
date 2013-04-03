@@ -34,6 +34,9 @@ exlsr.init = function _init () {
     // Foundation's `large-` classes may take effect
     $('html').addClass('screen-max-large');
   }
+
+  // Preload assets
+  exlsr.preloader.init();
 };
 
 $(document).ready(function(){exlsr.init();});
@@ -342,6 +345,47 @@ $(document).ready(function(){
   });
 
 });
+
+/**
+ * Asset Preloader
+ */
+exlsr.preloader = {
+  container: null, // The container <div>
+  assets: []       // Assets to be preloaded (HTML strings); this can be prepopulated
+};
+
+// Creates an off-screen container for preloaded assets and adds any assets present in the queue
+// Should be called at document.ready
+exlsr.preloader.init = function _exlsr_preloader_init () {
+  // Create container
+  exlsr.preloader.container = document.createElement('div');
+  exlsr.preloader.container.className = 'hide-off-screen';
+  document.body.appendChild(exlsr.preloader.container);
+
+  // Load anything that's already in the queue
+  exlsr.preloader.assets.forEach(function(i) {
+    exlsr.preloader.add(i);
+  });
+
+  // Empty the queue
+  exlsr.preloader.assets = [];
+};
+
+// Add an asset to the preload container
+// Argument is an HTML string to be added to the page
+// May be called before or after preload.setup() has run
+exlsr.preloader.add = function _exlsr_preloader_add (html) {
+  if (!html || typeof html !== 'string') { return false; }
+
+  // If the container has already been set up, add this asset immediately
+  if (exlsr.preloader.container) {
+    exlsr.preloader.container.innerHTML += html;
+  }
+  // Otherwise, queue it to load when setup() is run
+  else {
+    exlsr.preloader.assets.push(html);
+  }
+};
 
 /**
  * Plugins

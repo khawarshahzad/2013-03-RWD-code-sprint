@@ -4,6 +4,6 @@ $(function(){
 	});
 	$("#demoBar").on("click", function(e){
 		e.preventDefault();
-		$("body").load("../../js/app/demo-bar.js");
+		$.getScript("../../js/app/demo-bar.js");
 	});
 })

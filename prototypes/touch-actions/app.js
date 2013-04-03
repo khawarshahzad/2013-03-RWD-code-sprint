@@ -4,6 +4,7 @@ $(document).ready(function() {
   var $out = $('#out'),
       $html = $('html'),
       $mobile = $('#mobile'),
+      hastapped = false,
       $deskop = $('#desktop');
 
   // Show appropriate messages and check the right box
@@ -24,15 +25,23 @@ $(document).ready(function() {
 
   $('#in')
     .on('tap', function (evt) { // exlsr.activateEventName
+      if (!hastapped) { $out.slideDown(); }
       $out.text('You tapped!').addClass('alert-box success');
+      hastapped = true;
     })
     .on('longTap', function (evt) {
+      if (!hastapped) { $out.slideDown(); }
+      hastapped = true;
       $out.text('You tapped and held!').addClass('alert-box success');
     })
     .on('swipeLeft', function (evt) {
+      if (!hastapped) { $out.slideDown(); }
+      hastapped = true;
       $out.text('You swiped left!').addClass('alert-box success');
     })
     .on('swipeRight', function (evt) {
+      if (!hastapped) { $out.slideDown(); }
+      hastapped = true;
       $out.text('You swiped right!').addClass('alert-box success');
     });
 

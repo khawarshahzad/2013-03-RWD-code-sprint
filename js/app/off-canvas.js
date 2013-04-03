@@ -54,12 +54,12 @@ $(document).ready(function(){
 					}
 
 					// Add click off event handler on body
-					exlsr.$body.on(exlsr.activateEventName,function(){
+					exlsr.$body.on(exlsr.activateEventName, function(){
 
 						// Find all occurances off active menu, active and active-sub-menu and remove them
 						exlsr.$body.removeClass('active-sub-menu');
-						$('.active').removeClass('active');
-						$('.active-menu').removeClass('active-menu');
+						$('#global-nav .active').removeClass('active');
+						$('#global-nav .active-menu').removeClass('active-menu');
 
 					});
 

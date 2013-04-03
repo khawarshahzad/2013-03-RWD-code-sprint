@@ -1,6 +1,11 @@
 /* POC Styles */
 @media only screen {
 
+  html,
+  body {
+    background: #282828;
+  }
+
   /* Highjacked icon font to create after arrows */
   .icon-sub-content:after {
     content: "\e75e";
@@ -540,7 +545,11 @@
   .page {
     background: #FFF;
     position: relative;
-    top: 0;
+    top: -23px;
+  }
+
+  .page .content-section {
+    padding: 2em 0;
   }
 
 }

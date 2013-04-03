@@ -75,14 +75,17 @@
 .screen-max-large .hide-for-screen-max-large { display: none !important; }
 
 // IE classes
-.hide-for-lt-ie9 { display: none !important; }
+.lt-ie9 .hide-for-lt-ie9 { display: none !important; }
+.show-for-lt-ie9 { display: none !important; }
 .lt-ie9 .show-for-lt-ie9 { display: inherit !important; }
-.lt-ie9 .show-for-lt-ie9 { display: inherit !important; }
+.lt-ie9 .show-for-lt-ie9 li, .lt-ie9 li.show-for-lt-ie9 { display: list-item !important; }
 
-.hide-for-ie9 { display: none !important; }
+.ie9 .hide-for-ie9 { display: none !important; }
+.show-for-ie9 { display: none !important; }
 .ie9 .show-for-ie9 { display: inherit !important; }
 .ie9 .show-for-ie9 li, .ie9 li.show-for-ie9 { display: list-item !important; }
 
-.hide-for-oldie { display: inherit !important; }
-.hide-for-oldie li, li.hide-for-oldie { display: list-item !important; }
 .oldie .hide-for-oldie { display: none !important; }
+.show-for-oldie { display: none !important; }
+.oldie .show-for-oldie { display: inherit !important; }
+.oldie .show-for-oldie li, li.hide-for-oldie { display: list-item !important; }

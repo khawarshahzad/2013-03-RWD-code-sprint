@@ -38,9 +38,11 @@ exlsr.init = function _init () {
   }
 
   // Preload assets
-  exlsr.preloader.add('<img src="../images/close.svg">');
-  exlsr.preloader.add('<img src="../images/close-x-gray.svg">');
-  exlsr.preloader.add('<img src="../images/hamburger-no-dots.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/close.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/close-x-gray.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/hamburger-no-dots.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/nys-small.png">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/nys-banner-img.png">');
   exlsr.preloader.init();
 };
 

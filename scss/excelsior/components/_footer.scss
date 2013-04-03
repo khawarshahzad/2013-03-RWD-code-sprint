@@ -74,6 +74,7 @@
 	.footer .footer-links, .footer .footer-images {
 		overflow: hidden;
 		margin: 0 auto;
-		width: 60em;
+		width: 100%;
+		max-width: 60em;
 	}
  }

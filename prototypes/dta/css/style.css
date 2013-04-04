@@ -3,6 +3,9 @@
 }
 
 @media only screen and (min-width: 48em) {
+	.margin-top-large {
+		margin-top:1em;
+	}
 	.site-bar{
 		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCCC), to(#FFFFFF));
 	}
@@ -18,7 +21,8 @@
 	}
 	.site-wrap {
 		overflow:hidden;
-		background: transparent url(../images/ny-header.png) left 3px no-repeat!important;
+		background: transparent url(../images/ny-header-dark-bl.png) left 3px no-repeat!important;
+		text-shadow:1px 1px 2px #AAA;
 	}
 	.site-bar a.site-logo {
 		margin: 0 0 0 2.25em;

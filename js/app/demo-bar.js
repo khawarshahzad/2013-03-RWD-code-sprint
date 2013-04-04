@@ -32,18 +32,20 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         '  <\/li>'+
         '  </ol>  ' +
         '<script src="http://nys-its.github.com/RWD-Demo/js/vendor/jquery.js">' + '</sc' + 'ript>'+
-        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.js">' + '</sc' + 'ript>'+
-        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.joyride.js">' + '</sc' + 'ript>'+
-        '<script src="http://nys-its.github.com/RWD-Demo/js/app/demo-bar-post.js">' + '</sc' + 'ript>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.js">' + '</script>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.joyride.js">' + '</script>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/app/demo-bar-post.js">' + '</script>'+
         '<\/body><\/html>');
     };
 
 $(function(){
   if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE) {
     demoBar();
-
+    
     window.resbook = {};
-
+    
+    $(document).foundation('joyride', 'start');
+    
     (function (rb) {
         var d = document,
             w = window,

@@ -1,7 +1,5 @@
 
 	var hasClicked = false;
-	$(document).foundation();
-	$(document).foundation('joyride', 'start');
 	$('#devices a').on('click', function(){ // when they click on a device link we want to trigger the second tip.
 	  if (!hasClicked) {
 	    $(document).foundation("joyride", "hide");

@@ -311,7 +311,6 @@
   }
 
   .global-nav ul {
-    // font-family: $font-sans;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -330,7 +329,6 @@
     padding: 10px 15px;
     text-shadow: 1px 1px 1px #111;
   }
-
 
   /* Page Contents */
 
@@ -526,7 +524,6 @@
   }
 
   .global-nav {
-    border-radius: 5px;
     display: block;
     height: 46px;
     overflow: hidden;
@@ -536,7 +533,6 @@
   }
 
   .global-nav .nav-container {
-    border-radius: 5px;
     height: auto;
     background: #666;
   }
@@ -587,6 +583,11 @@
 
   .site-bar .site-functions {
     position: relative;
+  }
+
+  .global-nav,
+  .global-nav .nav-container {
+    border-radius: 5px;
   }
 }
 

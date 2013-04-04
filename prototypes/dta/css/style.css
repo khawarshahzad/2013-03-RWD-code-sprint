@@ -1,8 +1,12 @@
 .gov-bar{
 	box-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
-
+.firstCrop img{margin-left:-186px;}
 @media only screen and (min-width: 48em) {
+	.site-bar .site-functions .site-search input[type=search] {
+		border-color:rgb(116, 156, 196);
+	}
+	.firstCrop img {margin-left:0;}
 	.margin-top-large {
 		margin-top:1em;
 	}
@@ -12,7 +16,7 @@
 	.site-bar a.site-logo{
 		color: #036;
 	}
-	.global-nav .nav-container, .global-nav ul li a{
+	.global-nav .nav-container, .global-nav ul li a, .site-bar .site-functions .site-button{
 		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#85A2BE), to(#5082B3));
 	}
 	.global-nav ul li{

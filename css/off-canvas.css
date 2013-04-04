@@ -139,64 +139,68 @@
     left: -82%;
   }
   /* line 150, ../scss/off-canvas.scss */
-  .off-canvas.active-site-menu .page {
-    -webkit-box-shadow: 5px 2px 8px #000;
+  .off-canvas.active-site-menu .mobile-menu-button {
+    -webkit-box-shadow: inset 6px 0px 8px -2px #000;
   }
   /* line 154, ../scss/off-canvas.scss */
+  .off-canvas.active-site-menu .page {
+    -webkit-box-shadow: 5px 49px 8px #000;
+  }
+  /* line 158, ../scss/off-canvas.scss */
   .off-canvas.active-site-menu .footer {
     left: -82%;
   }
 }
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 768px) {
-  /* line 165, ../scss/off-canvas.scss */
+  /* line 169, ../scss/off-canvas.scss */
   body.off-canvas {
     padding-top: 0;
   }
 
-  /* line 173, ../scss/off-canvas.scss */
+  /* line 177, ../scss/off-canvas.scss */
   .off-canvas .gov-bar,
   .off-canvas .site-bar,
   .off-canvas .global-nav,
   .off-canvas .page {
     position: relative;
   }
-  /* line 180, ../scss/off-canvas.scss */
+  /* line 184, ../scss/off-canvas.scss */
   .off-canvas.active-site-menu .gov-bar, .off-canvas.active-site-menu .site-bar, .off-canvas.active-site-menu .global-nav, .off-canvas.active-site-menu .page {
     left: auto;
     position: relative;
   }
-  /* line 185, ../scss/off-canvas.scss */
+  /* line 189, ../scss/off-canvas.scss */
   .off-canvas.active-gov-bar .site-bar {
     top: 0;
   }
-  /* line 189, ../scss/off-canvas.scss */
+  /* line 193, ../scss/off-canvas.scss */
   .off-canvas .global-nav {
     height: 46px;
     overflow: visible;
     z-index: 30;
   }
-  /* line 195, ../scss/off-canvas.scss */
+  /* line 199, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul li {
     padding-left: 0;
   }
-  /* line 199, ../scss/off-canvas.scss */
+  /* line 203, ../scss/off-canvas.scss */
   .off-canvas .global-nav .menu-controls {
     display: none;
   }
-  /* line 204, ../scss/off-canvas.scss */
+  /* line 208, ../scss/off-canvas.scss */
   .off-canvas .global-nav .nav-container, .off-canvas.active-site-menu .global-nav .nav-container {
     overflow: hidden;
   }
-  /* line 209, ../scss/off-canvas.scss */
+  /* line 213, ../scss/off-canvas.scss */
   .off-canvas .global-nav .nav-container > ul, .off-canvas.active-site-menu .global-nav .nav-container ul {
     min-height: auto;
   }
-  /* line 214, ../scss/off-canvas.scss */
+  /* line 218, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul, .off-canvas.active-site-menu .global-nav ul {
     margin-left: 0;
   }
-  /* line 218, ../scss/off-canvas.scss */
+  /* line 222, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul {
     top: 46px;
     left: 0;
@@ -206,15 +210,15 @@
     -webkit-transition: left 0;
     transition: left 0s;
   }
-  /* line 228, ../scss/off-canvas.scss */
+  /* line 232, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu {
     visibility: visible;
   }
-  /* line 232, ../scss/off-canvas.scss */
+  /* line 236, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li {
     padding-left: 0;
   }
-  /* line 236, ../scss/off-canvas.scss */
+  /* line 240, ../scss/off-canvas.scss */
   .off-canvas .page {
     min-height: auto;
     top: -23px;

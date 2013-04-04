@@ -200,14 +200,13 @@ $(document).ready(function(){exlsr.init();});
     (function(w){
       var doc = w.document;
       if( !doc.querySelector ){ return; }
-      console.log('running');
       var meta = doc.querySelector( "meta[name=viewport]" ),
           initialContent = meta && meta.getAttribute( "content" ),
           disabledZoom = initialContent + ",maximum-scale=1",
           enabledZoom = initialContent + ",maximum-scale=10",
           enabled = true,
           x, y, z, aig;
-      if( !meta ){ console.log('quitting'); return; }
+      if( !meta ){ return; }
       function restoreZoom(){
         meta.setAttribute( "content", enabledZoom );
         enabled = true;
@@ -292,24 +291,18 @@ $(document).ready(function(){
 
       if (activeElm === 'active-site-menu') {
 
-        console.log('Entered');
-        
+
         // Check to see if off canvas is being used
         if (exlsr.$body.hasClass('off-canvas') && exlsr.$body.hasClass('active-site-menu')) {
-
-          console.log('true');
 
           // Get the screen size and set it has a min-height
           //document.getElementsByTagName("body").style.minHeight = screen.height + "px";
           exlsr.$body.css('min-height',screen.height+'px');
 
-        } else {
-
-          console.log('false');
-
+        }
+        else {
           // Remove min height
           exlsr.$body.css('min-height','');
-
         }
 
       }

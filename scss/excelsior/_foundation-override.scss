@@ -247,7 +247,7 @@ section .title a,
 }
 
 /* Same styles as above */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: emCalc(768px)) {
   .section-container.auto section .title,
   .section-container.auto .section .title {
     font-family: $font-sans-bold;
@@ -336,8 +336,13 @@ section .title a,
           transform: rotate(270deg);
 }
 
-/* Same styles as above */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: emCalc(767px)) {
+
+  .auto section {
+    margin-bottom: 0.5em;
+  }
+
+  /* Same styles as above */
   .auto section.auto .title:after,
   .auto section.section .title:after {
     content: "\e75e";

@@ -289,6 +289,31 @@ $(document).ready(function(){
       if (activeElm === 'active-site-search') {
         $('#site-search-box').focus();
       }
+
+      if (activeElm === 'active-site-menu') {
+
+        console.log('Entered');
+        
+        // Check to see if off canvas is being used
+        if (exlsr.$body.hasClass('off-canvas') && exlsr.$body.hasClass('active-site-menu')) {
+
+          console.log('true');
+
+          // Get the screen size and set it has a min-height
+          //document.getElementsByTagName("body").style.minHeight = screen.height + "px";
+          exlsr.$body.css('min-height',screen.height+'px');
+
+        } else {
+
+          console.log('false');
+
+          // Remove min height
+          exlsr.$body.css('min-height','');
+
+        }
+
+      }
+
     }
 
     // Check to see if there is already and active item

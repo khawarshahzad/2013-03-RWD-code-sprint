@@ -38,6 +38,10 @@
   margin-bottom: 0.5em;
 }
 
+.alert-box ul {
+  margin-bottom: 0; // Normalizes margin when ul's are used within alert box
+}
+
 .alert-box .close {
   position: relative;
   top: -2px;

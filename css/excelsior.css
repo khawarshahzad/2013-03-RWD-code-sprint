@@ -7149,18 +7149,24 @@ section .title a:hover,
   margin-top: 2em;
 }
 
-/* line 25, ../scss/excelsior/components/_global.scss */
+@media screen and (max-width: 768px) {
+  /* line 26, ../scss/excelsior/components/_global.scss */
+  .margin-top-small {
+    margin-top: 1em;
+  }
+}
+/* line 31, ../scss/excelsior/components/_global.scss */
 .scrollable-x {
   overflow-x: scroll;
 }
 
-/* line 29, ../scss/excelsior/components/_global.scss */
+/* line 35, ../scss/excelsior/components/_global.scss */
 .radius {
   border-radius: 4px;
   background-clip: padding-box;
 }
 
-/* line 33, ../scss/excelsior/components/_global.scss */
+/* line 39, ../scss/excelsior/components/_global.scss */
 .unsupported-browser-message {
   margin: 1em 0 0.5em 0;
   text-align: center;
@@ -7844,6 +7850,11 @@ tbody tr.info > td {
 }
 
 /* line 41, ../scss/excelsior/components/_alerts.scss */
+.alert-box ul {
+  margin-bottom: 0;
+}
+
+/* line 45, ../scss/excelsior/components/_alerts.scss */
 .alert-box .close {
   position: relative;
   top: -2px;
@@ -7852,63 +7863,63 @@ tbody tr.info > td {
   opacity: 0.4;
 }
 
-/* line 50, ../scss/excelsior/components/_alerts.scss */
+/* line 54, ../scss/excelsior/components/_alerts.scss */
 .alert-box .close:hover,
 .alert-box .close:focus {
   opacity: 0.8;
 }
 
-/* line 54, ../scss/excelsior/components/_alerts.scss */
+/* line 58, ../scss/excelsior/components/_alerts.scss */
 .alert-box.success {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #468847;
 }
 
-/* line 61, ../scss/excelsior/components/_alerts.scss */
+/* line 65, ../scss/excelsior/components/_alerts.scss */
 .alert-box.success h4,
 .alert-box.success .close {
   color: #468847;
 }
 
-/* line 65, ../scss/excelsior/components/_alerts.scss */
+/* line 69, ../scss/excelsior/components/_alerts.scss */
 .alert-box.alert {
   background-color: #f2dede;
   border-color: #eed3d7;
   color: #b94a48;
 }
 
-/* line 71, ../scss/excelsior/components/_alerts.scss */
+/* line 75, ../scss/excelsior/components/_alerts.scss */
 .alert-box.alert h4 {
   color: #b94a48;
 }
 
-/* line 75, ../scss/excelsior/components/_alerts.scss */
+/* line 79, ../scss/excelsior/components/_alerts.scss */
 .alert-box.callout {
   background-color: #d9edf7;
   border-color: #bce8f1;
   color: #3a87ad;
 }
 
-/* line 82, ../scss/excelsior/components/_alerts.scss */
+/* line 86, ../scss/excelsior/components/_alerts.scss */
 .alert-box.callout h4,
 .alert-box.callout .close {
   color: #3a87ad;
 }
 
-/* line 86, ../scss/excelsior/components/_alerts.scss */
+/* line 90, ../scss/excelsior/components/_alerts.scss */
 .alert-box.block {
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-/* line 92, ../scss/excelsior/components/_alerts.scss */
+/* line 96, ../scss/excelsior/components/_alerts.scss */
 .alert-box.block > p,
 .alert-box.block > ul {
   margin-bottom: 0;
 }
 
-/* line 96, ../scss/excelsior/components/_alerts.scss */
+/* line 100, ../scss/excelsior/components/_alerts.scss */
 .alert-box.block p + p {
   margin-top: 5px;
 }
@@ -9217,20 +9228,7 @@ header .keyboard a, header .cssrefresh a {
   margin-left: -104px;
   border: 1px solid #363738;
 }
-
-/* line 194, ../scss/excelsior/components/_demo-bar.scss */
-#devices a:first-of-type {
-  border-radius: 4px 0 0 4px;
-}
-
-/* line 198, ../scss/excelsior/components/_demo-bar.scss */
-#devices a:last-of-type {
-  border-radius: 0 4px 4px 0;
-  border-right-width: 1px;
-  width: 80px;
-}
-
-/* line 204, ../scss/excelsior/components/_demo-bar.scss */
+/* line 193, ../scss/excelsior/components/_demo-bar.scss */
 #devices a {
   background: -webkit-linear-gradient(#313131, #242424);
   background: linear-gradient(#313131, #242424);
@@ -9244,27 +9242,33 @@ header .keyboard a, header .cssrefresh a {
   height: 30px;
   outline: none;
 }
-
-/* line 218, ../scss/excelsior/components/_demo-bar.scss */
+/* line 206, ../scss/excelsior/components/_demo-bar.scss */
+#devices a:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+/* line 210, ../scss/excelsior/components/_demo-bar.scss */
+#devices a:last-of-type {
+  border-radius: 0 4px 4px 0;
+  border-right-width: 1px;
+  width: 80px;
+}
+/* line 216, ../scss/excelsior/components/_demo-bar.scss */
 #devices a:hover {
   background: -webkit-linear-gradient(#2c2c2c, #242424);
   background: linear-gradient(#2c2c2c, #242424);
 }
-
-/* line 223, ../scss/excelsior/components/_demo-bar.scss */
+/* line 222, ../scss/excelsior/components/_demo-bar.scss */
 #devices a.active, #devices a:active {
   background: -webkit-linear-gradient(#1c1c1c, #242424);
   background: linear-gradient(#1c1c1c, #242424);
   box-shadow: inset 0 1px 0 #242424;
   outline: none;
 }
-
 /* line 230, ../scss/excelsior/components/_demo-bar.scss */
 #devices a.active span, #devices a:active span {
   opacity: 1;
 }
-
-/* line 234, ../scss/excelsior/components/_demo-bar.scss */
+/* line 235, ../scss/excelsior/components/_demo-bar.scss */
 #devices span {
   text-align: center;
   display: block;
@@ -9273,15 +9277,14 @@ header .keyboard a, header .cssrefresh a {
   text-indent: -9999px;
   opacity: .75;
 }
-
-/* line 243, ../scss/excelsior/components/_demo-bar.scss */
-#devices .tablet-landscape span, #devices .smartphone-landscape span {
+/* line 245, ../scss/excelsior/components/_demo-bar.scss */
+#devices .tablet-landscape span,
+#devices .smartphone-landscape span {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-
-/* line 249, ../scss/excelsior/components/_demo-bar.scss */
+/* line 251, ../scss/excelsior/components/_demo-bar.scss */
 #devices .auto span {
   text-indent: 0;
   line-height: 30px;
@@ -9291,13 +9294,13 @@ header .keyboard a, header .cssrefresh a {
 }
 
 @media screen and (max-width: 600px) {
-  /* line 258, ../scss/excelsior/components/_demo-bar.scss */
+  /* line 261, ../scss/excelsior/components/_demo-bar.scss */
   #devices {
     margin-left: -54px;
   }
 }
 @media screen and (max-width: 520px) {
-  /* line 264, ../scss/excelsior/components/_demo-bar.scss */
+  /* line 267, ../scss/excelsior/components/_demo-bar.scss */
   #devices {
     margin-left: -25px;
     -webkit-transition: all 0s ease;
@@ -9305,7 +9308,7 @@ header .keyboard a, header .cssrefresh a {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 272, ../scss/excelsior/components/_demo-bar.scss */
+  /* line 275, ../scss/excelsior/components/_demo-bar.scss */
   #devices {
     right: 8px;
     margin: 0;
@@ -9313,58 +9316,61 @@ header .keyboard a, header .cssrefresh a {
   }
 }
 /*  Try to separate out Joyride CSS*/
-/* line 281, ../scss/excelsior/components/_demo-bar.scss */
+/* line 283, ../scss/excelsior/components/_demo-bar.scss */
 .joyride-tip-guide {
   background: #dedede !important;
   color: #333333 !important;
   top: 60px !important;
   text-shadow: none !important;
   box-shadow: 0 0 4px #666;
+  /* Typography */
 }
-
-/* line 289, ../scss/excelsior/components/_demo-bar.scss */
+/* line 290, ../scss/excelsior/components/_demo-bar.scss */
 .joyride-tip-guide .joyride-nub.top {
   border-color: transparent transparent #DEDEDE !important;
 }
-
-/* Typography */
-/* line 299, ../scss/excelsior/components/_demo-bar.scss */
-.joyride-tip-guide h1,
-.joyride-tip-guide h2,
-.joyride-tip-guide h3,
-.joyride-tip-guide h4,
-.joyride-tip-guide h5,
-.joyride-tip-guide h6 {
+/* line 295, ../scss/excelsior/components/_demo-bar.scss */
+.joyride-tip-guide h1, .joyride-tip-guide h2, .joyride-tip-guide h3, .joyride-tip-guide h4, .joyride-tip-guide h5, .joyride-tip-guide h6 {
   color: #333333 !important;
   margin-bottom: 0.5em;
 }
 
-/* line 304, ../scss/excelsior/components/_demo-bar.scss */
+/* line 301, ../scss/excelsior/components/_demo-bar.scss */
 body .joyride-close-tip:hover, .joyride-close-tip:focus {
   color: #000 !important;
 }
 
-/* line 308, ../scss/excelsior/components/_demo-bar.scss */
+/* line 305, ../scss/excelsior/components/_demo-bar.scss */
 #devices .tablet-portrait span, #devices .tablet-landscape span {
   background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAQAAAAqnqXBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALdJREFUKM/VkjEKwkAQRd/EVQKClYgIgmKnjWXu4C3sPIClrZXHsRQEPYG1qKCNINaCyexaBGIKN2jpdH/+4/8pRuyIBS184zgwkeREB8V5oICAjbF1Eom4eoKGLGkatSDn8PYZejQANQpQ8Z2kZQCTUDSp+x2khVDqmrgQin+o+1tIAe8PoO6dZL1JFsBYoeRW22e2v1OmliVVBQJjL/QZ5PrGdJm9pYOjrCM3p5dr2BPSzumdTF90y0NcVdvNJQAAAABJRU5ErkJggg==") 50% 50% no-repeat;
 }
 
-/* line 312, ../scss/excelsior/components/_demo-bar.scss */
+/* line 309, ../scss/excelsior/components/_demo-bar.scss */
 #devices .smartphone-portrait span, #devices .smartphone-landscape span {
   background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJNJREFUGFeVjDEKwkAUBefHhUAQG8HGwguIR7Czs/Munkq8hunTWohoIWlUBBf3r99CA64g6CuHeSP3hU05sZeSq83oY1JJOFJRc2ZLYEhHMpvgd35AMr9xCsU7uuQqTlMNBVz4gAH4w/wdfmvGxIzgFGuXBSCAwS3PRFaH5oMQAKHntEUXgCVr5s+Ei/aKjRk13QeKojmLEk117AAAAABJRU5ErkJggg==") 50% 50% no-repeat;
 }
 
-/* line 318, ../scss/excelsior/components/_demo-bar.scss */
+/* line 313, ../scss/excelsior/components/_demo-bar.scss */
+#resize-bar-body #wrapper {
+  height: 99%;
+}
+
+/* line 317, ../scss/excelsior/components/_demo-bar.scss */
+#resize-bar-body section {
+  overflow-y: hidden;
+}
+
+/* line 323, ../scss/excelsior/components/_demo-bar.scss */
 .ie10 .hide-for-ie10 {
   display: none !important;
 }
 
-/* line 322, ../scss/excelsior/components/_demo-bar.scss */
+/* line 327, ../scss/excelsior/components/_demo-bar.scss */
 .ie10 .show-for-ie10 {
   display: inherit !important;
 }
 
-/* line 327, ../scss/excelsior/components/_demo-bar.scss */
+/* line 332, ../scss/excelsior/components/_demo-bar.scss */
 .white-bg {
   background-color: white;
 }
@@ -9469,6 +9475,77 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
   padding-right: 5px;
   display: list-item;
   text-align: -webkit-match-parent;
+}
+
+/* Orbit Carousel */
+/* line 15, ../scss/excelsior/components/_lightbox.scss */
+.touch .orbit-container .orbit-prev,
+.touch .orbit-container .orbit-next {
+  display: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 20, ../scss/excelsior/components/_lightbox.scss */
+  .orbit-timer, .orbit-slide-number {
+    display: none;
+  }
+}
+/* line 23, ../scss/excelsior/components/_lightbox.scss */
+.orbit-container .orbit-slide-number {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: #fff;
+}
+
+/* line 30, ../scss/excelsior/components/_lightbox.scss */
+.orbit-container .orbit-slides-container .orbit-caption .hide-for-small,
+.orbit-container .orbit-slides-container .orbit-caption .hide-for-small a {
+  color: #aaa;
+}
+
+/* line 34, ../scss/excelsior/components/_lightbox.scss */
+.orbit-bullets {
+  display: none;
+}
+/* line 37, ../scss/excelsior/components/_lightbox.scss */
+.orbit-bullets li {
+  background-color: #eee;
+  box-shadow: inset 0 1px 1px 1px #333;
+  cursor: pointer;
+  border: 0;
+}
+/* line 43, ../scss/excelsior/components/_lightbox.scss */
+.orbit-bullets li.active {
+  background-color: #444;
+  box-shadow: inset 0 1px 1px 1px #111;
+}
+
+/* line 52, ../scss/excelsior/components/_lightbox.scss */
+.orbit-container .orbit-timer .orbit-progress {
+  background: rgba(0, 0, 0, 0.6);
+  height: 12px;
+}
+/* line 57, ../scss/excelsior/components/_lightbox.scss */
+.orbit-container .orbit-timer > span {
+  top: 16px;
+  border: solid 4px rgba(0, 0, 0, 0.6);
+  border-top: 0;
+  border-bottom: 0;
+}
+/* line 64, ../scss/excelsior/components/_lightbox.scss */
+.orbit-container .orbit-timer.paused > span {
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.6);
+  top: 16px;
+}
+
+/* line 71, ../scss/excelsior/components/_lightbox.scss */
+.orbit-slides-container img {
+  margin: 0 auto;
+}
+
+/* line 75, ../scss/excelsior/components/_lightbox.scss */
+.orbit-backcolor {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Image to lists */
@@ -10322,4 +10399,120 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
 /* line 21, ../scss/excelsior/components/_sticky_header.scss */
 .sticky-header.active-gov-bar .gov-pull-down-container {
   top: 88px;
+}
+
+/* gov widget */
+/* line 3, ../scss/excelsior/components/_components.scss */
+.govwidget {
+  width: 100%;
+  min-width: 240px;
+  max-width: 450px;
+  background-image: linear-gradient(bottom, #042f5a 20%, #0a4682 60%, #042f5a 82%);
+  background-image: -webkit-linear-gradient(bottom, #042f5a 20%, #0a4682 60%, #042f5a 82%);
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 13, ../scss/excelsior/components/_components.scss */
+.govheading {
+  background: url(../prototypes/dta/images/stateseal.png) 0.3em 0.3em no-repeat;
+}
+/* line 16, ../scss/excelsior/components/_components.scss */
+.govheading a {
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 120%;
+  text-shadow: 0.2em 0.2em 0.2em #333;
+  padding: 0.8em 0 0.4em 0;
+}
+/* line 28, ../scss/excelsior/components/_components.scss */
+.govheading span {
+  display: block;
+}
+
+/* line 33, ../scss/excelsior/components/_components.scss */
+.govbutton {
+  margin: 0 0.5em;
+}
+/* line 36, ../scss/excelsior/components/_components.scss */
+.govbutton a {
+  background: #002d56;
+  line-height: 0;
+}
+/* line 41, ../scss/excelsior/components/_components.scss */
+.govbutton .button {
+  border: 1px solid #222;
+}
+/* line 44, ../scss/excelsior/components/_components.scss */
+.govbutton .button:hover {
+  background-color: #162252;
+  border: 1px solid #444;
+}
+
+/* line 54, ../scss/excelsior/components/_components.scss */
+.facebook a {
+  font-size: 0.7em;
+  color: #fff;
+  text-decoration: none;
+  font-family: times new roman;
+  padding: 0.3em 0;
+  display: block;
+}
+/* line 62, ../scss/excelsior/components/_components.scss */
+.facebook a:hover {
+  color: #ff0;
+  text-decoration: none;
+}
+
+/* line 69, ../scss/excelsior/components/_components.scss */
+.govurl {
+  padding: 0.2em 0 0.5em 0;
+}
+
+/* line 72, ../scss/excelsior/components/_components.scss */
+.govurl a {
+  font-family: times new roman;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 77, ../scss/excelsior/components/_components.scss */
+.govurl a:hover {
+  color: #ff0;
+}
+
+/* line 81, ../scss/excelsior/components/_components.scss */
+.dta-action .panel {
+  overflow: hidden;
+}
+
+/* line 86, ../scss/excelsior/components/_components.scss */
+.dta-action span,
+.dta-action a {
+  display: block;
+  color: #000;
+}
+
+/* line 91, ../scss/excelsior/components/_components.scss */
+.dta-action a, .dta-action a:hover {
+  text-decoration: none;
+}
+
+/* line 95, ../scss/excelsior/components/_components.scss */
+.dta-action span.dta-text {
+  line-height: 1.6em;
+}
+
+/* line 99, ../scss/excelsior/components/_components.scss */
+.dta-action h4 {
+  text-decoration: underline;
+}
+
+/* line 103, ../scss/excelsior/components/_components.scss */
+.dta-action a:hover h4 {
+  text-decoration: none;
 }

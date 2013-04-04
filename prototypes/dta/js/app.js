@@ -1,11 +1,11 @@
 /*global exlsr: false */
 $(function(){
 	$("#page, footer").find("a[href='#']").on(exlsr.activateEventName, function(e){
-		e.preventDefault();
+		e.preventDefault(); // stop all the empty links from bringing you back to the header and ruining the awesome experience of the responsive site.
 	});
 	$("#demoBar").on(exlsr.activateEventName, function(e){
 		e.preventDefault();
-		$.getScript("../../js/app/demo-bar.js");
+		$.getScript("../../js/app/demo-bar.js"); // we're loading in the demo bar from the sub-navigation. we don't want to load it automatically on page load like we do for the rest of the other demos.
 	});
 
   // Map

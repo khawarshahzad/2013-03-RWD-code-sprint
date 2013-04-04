@@ -1,11 +1,26 @@
-
+.gov-bar{
+	box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.site-bar{
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCCC), to(#FFFFFF));
+}
+.site-bar a.site-logo{
+	color: #036;
+}
+.global-nav .nav-container, .global-nav ul li a{
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#85A2BE), to(#5082B3));
+}
+.global-nav ul li{
+	border-right: 1px solid #4E749A;
+	border-bottom: 1px solid #4E749A;
+}
 
 @media only screen and (min-width: 48em) {
-.site-wrap {
-	overflow:hidden;
-	background: transparent url(../images/ny-header.png) left 3px no-repeat!important;
-}
-.site-bar a.site-logo {
-margin: 0 0 0 2.25em;
-}
+	.site-wrap {
+		overflow:hidden;
+		background: transparent url(../images/ny-header.png) left 3px no-repeat!important;
+	}
+	.site-bar a.site-logo {
+		margin: 0 0 0 2.25em;
+	}
 }

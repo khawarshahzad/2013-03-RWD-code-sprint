@@ -48,14 +48,68 @@
   }
 }
 
-// DTA Prototype?
+@media screen and (max-width: 768px) {
+  .margin-top-small {
+    margin-top: 1em;
+  }
+}
+
+// DTA Prototype
+
+.news {
+  margin: 0.3em 0.8em;
+  border-radius: 8px;
+  background: #5082b3;
+
+  strong {
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+  }
+
+  img {
+    vertical-align: text-top;
+  }
+
+  dl {
+    background: #eee;
+    text-align: left;
+    padding: 0.5em 0.3em;
+    margin: 0;
+  }
+
+  dt {
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 0.688em;
+    margin: 0;
+    line-height: 1.4em;
+    padding-bottom: 0.5em;
+  }
+
+  a {
+    font-weight: normal;
+    color: #036;
+
+    &:hover{
+      color: #873939;
+      text-decoration: underline;
+    }
+  }
+}
+
+.whatsnew {
+  padding: 0.2em;
+  text-transform: uppercase;
+  font-family: "Cambria", sans-serif;
+  color: #fff;
+}
 
 .facebook{
-  a{
+  a {
     font-size: 0.7em;
     color: #fff;
     text-decoration: none;
-    font-family: times new roman;
+    font-family: "Times New Roman", serif;
     padding: 0.3em 0;
     display: block;
 
@@ -104,47 +158,3 @@
   text-decoration: none;
 }
 
-.news {
-  margin: 0.3em 0.8em;
-  border-radius: 8px;
-  background: #5082b3;
-
-  strong{
-    font-weight: bold;
-    font-family: verdana;
-  }
-
-  img {
-    vertical-align: text-top;
-  }
-
-  dl {
-    background: #eee;
-    text-align: left;
-    padding: 0.5em 0.3em;
-    margin: 0;
-  }
-
-  dt {
-    font-size: 0.688em;
-    margin: 0;
-    line-height: 1.4em;
-    padding-bottom: 0.5em;
-  }
-
-  a {
-    color: #036;
-
-    &:hover{
-      color: #873939;
-      text-decoration: underline;
-    }
-  }
-}
-
-.whatsnew {
-  padding: 0.2em;
-  text-transform: uppercase;
-  font-family: cambria;
-  color: #fff;
-}

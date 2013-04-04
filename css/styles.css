@@ -193,3 +193,161 @@
   color: #ff0;
 }
 
+
+
+
+/* Manuel's {pend move: Jeff} */
+@media only screen {
+
+  /* [M] _navigation.scss
+     -------------------- */
+  /* Highjacked icon font to create after arrows */
+  .icon-sub-content:after {
+    content: "\e75e";
+    float: right;
+    font-size: 1.2em;
+    line-height: inherit;
+    margin: -0.3em 0 0 8px;
+   }
+
+  .site-bar .site-functions .site-search {
+    box-shadow: none;
+  }
+
+  .active-site-search .site-functions .site-search {
+    height: 53px;
+    box-shadow: 2px 2px 4px #999;
+  }
+
+  /* Active Site Menu */
+  .active-site-menu .global-nav .nav-container {
+    height: 343px;
+  }
+
+  .gov-bar a.gov-link-1 {
+    margin: 12px 0.2em 0 0.5em;
+  }
+
+  .gov-bar a.gov-link-2 {
+    background: url(../images/hamburger-no-dots.svg) no-repeat 2px 0px transparent;
+    background-size: 24px 24px;
+  }
+
+  .gov-bar form { /* [combine two definitions together] */
+    padding: 0.1em 0.5em 0 0.5em;
+  }
+
+  .global-nav .nav-container {
+    border-bottom: 1px solid #505050;
+  }
+
+  .global-nav ul li a {
+    padding: 11px 12px 9px 12px;
+  }
+
+  /* [M] off-canvas.scss
+     ------------------- */
+  .off-canvas .global-nav ul ul {
+    background: #333 !important; /* M */
+  }
+
+  .off-canvas .global-nav ul ul li {
+    padding-left: 2% !important;
+  }
+
+  /* [M] _fonts.scss
+     --------------- */
+  [class^="icon-"]:before,
+  [class*=" icon-"]:before,
+  [class^="icon-"]:after,
+  [class*=" icon-"]:after {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+
+  /* [M] _navigation.scss
+     -------------------- */
+  /* Highjacked icon font to create after arrows */
+  .icon-sub-content:after {
+    content: "\e760";
+    float: right;
+    font-size: 1.5em;
+    line-height: inherit;
+    margin: -0.3em 0 0 8px;
+   }
+
+  .gov-bar a.gov-link-1 {
+    margin: 0;
+  }
+
+  .gov-bar a.gov-link-2 { /* NO */
+    background: url(../images/nys-banner-img.png) no-repeat 0 -28px transparent;
+  }
+
+  .global-nav ul li {
+    border-right: 1px solid #757575;
+    border-left: 1px solid #505050;
+    border-bottom: none;
+  }
+
+  .global-nav .nav-container ul li a.active {
+    border: none;
+  }
+
+  .global-nav .nav-container ul li a:hover {
+    background: #555;
+  }
+
+  .global-nav .nav-container ul li a.active:after {
+    content: "\e760";
+    width: 0;
+    height: auto;
+    position: absolute;
+    bottom: -5px;
+    margin-left: -2px;
+    border-right: 10px solid transparent;
+    border-bottom: 9px solid #454545;
+    border-left: 10px solid transparent;
+  }
+
+  .global-nav ul ul li {
+    border-right: 1px solid #666;
+    border-left: 1px solid #333;
+    border-bottom: none;
+  }
+
+  .global-nav .nav-container ul ul li a:hover {
+    background: #363636 !important;
+  }
+
+  /* [M] off-canvas.scss
+     ------------------- */
+  .off-canvas .global-nav ul ul {
+    top: 50px !important; /* M */
+    border-radius: 4px !important; /* M */
+    overflow: hidden;
+    width: auto !important;
+  }
+
+  .off-canvas .global-nav ul ul.active-menu li {
+    padding: 0 !important;
+  }
+
+  .off-canvas .global-nav ul ul {
+    background: #454545 !important; /* M */
+    border-radius: 4px;
+  }
+
+  .off-canvas .global-nav .active-menu li {
+    padding-left: 0;
+    border-bottom: 0; /* M */
+  }
+
+  .off-canvas .global-nav .active-menu li a {
+    border-radius: 4px;
+    background: #454545 !important;
+  }
+}
+

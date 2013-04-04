@@ -1,11 +1,11 @@
+// gov widget
 
-/* gov widget */
 .govwidget {
   width: 100%;
   min-width: 240px;
   max-width: 450px;
-  background-image: linear-gradient(bottom, rgb(4,47,90) 20%, rgb(10,70,130) 60%, rgb(4,47,90) 82%);
   background-image: -webkit-linear-gradient(bottom, rgb(4,47,90) 20%, rgb(10,70,130) 60%, rgb(4,47,90) 82%);
+  background-image:         linear-gradient(bottom, rgb(4,47,90) 20%, rgb(10,70,130) 60%, rgb(4,47,90) 82%);
   text-align: center;
   margin: 0 auto;
 }
@@ -102,4 +102,49 @@
 
 .dta-action a:hover h4 {
   text-decoration: none;
+}
+
+.news {
+  margin: 0.3em 0.8em;
+  border-radius: 8px;
+  background: #5082b3;
+
+  strong{
+    font-weight: bold;
+    font-family: verdana;
+  }
+
+  img {
+    vertical-align: text-top;
+  }
+
+  dl {
+    background: #eee;
+    text-align: left;
+    padding: 0.5em 0.3em;
+    margin: 0;
+  }
+
+  dt {
+    font-size: 0.688em;
+    margin: 0;
+    line-height: 1.4em;
+    padding-bottom: 0.5em;
+  }
+
+  a {
+    color: #036;
+
+    &:hover{
+      color: #873939;
+      text-decoration: underline;
+    }
+  }
+}
+
+.whatsnew {
+  padding: 0.2em;
+  text-transform: uppercase;
+  font-family: cambria;
+  color: #fff;
 }

@@ -8,6 +8,7 @@ var exlsr = {
   ua: navigator.userAgent,
   iOS: false,
   $body: null,
+  $html: null,
   $window: null
 };
 
@@ -19,21 +20,30 @@ exlsr.init = function _init () {
 
   // Init code here...
   exlsr.$body = $('body');
+  exlsr.$html = $('html');
   exlsr.$window = $(window);
 
   // Monitor-size classes
   screenMax = Math.max(screen.width, screen.height);
   if (screenMax <= 480) {
-    $('html').addClass('screen-max-tiny');
+    exlsr.$html.addClass('screen-max-tiny');
   }
   else if (screenMax > 480 && screenMax < 768) {
     // Only Foundation's `small-` classes will ever take effect
-    $('html').addClass('screen-max-small');
+    exlsr.$html.addClass('screen-max-small');
   }
   else if (screenMax >= 768) {
     // Foundation's `large-` classes may take effect
-    $('html').addClass('screen-max-large');
+    exlsr.$html.addClass('screen-max-large');
   }
+
+  // Preload assets
+  exlsr.preloader.add('<img src="/RWD-Demo/images/close.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/close-x-gray.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/hamburger-no-dots.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/nys-small.png">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/nys-banner-img.png">');
+  exlsr.preloader.init();
 };
 
 $(document).ready(function(){exlsr.init();});
@@ -279,6 +289,31 @@ $(document).ready(function(){
       if (activeElm === 'active-site-search') {
         $('#site-search-box').focus();
       }
+
+      if (activeElm === 'active-site-menu') {
+
+        console.log('Entered');
+        
+        // Check to see if off canvas is being used
+        if (exlsr.$body.hasClass('off-canvas') && exlsr.$body.hasClass('active-site-menu')) {
+
+          console.log('true');
+
+          // Get the screen size and set it has a min-height
+          //document.getElementsByTagName("body").style.minHeight = screen.height + "px";
+          exlsr.$body.css('min-height',screen.height+'px');
+
+        } else {
+
+          console.log('false');
+
+          // Remove min height
+          exlsr.$body.css('min-height','');
+
+        }
+
+      }
+
     }
 
     // Check to see if there is already and active item
@@ -342,6 +377,47 @@ $(document).ready(function(){
   });
 
 });
+
+/**
+ * Asset Preloader
+ */
+exlsr.preloader = {
+  container: null, // The container <div>
+  assets: []       // Assets to be preloaded (HTML strings); this can be prepopulated
+};
+
+// Creates an off-screen container for preloaded assets and adds any assets present in the queue
+// Should be called at document.ready
+exlsr.preloader.init = function _exlsr_preloader_init () {
+  // Create container
+  exlsr.preloader.container = document.createElement('div');
+  exlsr.preloader.container.className = 'hide-off-screen';
+  document.body.appendChild(exlsr.preloader.container);
+
+  // Load anything that's already in the queue
+  exlsr.preloader.assets.forEach(function(i) {
+    exlsr.preloader.add(i);
+  });
+
+  // Empty the queue
+  exlsr.preloader.assets = [];
+};
+
+// Add an asset to the preload container
+// Argument is an HTML string to be added to the page
+// May be called before or after preload.setup() has run
+exlsr.preloader.add = function _exlsr_preloader_add (html) {
+  if (!html || typeof html !== 'string') { return false; }
+
+  // If the container has already been set up, add this asset immediately
+  if (exlsr.preloader.container) {
+    exlsr.preloader.container.innerHTML += html;
+  }
+  // Otherwise, queue it to load when setup() is run
+  else {
+    exlsr.preloader.assets.push(html);
+  }
+};
 
 /**
  * Plugins

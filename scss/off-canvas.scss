@@ -62,7 +62,10 @@ $nav-bar-height: 48px;
 	    height: inherit;
 	    overflow-y: scroll;
 	    border-radius: 4px;
+	  }
 
+	  .global-nav .nav-container > ul {
+	  	min-height: 1000px;
 	  }
 
 	  .global-nav ul {
@@ -81,9 +84,9 @@ $nav-bar-height: 48px;
 	    position: fixed;
 	    top: 53px;
 	    width: 100%;
-	    background: #666;
-	    -webkit-transition: left 0.2s ease-in;
-	            transition: left 0.2s ease-in;
+	    background: #333;
+	    -webkit-transition: left 0.2s ease;
+	            transition: left 0.2s ease;
 	  }
 
 	  .global-nav ul ul li {
@@ -126,8 +129,8 @@ $nav-bar-height: 48px;
 	  .gov-bar,
 	  .site-bar,
 	  .page {
-	    -webkit-transition: top 0.2s ease-in, left 0.2s ease-in, height 0.2s ease-in; /* Safari and Chrome */
-	            transition: top 0.2s ease-in, left 0.2s ease-in, height 0.2s ease-in;
+	    -webkit-transition: top 0.2s ease, left 0.2s ease, height 0.2s ease; /* Safari and Chrome */
+	            transition: top 0.2s ease, left 0.2s ease, height 0.2s ease;
 	  }
 
 	  &.active-gov-bar .gov-pull-down-container,
@@ -144,8 +147,12 @@ $nav-bar-height: 48px;
 	    left: -82%;
 	  }
 
+	  &.active-site-menu .mobile-menu-button {
+	  	-webkit-box-shadow: inset 6px 0px 8px -2px #000;
+	  }
+
 	  &.active-site-menu .page {
-	  	-webkit-box-shadow: 5px 2px 8px #000;
+	  	-webkit-box-shadow: 5px 49px 8px #000;
 	  }
 
 	  &.active-site-menu .footer {
@@ -200,6 +207,11 @@ $nav-bar-height: 48px;
 	  .global-nav .nav-container,
 	  &.active-site-menu .global-nav .nav-container {
 	    overflow: hidden;
+	  }
+
+	  .global-nav .nav-container > ul,
+	  &.active-site-menu .global-nav .nav-container ul {
+	  	min-height: auto;
 	  }
 
 	  .global-nav ul,

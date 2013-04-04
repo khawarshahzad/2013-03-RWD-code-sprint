@@ -189,83 +189,86 @@ header .keyboard a,header .cssrefresh a {
   left: 50%;
   margin-left: -104px;
   border: 1px solid #363738;
-}
 
-#devices a:first-of-type {
-  border-radius: 4px 0 0 4px;
-}
+  a {
+    background: -webkit-linear-gradient(#313131,#242424);
+    background:         linear-gradient(#313131,#242424);
+    box-shadow: inset 0 1px 0 #3c3c3c;
+    text-decoration: none;
+    border: 1px solid #040404;
+    border-right-width: 0;
+    float: left;
+    display: block;
+    width: 40px;
+    height: 30px;
+    outline: none;
 
-#devices a:last-of-type {
-  border-radius: 0 4px 4px 0;
-  border-right-width: 1px;
-  width:80px;
-}
+    &:first-of-type {
+      border-radius: 4px 0 0 4px;
+    }
 
-#devices a {
-  background: -webkit-linear-gradient(#313131,#242424);
-  background:         linear-gradient(#313131,#242424);
-  box-shadow: inset 0 1px 0 #3c3c3c;
-  text-decoration: none;
-  border: 1px solid #040404;
-  border-right-width: 0;
-  float: left;
-  display: block;
-  width: 40px;
-  height: 30px;
-  outline: none;
-}
+    &:last-of-type {
+      border-radius: 0 4px 4px 0;
+      border-right-width: 1px;
+      width: 80px;
+    }
 
-#devices a:hover {
-  background: -webkit-linear-gradient(#2c2c2c,#242424);
-  background:         linear-gradient(#2c2c2c,#242424);
-}
+    &:hover {
+      background: -webkit-linear-gradient(#2c2c2c,#242424);
+      background:         linear-gradient(#2c2c2c,#242424);
+    }
 
-#devices a.active,#devices a:active {
-  background: -webkit-linear-gradient(#1c1c1c,#242424);
-  background:         linear-gradient(#1c1c1c,#242424);
-  box-shadow: inset 0 1px 0 #242424;
-  outline: none;
-}
+    &.active,
+    &:active {
+      background: -webkit-linear-gradient(#1c1c1c,#242424);
+      background:         linear-gradient(#1c1c1c,#242424);
+      box-shadow: inset 0 1px 0 #242424;
+      outline: none;
+    }
 
-#devices a.active span,#devices a:active span {
-  opacity: 1;
-}
+    &.active span,
+    &:active span {
+      opacity: 1;
+    }
+  }
 
-#devices span {
-  text-align: center;
-  display: block;
-  width: 40px;
-  height: 30px;
-  text-indent: -9999px;
-  opacity: .75;
-}
+  span {
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 30px;
+    text-indent: -9999px;
+    opacity: .75;
+  }
 
-#devices .tablet-landscape span,#devices .smartphone-landscape span {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
+  .tablet-landscape span,
+  .smartphone-landscape span {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 
-#devices .auto span {
-  text-indent: 0;
-  line-height: 30px;
-  font-size: 14px;
-  margin: 0 auto;
-  width:80px;
+  .auto span {
+    text-indent: 0;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 80px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #devices {
     margin-left: -54px;
-  };
+  }
 }
 
 @media screen and (max-width: 520px) {
   #devices {
     margin-left: -25px;
     -webkit-transition: all 0s ease;
-    transition: all 0s ease;
-  };
+            transition: all 0s ease;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -273,32 +276,26 @@ header .keyboard a,header .cssrefresh a {
     right: 8px;
     margin: 0;
     left: auto;
-  };
+  }
 }
 
 /*  Try to separate out Joyride CSS*/
-
 .joyride-tip-guide {
   background: #DEDEDE!important;
   color: #333!important;
   top: 60px!important;
   text-shadow:none!important;
   box-shadow:0 0 4px #666;
-}
 
-.joyride-tip-guide .joyride-nub.top {
-  border-color: transparent transparent #DEDEDE !important;
-}
+  .joyride-nub.top {
+    border-color: transparent transparent #DEDEDE !important;
+  }
 
-/* Typography */
-.joyride-tip-guide h1,
-.joyride-tip-guide h2,
-.joyride-tip-guide h3,
-.joyride-tip-guide h4,
-.joyride-tip-guide h5,
-.joyride-tip-guide h6 {
-  color: #333!important;
-  margin-bottom: 0.5em;
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    color: #333!important;
+    margin-bottom: 0.5em;
+  }
 }
 
 body .joyride-close-tip:hover, .joyride-close-tip:focus {
@@ -311,6 +308,14 @@ body .joyride-close-tip:hover, .joyride-close-tip:focus {
 
 #devices .smartphone-portrait span,#devices .smartphone-landscape span {
   background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJNJREFUGFeVjDEKwkAUBefHhUAQG8HGwguIR7Czs/Munkq8hunTWohoIWlUBBf3r99CA64g6CuHeSP3hU05sZeSq83oY1JJOFJRc2ZLYEhHMpvgd35AMr9xCsU7uuQqTlMNBVz4gAH4w/wdfmvGxIzgFGuXBSCAwS3PRFaH5oMQAKHntEUXgCVr5s+Ei/aKjRk13QeKojmLEk117AAAAABJRU5ErkJggg==') 50% 50% no-repeat;
+}
+
+#resize-bar-body #wrapper {
+  height:99%;
+}
+
+#resize-bar-body section {
+  overflow-y:hidden;
 }
 
 // IE classes -- demo only, since the `.ie10` class will be added by JS by this component only

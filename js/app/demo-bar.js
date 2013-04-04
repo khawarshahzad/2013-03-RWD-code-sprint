@@ -5,7 +5,7 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
     demoBar = function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
-        d.title+
+        d.title +
         '<\/title><link rel="stylesheet" href="http://nys-its.github.com/RWD-Demo/css/excelsior.css"><link rel="stylesheet" href="http://nys-its.github.com/RWD-Demo/css/styles.css"><\/head>' +
         '<body id="resize-bar-body">' +
         '<header>' +
@@ -41,11 +41,9 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
 $(function(){
   if ( parent.$("#devices").length <=0 && !Modernizr.touch && !isIE) {
     demoBar();
-    
+
     window.resbook = {};
-    
-    $(document).foundation('joyride', 'start');
-    
+
     (function (rb) {
         var d = document,
             w = window,

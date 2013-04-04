@@ -21,7 +21,7 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         '   <h4>Getting Started!<\/h4>'+
         '   <p>This tutorial will teach you how to use the "Resize Bar" available throughout the demo site.<\/p>'+
         '  <\/li>'+
-        '  <li data-id="tablet-landscape-joyride" data-button="Hidden">'+
+        '  <li data-id="tablet-landscape-joyride">'+
         '   <h4>Choose a Device<\/h4>'+
         '   <p>Click any of these buttons to see how this site would look on various devices.<\/p><p><em>Return to Desktop view by clicking "Desktop".<\/em><\/p><p><strong>Go ahead, click one now!<\/strong><\/p>'+
         '  <\/li>'+

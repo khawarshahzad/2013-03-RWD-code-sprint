@@ -62,7 +62,10 @@ $nav-bar-height: 48px;
 	    height: inherit;
 	    overflow-y: scroll;
 	    border-radius: 4px;
+	  }
 
+	  .global-nav .nav-container > ul {
+	  	min-height: 445px;
 	  }
 
 	  .global-nav ul {
@@ -200,6 +203,11 @@ $nav-bar-height: 48px;
 	  .global-nav .nav-container,
 	  &.active-site-menu .global-nav .nav-container {
 	    overflow: hidden;
+	  }
+
+	  .global-nav .nav-container > ul,
+	  &.active-site-menu .global-nav .nav-container ul {
+	  	min-height: auto;
 	  }
 
 	  .global-nav ul,

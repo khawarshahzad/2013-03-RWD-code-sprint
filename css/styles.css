@@ -3,7 +3,6 @@
  *
  * These will eventually move to /scss/_excelsior.scss or a component file
 */
-
 #resize-bar-body #wrapper {height:99%;}
 #resize-bar-body section {
   overflow-y:hidden;
@@ -351,4 +350,3 @@
     background: #454545 !important;
   }
 }
-

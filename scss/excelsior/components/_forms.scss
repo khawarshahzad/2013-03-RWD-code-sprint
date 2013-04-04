@@ -35,6 +35,16 @@ legend small {
   color: #999999;
 }
 
+label {
+  display: inline-block;
+  position: relative;
+
+  .has-tip { // Tooltip inside a label
+    font-weight: normal;
+    margin-bottom: 0.25em; // To help see the dotted underline when it's right above an input
+  }
+}
+
 input,
 button,
 select,
@@ -462,4 +472,31 @@ select:focus:invalid:focus {
 
 .input-prepend.input-append .btn-group:first-child {
   margin-left: 0;
+}
+
+.required:after {
+  content: "*";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  color: #{$alert-color};
+}
+
+.form-field-info {
+  display: none;
+  margin-top: -10px;
+  /*@extend .italic;*/
+
+  p {
+    font-family: inherit;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.show .form-field-info {
+  display: block;
 }

@@ -1,16 +1,15 @@
 /*global Modernizr: false */
 var isIE = (/MSIE/.test(navigator.userAgent)),
+    isAndroid = (/Android/.test(navigator.userAgent)),
+    isChrome = (/Chrome/.test(navigator.userAgent)),
     demoBar = function(){
         var d = document;
         d.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>'+
-        d.title+
-        '<\/title><link rel="stylesheet" href="../css/excelsior.css"><link rel="stylesheet" href="../css/styles.css"><\/head>' +
+        d.title +
+        '<\/title><link rel="stylesheet" href="http://nys-its.github.com/RWD-Demo/css/excelsior.css"><link rel="stylesheet" href="http://nys-its.github.com/RWD-Demo/css/styles.css"><\/head>' +
         '<body id="resize-bar-body">' +
         '<header>' +
-        //'<div class="close"><a href="#">X<\/a><\/div>' +
         '<div id="size"><\/div>' +
-        //'<div id="keyboard" class="keyboard"><a href="#">I<\/a><\/div>' +
-        //'<div class="cssrefresh"><a href="#">I<\/a><\/div>' +
         '<div id="devices">' +
         '  <a href="#" class="tablet-landscape"><span>Tablet Landscape<\/span><\/a>' +
         '  <a href="#" class="tablet-portrait" id="tablet-landscape-joyride"><span>Tablet Portrait<\/span><\/a>' +
@@ -24,26 +23,18 @@ var isIE = (/MSIE/.test(navigator.userAgent)),
         '  <\/li>'+
         '  <li data-id="tablet-landscape-joyride">'+
         '   <h4>Choose a Device<\/h4>'+
-        '   <p>Click any of these buttons to see how this site would look on various devices.<\/p><p><strong>Go ahead, click one now!<\/strong><\/p>'+
+        '   <p>Click any of these buttons to see how this site would look on various devices.<\/p><p><em>Return to Desktop view by clicking "Desktop".<\/em><\/p><p><strong>Go ahead, click one now!<\/strong><\/p>'+
         '  <\/li>'+
-        '  <li data-button="Yes!">'+
-        '   <h4>Notice a Difference?<\/h4>'+
-        '   <p>You are now viewing the same page at a smaller size.<\/p>'+
-        '  <\/li>'+
-        // '  <li data-id="keyboard" data-button="Next">'+
-        // '   <h4>Show a Keyboard<\/h4>'+
-        // '   <p>Clicking this button will show/hide a keyboard overlay.<\/p>'+
-        // '  <\/li>'+
-        '  <li data-id="desktop-view" data-button="Close">'+
-        '   <h4>Desktop View<\/h4>'+
-        '   <p>Clicking "Desktop" will bring you back to full screen mode.<\/p>'+
-        '   <p>Go ahead and explore the Responsive demos now!<\/p>'+
+        '  <li data-button="Close">'+
+        '   <h4>New View Activated!<\/h4>'+
+        '   <p>You are now viewing the same page at a new size.<\/p>'+
+        '   <p><strong>Go explore the responsive demos now!<\/strong><\/p>'+
         '  <\/li>'+
         '  </ol>  ' +
-        //'<script src="../../js/vendor/jquery.js">' + '</sc' + 'ript>'+
-        // '<script src="../js/foundation/foundation.js"></script>'+
-        '<script src="../js/foundation/foundation.joyride.js"></script>'+
-        '<script src="../js/app/demo-bar-post.js"></script>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/vendor/jquery.js">' + '</sc' + 'ript>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.js">' + '</script>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/foundation/foundation.joyride.js">' + '</script>'+
+        '<script src="http://nys-its.github.com/RWD-Demo/js/app/demo-bar-post.js">' + '</script>'+
         '<\/body><\/html>');
     };
 
@@ -190,7 +181,7 @@ $(function(){
         });
     })(window.resbook);
   }
-  else if (isIE) {
-    $("body").prepend('<div class="row hide-for-oldie"><div class="large-8 small-centered columns"><div class="alert-box radius" data-alert><h4>Non-Optimal Browser Detected</h4><p>To get the best demo experience, it\'s recommended that you use a <a href="http://browsehappy.com/">different browser</a>.<br>If you cannot upgrade your browser, you can resize your browser to experience it.</div></div></div>')
+  else if (isIE || (isAndroid && !isChrome) ) {
+    $("body").prepend('<div class="row hide-for-oldie"><div class="large-8 small-centered columns"><div class="alert-box radius" data-alert><h4>Non-Optimal Browser Detected</h4><p>To get the best demo experience, it\'s recommended that you use <a target="_parent" href="https://www.google.com/chrome/">Google Chrome</a><br>If you cannot upgrade your browser, you can resize your browser to experience it.</div></div></div>');
   }
 });

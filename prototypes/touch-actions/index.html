@@ -18,9 +18,9 @@
   <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
   <link rel="icon" href="../../images/favicon.ico">
 </head>
-<body>
+<body class="white-bg">
   <!--[if lte IE 7]>
-    <div class="row"><div class="small-12 columns unsupported-browser-message"><div class="alert-box">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</div></div></div>
+    <div class="row"><div class="small-12 columns unsupported-browser-message"><div class="alert-box">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please use <a href="http://www.google.com/chrome/">Google Chrome</a> to interact with this demo.</div></div></div>
   <![endif]-->
 
   <div class="row">
@@ -35,19 +35,19 @@
 
   <div class="row hide-for-touch">
     <div class="large-12 columns">
-      <div class="alert-box callout radius">Touch events are not supported on this browser &mdash; try opening this page on a mobile device.</div>
+      <div class="alert-box radius">Touch events are not supported on this browser &mdash; try opening this page on a mobile device.</div>
       <p class="show-for-chrome">To test on a desktop verson of Chrome, open Chrome's Developer Tools (F12), go to the settings (gear icon) and enable touch events in the Overrides section. Then refresh the page, keeping the Developer Tools open.</p>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" id="out-container" style="display:none;">
     <div class="large-12 columns">
       <div id="out">&nbsp;</div>
     </div>
   </div>
 
   <div class="row playground">
-    <div class="large-12 columns callout radius" id="in">Touch Here</div>
+    <div class="large-12 columns radius" id="in">Touch Here</div>
     <div class="large-6 small-12 small-centered columns">
       <h4>Try these actions in the box</h4>
       <ul>
@@ -56,6 +56,13 @@
         <li>Swipe Left</li>
         <li>Swipe Right</li>
       </ul>
+      <p>The capabilities of touch-enabled devices can be leveraged as an additional layer of interactivity.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 small-6 columns">
+      <a class="button-for-touch" target="_parent" href="https://github.com/nys-its/excelsior-web-framework/wiki/Touch-Events">Developer Documentation</a>
     </div>
   </div>
 

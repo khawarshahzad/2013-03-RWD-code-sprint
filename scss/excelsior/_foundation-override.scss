@@ -49,12 +49,37 @@ button,
 .button {
   font-family: $font-sans;
   font-weight: normal !important;
+  padding-bottom: emCalc(8px);
 }
 
 h1, h2, h3, h4, h5, h6 {
   // font-family: $font-serif;
   // font-weight: normal;
   @include font-serif;
+}
+
+h1 {
+  font-size: emCalc(32px);
+}
+
+h2 {
+  font-size: emCalc(28px);
+}
+
+h3 {
+  font-size: emCalc(24px);
+}
+
+h4 {
+  font-size: emCalc(20px);
+}
+
+h5 {
+  font-size: emCalc(18px);
+}
+
+h6 {
+  font-size: 1em;
 }
 
 p {
@@ -222,7 +247,7 @@ section .title a,
 }
 
 /* Same styles as above */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: emCalc(768px)) {
   .section-container.auto section .title,
   .section-container.auto .section .title {
     font-family: $font-sans-bold;
@@ -265,7 +290,6 @@ section .title a,
 
 .auto section.section,
 .accordion section.section {
-  margin-bottom: 0.5em;
   border-radius: 3px;
   background-clip: padding-box;
   border-left: 1px solid #cccccc;
@@ -312,8 +336,13 @@ section .title a,
           transform: rotate(270deg);
 }
 
-/* Same styles as above */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: emCalc(767px)) {
+
+  .auto section {
+    margin-bottom: 0.5em;
+  }
+
+  /* Same styles as above */
   .auto section.auto .title:after,
   .auto section.section .title:after {
     content: "\e75e";
@@ -340,7 +369,7 @@ section .title a,
 
 // Orbit
 @media only screen and (max-width: 767px) {
-    .orbit-timer, .orbit-slide-number{ 
+    .orbit-timer, .orbit-slide-number{
       display:none;
     }
 }
@@ -353,7 +382,7 @@ section .title a,
     color: #fff;
   }
 
-  & .orbit-slides-container .orbit-caption .hide-for-small, 
+  & .orbit-slides-container .orbit-caption .hide-for-small,
   & .orbit-slides-container .orbit-caption .hide-for-small a {
     color: #aaa;
   }
@@ -362,7 +391,7 @@ section .title a,
     background: #eee;
     height: 12px;
   }
-  
+
   & .orbit-timer > span{
     top: 16px;
     border: solid 4px #fff;

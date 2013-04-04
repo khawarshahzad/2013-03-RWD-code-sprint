@@ -4,6 +4,10 @@
   white-space: nowrap;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .bulleted-list {
   list-style-position: outside;
   margin-left: 1em;
@@ -14,11 +18,18 @@
   padding-right: 0 !important;
 }
 
+.margin-top-xlarge {
+  margin-top: 2em;
+}
+
+.scrollable-x {
+  overflow-x: scroll;
+}
+
 .radius {
   @include radius(4px);
 }
 
-.chromeframe, // Old name, remove once all HTML is updated
 .unsupported-browser-message {
   margin: 1em 0 0.5em 0;
   text-align: center;
@@ -26,36 +37,6 @@
   line-height: 120%;
 }
 
-// Visiblity
-
-// Touch-enabled device targeting
-.show-for-no-touch { display: none !important; }
-.hide-for-no-touch { display: inherit !important; }
-.no-touch .show-for-no-touch { display: inherit !important; }
-.no-touch .hide-for-no-touch { display: none !important; }
-
-// IE classes
-
-.hide-for-lt-ie9 {
-  display: none !important;
-}
-
-.lt-ie9 .show-for-lt-ie9 {
-  display: inherit !important;
-}
-
-.hide-for-ie9 {
-  display: none !important;
-}
-
-.ie9 .show-for-ie9 {
-  display: inherit !important;
-}
-
-.hide-for-oldie {
-  display: inherit !important;
-}
-
-.oldie .hide-for-oldie {
-  display: none !important;
+.row {
+  padding-bottom:1em;
 }

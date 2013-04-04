@@ -101,9 +101,8 @@ button.button {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+       box-sizing: border-box;
 }
 
 .button-block + .button-block {
@@ -344,4 +343,13 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+}
+
+.button-for-touch {
+  display: inline-block;
+}
+
+.touch .button-for-touch {
+  @include button();
+  padding: 6px 12px;
 }

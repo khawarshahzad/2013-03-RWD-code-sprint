@@ -8,6 +8,7 @@ var exlsr = {
   ua: navigator.userAgent,
   iOS: false,
   $body: null,
+  $html: null,
   $window: null
 };
 
@@ -15,9 +16,34 @@ var exlsr = {
  * Init methods
  */
 exlsr.init = function _init () {
+  var screenMax;
+
   // Init code here...
   exlsr.$body = $('body');
+  exlsr.$html = $('html');
   exlsr.$window = $(window);
+
+  // Monitor-size classes
+  screenMax = Math.max(screen.width, screen.height);
+  if (screenMax <= 480) {
+    exlsr.$html.addClass('screen-max-tiny');
+  }
+  else if (screenMax > 480 && screenMax < 768) {
+    // Only Foundation's `small-` classes will ever take effect
+    exlsr.$html.addClass('screen-max-small');
+  }
+  else if (screenMax >= 768) {
+    // Foundation's `large-` classes may take effect
+    exlsr.$html.addClass('screen-max-large');
+  }
+
+  // Preload assets
+  exlsr.preloader.add('<img src="/RWD-Demo/images/close.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/close-x-gray.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/hamburger-no-dots.svg">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/nys-small.png">');
+  exlsr.preloader.add('<img src="/RWD-Demo/images/nys-banner-img.png">');
+  exlsr.preloader.init();
 };
 
 $(document).ready(function(){exlsr.init();});
@@ -174,14 +200,13 @@ $(document).ready(function(){exlsr.init();});
     (function(w){
       var doc = w.document;
       if( !doc.querySelector ){ return; }
-      console.log('running');
       var meta = doc.querySelector( "meta[name=viewport]" ),
           initialContent = meta && meta.getAttribute( "content" ),
           disabledZoom = initialContent + ",maximum-scale=1",
           enabledZoom = initialContent + ",maximum-scale=10",
           enabled = true,
           x, y, z, aig;
-      if( !meta ){ console.log('quitting'); return; }
+      if( !meta ){ return; }
       function restoreZoom(){
         meta.setAttribute( "content", enabledZoom );
         enabled = true;
@@ -224,13 +249,13 @@ $(document).ready(function(){
   }
 
   // Standard Gov Banner display code
-  $('#gov-link-3').on('click', function(e) {
+  $('#gov-link-3').on(exlsr.activateEventName, function(e) {
     e.preventDefault();
     exlsr.$body.addClass('active-gov-bar-search');
   });
 
   // Active Elements
-  $('[data-active]').on('click', function(e) {
+  $('[data-active]').on(exlsr.activateEventName, function(e) {
 
     // Prevent Defaults
     e.preventDefault();
@@ -263,6 +288,25 @@ $(document).ready(function(){
       if (activeElm === 'active-site-search') {
         $('#site-search-box').focus();
       }
+
+      if (activeElm === 'active-site-menu') {
+
+
+        // Check to see if off canvas is being used
+        if (exlsr.$body.hasClass('off-canvas') && exlsr.$body.hasClass('active-site-menu')) {
+
+          // Get the screen size and set it has a min-height
+          //document.getElementsByTagName("body").style.minHeight = screen.height + "px";
+          exlsr.$body.css('min-height',screen.height+'px');
+
+        }
+        else {
+          // Remove min height
+          exlsr.$body.css('min-height','');
+        }
+
+      }
+
     }
 
     // Check to see if there is already and active item
@@ -283,7 +327,7 @@ $(document).ready(function(){
       $clickedElm.removeClass(selectedClass);
 
       // Remove any stray body click event
-      $('body').off('click');
+      exlsr.$body.off(exlsr.activateEventName);
 
     } else {
       // Add active state class from header
@@ -293,7 +337,7 @@ $(document).ready(function(){
       $clickedElm.addClass(selectedClass);
 
       // Setup the on click function to close open drop down if the user clicks outside the active element.
-      exlsr.$body.on('click', function(e) {
+      exlsr.$body.on(exlsr.activateEventName, function(e) {
 
         var activeElm = $('.active'),
             clicked = $(this);
@@ -309,14 +353,14 @@ $(document).ready(function(){
           exlsr.$body.removeClass(activeClass);
 
           // Remove active from the active element
-          activeElm.removeClass('active'); 
+          activeElm.removeClass('active');
 
           // Remove this click event
-          exlsr.$body.off('click');       
+          exlsr.$body.off(exlsr.activateEventName);
 
         }
 
-      });      
+      });
 
     }
 
@@ -326,6 +370,47 @@ $(document).ready(function(){
   });
 
 });
+
+/**
+ * Asset Preloader
+ */
+exlsr.preloader = {
+  container: null, // The container <div>
+  assets: []       // Assets to be preloaded (HTML strings); this can be prepopulated
+};
+
+// Creates an off-screen container for preloaded assets and adds any assets present in the queue
+// Should be called at document.ready
+exlsr.preloader.init = function _exlsr_preloader_init () {
+  // Create container
+  exlsr.preloader.container = document.createElement('div');
+  exlsr.preloader.container.className = 'hide-off-screen';
+  document.body.appendChild(exlsr.preloader.container);
+
+  // Load anything that's already in the queue
+  exlsr.preloader.assets.forEach(function(i) {
+    exlsr.preloader.add(i);
+  });
+
+  // Empty the queue
+  exlsr.preloader.assets = [];
+};
+
+// Add an asset to the preload container
+// Argument is an HTML string to be added to the page
+// May be called before or after preload.setup() has run
+exlsr.preloader.add = function _exlsr_preloader_add (html) {
+  if (!html || typeof html !== 'string') { return false; }
+
+  // If the container has already been set up, add this asset immediately
+  if (exlsr.preloader.container) {
+    exlsr.preloader.container.innerHTML += html;
+  }
+  // Otherwise, queue it to load when setup() is run
+  else {
+    exlsr.preloader.assets.push(html);
+  }
+};
 
 /**
  * Plugins

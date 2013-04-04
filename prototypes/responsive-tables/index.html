@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>Responsive Tables</title>
+  <title>Adaptive Tables</title>
   <link rel="stylesheet" href="../../css/excelsior.css">
   <link rel="stylesheet" href="../../css/styles.css">
   <script src="../../js/vendor/custom.modernizr.js"></script>
@@ -17,38 +17,29 @@
   <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
   <link rel="icon" href="../../images/favicon.ico">
 </head>
-<body>
+<body class="white-bg">
   <!--[if lte IE 7]>
-    <div class="row"><div class="small-12 columns unsupported-browser-message"><div class="alert-box">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</div></div></div>
+    <div class="row"><div class="small-12 columns unsupported-browser-message"><div class="alert-box">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please use <a href="http://www.google.com/chrome/">Google Chrome</a> to interact with this demo.</div></div></div>
   <![endif]-->
 
   <div class="row">
     <div class="large-12 columns">
-      <h1>Responsive Tables</h1>
+      <h1>Adaptive Tables</h1>
       <ul class="breadcrumbs">
         <li><a href="../index.html">Prototypes Home</a></li>
-        <li class="current"><a href="#">Responsive Tables</a></li>
+        <li class="current"><a href="#">Adaptive Tables</a></li>
       </ul>
-      <dl class="sub-nav">
-        <dt>Section:</dt>
-        <dd class="active"><a href="#">Overview</a></dd>
-        <dd><a href="examples.html">More Examples</a></dd>
-        <dd><a href="typical.html">Typical</a></dd>
-      </dl>
-      <hr>
     </div>
   </div>
 
   <div class="row">
     <div class="large-8 small-centered columns">
-      <div class="alert-box callout radius" data-alert>
+      <div class="alert-box radius" data-alert>
         <a href="#" class="close">&times;</a>
         <h4>What to watch for:</h4>
         <ul class="bulleted-list">
-          <li>Watch how smaller screens automatically show fewer columns to keep the table readable</li>
-          <li>Use the dropdown menu to select which columns you want to view</li>
-          <li>Notice that some columns, such as Date Issues, are the first to disappear to allow more space for the important columns</li>
-          <li>Note that the 'Name' column can't be hidden by the dropdown because the page design requires it to be shown at all times</li>
+          <li>Notice how smaller screen automatically hide less important columns.</li>
+          <li>The dropdown menu allows you to select which columns you want to view.</li>
         </ul>
       </div>
     </div>
@@ -57,13 +48,12 @@
   <div class="row">
     <div class="large-12 columns">
       <h2>Tax Appeals Tribunal February 2013 Docket</h2>
-        <!-- <h4>Administrative Law Judge Determinations Issued</h4> -->
       <div class="rt-table-menu" id="tadocket-check-container"></div>
     </div>
   </div>
 
   <div class="row">
-    <div class="large-12 columns">
+    <div class="large-12 columns scrollable-x">
       <table id="tadocket">
         <thead>
           <tr>
@@ -147,6 +137,12 @@
           </tr>
         </tbody>
       </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 small-6 columns">
+      <a class="button-for-touch" target="_parent" href="https://github.com/nys-its/excelsior-web-framework/wiki/Adaptive-Tables">Developer Documentation</a>
     </div>
   </div>
 

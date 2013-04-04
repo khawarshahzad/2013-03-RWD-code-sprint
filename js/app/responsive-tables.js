@@ -60,7 +60,7 @@
 
         $.each(selectors, function(j, selector) {
 
-          if ($table.width() >= totalMinWidth) {
+          if ($table.width() >= totalMinWidth && exlsr.$body.width() >= $table.width()) {
             // Don't need to hide any more
             return false;
           }

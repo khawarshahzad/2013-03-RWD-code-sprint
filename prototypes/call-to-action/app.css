@@ -2,8 +2,17 @@
 	margin-top:.5em;
 }
 
+@media only screen {
+
+	.columns {
+		margin-top: 0.5em;
+	}
+
+}
+
 @media only screen and (min-width: 48em) {
 	.hide-for-small {
 		display:block!important;
 	}
 }
+

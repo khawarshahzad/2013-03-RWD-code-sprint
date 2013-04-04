@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
   var $out = $('#out'),
-      $html = $('html'),
+      hastapped = false,
       $mobile = $('#mobile'),
       $deskop = $('#desktop');
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   // Playground demo only
   if (/Chrome\/\d+/.test(navigator.userAgent)) {
-    $('html').addClass('chrome');
+    exlsr.$html.addClass('chrome');
   }
 
   // Touch is supported
@@ -24,15 +24,23 @@ $(document).ready(function() {
 
   $('#in')
     .on('tap', function (evt) { // exlsr.activateEventName
+      if (!hastapped) { $('#out-container').slideDown(); }
+      hastapped = true;
       $out.text('You tapped!').addClass('alert-box success');
     })
     .on('longTap', function (evt) {
+      if (!hastapped) { $('#out-container').slideDown(); }
+      hastapped = true;
       $out.text('You tapped and held!').addClass('alert-box success');
     })
     .on('swipeLeft', function (evt) {
+      if (!hastapped) { $('#out-container').slideDown(); }
+      hastapped = true;
       $out.text('You swiped left!').addClass('alert-box success');
     })
     .on('swipeRight', function (evt) {
+      if (!hastapped) { $('#out-container').slideDown(); }
+      hastapped = true;
       $out.text('You swiped right!').addClass('alert-box success');
     });
 
@@ -40,12 +48,12 @@ $(document).ready(function() {
 
   $('.switch').on(exlsr.activateEventName, function (evt) {
     if ($mobile.is(':checked')) {
-      $html
+      exlsr.$html
         .addClass('touch')
         .removeClass('no-touch');
     }
     else {
-      $html
+      exlsr.$html
         .removeClass('touch')
         .addClass('no-touch');
     }

@@ -9,7 +9,7 @@
   <title>Forms</title>
   <link rel="stylesheet" href="../../css/excelsior.css">
   <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="app.css">
   <script src="../../js/vendor/custom.modernizr.js"></script>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/apple-touch-icon-144x144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../images/apple-touch-icon-114x114-precomposed.png">
@@ -18,9 +18,9 @@
   <link rel="shortcut icon" href="../../images/apple-touch-icon.png">
   <link rel="icon" href="../../images/favicon.ico">
 </head>
-<body>
+<body class="white-bg">
   <!--[if lte IE 7]>
-    <div class="row"><div class="small-12 columns unsupported-browser-message"><div class="alert-box">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please <a href="http://browsehappy.com/">use a different browser</a> to interact with our site.</div></div></div>
+    <div class="row"><div class="small-12 columns unsupported-browser-message"><div class="alert-box">You are using a browser which is currently <strong>incompatible</strong> with our demo.<br> Please use <a href="http://www.google.com/chrome/">Google Chrome</a> to interact with this demo.</div></div></div>
   <![endif]-->
 
   <div class="row">
@@ -33,16 +33,28 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row show-for-screen-max-large">
     <div class="large-8 small-centered columns">
-      <div class="alert-box callout radius" data-alert>
+      <div class="alert-box radius" data-alert>
         <a href="#" class="close">&times;</a>
         <h4>What to watch for:</h4>
         <ul class="bulleted-list">
-          <li>Notice how the labels lie above the input fields on smaller screens for easier viewing</li>
-          <li>A tooltip provides additional help for the Street Address field.</li>
+          <li>Notice how the labels move above the input fields on smaller screens for easier viewing</li>
+          <li>A tooltip provides additional help for the Street Address field. Tooltips adapt to device size.</li>
           <li>Modern browsers will validate your input &mdash; try entering an invalid ZIP code.</li>
-          <li>On a phone, the click-to-call and click-to-txt buttons launch a call/text</li>
+          <li class="hide-for-no-touch">The click-to-call and click-to-text buttons launch a call/text</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row show-for-screen-max-small hide-for-no-touch">
+    <div class="large-8 small-centered columns">
+      <div class="alert-box radius" data-alert>
+        <a href="#" class="close">&times;</a>
+        <h4>What to watch for:</h4>
+        <ul class="bulleted-list">
+          <li>Click-to-call and click-to-text buttons launch a call/text</li>
         </ul>
       </div>
     </div>
@@ -143,6 +155,12 @@
       <div class="large-6 columns">
         <a href="sms:15184748275" class="large button radius expand"><span class="icon-comment"></span>Txt 1-518-474-8275</a>
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 small-6 columns">
+      <a class="button-for-touch" target="_parent" href="https://github.com/nys-its/excelsior-web-framework/wiki/Forms">Developer Documentation</a>
     </div>
   </div>
 

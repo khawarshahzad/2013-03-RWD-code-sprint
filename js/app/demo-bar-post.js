@@ -1,8 +1,8 @@
-$(function(){
+
 	var hasClicked = false;
 
 	$(document).foundation('joyride', 'start');
-
+$(function(){
 	$('#devices a').on('click', function(){ // when they click on a device link we want to trigger the second tip.
 	  if (!hasClicked) {
 	    $('.joyride-tip-guide .joyride-next-tip').eq(1).click(); // click the hidden button to advance

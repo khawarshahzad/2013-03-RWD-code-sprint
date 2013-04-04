@@ -7,12 +7,12 @@
   }
 
   /* Highjacked icon font to create after arrows */
-  .icon-sub-content:after {
+  .icon-sub-menu:after {
     content: "\e75e";
     float: right;
     font-size: 1.2em;
     line-height: inherit;
-    margin-top: -0.25em;
+    margin-top: -0.1em;
    }
 
   .skip-to {
@@ -390,6 +390,11 @@
 
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 48em) {
+
+  .icon-sub-menu:after {
+    content: '\e75c';
+    margin-top: -0.13em;
+  }
 
   .gov-bar {
     background: #036;

@@ -326,6 +326,7 @@
     display: block;
     font-size: 1.15em;
     padding: 10px 15px;
+    text-shadow: 1px 1px 1px #111;
   }
 
 
@@ -545,6 +546,7 @@
   .global-nav ul li a {
     background: #666;
     font-size: 1em;
+    text-shadow: none;
   }
 
   .page {

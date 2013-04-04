@@ -294,6 +294,7 @@
 
   .global-nav .nav-container ul li a.active {
     border: none;
+    background-color: #555;
   }
 
   .global-nav .nav-container ul li a:hover {
@@ -308,7 +309,7 @@
     bottom: -5px;
     margin-left: -2px;
     border-right: 10px solid transparent;
-    border-bottom: 9px solid #454545;
+    border-bottom: 9px solid #404040;
     border-left: 10px solid transparent;
   }
 
@@ -319,7 +320,7 @@
   }
 
   .global-nav .nav-container ul ul li a:hover {
-    background: #363636 !important;
+    background-color: #393939 !important;
   }
 
   /* [M] off-canvas.scss

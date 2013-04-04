@@ -82,8 +82,8 @@ $nav-bar-height: 48px;
 	    top: 53px;
 	    width: 100%;
 	    background: #666;
-	    -webkit-transition: left 0.2s ease-in;
-	            transition: left 0.2s ease-in;
+	    -webkit-transition: left 0.2s ease;
+	            transition: left 0.2s ease;
 	  }
 
 	  .global-nav ul ul li {
@@ -126,8 +126,8 @@ $nav-bar-height: 48px;
 	  .gov-bar,
 	  .site-bar,
 	  .page {
-	    -webkit-transition: top 0.2s ease-in, left 0.2s ease-in, height 0.2s ease-in; /* Safari and Chrome */
-	            transition: top 0.2s ease-in, left 0.2s ease-in, height 0.2s ease-in;
+	    -webkit-transition: top 0.2s ease, left 0.2s ease, height 0.2s ease; /* Safari and Chrome */
+	            transition: top 0.2s ease, left 0.2s ease, height 0.2s ease;
 	  }
 
 	  &.active-gov-bar .gov-pull-down-container,

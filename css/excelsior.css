@@ -7114,15 +7114,20 @@ section .title a:hover,
   }
 }
 /* line 433, ../scss/excelsior/_foundation-override.scss */
+.clearing-blackout {
+  top: 48px;
+}
+
+/* line 437, ../scss/excelsior/_foundation-override.scss */
 .clearing-caption {
   display: none !important;
 }
 
-/* line 437, ../scss/excelsior/_foundation-override.scss */
+/* line 441, ../scss/excelsior/_foundation-override.scss */
 .clearing-close {
   text-decoration: none;
 }
-/* line 440, ../scss/excelsior/_foundation-override.scss */
+/* line 444, ../scss/excelsior/_foundation-override.scss */
 .clearing-close:hover {
   text-decoration: none;
 }

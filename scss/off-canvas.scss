@@ -76,8 +76,8 @@ $nav-bar-height: 48px;
     }
 
     .global-nav ul ul {
+      background: #333 !important;
       display: block;
-
       height: 100%;
       left: 100%;
       position: fixed;
@@ -89,7 +89,7 @@ $nav-bar-height: 48px;
     }
 
     .global-nav ul ul li {
-      padding-left: 1.5%;
+      padding-left: 2% !important;
     }
 
     .global-nav .menu-controls {
@@ -226,11 +226,13 @@ $nav-bar-height: 48px;
     }
 
     .global-nav ul ul {
-      top: 46px;
-      left: 0;
+      background: #454545 !important; /* M */
+      border-radius: 4px !important;
+      top: 50px !important;
       position: absolute;
+      overflow: hidden;
       visibility: hidden;
-      width: 100%;
+      width: auto !important;
       -webkit-transition: left 0;
               transition: left 0s;
     }
@@ -239,8 +241,18 @@ $nav-bar-height: 48px;
       visibility: visible;
     }
 
+    .global-nav ul ul.active-menu li {
+      padding: 0 !important;
+    }
+
     .global-nav .active-menu li {
       padding-left: 0;
+      border-bottom: 0;
+    }
+
+    .global-nav .active-menu li a {
+      border-radius: 4px;
+      background: #454545 !important;
     }
 
     .page {

@@ -73,6 +73,7 @@
   }
   /* line 78, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul {
+    background: #333 !important;
     display: block;
     height: 100%;
     left: 100%;
@@ -85,7 +86,7 @@
   }
   /* line 91, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul li {
-    padding-left: 1.5%;
+    padding-left: 2% !important;
   }
   /* line 95, ../scss/off-canvas.scss */
   .off-canvas .global-nav .menu-controls {
@@ -207,23 +208,36 @@
   }
   /* line 228, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul {
-    top: 46px;
-    left: 0;
+    background: #454545 !important;
+    /* M */
+    border-radius: 4px !important;
+    top: 50px !important;
     position: absolute;
+    overflow: hidden;
     visibility: hidden;
-    width: 100%;
+    width: auto !important;
     -webkit-transition: left 0;
     transition: left 0s;
   }
-  /* line 238, ../scss/off-canvas.scss */
+  /* line 240, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu {
     visibility: visible;
   }
-  /* line 242, ../scss/off-canvas.scss */
+  /* line 244, ../scss/off-canvas.scss */
+  .off-canvas .global-nav ul ul.active-menu li {
+    padding: 0 !important;
+  }
+  /* line 248, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li {
     padding-left: 0;
+    border-bottom: 0;
   }
-  /* line 246, ../scss/off-canvas.scss */
+  /* line 253, ../scss/off-canvas.scss */
+  .off-canvas .global-nav .active-menu li a {
+    border-radius: 4px;
+    background: #454545 !important;
+  }
+  /* line 258, ../scss/off-canvas.scss */
   .off-canvas .page {
     min-height: auto;
     top: -23px;

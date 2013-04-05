@@ -12,7 +12,7 @@
     float: right;
     font-size: 1.2em;
     line-height: inherit;
-    margin-top: -0.1em;
+    margin: -0.3em 0 0 8px;
    }
 
   .skip-to {
@@ -75,13 +75,13 @@
         font-size: 1.3em;
         text-align: center;
         padding-bottom: 5px;
-        margin: 8px 0.2em 0 0.5em;
+        margin: 12px 0.2em 0 0.5em;
       }
 
       &.gov-link-2 {
         float: right;
-        background: url(../images/hamburger-no-dots.svg) no-repeat 2px 2px transparent;
-        background-size: 24px 24px;
+        background: url(../images/hamburger-no-dots.svg) no-repeat 2px 0px transparent;
+        background-size: 24px;
         color: #FFF;
         font-size: 1em;
         margin: 5px 0.4em;
@@ -100,7 +100,7 @@
 
     form {
       overflow: auto;
-      padding: 0.5em 0.5em 0 0.5em;
+      padding: 0.1em 0.5em 0 0.5em;
       width: 100%;
 
       .gov-search-button {
@@ -157,6 +157,7 @@
       height: 37px;
       margin: 1px 2px 0 0;
     }
+
   } // end .gov-bar
 
   /* Site Header */
@@ -190,7 +191,7 @@
   .site-bar .site-functions .site-search {
     background: #fff;
     border-bottom: 1px solid #666;
-    box-shadow: 2px 2px 4px #999;
+    box-shadow: none;
     display: block;
     height: 0;
     left: 0;
@@ -304,6 +305,7 @@
   }
 
   .global-nav .nav-container {
+    border-bottom: 1px solid #505050;
     height: 0;
     overflow: hidden;
     -webkit-transition: height 0.2s ease;
@@ -326,7 +328,7 @@
     color: #FFF;
     display: block;
     font-size: 1.15em;
-    padding: 10px 15px;
+    padding: 11px 12px 9px 12px;
     text-shadow: 1px 1px 1px #111;
   }
 
@@ -383,7 +385,7 @@
 
   /* Active Site Menu */
   .active-site-menu .global-nav .nav-container {
-    height: 356px;
+    height: 343px;
   }
 
   /* Utility Classes */
@@ -393,8 +395,11 @@
 @media only screen and (min-width: 48em) {
 
   .icon-sub-menu:after {
-    content: '\e75c';
-    margin-top: -0.13em;
+    content: "\e760";
+    float: right;
+    font-size: 1.5em;
+    line-height: inherit;
+    margin: -0.3em 0 0 8px;
   }
 
   .gov-bar {
@@ -538,6 +543,9 @@
   }
 
   .global-nav ul li {
+    border-right: 1px solid #757575;
+    border-left: 1px solid #505050;
+    border-bottom: none;
     float: left
   }
 
@@ -545,6 +553,37 @@
     background: #666;
     font-size: 1em;
     text-shadow: none;
+  }
+
+  .global-nav .nav-container ul li a.active {
+    border: none;
+    background-color: #555;
+  }
+
+  .global-nav .nav-container ul li a:hover {
+    background: #555;
+  }
+
+  .global-nav .nav-container ul li a.active:after {
+    content: "\e760";
+    width: 0;
+    height: auto;
+    position: absolute;
+    bottom: -5px;
+    margin-left: -2px;
+    border-right: 10px solid transparent;
+    border-bottom: 9px solid #404040;
+    border-left: 10px solid transparent;
+  }
+
+  .global-nav ul ul li {
+    border-right: 1px solid #666;
+    border-left: 1px solid #333;
+    border-bottom: none;
+  }
+
+  .global-nav .nav-container ul ul li a:hover {
+    background-color: #393939 !important;
   }
 
   .page {

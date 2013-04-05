@@ -21,11 +21,8 @@
   margin-top: 0;
 }
 
-.image-to-list .has-video a span {
-  bottom: 0;
-  display: block;
-  position: absolute;
-  width: 100%;
+.image-to-list .video-container .has-video a span {
+  display: none !important;
 }
 
 @media only screen and (min-width: 24em) {

@@ -402,6 +402,10 @@
     margin: -0.3em 0 0 8px;
   }
 
+  .active.icon-sub-menu:after {
+    margin: -0.3em 0 0 -4px;
+  }
+
   .gov-bar {
     background: #036;
     border-bottom: 1px solid #555;
@@ -570,7 +574,7 @@
     height: auto;
     position: absolute;
     bottom: -5px;
-    margin-left: -2px;
+    margin-left: 4px;
     border-right: 10px solid transparent;
     border-bottom: 9px solid #404040;
     border-left: 10px solid transparent;

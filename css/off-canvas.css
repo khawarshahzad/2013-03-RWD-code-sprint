@@ -215,29 +215,28 @@
     position: absolute;
     overflow: hidden;
     visibility: hidden;
-    width: auto !important;
     -webkit-transition: left 0;
     transition: left 0s;
   }
-  /* line 240, ../scss/off-canvas.scss */
+  /* line 239, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu {
     visibility: visible;
   }
-  /* line 244, ../scss/off-canvas.scss */
+  /* line 243, ../scss/off-canvas.scss */
   .off-canvas .global-nav ul ul.active-menu li {
     padding: 0 !important;
   }
-  /* line 248, ../scss/off-canvas.scss */
+  /* line 247, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li {
     padding-left: 0;
     border-bottom: 0;
   }
-  /* line 253, ../scss/off-canvas.scss */
+  /* line 252, ../scss/off-canvas.scss */
   .off-canvas .global-nav .active-menu li a {
     border-radius: 4px;
     background: #454545 !important;
   }
-  /* line 258, ../scss/off-canvas.scss */
+  /* line 257, ../scss/off-canvas.scss */
   .off-canvas .page {
     min-height: auto;
     top: -23px;

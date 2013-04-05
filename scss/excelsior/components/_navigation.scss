@@ -65,12 +65,6 @@
           transition: top 0.2s ease;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .gov-pull-down {
-    background-image: url(../images/nys-small@2x.png);
-  }
-}
-
 .gov-bar {
   background: #036;
   background-image: -webkit-linear-gradient(#002851, #036);

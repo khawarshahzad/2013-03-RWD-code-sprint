@@ -9820,13 +9820,7 @@ a:focus {
   transition: top 0.2s ease;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 69, ../scss/excelsior/components/_navigation.scss */
-  .gov-pull-down {
-    background-image: url(../images/nys-small@2x.png);
-  }
-}
-/* line 74, ../scss/excelsior/components/_navigation.scss */
+/* line 68, ../scss/excelsior/components/_navigation.scss */
 .gov-bar {
   background: #036;
   background-image: -webkit-linear-gradient(#002851, #003366);
@@ -9840,11 +9834,11 @@ a:focus {
   width: 100%;
   z-index: 40;
 }
-/* line 87, ../scss/excelsior/components/_navigation.scss */
+/* line 81, ../scss/excelsior/components/_navigation.scss */
 .gov-bar a {
   color: #FFF;
 }
-/* line 90, ../scss/excelsior/components/_navigation.scss */
+/* line 84, ../scss/excelsior/components/_navigation.scss */
 .gov-bar a.gov-link-1 {
   float: left;
   font-size: 1.3em;
@@ -9852,7 +9846,7 @@ a:focus {
   padding-bottom: 5px;
   margin: 12px 0.2em 0 0.5em;
 }
-/* line 98, ../scss/excelsior/components/_navigation.scss */
+/* line 92, ../scss/excelsior/components/_navigation.scss */
 .gov-bar a.gov-link-2 {
   float: right;
   background: url(../images/hamburger-no-dots.svg) no-repeat 2px 0px transparent;
@@ -9862,39 +9856,39 @@ a:focus {
   margin: 5px 0.4em;
   padding: 6px 0.2em 2px 32px;
 }
-/* line 108, ../scss/excelsior/components/_navigation.scss */
+/* line 102, ../scss/excelsior/components/_navigation.scss */
 .gov-bar a.gov-link-3 {
   display: none;
   text-indent: -9999px;
 }
-/* line 114, ../scss/excelsior/components/_navigation.scss */
+/* line 108, ../scss/excelsior/components/_navigation.scss */
 .gov-bar .state-links {
   overflow: auto;
 }
-/* line 118, ../scss/excelsior/components/_navigation.scss */
+/* line 112, ../scss/excelsior/components/_navigation.scss */
 .gov-bar form {
   overflow: auto;
   padding: 0.1em 0.5em 0 0.5em;
   width: 100%;
 }
-/* line 123, ../scss/excelsior/components/_navigation.scss */
+/* line 117, ../scss/excelsior/components/_navigation.scss */
 .gov-bar form .gov-search-button {
   float: right;
   font-size: 0.95em;
   width: 26%;
 }
-/* line 130, ../scss/excelsior/components/_navigation.scss */
+/* line 124, ../scss/excelsior/components/_navigation.scss */
 .gov-bar form legend,
 .gov-bar form label {
   display: none;
 }
-/* line 134, ../scss/excelsior/components/_navigation.scss */
+/* line 128, ../scss/excelsior/components/_navigation.scss */
 .gov-bar form fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-/* line 141, ../scss/excelsior/components/_navigation.scss */
+/* line 135, ../scss/excelsior/components/_navigation.scss */
 .gov-bar input {
   border-radius: 4px;
   -webkit-appearance: none;
@@ -9904,7 +9898,7 @@ a:focus {
   float: left;
   margin: 0;
 }
-/* line 150, ../scss/excelsior/components/_navigation.scss */
+/* line 144, ../scss/excelsior/components/_navigation.scss */
 .gov-bar input[type=search] {
   border-radius: 5px 0 0 5px;
   padding-left: 10px;
@@ -9914,7 +9908,7 @@ a:focus {
   box-sizing: border-box;
   height: 25px;
 }
-/* line 160, ../scss/excelsior/components/_navigation.scss */
+/* line 154, ../scss/excelsior/components/_navigation.scss */
 .gov-bar input[type=submit] {
   background-image: -webkit-linear-gradient(#999999, #505050);
   background-image: linear-gradient(#999999, #505050);
@@ -9926,14 +9920,14 @@ a:focus {
   width: 30%;
   margin-top: 1px;
 }
-/* line 173, ../scss/excelsior/components/_navigation.scss */
+/* line 167, ../scss/excelsior/components/_navigation.scss */
 .gov-bar .search-container {
   height: 37px;
   margin: 1px 2px 0 0;
 }
 
 /* Site Header */
-/* line 181, ../scss/excelsior/components/_navigation.scss */
+/* line 175, ../scss/excelsior/components/_navigation.scss */
 .site-bar {
   background: #454545;
   background-image: -webkit-linear-gradient(#5f5f5f, #282828);
@@ -9947,7 +9941,7 @@ a:focus {
   transition: top 0.2s ease;
 }
 
-/* line 194, ../scss/excelsior/components/_navigation.scss */
+/* line 188, ../scss/excelsior/components/_navigation.scss */
 .site-bar a.site-logo {
   color: #fff;
   float: left;
@@ -9958,12 +9952,12 @@ a:focus {
   line-height: 48px;
 }
 
-/* line 204, ../scss/excelsior/components/_navigation.scss */
+/* line 198, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions {
   overflow: auto;
 }
 
-/* line 208, ../scss/excelsior/components/_navigation.scss */
+/* line 202, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-search {
   background: #fff;
   border-bottom: 1px solid #666;
@@ -9980,33 +9974,33 @@ a:focus {
   transition: height 0.2s ease;
 }
 
-/* line 224, ../scss/excelsior/components/_navigation.scss */
+/* line 218, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-search .search-container {
   height: 37px;
   padding: 0 0.3em !important;
 }
 
-/* line 229, ../scss/excelsior/components/_navigation.scss */
+/* line 223, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-search form {
   margin: 3px 0 0 0;
   padding: 5px 8px;
   width: 100%;
 }
 
-/* line 236, ../scss/excelsior/components/_navigation.scss */
+/* line 230, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-search form legend,
 .site-bar .site-functions .site-search form label {
   display: none;
 }
 
-/* line 240, ../scss/excelsior/components/_navigation.scss */
+/* line 234, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-search form fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 246, ../scss/excelsior/components/_navigation.scss */
+/* line 240, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-search input {
   -webkit-appearance: none;
   padding: 0;
@@ -10015,7 +10009,7 @@ a:focus {
   margin: 0;
 }
 
-/* line 253, ../scss/excelsior/components/_navigation.scss */
+/* line 247, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-search input[type=search] {
   float: left;
   border-radius: 5px 0 0 5px;
@@ -10027,7 +10021,7 @@ a:focus {
   box-sizing: border-box;
 }
 
-/* line 264, ../scss/excelsior/components/_navigation.scss */
+/* line 258, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-button {
   float: left;
   background-image: -webkit-linear-gradient(#999999, #505050);
@@ -10038,7 +10032,7 @@ a:focus {
   height: 100%;
 }
 
-/* line 274, ../scss/excelsior/components/_navigation.scss */
+/* line 268, ../scss/excelsior/components/_navigation.scss */
 .site-bar .site-functions .site-search input[type=submit] {
   background: url(../images/search.svg) no-repeat center center transparent;
   background-size: 24px;
@@ -10050,32 +10044,32 @@ a:focus {
   padding-bottom: 0.69em;
 }
 
-/* line 285, ../scss/excelsior/components/_navigation.scss */
+/* line 279, ../scss/excelsior/components/_navigation.scss */
 .site-bar .mobile-functions {
   float: right;
   list-style: none;
   margin: 0;
 }
 
-/* line 291, ../scss/excelsior/components/_navigation.scss */
+/* line 285, ../scss/excelsior/components/_navigation.scss */
 .site-bar .mobile-functions li {
   float: left;
   border-left: 1px solid #666;
 }
 
-/* line 296, ../scss/excelsior/components/_navigation.scss */
+/* line 290, ../scss/excelsior/components/_navigation.scss */
 .site-bar .mobile-functions .mobile-search-button {
   background: url(../images/search.svg) no-repeat 12px 12px transparent;
   background-size: 24px 24px;
 }
 
-/* line 301, ../scss/excelsior/components/_navigation.scss */
+/* line 295, ../scss/excelsior/components/_navigation.scss */
 .site-bar .mobile-functions .mobile-menu-button {
   background: url(../images/hamburger.svg) no-repeat 12px 12px transparent;
   background-size: 24px 24px;
 }
 
-/* line 306, ../scss/excelsior/components/_navigation.scss */
+/* line 300, ../scss/excelsior/components/_navigation.scss */
 .site-bar .mobile-functions .mobile-icons {
   display: inline-block;
   height: 48px;
@@ -10084,7 +10078,7 @@ a:focus {
 }
 
 /* Global Navigation Bar */
-/* line 316, ../scss/excelsior/components/_navigation.scss */
+/* line 310, ../scss/excelsior/components/_navigation.scss */
 .global-nav {
   background: #333;
   position: absolute;
@@ -10093,7 +10087,7 @@ a:focus {
   z-index: 20;
 }
 
-/* line 324, ../scss/excelsior/components/_navigation.scss */
+/* line 318, ../scss/excelsior/components/_navigation.scss */
 .global-nav .nav-container {
   border-bottom: 1px solid #505050;
   height: 0;
@@ -10102,20 +10096,20 @@ a:focus {
   transition: height 0.2s ease;
 }
 
-/* line 332, ../scss/excelsior/components/_navigation.scss */
+/* line 326, ../scss/excelsior/components/_navigation.scss */
 .global-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 338, ../scss/excelsior/components/_navigation.scss */
+/* line 332, ../scss/excelsior/components/_navigation.scss */
 .global-nav ul li {
   border-right: 1px solid #444;
   border-bottom: 1px solid #444;
 }
 
-/* line 343, ../scss/excelsior/components/_navigation.scss */
+/* line 337, ../scss/excelsior/components/_navigation.scss */
 .global-nav ul li a {
   background: #333;
   color: #FFF;
@@ -10126,7 +10120,7 @@ a:focus {
 }
 
 /* Page Contents */
-/* line 354, ../scss/excelsior/components/_navigation.scss */
+/* line 348, ../scss/excelsior/components/_navigation.scss */
 .page {
   background: #282828;
   height: 100%;
@@ -10136,62 +10130,62 @@ a:focus {
   z-index: 10;
 }
 
-/* line 363, ../scss/excelsior/components/_navigation.scss */
+/* line 357, ../scss/excelsior/components/_navigation.scss */
 .page .content-section {
   background: #FFF;
   padding: 1em 0;
 }
 
 /* Active Govenor Banner */
-/* line 370, ../scss/excelsior/components/_navigation.scss */
+/* line 364, ../scss/excelsior/components/_navigation.scss */
 .active-gov-bar .gov-bar {
   height: 88px;
 }
 
-/* line 374, ../scss/excelsior/components/_navigation.scss */
+/* line 368, ../scss/excelsior/components/_navigation.scss */
 .active-gov-bar .site-bar {
   top: 88px;
 }
 
-/* line 378, ../scss/excelsior/components/_navigation.scss */
+/* line 372, ../scss/excelsior/components/_navigation.scss */
 .active-gov-bar .gov-pull-down-container {
   top: 88px;
 }
 
-/* line 382, ../scss/excelsior/components/_navigation.scss */
+/* line 376, ../scss/excelsior/components/_navigation.scss */
 .active-gov-bar .gov-pull-down {
   background: url(../images/close.svg) no-repeat 5px 7px transparent;
   background-size: 28px;
 }
 
 /* Active Site Search */
-/* line 388, ../scss/excelsior/components/_navigation.scss */
+/* line 382, ../scss/excelsior/components/_navigation.scss */
 .active-site-search .site-bar .mobile-functions .mobile-icons.active {
   background: url(../images/close-x-gray.svg) no-repeat 10px 12px white;
   background-size: 28px;
 }
 
 /* Active Menu */
-/* line 394, ../scss/excelsior/components/_navigation.scss */
+/* line 388, ../scss/excelsior/components/_navigation.scss */
 .active-site-menu .site-bar .mobile-functions .mobile-icons.active {
   background: url(../images/close.svg) no-repeat 10px 12px #333333;
   background-size: 28px;
 }
 
-/* line 399, ../scss/excelsior/components/_navigation.scss */
+/* line 393, ../scss/excelsior/components/_navigation.scss */
 .active-site-search .site-functions .site-search {
   height: 53px;
 }
 
 /* Active Site Menu */
-/* line 404, ../scss/excelsior/components/_navigation.scss */
+/* line 398, ../scss/excelsior/components/_navigation.scss */
 .active-site-menu .global-nav .nav-container {
   height: 343px;
 }
 
 /* Medium Displays: 768px - 1279px */
 @media only screen and (min-width: 48em) {
-  /* line 412, ../scss/excelsior/components/_navigation.scss */
+  /* line 406, ../scss/excelsior/components/_navigation.scss */
   .icon-sub-menu:after {
     content: "\e760";
     float: right;
@@ -10200,12 +10194,12 @@ a:focus {
     margin: -0.3em 0 0 8px;
   }
 
-  /* line 420, ../scss/excelsior/components/_navigation.scss */
+  /* line 414, ../scss/excelsior/components/_navigation.scss */
   .active.icon-sub-menu:after {
     margin: -0.3em 0 0 -4px;
   }
 
-  /* line 424, ../scss/excelsior/components/_navigation.scss */
+  /* line 418, ../scss/excelsior/components/_navigation.scss */
   .gov-bar {
     background: #036;
     border-bottom: 1px solid #555;
@@ -10214,20 +10208,20 @@ a:focus {
     transition: height 0s ease;
   }
 
-  /* line 434, ../scss/excelsior/components/_navigation.scss */
+  /* line 428, ../scss/excelsior/components/_navigation.scss */
   .gov-bar,
   .active-gov-bar .gov-bar,
   .gov-bar a {
     height: 28px;
   }
 
-  /* line 438, ../scss/excelsior/components/_navigation.scss */
+  /* line 432, ../scss/excelsior/components/_navigation.scss */
   .gov-bar .state-links {
     display: inline-block;
     float: left;
   }
 
-  /* line 443, ../scss/excelsior/components/_navigation.scss */
+  /* line 437, ../scss/excelsior/components/_navigation.scss */
   .gov-bar a.gov-link-1 {
     background: url(../images/nys-banner-img.png) no-repeat 0 0 transparent;
     display: inline-block;
@@ -10237,7 +10231,7 @@ a:focus {
     width: 185px;
   }
 
-  /* line 453, ../scss/excelsior/components/_navigation.scss */
+  /* line 447, ../scss/excelsior/components/_navigation.scss */
   .gov-bar a.gov-link-2,
   .gov-bar a.gov-link-2:hover {
     background: url(../images/nys-banner-img.png) no-repeat 0 -28px transparent;
@@ -10249,12 +10243,12 @@ a:focus {
     width: 130px;
   }
 
-  /* line 463, ../scss/excelsior/components/_navigation.scss */
+  /* line 457, ../scss/excelsior/components/_navigation.scss */
   .gov-bar a.gov-link-2:hover {
     background-color: transparent;
   }
 
-  /* line 467, ../scss/excelsior/components/_navigation.scss */
+  /* line 461, ../scss/excelsior/components/_navigation.scss */
   .gov-bar a.gov-link-3 {
     background: url(../images/nys-banner-img.png) no-repeat 0 -56px transparent;
     display: inline-block;
@@ -10262,7 +10256,7 @@ a:focus {
     width: 150px;
   }
 
-  /* line 474, ../scss/excelsior/components/_navigation.scss */
+  /* line 468, ../scss/excelsior/components/_navigation.scss */
   .gov-bar form {
     display: none;
     float: right;
@@ -10273,18 +10267,18 @@ a:focus {
   }
 
   /* Active Gov Bar Search Box */
-  /* line 484, ../scss/excelsior/components/_navigation.scss */
+  /* line 478, ../scss/excelsior/components/_navigation.scss */
   .active-gov-bar-search a.gov-link-3 {
     display: none;
   }
 
-  /* line 488, ../scss/excelsior/components/_navigation.scss */
+  /* line 482, ../scss/excelsior/components/_navigation.scss */
   .active-gov-bar-search .gov-bar form {
     display: block;
   }
 
   /* Site Header */
-  /* line 494, ../scss/excelsior/components/_navigation.scss */
+  /* line 488, ../scss/excelsior/components/_navigation.scss */
   .site-bar {
     background-image: -webkit-linear-gradient(#363636, #282828);
     background-image: linear-gradient(#363636, #282828);
@@ -10293,7 +10287,7 @@ a:focus {
     width: 100%;
   }
 
-  /* line 503, ../scss/excelsior/components/_navigation.scss */
+  /* line 497, ../scss/excelsior/components/_navigation.scss */
   .site-bar,
   .active-gov-bar .site-bar {
     top: 0;
@@ -10302,25 +10296,25 @@ a:focus {
     z-index: 0;
   }
 
-  /* line 510, ../scss/excelsior/components/_navigation.scss */
+  /* line 504, ../scss/excelsior/components/_navigation.scss */
   .site-bar a.site-logo {
     font-size: 2em;
     margin: 0 0 0 .3em;
     padding: 0.4em 0 0 0;
   }
 
-  /* line 516, ../scss/excelsior/components/_navigation.scss */
+  /* line 510, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-functions {
     height: 100%;
   }
 
-  /* line 520, ../scss/excelsior/components/_navigation.scss */
+  /* line 514, ../scss/excelsior/components/_navigation.scss */
   .site-bar .mobile-functions {
     display: none !important;
     speak: none;
   }
 
-  /* line 525, ../scss/excelsior/components/_navigation.scss */
+  /* line 519, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-functions .site-search {
     border-bottom: none;
     background: transparent;
@@ -10334,22 +10328,22 @@ a:focus {
     width: 15em;
   }
 
-  /* line 538, ../scss/excelsior/components/_navigation.scss */
+  /* line 532, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-functions .site-search form {
     margin: 0;
   }
 
-  /* line 542, ../scss/excelsior/components/_navigation.scss */
+  /* line 536, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-functions .site-search input[type=search] {
     width: 82%;
   }
 
-  /* line 546, ../scss/excelsior/components/_navigation.scss */
+  /* line 540, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-functions .site-button {
     width: 18%;
   }
 
-  /* line 550, ../scss/excelsior/components/_navigation.scss */
+  /* line 544, ../scss/excelsior/components/_navigation.scss */
   .global-nav {
     display: block;
     height: 46px;
@@ -10359,13 +10353,13 @@ a:focus {
     margin-top: -24px;
   }
 
-  /* line 559, ../scss/excelsior/components/_navigation.scss */
+  /* line 553, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container {
     height: auto;
     background: #666;
   }
 
-  /* line 564, ../scss/excelsior/components/_navigation.scss */
+  /* line 558, ../scss/excelsior/components/_navigation.scss */
   .global-nav ul li {
     border-right: 1px solid #757575;
     border-left: 1px solid #505050;
@@ -10373,25 +10367,25 @@ a:focus {
     float: left;
   }
 
-  /* line 571, ../scss/excelsior/components/_navigation.scss */
+  /* line 565, ../scss/excelsior/components/_navigation.scss */
   .global-nav ul li a {
     background: #666;
     font-size: 1em;
     text-shadow: none;
   }
 
-  /* line 577, ../scss/excelsior/components/_navigation.scss */
+  /* line 571, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul li a.active {
     border: none;
     background-color: #555;
   }
 
-  /* line 582, ../scss/excelsior/components/_navigation.scss */
+  /* line 576, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul li a:hover {
     background: #555;
   }
 
-  /* line 586, ../scss/excelsior/components/_navigation.scss */
+  /* line 580, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul li a.active:after {
     content: "\e760";
     width: 0;
@@ -10404,38 +10398,38 @@ a:focus {
     border-left: 10px solid transparent;
   }
 
-  /* line 598, ../scss/excelsior/components/_navigation.scss */
+  /* line 592, ../scss/excelsior/components/_navigation.scss */
   .global-nav ul ul li {
     border-right: 1px solid #666;
     border-left: 1px solid #333;
     border-bottom: none;
   }
 
-  /* line 604, ../scss/excelsior/components/_navigation.scss */
+  /* line 598, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul ul li a:hover {
     background-color: #393939 !important;
   }
 
-  /* line 608, ../scss/excelsior/components/_navigation.scss */
+  /* line 602, ../scss/excelsior/components/_navigation.scss */
   .page {
     background: #FFF;
     position: relative;
     top: -23px;
   }
 
-  /* line 614, ../scss/excelsior/components/_navigation.scss */
+  /* line 608, ../scss/excelsior/components/_navigation.scss */
   .page .content-section {
     padding: 2em 0;
   }
 }
 /* Page Lock at 960px */
 @media only screen and (min-width: 60em) {
-  /* line 623, ../scss/excelsior/components/_navigation.scss */
+  /* line 617, ../scss/excelsior/components/_navigation.scss */
   .gov-bar {
     background: #036;
   }
 
-  /* line 631, ../scss/excelsior/components/_navigation.scss */
+  /* line 625, ../scss/excelsior/components/_navigation.scss */
   .gov-bar .gov-wrap,
   .site-bar .site-wrap,
   .global-nav,
@@ -10447,17 +10441,17 @@ a:focus {
     width: 60em !important;
   }
 
-  /* line 638, ../scss/excelsior/components/_navigation.scss */
+  /* line 632, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-wrap {
     position: relative;
   }
 
-  /* line 642, ../scss/excelsior/components/_navigation.scss */
+  /* line 636, ../scss/excelsior/components/_navigation.scss */
   .site-bar .site-functions {
     position: relative;
   }
 
-  /* line 647, ../scss/excelsior/components/_navigation.scss */
+  /* line 641, ../scss/excelsior/components/_navigation.scss */
   .global-nav,
   .global-nav .nav-container {
     border-radius: 5px;
@@ -10465,14 +10459,14 @@ a:focus {
 }
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {
-  /* line 656, ../scss/excelsior/components/_navigation.scss */
+  /* line 650, ../scss/excelsior/components/_navigation.scss */
   .gov-bar {
     background: #036;
   }
 }
 /* X-Large Displays: 1400px and up */
 @media only screen and (min-width: 90em) {
-  /* line 663, ../scss/excelsior/components/_navigation.scss */
+  /* line 657, ../scss/excelsior/components/_navigation.scss */
   .gov-bar {
     background: #036;
   }

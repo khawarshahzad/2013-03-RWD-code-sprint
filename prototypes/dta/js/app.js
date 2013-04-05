@@ -11,7 +11,6 @@ $(function(){
   // Map
   if ($('.map-canvas').length) {
     var latlng, myOptions, map, marker;
-    console.log('1');
     latlng = new google.maps.LatLng(42.65163, -73.7595);
     myOptions = {
       zoom: 15,

@@ -6,6 +6,10 @@
     background: #282828;
   }
 
+  a:focus {
+    outline: 1px dotted #fc6;
+  }
+
   /* Highjacked icon font to create after arrows */
   .icon-sub-menu:after {
     content: "\e75e";
@@ -16,7 +20,21 @@
    }
 
   .skip-to {
-    display: none;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    background: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    border: 1px solid #FFF;
+    display: inline-block;
+    padding: 5px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .skip-to:focus {
+    clip: auto;
+    outline: 1px solid #FFF;
+    z-index: 100;
   }
 
   .gov-pull-down-container {

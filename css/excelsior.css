@@ -10372,8 +10372,8 @@ a:focus {
 
   /* line 558, ../scss/excelsior/components/_navigation.scss */
   .global-nav ul li {
-    border-right: 1px solid #757575;
-    border-left: 1px solid #505050;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
     border-bottom: none;
     float: left;
   }
@@ -10388,12 +10388,12 @@ a:focus {
   /* line 571, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul li a.active {
     border: none;
-    background-color: #555;
+    background-color: #888;
   }
 
   /* line 576, ../scss/excelsior/components/_navigation.scss */
   .global-nav .nav-container ul li a:hover {
-    background: #555;
+    background: #888;
   }
 
   /* line 580, ../scss/excelsior/components/_navigation.scss */
@@ -10405,14 +10405,14 @@ a:focus {
     bottom: -5px;
     margin-left: 4px;
     border-right: 10px solid transparent;
-    border-bottom: 9px solid #404040;
+    border-bottom: 9px solid #454545;
     border-left: 10px solid transparent;
   }
 
   /* line 592, ../scss/excelsior/components/_navigation.scss */
   .global-nav ul ul li {
-    border-right: 1px solid #666;
-    border-left: 1px solid #333;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
     border-bottom: none;
   }
 

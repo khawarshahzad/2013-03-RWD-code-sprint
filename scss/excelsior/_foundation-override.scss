@@ -434,6 +434,14 @@ section .title a,
   top: 48px
 }
 
+@media only screen and (min-width: 48em) {
+  
+  .clearing-blackout {
+    top: 0
+  }
+  
+}
+
 .clearing-caption {
   display: none !important;
 }

@@ -1,1 +1,1 @@
-gource ../ --file-idle-time 0 --background 333333 --font-size 24 --title "NYS ITS Responsive Web Design Code Sprint: 3/18/2013 - 4/5/2013" --user-image-dir avatars/ --multi-sampling --file-idle-time 0 --logo avatars/its-logo-gray.png
+gource -1280x720 ../ --file-idle-time 0 --background 333333 --font-size 24 --title "NYS ITS Responsive Web Design Code Sprint: 3/18/2013 - 4/5/2013" --user-image-dir avatars/ --multi-sampling --file-idle-time 0 --logo avatars/its-logo-gray.png

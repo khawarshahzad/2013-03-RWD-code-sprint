@@ -1,1 +1,1 @@
-- [Prototypes Index](http://nys-its.github.com/RWD-Demo/prototypes/index.html) (pull master to gh-pages branch to update view)
+This was a multi-use repo for the RWD code sprint (3/18/2013-4/5/2013) and is now depricated. Features and functionality have been migrated out to the "go-responsive" and "excelsior-web-framework" repos. The repo is kept for reference to issues and a record of how the work evolved.

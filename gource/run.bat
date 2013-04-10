@@ -1,0 +1,1 @@
+gource -1280x720 --fullscreen ../../go-responsive/ --background 222222 --font-size 20 --title "NYS ITS GoResponsive Web Site: 4/3/18/2013 - 4/9/2013" --user-image-dir avatars/ --multi-sampling --logo avatars/its-logo-gray.png --highlight-dirs --highlight-users --bloom-multiplier 0.5 --user-scale 2.25 --hide mouse,filenames,progress
